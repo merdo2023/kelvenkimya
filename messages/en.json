@@ -1,0 +1,340 @@
+{
+  "common": {
+    "companyName": "Kelven Kimya",
+    "tagline": "Industrial Water Treatment and Chemical Solutions",
+    "learnMore": "Learn More",
+    "viewAll": "View All",
+    "getQuote": "Get a Quote",
+    "contactUs": "Contact Us",
+    "exploreProducts": "Explore Products",
+    "readMore": "Read More",
+    "backToHome": "Back to Home",
+    "loading": "Loading..."
+  },
+  "language": {
+    "groupLabel": "Language selection",
+    "tr": "TR",
+    "en": "EN",
+    "switchToTr": "Switch to Turkish",
+    "switchToEn": "Switch to English"
+  },
+  "nav": {
+    "items": [
+      { "key": "home", "path": "/" },
+      { "key": "products", "path": "/products" },
+      { "key": "about", "path": "/about" },
+      { "key": "projects", "path": "/projects" },
+      { "key": "contact", "path": "/contact" }
+    ],
+    "labels": {
+      "home": "Home",
+      "products": "Products",
+      "about": "About Us",
+      "projects": "Projects",
+      "contact": "Contact"
+    },
+    "ariaLabel": "Main navigation",
+    "menuToggle": "Open Menu",
+    "menuClose": "Close Menu"
+  },
+  "home": {
+    "hero": {
+      "badge": "40+ Years of Industrial Experience",
+      "title": "Industrial Water Treatment and Chemical Solutions",
+      "subtitle": "We provide reliable industrial water treatment, chemical cleaning and system protection solutions for industrial facilities. Expert technical support for boilers, cooling towers and process systems.",
+      "primaryCta": "Explore Products",
+      "secondaryCta": "Get a Quote",
+      "trustIndicators": [
+        "40+ Years",
+        "International Projects",
+        "Expert Team"
+      ]
+    },
+    "stats": [
+      { "value": "41", "label": "Years of Experience", "icon": "award" },
+      { "value": "93", "label": "Completed Projects", "icon": "building" },
+      { "value": "5", "label": "Countries Served", "icon": "globe" }
+    ],
+    "services": {
+      "title": "Our Services",
+      "subtitle": "Comprehensive solutions for your industrial water and chemical treatment needs.",
+      "items": [
+        {
+          "id": "boiler",
+          "title": "Boiler Chemical Cleaning",
+          "description": "Corrosion inhibitors, scale removers and system cleaning chemicals for industrial boiler systems."
+        },
+        {
+          "id": "cooling",
+          "title": "Cooling Tower Chemicals",
+          "description": "Professional chemical solutions for biological control, scale and corrosion prevention in cooling towers."
+        },
+        {
+          "id": "cleaning",
+          "title": "Industrial System Cleaning",
+          "description": "Effective cleaning and maintenance solutions for process lines, heat exchangers and industrial equipment."
+        },
+        {
+          "id": "analysis",
+          "title": "Water Analysis and Consultancy",
+          "description": "Detailed water analysis, process optimization and technical consultancy to improve system efficiency."
+        },
+        {
+          "id": "filtration",
+          "title": "Filtration and Treatment Media",
+          "description": "Supply of ion exchange resins, activated carbon and water treatment filtration media."
+        }
+      ]
+    },
+    "productCategories": {
+      "title": "Product Categories",
+      "subtitle": "Explore our extensive product range for industrial water treatment needs."
+    },
+    "aboutPreview": {
+      "title": "About Kelven Kimya",
+      "description": "With over 40 years of industrial experience, we deliver reliable solutions in industrial water treatment, chemical cleaning and system protection across Turkey and international projects. Our expert technical team develops customized solutions for your facility's needs.",
+      "cta": "About Us"
+    },
+    "clientReferences": {
+      "title": "Our References",
+      "subtitle": "We provide reliable solutions to leading industrial organizations in Turkey.",
+      "badge": "Trusted Partners",
+      "statLabel": "Corporate References",
+      "companies": [
+        "Tei Alasim",
+        "Rönesans Holding",
+        "Karaman Döküm",
+        "Şişecam",
+        "Mersin Soda Fabrikası"
+      ]
+    },
+    "contactCta": {
+      "title": "Let's determine the right chemical solution for your industrial facility together.",
+      "subtitle": "Our expert team provides customized technical consultancy and product recommendations for your facility's needs.",
+      "primaryCta": "Contact Us",
+      "secondaryCta": "Get a Quote"
+    }
+  },
+  "products": {
+    "title": "Our Products",
+    "subtitle": "Comprehensive product portfolio for industrial water treatment and chemical solutions.",
+    "cta": "Get a Quote",
+    "ctaTitle": "Let's find the right product together",
+    "ctaDescription": "Contact us for detailed information and pricing on our products.",
+    "itemLabel": "products",
+    "categoriesNav": "Categories",
+    "stats": {
+      "categories": "Categories",
+      "products": "Total Products"
+    },
+    "categories": [
+      {
+        "id": "kelvenoks",
+        "title": "Kelvenoks Series",
+        "description": "High-performance chemical formulations developed for industrial water treatment systems. Specially designed for corrosion prevention, scale control and system protection.",
+        "products": [
+          { "name": "Kelvenoks Ferlin 123", "description": "Multi-purpose industrial water treatment chemical." },
+          { "name": "Kelvenoks Ferlin 124", "description": "Special formulation for high-temperature applications." },
+          { "name": "Kelvenoks Ferlin 128", "description": "Corrosion and scale inhibitor concentrate solution." },
+          { "name": "Kelvenoks Ferlin 130", "description": "Advanced formula for process water conditioning." }
+        ]
+      },
+      {
+        "id": "boiler",
+        "title": "Boiler Chemicals",
+        "description": "Professional chemical solutions for steam quality, corrosion control and energy efficiency in industrial boiler systems.",
+        "products": [
+          { "name": "Polyquestamin", "description": "Boiler feed water conditioning and corrosion inhibitor." },
+          { "name": "Polyquest K-400", "description": "Alkaline boiler chemical for scale and corrosion control." },
+          { "name": "Polyquest K-410", "description": "Advanced boiler water conditioning formulation." }
+        ]
+      },
+      {
+        "id": "cooling",
+        "title": "Cooling Tower Chemicals",
+        "description": "Effective solutions against biological contamination, scale buildup and corrosion in cooling towers.",
+        "products": [
+          { "name": "ORGC Series", "description": "Organic biocide and microbiological control products." },
+          { "name": "ABACIDE", "description": "Broad-spectrum biocide and algaecide solution." },
+          { "name": "Silifoom", "description": "Foam control and surfactant remover." }
+        ]
+      },
+      {
+        "id": "filtration",
+        "title": "Filtration and Treatment Media",
+        "description": "High-quality media and resin solutions for water treatment and filtration systems.",
+        "products": [
+          { "name": "Ion Exchange Resins", "description": "Resins for softening and demineralization applications." },
+          { "name": "Granular Activated Carbon", "description": "Activated carbon for organic matter and chlorine removal." },
+          { "name": "Water Treatment Filtration Media", "description": "Media for multi-layer filtration systems." }
+        ]
+      }
+    ]
+  },
+  "about": {
+    "title": "About Us",
+    "subtitle": "Over 40 years of experience and trust in industrial water treatment.",
+    "cta": "Contact Us",
+    "ctaTitle": "Let's find the right solution partner for your facility together",
+    "ctaDescription": "Our expert team provides technical consultancy and solution recommendations for your industrial water treatment needs.",
+    "story": {
+      "title": "Our Company Story",
+      "paragraphs": [
+        "Kelven Kimya is a company with over 40 years of experience in industrial water treatment and chemical solutions. We provide reliable solutions for industrial facilities across Turkey and internationally.",
+        "Through our boiler chemicals, cooling tower chemicals, industrial system cleaning, water analysis and technical consultancy services, we aim to maximize operational efficiency and extend system lifespan for industrial facilities.",
+        "Our experience in international industrial projects, particularly in Turkmenistan, strengthens our technical competence and capacity to deliver services at global standards."
+      ]
+    },
+    "expertise": {
+      "title": "Areas of Expertise",
+      "subtitle": "Comprehensive technical competence for industrial water and chemical needs.",
+      "items": [
+        { "title": "Industrial Water Treatment", "description": "Process water, boiler feed water and cooling water conditioning solutions." },
+        { "title": "Boiler Chemicals", "description": "Professional products for corrosion, scale and steam quality control." },
+        { "title": "Cooling Tower Chemicals", "description": "Biological control, scale and corrosion prevention solutions." },
+        { "title": "System Cleaning", "description": "Effective cleaning for industrial equipment and process lines." },
+        { "title": "Water Analysis", "description": "Detailed laboratory analysis and process optimization." },
+        { "title": "Technical Consultancy", "description": "Custom technical solution development for facility needs." }
+      ]
+    },
+    "mission": {
+      "title": "Our Mission",
+      "description": "To maximize our customers' operational efficiency and system reliability by providing dependable, efficient and sustainable water treatment and chemical solutions for industrial facilities."
+    },
+    "vision": {
+      "title": "Our Vision",
+      "description": "To be the leading trusted solution partner in industrial water treatment in Turkey and the region; maintaining our position as a reference company with international service quality standards."
+    },
+    "values": {
+      "title": "Our Values",
+      "subtitle": "The core principles that guide us in every project.",
+      "items": [
+        { "title": "Reliability", "description": "We deliver long-term, consistent and dependable solutions to our customers." },
+        { "title": "Technical Excellence", "description": "We provide services at the highest technical standards with our expert team." },
+        { "title": "Sustainability", "description": "We develop environmentally conscious, efficient and sustainable chemical solutions." },
+        { "title": "Customer Focus", "description": "We design customized solutions for each facility's unique needs." }
+      ]
+    },
+    "team": {
+      "title": "Our Technical Team",
+      "description": "Our experienced team of chemical engineers, process specialists and field technicians supports you throughout all stages from project analysis to implementation. We provide comprehensive technical support in water analysis, dosage calculations and system optimization."
+    },
+    "international": {
+      "title": "International Projects",
+      "description": "In addition to serving across Turkey, we continuously expand our international experience through industrial water treatment and chemical solution projects, particularly in Turkmenistan. We serve facilities in energy, petrochemical, textile and food sectors."
+    }
+  },
+  "projects": {
+    "title": "Our Projects",
+    "subtitle": "Projects completed at industrial facilities in Turkey and internationally.",
+    "emptyState": {
+      "title": "No Project Information Available",
+      "description": "Detailed information about our projects will be added soon. Contact us for our latest projects."
+    },
+    "items": [
+      {
+        "id": "ref-1",
+        "projectName": "Turkmenistan Energy Plant Water Treatment",
+        "country": "Turkmenistan",
+        "sector": "Energy",
+        "serviceType": "Boiler Chemicals and Water Analysis",
+        "description": "Boiler feed water conditioning, chemical dosing system installation and periodic water analysis services at an industrial energy facility."
+      },
+      {
+        "id": "ref-2",
+        "projectName": "Petrochemical Plant Cooling Tower Chemicals",
+        "country": "Turkmenistan",
+        "sector": "Petrochemical",
+        "serviceType": "Cooling Tower Chemicals",
+        "description": "Cooling tower biological control, scale prevention and corrosion protection program at a large-scale petrochemical facility."
+      },
+      {
+        "id": "ref-3",
+        "projectName": "Textile Factory Process Water Treatment",
+        "country": "Turkey",
+        "sector": "Textile",
+        "serviceType": "Filtration Media and Consultancy",
+        "description": "Process water treatment, filtration media supply and water quality optimization consultancy at a textile production facility."
+      },
+      {
+        "id": "ref-4",
+        "projectName": "Food Processing Plant System Cleaning",
+        "country": "Turkey",
+        "sector": "Food",
+        "serviceType": "Industrial System Cleaning",
+        "description": "Heat exchanger and process line chemical cleaning, periodic maintenance program at a food processing facility."
+      },
+      {
+        "id": "ref-5",
+        "projectName": "Industrial Boiler Chemical Program",
+        "country": "Turkey",
+        "sector": "Manufacturing",
+        "serviceType": "Boiler Chemicals",
+        "description": "Comprehensive boiler chemical program, water analysis and technical consultancy services at a large-scale manufacturing facility."
+      }
+    ]
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "Get in touch with us for your industrial water treatment needs.",
+    "highlights": [
+      "Expert Technical Support",
+      "Fast Response",
+      "Free Consultation"
+    ],
+    "info": {
+      "title": "Contact Information",
+      "subtitle": "Reach us through your preferred channel or fill out the form to get in touch.",
+      "address": "Defterdar Mah. Hacı Bilgin Sokak No:35 Eyüpsultan / İstanbul",
+      "email": "info@kelvenkimya.com",
+      "phone": "+90 543 522 80 14",
+      "phoneHref": "+905435228014"
+    },
+    "cards": {
+      "phone": { "title": "Phone", "description": "Call us for technical support and information." },
+      "email": { "title": "Email", "description": "Write to us for detailed information and quote requests." },
+      "address": { "title": "Address", "description": "Our office address for your visit." }
+    },
+    "form": {
+      "title": "Get in Touch",
+      "subtitle": "Fill out the form and we will get back to you shortly.",
+      "fields": {
+        "name": { "label": "Full Name", "placeholder": "Your full name" },
+        "email": { "label": "Email", "placeholder": "example@company.com" },
+        "phone": { "label": "Phone", "placeholder": "+90 5XX XXX XX XX" },
+        "company": { "label": "Company", "placeholder": "Your company name" },
+        "message": { "label": "Message", "placeholder": "Write your message here..." }
+      },
+      "submit": "Send Message",
+      "submitting": "Sending...",
+      "error": "Could not send your message. Please try again or contact us directly by email.",
+      "validation": {
+        "nameRequired": "Full name is required.",
+        "emailRequired": "Email is required.",
+        "emailInvalid": "Please enter a valid email address.",
+        "messageRequired": "Message is required."
+      },
+      "success": {
+        "title": "Message Received",
+        "description": "We will contact you as soon as possible. Thank you for your interest."
+      }
+    },
+    "map": {
+      "title": "Location",
+      "placeholder": "Map will be added soon."
+    }
+  },
+  "footer": {
+    "description": "With over 40 years of experience, we provide reliable solutions in industrial water treatment, chemical cleaning and system protection.",
+    "navigation": {
+      "title": "Pages"
+    },
+    "services": {
+      "title": "Services"
+    },
+    "contact": {
+      "title": "Contact"
+    },
+    "copyright": "© {year} Kelven Kimya. All rights reserved."
+  }
+}

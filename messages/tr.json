@@ -1,0 +1,340 @@
+{
+  "common": {
+    "companyName": "Kelven Kimya",
+    "tagline": "Endüstriyel Su Şartlandırma ve Kimyasal Çözümler",
+    "learnMore": "Daha Fazla Bilgi",
+    "viewAll": "Tümünü Gör",
+    "getQuote": "Teklif Al",
+    "contactUs": "İletişime Geç",
+    "exploreProducts": "Ürünleri İncele",
+    "readMore": "Devamını Oku",
+    "backToHome": "Ana Sayfaya Dön",
+    "loading": "Yükleniyor..."
+  },
+  "language": {
+    "groupLabel": "Dil seçimi",
+    "tr": "TR",
+    "en": "EN",
+    "switchToTr": "Türkçe'ye geç",
+    "switchToEn": "Switch to English"
+  },
+  "nav": {
+    "items": [
+      { "key": "home", "path": "/" },
+      { "key": "products", "path": "/products" },
+      { "key": "about", "path": "/about" },
+      { "key": "projects", "path": "/projects" },
+      { "key": "contact", "path": "/contact" }
+    ],
+    "labels": {
+      "home": "Ana Sayfa",
+      "products": "Ürünler",
+      "about": "Hakkımızda",
+      "projects": "Projeler",
+      "contact": "İletişim"
+    },
+    "ariaLabel": "Ana navigasyon",
+    "menuToggle": "Menüyü Aç",
+    "menuClose": "Menüyü Kapat"
+  },
+  "home": {
+    "hero": {
+      "badge": "40+ Yıllık Endüstriyel Deneyim",
+      "title": "Endüstriyel Su Şartlandırma ve Kimyasal Çözümler",
+      "subtitle": "Endüstriyel tesisler için güvenilir su şartlandırma, kimyasal temizlik ve sistem koruma çözümleri sunuyoruz. Kazan, soğutma kulesi ve proses sistemleriniz için uzman teknik destek.",
+      "primaryCta": "Ürünleri İncele",
+      "secondaryCta": "Teklif Al",
+      "trustIndicators": [
+        "40+ Yıl Deneyim",
+        "Uluslararası Projeler",
+        "Uzman Teknik Ekip"
+      ]
+    },
+    "stats": [
+      { "value": "41", "label": "Yıl Deneyim", "icon": "award" },
+      { "value": "93", "label": "Tamamlanan Proje", "icon": "building" },
+      { "value": "5", "label": "Hizmet Verilen Ülke", "icon": "globe" }
+    ],
+    "services": {
+      "title": "Hizmetlerimiz",
+      "subtitle": "Endüstriyel tesislerinizin su ve kimyasal ihtiyaçlarına yönelik kapsamlı çözümler sunuyoruz.",
+      "items": [
+        {
+          "id": "boiler",
+          "title": "Kazan Kimyasal Temizliği",
+          "description": "Endüstriyel kazan sistemleriniz için korozyon önleyici, ölçek giderici ve sistem temizlik kimyasalları."
+        },
+        {
+          "id": "cooling",
+          "title": "Soğutma Kulesi Kimyasalları",
+          "description": "Soğutma kulelerinde biyolojik kontrol, ölçek ve korozyon önleme için profesyonel kimyasal çözümler."
+        },
+        {
+          "id": "cleaning",
+          "title": "Endüstriyel Sistem Temizliği",
+          "description": "Proses hatları, ısı eşanjörleri ve endüstriyel ekipmanlar için etkin temizlik ve bakım çözümleri."
+        },
+        {
+          "id": "analysis",
+          "title": "Su Analizi ve Danışmanlık",
+          "description": "Detaylı su analizi, proses optimizasyonu ve teknik danışmanlık hizmetleri ile sistem verimliliğinizi artırın."
+        },
+        {
+          "id": "filtration",
+          "title": "Filtrasyon ve Arıtma Medyaları",
+          "description": "İyon değiştirici reçineler, aktif karbon ve su arıtma filtrasyon medyaları tedariki."
+        }
+      ]
+    },
+    "productCategories": {
+      "title": "Ürün Kategorileri",
+      "subtitle": "Endüstriyel su şartlandırma ihtiyaçlarınız için geniş ürün yelpazemizi keşfedin."
+    },
+    "aboutPreview": {
+      "title": "Kelven Kimya Hakkında",
+      "description": "40 yılı aşkın endüstriyel deneyimimizle, Türkiye genelinde ve uluslararası projelerde endüstriyel su şartlandırma, kimyasal temizlik ve sistem koruma alanlarında güvenilir çözümler sunuyoruz. Uzman teknik ekibimiz, tesisinizin ihtiyaçlarına özel çözümler geliştirmektedir.",
+      "cta": "Hakkımızda"
+    },
+    "clientReferences": {
+      "title": "Referanslarımız",
+      "subtitle": "Türkiye'nin önde gelen endüstriyel kuruluşlarına güvenilir çözümler sunuyoruz.",
+      "badge": "Güvenilir İş Ortakları",
+      "statLabel": "Kurumsal Referans",
+      "companies": [
+        "Tei Alasim",
+        "Rönesans Holding",
+        "Karaman Döküm",
+        "Şişecam",
+        "Mersin Soda Fabrikası"
+      ]
+    },
+    "contactCta": {
+      "title": "Endüstriyel tesisiniz için doğru kimyasal çözümü birlikte belirleyelim.",
+      "subtitle": "Uzman ekibimiz, tesisinizin ihtiyaçlarına özel teknik danışmanlık ve ürün önerileri sunmaktadır.",
+      "primaryCta": "İletişime Geç",
+      "secondaryCta": "Teklif Al"
+    }
+  },
+  "products": {
+    "title": "Ürünlerimiz",
+    "subtitle": "Endüstriyel su şartlandırma ve kimyasal çözümler için kapsamlı ürün portföyümüz.",
+    "cta": "Teklif Al",
+    "ctaTitle": "Doğru ürünü birlikte belirleyelim",
+    "ctaDescription": "Ürünlerimiz hakkında detaylı bilgi ve fiyat teklifi için bizimle iletişime geçin.",
+    "itemLabel": "ürün",
+    "categoriesNav": "Kategoriler",
+    "stats": {
+      "categories": "Kategori",
+      "products": "Toplam Ürün"
+    },
+    "categories": [
+      {
+        "id": "kelvenoks",
+        "title": "Kelvenoks Serisi",
+        "description": "Endüstriyel su şartlandırma sistemleri için geliştirilmiş, yüksek performanslı kimyasal formülasyonlar. Korozyon önleme, ölçek kontrolü ve sistem koruması için özel olarak tasarlanmıştır.",
+        "products": [
+          { "name": "Kelvenoks Ferlin 123", "description": "Çok amaçlı endüstriyel su şartlandırma kimyasalı." },
+          { "name": "Kelvenoks Ferlin 124", "description": "Yüksek sıcaklık uygulamaları için özel formülasyon." },
+          { "name": "Kelvenoks Ferlin 128", "description": "Korozyon ve ölçek önleyici konsantre çözüm." },
+          { "name": "Kelvenoks Ferlin 130", "description": "Proses suyu şartlandırma için gelişmiş formül." }
+        ]
+      },
+      {
+        "id": "boiler",
+        "title": "Kazan Kimyasalları",
+        "description": "Endüstriyel kazan sistemlerinde buhar kalitesi, korozyon kontrolü ve enerji verimliliği için profesyonel kimyasal çözümler.",
+        "products": [
+          { "name": "Polyquestamin", "description": "Kazan besleme suyu şartlandırma ve korozyon önleyici." },
+          { "name": "Polyquest K-400", "description": "Alkalin kazan kimyasalı, ölçek ve korozyon kontrolü." },
+          { "name": "Polyquest K-410", "description": "Gelişmiş kazan suyu şartlandırma formülasyonu." }
+        ]
+      },
+      {
+        "id": "cooling",
+        "title": "Soğutma Kulesi Kimyasalları",
+        "description": "Soğutma kulelerinde biyolojik kontaminasyon, ölçek birikimi ve korozyon sorunlarına karşı etkin çözümler.",
+        "products": [
+          { "name": "ORGC Serisi", "description": "Organik biyosit ve mikrobiyolojik kontrol ürünleri." },
+          { "name": "ABACIDE", "description": "Geniş spektrumlu biyosit ve algisit çözümü." },
+          { "name": "Silifoom", "description": "Köpük kontrolü ve yüzey aktif madde giderici." }
+        ]
+      },
+      {
+        "id": "filtration",
+        "title": "Filtrasyon ve Arıtma Medyaları",
+        "description": "Su arıtma ve filtrasyon sistemleri için yüksek kaliteli medya ve reçine çözümleri.",
+        "products": [
+          { "name": "İyon Değiştirici Reçineler", "description": "Yumuşatma ve demineralizasyon uygulamaları için reçineler." },
+          { "name": "Granül Aktif Karbon", "description": "Organik madde ve klor giderimi için aktif karbon." },
+          { "name": "Su Arıtma Filtrasyon Medyası", "description": "Çok katmanlı filtrasyon sistemleri için medya." }
+        ]
+      }
+    ]
+  },
+  "about": {
+    "title": "Hakkımızda",
+    "subtitle": "Endüstriyel su şartlandırma alanında 40 yılı aşkın deneyim ve güven.",
+    "cta": "İletişime Geç",
+    "ctaTitle": "Tesisiniz için doğru çözüm ortağını birlikte belirleyelim",
+    "ctaDescription": "Uzman ekibimiz, endüstriyel su şartlandırma ihtiyaçlarınız için teknik danışmanlık ve çözüm önerileri sunmaktadır.",
+    "story": {
+      "title": "Şirket Hikayemiz",
+      "paragraphs": [
+        "Kelven Kimya, endüstriyel su şartlandırma ve kimyasal çözümler alanında 40 yılı aşkın deneyime sahip bir firmadır. Türkiye genelinde ve uluslararası endüstriyel tesislerde güvenilir çözümler sunmaktayız.",
+        "Kazan kimyasalları, soğutma kulesi kimyasalları, endüstriyel sistem temizliği, su analizi ve teknik danışmanlık hizmetlerimizle endüstriyel tesislerin verimliliğini ve sistem ömrünü uzatmayı hedefliyoruz.",
+        "Özellikle Türkmenistan başta olmak üzere uluslararası endüstriyel projelerde edindiğimiz deneyim, teknik yetkinliğimizi ve global standartlarda hizmet sunma kapasitemizi güçlendirmektedir."
+      ]
+    },
+    "expertise": {
+      "title": "Uzmanlık Alanlarımız",
+      "subtitle": "Endüstriyel tesislerin su ve kimyasal ihtiyaçlarına yönelik kapsamlı teknik yetkinlik.",
+      "items": [
+        { "title": "Endüstriyel Su Şartlandırma", "description": "Proses suyu, kazan besleme suyu ve soğutma suyu şartlandırma çözümleri." },
+        { "title": "Kazan Kimyasalları", "description": "Korozyon, ölçek ve buhar kalitesi kontrolü için profesyonel ürünler." },
+        { "title": "Soğutma Kulesi Kimyasalları", "description": "Biyolojik kontrol, ölçek ve korozyon önleme çözümleri." },
+        { "title": "Sistem Temizliği", "description": "Endüstriyel ekipman ve proses hatları için etkin temizlik." },
+        { "title": "Su Analizi", "description": "Detaylı laboratuvar analizi ve proses optimizasyonu." },
+        { "title": "Teknik Danışmanlık", "description": "Tesis ihtiyaçlarına özel teknik çözüm geliştirme." }
+      ]
+    },
+    "mission": {
+      "title": "Misyonumuz",
+      "description": "Endüstriyel tesislere güvenilir, verimli ve sürdürülebilir su şartlandırma ve kimyasal çözümler sunarak, müşterilerimizin operasyonel verimliliğini ve sistem güvenilirliğini en üst düzeye çıkarmak."
+    },
+    "vision": {
+      "title": "Vizyonumuz",
+      "description": "Endüstriyel su şartlandırma alanında Türkiye'nin ve bölgenin önde gelen güvenilir çözüm ortağı olmak; uluslararası standartlarda hizmet kalitesi ile sektörde referans firma konumunu sürdürmek."
+    },
+    "values": {
+      "title": "Değerlerimiz",
+      "subtitle": "Her projede rehberimiz olan temel ilkelerimiz.",
+      "items": [
+        { "title": "Güvenilirlik", "description": "Müşterilerimize uzun vadeli, tutarlı ve güvenilir çözümler sunuyoruz." },
+        { "title": "Teknik Mükemmellik", "description": "Uzman ekibimizle en yüksek teknik standartlarda hizmet veriyoruz." },
+        { "title": "Sürdürülebilirlik", "description": "Çevreye duyarlı, verimli ve sürdürülebilir kimyasal çözümler geliştiriyoruz." },
+        { "title": "Müşteri Odaklılık", "description": "Her tesisin ihtiyacına özel çözümler tasarlıyoruz." }
+      ]
+    },
+    "team": {
+      "title": "Teknik Ekibimiz",
+      "description": "Kimya mühendisleri, proses uzmanları ve saha teknikerlerinden oluşan deneyimli ekibimiz, proje analizinden uygulamaya kadar tüm süreçlerde yanınızdadır. Su analizi, dozaj hesaplamaları ve sistem optimizasyonu konularında kapsamlı teknik destek sağlamaktayız."
+    },
+    "international": {
+      "title": "Uluslararası Projeler",
+      "description": "Türkiye genelinde hizmet vermenin yanı sıra, özellikle Türkmenistan'da gerçekleştirdiğimiz endüstriyel su şartlandırma ve kimyasal çözüm projeleriyle uluslararası deneyimimizi sürekli genişletmekteyiz. Enerji, petrokimya, tekstil ve gıda sektörlerinde faaliyet gösteren tesislere hizmet vermekteyiz."
+    }
+  },
+  "projects": {
+    "title": "Projelerimiz",
+    "subtitle": "Türkiye ve uluslararası endüstriyel tesislerde gerçekleştirdiğimiz projeler.",
+    "emptyState": {
+      "title": "Proje Bilgisi Bulunmuyor",
+      "description": "Projelerimiz hakkında detaylı bilgiler yakında eklenecektir. Güncel projelerimiz için bizimle iletişime geçebilirsiniz."
+    },
+    "items": [
+      {
+        "id": "ref-1",
+        "projectName": "Türkmenistan Enerji Tesisi Su Şartlandırma",
+        "country": "Türkmenistan",
+        "sector": "Enerji",
+        "serviceType": "Kazan Kimyasalları ve Su Analizi",
+        "description": "Endüstriyel enerji tesisinde kazan besleme suyu şartlandırma, kimyasal dozaj sistemi kurulumu ve periyodik su analizi hizmetleri."
+      },
+      {
+        "id": "ref-2",
+        "projectName": "Petrokimya Tesisi Soğutma Kulesi Kimyasalları",
+        "country": "Türkmenistan",
+        "sector": "Petrokimya",
+        "serviceType": "Soğutma Kulesi Kimyasalları",
+        "description": "Büyük ölçekli petrokimya tesisinde soğutma kulesi biyolojik kontrol, ölçek önleme ve korozyon koruma programı."
+      },
+      {
+        "id": "ref-3",
+        "projectName": "Tekstil Fabrikası Proses Suyu Arıtma",
+        "country": "Türkiye",
+        "sector": "Tekstil",
+        "serviceType": "Filtrasyon Medyaları ve Danışmanlık",
+        "description": "Tekstil üretim tesisinde proses suyu arıtma, filtrasyon medyası tedariki ve su kalitesi optimizasyonu danışmanlığı."
+      },
+      {
+        "id": "ref-4",
+        "projectName": "Gıda İşleme Tesisi Sistem Temizliği",
+        "country": "Türkiye",
+        "sector": "Gıda",
+        "serviceType": "Endüstriyel Sistem Temizliği",
+        "description": "Gıda işleme tesisinde ısı eşanjörü ve proses hattı kimyasal temizliği, periyodik bakım programı."
+      },
+      {
+        "id": "ref-5",
+        "projectName": "Endüstriyel Kazan Kimyasal Programı",
+        "country": "Türkiye",
+        "sector": "Üretim",
+        "serviceType": "Kazan Kimyasalları",
+        "description": "Büyük ölçekli üretim tesisinde kapsamlı kazan kimyasal programı, su analizi ve teknik danışmanlık hizmetleri."
+      }
+    ]
+  },
+  "contact": {
+    "title": "İletişim",
+    "subtitle": "Endüstriyel su şartlandırma ihtiyaçlarınız için bizimle iletişime geçin.",
+    "highlights": [
+      "Uzman Teknik Destek",
+      "Hızlı Geri Dönüş",
+      "Ücretsiz Danışmanlık"
+    ],
+    "info": {
+      "title": "İletişim Bilgileri",
+      "subtitle": "Size en uygun kanaldan ulaşabilir veya formu doldurarak bize yazabilirsiniz.",
+      "address": "Defterdar Mah. Hacı Bilgin Sokak No:35 Eyüpsultan / İstanbul",
+      "email": "info@kelvenkimya.com",
+      "phone": "+90 543 522 80 14",
+      "phoneHref": "+905435228014"
+    },
+    "cards": {
+      "phone": { "title": "Telefon", "description": "Teknik destek ve bilgi için bizi arayın." },
+      "email": { "title": "E-posta", "description": "Detaylı bilgi ve teklif talepleri için yazın." },
+      "address": { "title": "Adres", "description": "Ofisimize ulaşım için adres bilgilerimiz." }
+    },
+    "form": {
+      "title": "Bize Ulaşın",
+      "subtitle": "Formu doldurun, en kısa sürede size dönüş yapalım.",
+      "fields": {
+        "name": { "label": "Ad Soyad", "placeholder": "Adınız ve soyadınız" },
+        "email": { "label": "E-posta", "placeholder": "ornek@firma.com" },
+        "phone": { "label": "Telefon", "placeholder": "+90 5XX XXX XX XX" },
+        "company": { "label": "Firma", "placeholder": "Firma adınız" },
+        "message": { "label": "Mesaj", "placeholder": "Mesajınızı buraya yazın..." }
+      },
+      "submit": "Mesaj Gönder",
+      "submitting": "Gönderiliyor...",
+      "error": "Mesaj gönderilemedi. Lütfen tekrar deneyin veya doğrudan e-posta ile iletişime geçin.",
+      "validation": {
+        "nameRequired": "Ad soyad alanı zorunludur.",
+        "emailRequired": "E-posta alanı zorunludur.",
+        "emailInvalid": "Geçerli bir e-posta adresi giriniz.",
+        "messageRequired": "Mesaj alanı zorunludur."
+      },
+      "success": {
+        "title": "Mesajınız Alındı",
+        "description": "En kısa sürede sizinle iletişime geçeceğiz. İlginiz için teşekkür ederiz."
+      }
+    },
+    "map": {
+      "title": "Konum",
+      "placeholder": "Harita yakında eklenecektir."
+    }
+  },
+  "footer": {
+    "description": "Endüstriyel su şartlandırma, kimyasal temizlik ve sistem koruma alanlarında 40 yılı aşkın deneyimle güvenilir çözümler sunuyoruz.",
+    "navigation": {
+      "title": "Sayfalar"
+    },
+    "services": {
+      "title": "Hizmetler"
+    },
+    "contact": {
+      "title": "İletişim"
+    },
+    "copyright": "© {year} Kelven Kimya. Tüm hakları saklıdır."
+  }
+}
