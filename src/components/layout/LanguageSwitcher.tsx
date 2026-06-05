@@ -34,7 +34,7 @@ export function LanguageSwitcher() {
             onClick={() => setLanguage(lang)}
             aria-pressed={isActive}
             aria-label={t(`language.switchTo${lang === 'tr' ? 'Tr' : 'En'}`)}
-            className={`min-w-[2.25rem] rounded-lg px-2.5 py-1.5 text-xs font-bold transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan focus-visible:ring-offset-2 sm:text-sm ${
+            className={`min-w-[2.25rem] cursor-pointer rounded-lg px-2.5 py-1.5 text-xs font-bold transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan focus-visible:ring-offset-2 sm:text-sm ${
               isActive
                 ? 'gradient-accent text-white shadow-sm'
                 : 'text-muted hover:text-navy'

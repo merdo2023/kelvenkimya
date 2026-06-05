@@ -4,7 +4,6 @@ import { useTranslation } from '@/hooks/useTranslation'
 import { Container } from '../common/Container'
 import { SectionHeader } from '../common/SectionHeader'
 import { ServiceCard } from './ServiceCard'
-import { useLocaleArray } from '@/hooks/useLocaleArray'
 import type { ServiceItem } from '@/types/locale'
 
 function renderServiceCards(
@@ -28,9 +27,12 @@ function secondRowGridClass(count: number): string {
   return 'lg:grid-cols-3'
 }
 
-export function ServicesSection() {
+type ServicesSectionProps = {
+  services: ServiceItem[]
+}
+
+export function ServicesSection({ services }: ServicesSectionProps) {
   const { t } = useTranslation()
-  const services = useLocaleArray<ServiceItem>('home.services.items')
   const learnMore = t('common.learnMore')
 
   const firstRow = services.length > 3 ? services.slice(0, 3) : services

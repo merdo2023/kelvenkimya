@@ -20,11 +20,26 @@
   },
   "nav": {
     "items": [
-      { "key": "home", "path": "/" },
-      { "key": "products", "path": "/products" },
-      { "key": "about", "path": "/about" },
-      { "key": "projects", "path": "/projects" },
-      { "key": "contact", "path": "/contact" }
+      {
+        "key": "home",
+        "path": "/"
+      },
+      {
+        "key": "products",
+        "path": "/products"
+      },
+      {
+        "key": "about",
+        "path": "/about"
+      },
+      {
+        "key": "projects",
+        "path": "/projects"
+      },
+      {
+        "key": "contact",
+        "path": "/contact"
+      }
     ],
     "labels": {
       "home": "Home",
@@ -38,6 +53,10 @@
     "menuClose": "Close Menu"
   },
   "home": {
+    "seo": {
+      "title": "Industrial Water Treatment",
+      "description": "Chemical cleaning and water treatment solutions for boilers, cooling towers and process systems."
+    },
     "hero": {
       "badge": "40+ Years of Industrial Experience",
       "title": "Industrial Water Treatment and Chemical Solutions",
@@ -51,44 +70,57 @@
       ]
     },
     "stats": [
-      { "value": "41", "label": "Years of Experience", "icon": "award" },
-      { "value": "93", "label": "Completed Projects", "icon": "building" },
-      { "value": "5", "label": "Countries Served", "icon": "globe" }
+      {
+        "value": "41",
+        "label": "Years of Experience",
+        "icon": "award"
+      },
+      {
+        "value": "93",
+        "label": "Completed Projects",
+        "icon": "building"
+      },
+      {
+        "value": "5",
+        "label": "Countries Served",
+        "icon": "globe"
+      }
     ],
     "services": {
       "title": "Our Services",
       "subtitle": "Comprehensive solutions for your industrial water and chemical treatment needs.",
       "items": [
         {
-          "id": "boiler",
-          "title": "Boiler Chemical Cleaning",
-          "description": "Corrosion inhibitors, scale removers and system cleaning chemicals for industrial boiler systems."
+          "id": "endustriyel-kimyasal-temizlik",
+          "title": "Industrial Chemical Cleaning",
+          "description": "Professional chemical cleaning for steam boilers, heat exchangers, cooling towers, chiller systems, process pipelines and industrial equipment."
         },
         {
-          "id": "cooling",
-          "title": "Cooling Tower Chemicals",
-          "description": "Professional chemical solutions for biological control, scale and corrosion prevention in cooling towers."
+          "id": "su-yumusatma-uniteleri-revizyonu",
+          "title": "Water Softening Unit Revision",
+          "description": "Resin replacement, valve maintenance, system optimization and revision services for water softening systems."
         },
         {
-          "id": "cleaning",
-          "title": "Industrial System Cleaning",
-          "description": "Effective cleaning and maintenance solutions for process lines, heat exchangers and industrial equipment."
+          "id": "su-sartlandirma-kimyasallari",
+          "title": "Water Treatment Chemicals",
+          "description": "Chemical solutions for scale, corrosion and biological formation control in steam boilers, cooling towers and closed-loop systems."
         },
         {
-          "id": "analysis",
-          "title": "Water Analysis and Consultancy",
-          "description": "Detailed water analysis, process optimization and technical consultancy to improve system efficiency."
+          "id": "kimyasal-temizlik-kimyasallari",
+          "title": "Chemical Cleaning Products",
+          "description": "Supply of industrial cleaning chemicals including descalers, rust removers, degreasers and passivation products."
         },
         {
-          "id": "filtration",
-          "title": "Filtration and Treatment Media",
-          "description": "Supply of ion exchange resins, activated carbon and water treatment filtration media."
+          "id": "laboratuvar-analiz-hizmetleri",
+          "title": "Laboratory Analysis Services",
+          "description": "Raw water, boiler water and cooling water analyses with system performance evaluation and technical reporting."
         }
       ]
     },
     "productCategories": {
       "title": "Product Categories",
-      "subtitle": "Explore our extensive product range for industrial water treatment needs."
+      "subtitle": "Explore our extensive product range for industrial water treatment needs.",
+      "viewAll": "View All Categories"
     },
     "aboutPreview": {
       "title": "About Kelven Kimya",
@@ -99,14 +131,22 @@
       "title": "Our References",
       "subtitle": "We provide reliable solutions to leading industrial organizations in Turkey.",
       "badge": "Trusted Partners",
-      "statLabel": "Corporate References",
-      "companies": [
-        "Tei Alasim",
-        "Rönesans Holding",
-        "Karaman Döküm",
+      "statLabel": "Corporate references",
+      "rowFirst": [
+        "Rönesans",
         "Şişecam",
-        "Mersin Soda Fabrikası"
-      ]
+        "Mersin Soda",
+        "Koç Grubu",
+        "TEI Alaşım"
+      ],
+      "rowSecond": [
+        "Aksa Enerji",
+        "Nuh Enerji",
+        "BIS Enerji",
+        "Karaman Döküm",
+        "Mary Amonyak (Türkmenistan)"
+      ],
+      "cardLabel": "Reference"
     },
     "contactCta": {
       "title": "Let's determine the right chemical solution for your industrial facility together.",
@@ -116,6 +156,10 @@
     }
   },
   "products": {
+    "seo": {
+      "title": "Industrial Water Treatment Products",
+      "description": "Chemical cleaning, water softening, filtration and corrosion protection product portfolio."
+    },
     "title": "Our Products",
     "subtitle": "Comprehensive product portfolio for industrial water treatment and chemical solutions.",
     "cta": "Get a Quote",
@@ -123,55 +167,342 @@
     "ctaDescription": "Contact us for detailed information and pricing on our products.",
     "itemLabel": "products",
     "categoriesNav": "Categories",
+    "searchLabel": "Search products",
+    "searchPlaceholder": "Search category, product name or description…",
+    "clearSearch": "Clear search",
+    "filterAll": "All categories",
+    "clearFilters": "Clear filters",
+    "resultsTotal": "{total} products total",
+    "resultsFiltered": "Showing {visible} of {total} products",
+    "noResultsTitle": "No results found",
+    "noResultsDescription": "No products match your search or category filter. Try a different term or clear the filters.",
     "stats": {
       "categories": "Categories",
       "products": "Total Products"
     },
     "categories": [
       {
-        "id": "kelvenoks",
-        "title": "Kelvenoks Series",
-        "description": "High-performance chemical formulations developed for industrial water treatment systems. Specially designed for corrosion prevention, scale control and system protection.",
+        "id": "kimyasal_temizlik_urunleri",
+        "title": "Chemical Cleaning Products",
+        "description": "Used for chemical cleaning of iron, steel and cast materials.",
         "products": [
-          { "name": "Kelvenoks Ferlin 123", "description": "Multi-purpose industrial water treatment chemical." },
-          { "name": "Kelvenoks Ferlin 124", "description": "Special formulation for high-temperature applications." },
-          { "name": "Kelvenoks Ferlin 128", "description": "Corrosion and scale inhibitor concentrate solution." },
-          { "name": "Kelvenoks Ferlin 130", "description": "Advanced formula for process water conditioning." }
+          {
+            "name": "Kelvenoks Ferlin - 123",
+            "description": "Used for chemical cleaning of iron, steel and cast materials."
+          },
+          {
+            "name": "Kelvenoks Ferlin - 124",
+            "description": "Used for cleaning all types of copper and copper alloy systems."
+          },
+          {
+            "name": "Kelvenoks Ferlin - 128",
+            "description": "Used for chemical cleaning of stainless and stainless alloy metal surfaces and facilities."
+          },
+          {
+            "name": "Kelvenoks Ferlin - 130",
+            "description": "Used for chemical cleaning of aluminum and aluminum alloy metal surfaces and facilities."
+          },
+          {
+            "name": "Kelvenoks Ferlin - 150",
+            "description": "Used for concrete weakening, fracturing and breaking operations."
+          },
+          {
+            "name": "Kelvenoks Ferlin 101 Pickling Liquid",
+            "description": "Stainless weld mark cleaner; used for cleaning all types of stainless weld marks."
+          },
+          {
+            "name": "Alkalen NP-100",
+            "description": "Passivation cleaning chemical applied after chemical cleaning."
+          },
+          {
+            "name": "Alkalen NP-150",
+            "description": "High-alkaline industrial chemical cleaning product developed to remove heavy oil, carbon, grease and process residues."
+          }
         ]
       },
       {
-        "id": "boiler",
-        "title": "Boiler Chemicals",
-        "description": "Professional chemical solutions for steam quality, corrosion control and energy efficiency in industrial boiler systems.",
+        "id": "kabinetler_ve_tuz_tanklari",
+        "title": "Cabinets & Salt Tanks",
+        "description": "",
         "products": [
-          { "name": "Polyquestamin", "description": "Boiler feed water conditioning and corrosion inhibitor." },
-          { "name": "Polyquest K-400", "description": "Alkaline boiler chemical for scale and corrosion control." },
-          { "name": "Polyquest K-410", "description": "Advanced boiler water conditioning formulation." }
+          {
+            "name": "Aqualine Cabinets"
+          },
+          {
+            "name": "Salt tanks"
+          }
         ]
       },
       {
-        "id": "cooling",
-        "title": "Cooling Tower Chemicals",
-        "description": "Effective solutions against biological contamination, scale buildup and corrosion in cooling towers.",
+        "id": "su_yumusatma_sistemleri",
+        "title": "Water Softening Systems",
+        "description": "Water softening systems designed manually, semi-automatically and fully automatically to meet required flow rate and efficiency specifications.",
         "products": [
-          { "name": "ORGC Series", "description": "Organic biocide and microbiological control products." },
-          { "name": "ABACIDE", "description": "Broad-spectrum biocide and algaecide solution." },
-          { "name": "Silifoom", "description": "Foam control and surfactant remover." }
+          {
+            "name": "Water softening systems",
+            "description": "Water softening systems designed manually, semi-automatically and fully automatically to meet required flow rate and efficiency specifications."
+          }
         ]
       },
       {
-        "id": "filtration",
-        "title": "Filtration and Treatment Media",
-        "description": "High-quality media and resin solutions for water treatment and filtration systems.",
+        "id": "filtrasyon_sistemleri",
+        "title": "Filtration Systems",
+        "description": "Manual, semi-automatic and fully automatic multimedia filter systems that capture solids, sediment and particles in water.",
         "products": [
-          { "name": "Ion Exchange Resins", "description": "Resins for softening and demineralization applications." },
-          { "name": "Granular Activated Carbon", "description": "Activated carbon for organic matter and chlorine removal." },
-          { "name": "Water Treatment Filtration Media", "description": "Media for multi-layer filtration systems." }
+          {
+            "name": "Manual and fully automatic multimedia filter systems",
+            "description": "Manual, semi-automatic and fully automatic multimedia filter systems that capture solids, sediment and particles in water."
+          },
+          {
+            "name": "Manual and fully automatic activated carbon filters",
+            "description": "Manual, semi-automatic and fully automatic activated carbon filters that control taste and odor in water and capture organic matter and free chlorine."
+          },
+          {
+            "name": "Manual and fully automatic iron and manganese removal systems",
+            "description": "Manual, semi-automatic and fully automatic iron and manganese removal systems applied to remove iron and manganese from water."
+          },
+          {
+            "name": "Reverse osmosis unit"
+          }
+        ]
+      },
+      {
+        "id": "demineralize_ve_ters_osmos_sistemleri",
+        "title": "Demineralization & Reverse Osmosis Systems",
+        "description": "A system that removes dissolved salts, sulfates, chlorides, heavy metals, hardness and organic contaminants to a large extent by passing water through special membranes at high pressure.",
+        "products": [
+          {
+            "name": "Reverse Osmosis",
+            "description": "A system that removes dissolved salts, sulfates, chlorides, heavy metals, hardness and organic contaminants to a large extent by passing water through special membranes at high pressure."
+          },
+          {
+            "name": "Demineralization",
+            "description": "A system that removes ions from water completely or to a very high degree using resins, providing high-purity water production."
+          }
+        ]
+      },
+      {
+        "id": "mineraller_ve_kimyasallar",
+        "title": "Minerals & Chemicals",
+        "description": "pH increaser and remineralization product.",
+        "products": [
+          {
+            "name": "Resin Minerals"
+          },
+          {
+            "name": "Activated Carbon Minerals"
+          },
+          {
+            "name": "Filtration Minerals"
+          },
+          {
+            "name": "Other Minerals"
+          },
+          {
+            "name": "Chemicals"
+          },
+          {
+            "name": "Antiscalants"
+          },
+          {
+            "name": "Dolomit Juraperle",
+            "description": "pH increaser and remineralization product."
+          },
+          {
+            "name": "Corosex",
+            "description": "pH increaser and remineralization product."
+          },
+          {
+            "name": "As-Fe-Mn",
+            "description": "Used for arsenic, iron and manganese removal."
+          },
+          {
+            "name": "Aquamandix",
+            "description": "Used for iron and manganese removal."
+          },
+          {
+            "name": "Birm",
+            "description": "Used for iron and manganese removal."
+          },
+          {
+            "name": "Siliphos",
+            "description": "Scale inhibitor for water lines and appliances."
+          },
+          {
+            "name": "Dosal Crystal Polyphosphate 0.5 Kg",
+            "description": "Scale inhibitor."
+          },
+          {
+            "name": "Dosal Crystal Polyphosphate 1.5 Kg",
+            "description": "Scale inhibitor."
+          }
+        ]
+      },
+      {
+        "id": "dezenfeksiyon_sistemleri",
+        "title": "Disinfection Systems",
+        "description": "",
+        "products": [
+          {
+            "name": "Automatic chlorine dosing systems"
+          },
+          {
+            "name": "Ozonation systems"
+          }
+        ]
+      },
+      {
+        "id": "kazan_suyu_kimyasallari",
+        "title": "Boiler Water Chemicals",
+        "description": "Used as a scale and corrosion inhibitor in boilers; protects steam and condensate lines safely with its oxygen scavenger property.",
+        "products": [
+          {
+            "name": "Polyquestamin",
+            "description": "Used as a scale and corrosion inhibitor in boilers; protects steam and condensate lines safely with its oxygen scavenger property."
+          },
+          {
+            "name": "Polyox-432",
+            "description": "Prevents corrosion in the system by binding dissolved oxygen in condensate within the steam line."
+          },
+          {
+            "name": "Carbohydrazide",
+            "description": "Prevents oxygen-related corrosion in boiler systems, forms a protective film in the steam line, remains effective at high temperatures, increases system efficiency and extends boiler life."
+          }
+        ]
+      },
+      {
+        "id": "sogutma_suyu_kimyasallari",
+        "title": "Cooling Water Chemicals",
+        "description": "Used as a scale inhibitor in closed and semi-open cooling water units.",
+        "products": [
+          {
+            "name": "ORG-211",
+            "description": "Used as a scale inhibitor in closed and semi-open cooling water units."
+          },
+          {
+            "name": "ORG-311",
+            "description": "Prevents scale and corrosion in closed and open cooling systems."
+          },
+          {
+            "name": "ORG 400",
+            "description": "HEDP-based antiscalant; prevents hardness-related precipitates, operates stably at high temperatures and provides iron and calcium dispersion."
+          },
+          {
+            "name": "ORG-411",
+            "description": "Used as a bio dispersant in cooling towers."
+          },
+          {
+            "name": "Abacide",
+            "description": "Biocide; used as an algaecide and bactericide in cooling systems."
+          },
+          {
+            "name": "Silifoam-101",
+            "description": "Used as an antifoam agent in boiler and cooling water circuits."
+          },
+          {
+            "name": "Monoethylene Glycol",
+            "description": "Used as antifreeze in industrial cooling systems."
+          },
+          {
+            "name": "Monopropylene Glycol",
+            "description": "Used as antifreeze in industrial cooling systems."
+          }
+        ]
+      },
+      {
+        "id": "havuz_kimyasallari",
+        "title": "Pool Chemicals",
+        "description": "",
+        "products": [
+          {
+            "name": "Chlorine"
+          },
+          {
+            "name": "pH reducer"
+          },
+          {
+            "name": "pH increaser"
+          },
+          {
+            "name": "Surface disinfectant"
+          },
+          {
+            "name": "Algae preventive"
+          },
+          {
+            "name": "Algae remover"
+          },
+          {
+            "name": "Defoamer"
+          },
+          {
+            "name": "Clarifier"
+          },
+          {
+            "name": "Flocculant"
+          },
+          {
+            "name": "Foot disinfectant"
+          },
+          {
+            "name": "Dosing pumps"
+          }
+        ]
+      },
+      {
+        "id": "su_sartlandirma_yardimcilari",
+        "title": "Water Conditioning Auxiliaries",
+        "description": "A synthetic material that enables ion exchange by capturing positively charged dissolved ions in water. Used to remove water hardness and limescale by capturing minerals such as calcium and magnesium.",
+        "products": [
+          {
+            "name": "Activated carbon minerals"
+          },
+          {
+            "name": "Anion resin"
+          },
+          {
+            "name": "Cation resin",
+            "description": "A synthetic material that enables ion exchange by capturing positively charged dissolved ions in water. Used to remove water hardness and limescale by capturing minerals such as calcium and magnesium."
+          },
+          {
+            "name": "Ion exchange resins"
+          },
+          {
+            "name": "Filter media",
+            "description": "Nozzles, collection and distribution equipment."
+          },
+          {
+            "name": "Calibrated filtration sand",
+            "description": "High-purity, washed natural quartz sand screened to specific grain sizes, used in swimming pools, drinking water treatment plants and industrial water treatment systems."
+          },
+          {
+            "name": "Pallas MB 444 Resin",
+            "description": "High-quality mixed-bed ion exchange resin used to obtain ultra-pure water in aquariums, laboratories or industrial processes."
+          },
+          {
+            "name": "Mixed-Bed Resin MB400",
+            "description": "A special treatment material that captures all positively and negatively charged minerals in water through ion exchange to obtain ultra-pure water with near-zero conductivity."
+          }
+        ]
+      },
+      {
+        "id": "endustriyel_tablet_tuz",
+        "title": "Industrial Tablet Salt",
+        "description": "High-quality tablet salt for water softening systems. Improves resin performance, extends system life and prevents limescale formation.",
+        "products": [
+          {
+            "name": "Industrial Tablet Salt",
+            "description": "High-quality tablet salt for water softening systems. Improves resin performance, extends system life and prevents limescale formation."
+          }
         ]
       }
     ]
   },
   "about": {
+    "seo": {
+      "title": "About Us",
+      "description": "Over 40 years of industrial water treatment experience and technical expertise."
+    },
     "title": "About Us",
     "subtitle": "Over 40 years of experience and trust in industrial water treatment.",
     "cta": "Contact Us",
@@ -186,15 +517,33 @@
       ]
     },
     "expertise": {
-      "title": "Areas of Expertise",
-      "subtitle": "Comprehensive technical competence for industrial water and chemical needs.",
+      "title": "Our Services",
+      "subtitle": "Core service areas we provide for your industrial facilities.",
       "items": [
-        { "title": "Industrial Water Treatment", "description": "Process water, boiler feed water and cooling water conditioning solutions." },
-        { "title": "Boiler Chemicals", "description": "Professional products for corrosion, scale and steam quality control." },
-        { "title": "Cooling Tower Chemicals", "description": "Biological control, scale and corrosion prevention solutions." },
-        { "title": "System Cleaning", "description": "Effective cleaning for industrial equipment and process lines." },
-        { "title": "Water Analysis", "description": "Detailed laboratory analysis and process optimization." },
-        { "title": "Technical Consultancy", "description": "Custom technical solution development for facility needs." }
+        {
+          "title": "Industrial Chemical Cleaning",
+          "description": "Professional chemical cleaning for steam boilers, heat exchangers, cooling towers and process lines."
+        },
+        {
+          "title": "Industrial Water Treatment",
+          "description": "Conditioning solutions for process water, boiler feed water and cooling water."
+        },
+        {
+          "title": "Cooling Tower Chemicals",
+          "description": "Chemical programs for biological control, scale and corrosion prevention in cooling towers."
+        },
+        {
+          "title": "Boiler Water Treatment Chemicals",
+          "description": "Boiler water treatment chemicals for corrosion, scale and steam quality control."
+        },
+        {
+          "title": "Laboratory Analysis",
+          "description": "Raw water, boiler water and cooling water analysis with technical reporting."
+        },
+        {
+          "title": "Technical Consultancy",
+          "description": "Custom water treatment and chemical solution consultancy for facility needs."
+        }
       ]
     },
     "mission": {
@@ -209,10 +558,22 @@
       "title": "Our Values",
       "subtitle": "The core principles that guide us in every project.",
       "items": [
-        { "title": "Reliability", "description": "We deliver long-term, consistent and dependable solutions to our customers." },
-        { "title": "Technical Excellence", "description": "We provide services at the highest technical standards with our expert team." },
-        { "title": "Sustainability", "description": "We develop environmentally conscious, efficient and sustainable chemical solutions." },
-        { "title": "Customer Focus", "description": "We design customized solutions for each facility's unique needs." }
+        {
+          "title": "Reliability",
+          "description": "We deliver long-term, consistent and dependable solutions to our customers."
+        },
+        {
+          "title": "Technical Excellence",
+          "description": "We provide services at the highest technical standards with our expert team."
+        },
+        {
+          "title": "Sustainability",
+          "description": "We develop environmentally conscious, efficient and sustainable chemical solutions."
+        },
+        {
+          "title": "Customer Focus",
+          "description": "We design customized solutions for each facility's unique needs."
+        }
       ]
     },
     "team": {
@@ -225,56 +586,88 @@
     }
   },
   "projects": {
+    "seo": {
+      "title": "Industrial Projects",
+      "description": "Chemical cleaning projects completed at industrial facilities in Turkey and internationally."
+    },
     "title": "Our Projects",
-    "subtitle": "Projects completed at industrial facilities in Turkey and internationally.",
+    "subtitle": "Chemical cleaning projects completed at industrial facilities in Turkey and internationally.",
+    "resultsCount": "{count} projects listed",
+    "cta": "Get a Quote",
+    "ctaTitle": "Let's plan a project for your facility",
+    "ctaDescription": "Contact us for a technical assessment and solution proposal for your chemical cleaning needs.",
+    "stats": {
+      "total": "Total Projects",
+      "turkey": "Turkey",
+      "turkmenistan": "Turkmenistan"
+    },
+    "filters": {
+      "label": "Filter projects by location",
+      "all": "All",
+      "turkey": "Turkey",
+      "turkmenistan": "Turkmenistan"
+    },
     "emptyState": {
-      "title": "No Project Information Available",
-      "description": "Detailed information about our projects will be added soon. Contact us for our latest projects."
+      "title": "No Projects Found",
+      "description": "No projects match the selected filter. Try a different location filter."
+    },
+    "video": "Video",
+    "videoModal": {
+      "close": "Close video"
     },
     "items": [
       {
-        "id": "ref-1",
-        "projectName": "Turkmenistan Energy Plant Water Treatment",
-        "country": "Turkmenistan",
-        "sector": "Energy",
-        "serviceType": "Boiler Chemicals and Water Analysis",
-        "description": "Boiler feed water conditioning, chemical dosing system installation and periodic water analysis services at an industrial energy facility."
+        "id": "gtg-int-projesi-0",
+        "projectName": "GTG-INT Project",
+        "location": "Ahal, Turkmenistan",
+        "description": "Acidic and alkaline chemical cleaning was performed on stainless spool pipes, liquid storage tanks, oxygen and nitrogen tanks, and HP-01, DV-01, MP-03, DV-03 and 1FU-02 systems.",
+        "date": "2016–2019",
+        "videoUrl": "/videos/ronesans.mp4"
       },
       {
-        "id": "ref-2",
-        "projectName": "Petrochemical Plant Cooling Tower Chemicals",
-        "country": "Turkmenistan",
-        "sector": "Petrochemical",
-        "serviceType": "Cooling Tower Chemicals",
-        "description": "Cooling tower biological control, scale prevention and corrosion protection program at a large-scale petrochemical facility."
+        "id": "mary-amonyak-sanayi-tesisi-1",
+        "projectName": "Mary Ammonia Industrial Plant",
+        "location": "Turkmenistan",
+        "description": "Chemical cleaning was performed on waste heat boilers, power steam boilers and removal units."
       },
       {
-        "id": "ref-3",
-        "projectName": "Textile Factory Process Water Treatment",
-        "country": "Turkey",
-        "sector": "Textile",
-        "serviceType": "Filtration Media and Consultancy",
-        "description": "Process water treatment, filtration media supply and water quality optimization consultancy at a textile production facility."
+        "id": "mersin-soda-sanayi-a-s-2",
+        "projectName": "Mersin Soda Industry Inc.",
+        "location": "Mersin, Turkey",
+        "description": "Pre-commissioning chemical cleaning services were provided at Unit #1 CCPP-HRSG 130 MW facility.",
+        "videoUrl": "/videos/mersin.mp4"
       },
       {
-        "id": "ref-4",
-        "projectName": "Food Processing Plant System Cleaning",
-        "country": "Turkey",
-        "sector": "Food",
-        "serviceType": "Industrial System Cleaning",
-        "description": "Heat exchanger and process line chemical cleaning, periodic maintenance program at a food processing facility."
+        "id": "nuh-enerji-elektrik-uretim-a-s-3",
+        "projectName": "Nuh Energy Electricity Generation Inc.",
+        "location": "Kocaeli, Turkey",
+        "description": "Chemical cleaning was performed at Unit #2 CCPP-HRSG 60 MW facility."
       },
       {
-        "id": "ref-5",
-        "projectName": "Industrial Boiler Chemical Program",
-        "country": "Turkey",
-        "sector": "Manufacturing",
-        "serviceType": "Boiler Chemicals",
-        "description": "Comprehensive boiler chemical program, water analysis and technical consultancy services at a large-scale manufacturing facility."
+        "id": "mersin-soda-sanayi-a-s-4",
+        "projectName": "Mersin Soda Industry Inc.",
+        "location": "Mersin, Turkey",
+        "description": "Chemical cleaning services were provided at Unit #2 and Unit #4 CCPP-HRSG 120 MW facilities."
+      },
+      {
+        "id": "aksa-enerji-uretim-a-s-5",
+        "projectName": "Aksa Energy Generation Inc.",
+        "location": "Antalya, Turkey",
+        "description": "Chemical cleaning was performed at Unit #5 and Unit #6 CCPP-HRSG 820 MW power plant."
+      },
+      {
+        "id": "bis-enerji-elektrik-uretim-a-s-6",
+        "projectName": "Bis Energy Electricity Generation Inc.",
+        "location": "Bursa, Turkey",
+        "description": "Chemical cleaning services were provided at Unit #7 and Unit #8 CCPP-HRSG 120 MW facilities."
       }
     ]
   },
   "contact": {
+    "seo": {
+      "title": "Contact",
+      "description": "Contact Kelven Kimya for your industrial water treatment needs."
+    },
     "title": "Contact",
     "subtitle": "Get in touch with us for your industrial water treatment needs.",
     "highlights": [
@@ -285,25 +678,49 @@
     "info": {
       "title": "Contact Information",
       "subtitle": "Reach us through your preferred channel or fill out the form to get in touch.",
-      "address": "Defterdar Mah. Hacı Bilgin Sokak No:35 Eyüpsultan / İstanbul",
+      "address": "Defterdar Neighborhood, Hacı Bilgin Street No:35, Eyüpsultan / Istanbul",
       "email": "info@kelvenkimya.com",
-      "phone": "+90 543 522 80 14",
-      "phoneHref": "+905435228014"
+      "phone": "+90 211 567 47 12",
+      "phoneHref": "+902115674712"
     },
     "cards": {
-      "phone": { "title": "Phone", "description": "Call us for technical support and information." },
-      "email": { "title": "Email", "description": "Write to us for detailed information and quote requests." },
-      "address": { "title": "Address", "description": "Our office address for your visit." }
+      "phone": {
+        "title": "Phone",
+        "description": "Call us for technical support and information."
+      },
+      "email": {
+        "title": "Email",
+        "description": "Write to us for detailed information and quote requests."
+      },
+      "address": {
+        "title": "Address",
+        "description": "Our office address for your visit."
+      }
     },
     "form": {
       "title": "Get in Touch",
       "subtitle": "Fill out the form and we will get back to you shortly.",
       "fields": {
-        "name": { "label": "Full Name", "placeholder": "Your full name" },
-        "email": { "label": "Email", "placeholder": "example@company.com" },
-        "phone": { "label": "Phone", "placeholder": "+90 5XX XXX XX XX" },
-        "company": { "label": "Company", "placeholder": "Your company name" },
-        "message": { "label": "Message", "placeholder": "Write your message here..." }
+        "name": {
+          "label": "Full Name",
+          "placeholder": "Your full name"
+        },
+        "email": {
+          "label": "Email",
+          "placeholder": "example@company.com"
+        },
+        "phone": {
+          "label": "Phone",
+          "placeholder": "+90 5XX XXX XX XX"
+        },
+        "company": {
+          "label": "Company",
+          "placeholder": "Your company name"
+        },
+        "message": {
+          "label": "Message",
+          "placeholder": "Write your message here..."
+        }
       },
       "submit": "Send Message",
       "submitting": "Sending...",

@@ -1,6 +1,3 @@
-'use client'
-
-import { useTranslation } from '@/hooks/useTranslation'
 import { PageHero } from '@/components/common/PageHero'
 import { AboutHeroStats } from '@/components/about/AboutHeroStats'
 import { AboutStorySection } from '@/components/about/AboutStorySection'
@@ -9,13 +6,18 @@ import { AboutMissionVisionSection } from '@/components/about/AboutMissionVision
 import { AboutValuesSection } from '@/components/about/AboutValuesSection'
 import { AboutTeamSection } from '@/components/about/AboutTeamSection'
 import { AboutPageCTA } from '@/components/about/AboutPageCTA'
+import { getTranslations } from 'next-intl/server'
 
-export function AboutPage() {
-  const { t } = useTranslation()
+type AboutPageProps = {
+  locale: string
+}
+
+export async function AboutPage({ locale }: AboutPageProps) {
+  const t = await getTranslations({ locale, namespace: 'about' })
 
   return (
     <>
-      <PageHero title={t('about.title')} subtitle={t('about.subtitle')}>
+      <PageHero title={t('title')} subtitle={t('subtitle')}>
         <AboutHeroStats />
       </PageHero>
 

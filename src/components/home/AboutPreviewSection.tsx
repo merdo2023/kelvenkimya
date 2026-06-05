@@ -2,7 +2,6 @@
 
 import { Link } from '@/i18n/navigation'
 import { useTranslation } from '@/hooks/useTranslation'
-import { motion } from 'framer-motion'
 import { ArrowUpRight } from 'lucide-react'
 import { Container } from '../common/Container'
 import { AnimatedCounter } from '../common/AnimatedCounter'
@@ -24,13 +23,7 @@ export function AboutPreviewSection() {
       <div className="pointer-events-none absolute right-0 top-1/2 h-80 w-80 -translate-y-1/2 rounded-full bg-cyan/5 blur-3xl" aria-hidden="true" />
 
       <Container className="relative">
-        <motion.div
-          initial={{ opacity: 0, y: 32 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: '-60px' }}
-          transition={{ duration: 0.55, ease: [0.22, 1, 0.36, 1] }}
-          className="group relative"
-        >
+        <div className="group relative animate-fade-up">
           <div className="absolute -inset-px rounded-3xl bg-gradient-to-br from-white via-border/20 to-white opacity-90" aria-hidden="true" />
           <div
             className={`absolute -inset-px rounded-3xl bg-gradient-to-br ${accent.wash} opacity-0 transition-opacity duration-500 group-hover:opacity-100`}
@@ -39,27 +32,16 @@ export function AboutPreviewSection() {
 
           <div className="relative overflow-hidden rounded-3xl bg-white shadow-[0_4px_40px_-10px_rgba(11,31,51,0.1)] transition-shadow duration-300 group-hover:shadow-[0_20px_56px_-14px_rgba(11,31,51,0.15)]">
             <div className="grid items-center gap-10 p-8 sm:p-10 lg:grid-cols-12 lg:gap-12 lg:p-12">
-              {/* Content */}
               <div className="relative lg:col-span-7">
-                <motion.div
-                  className={`absolute left-0 top-0 h-full w-[3px] rounded-full bg-gradient-to-b ${accent.gradient}`}
-                  initial={{ scaleY: 0.2, opacity: 0.3 }}
-                  whileInView={{ scaleY: 1, opacity: 1 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.6 }}
-                  style={{ originY: 0 }}
+                <div
+                  className={`absolute left-0 top-0 h-full w-[3px] rounded-full bg-gradient-to-b ${accent.gradient} opacity-80`}
+                  aria-hidden="true"
                 />
 
                 <div className="pl-6">
                   <div className="flex items-center gap-3">
                     <span className={`h-1.5 w-1.5 rounded-full ${accent.dot}`} aria-hidden="true" />
-                    <motion.div
-                      className={`h-px bg-gradient-to-r ${accent.gradient}`}
-                      initial={{ width: 0 }}
-                      whileInView={{ width: 56 }}
-                      viewport={{ once: true }}
-                      transition={{ duration: 0.7, delay: 0.1 }}
-                    />
+                    <div className={`h-px w-14 bg-gradient-to-r ${accent.gradient}`} aria-hidden="true" />
                   </div>
 
                   <h2 className="mt-6 text-3xl font-bold leading-tight text-navy sm:text-4xl">
@@ -82,17 +64,13 @@ export function AboutPreviewSection() {
                 </div>
               </div>
 
-              {/* Experience highlight */}
               <div className="relative lg:col-span-5">
                 <div className="relative overflow-hidden rounded-2xl border border-border/50 bg-light-bg/80 p-8 sm:p-10">
                   <div className="absolute -right-8 -top-8 h-32 w-32 rounded-full bg-cyan/10 blur-2xl" aria-hidden="true" />
                   <div className="absolute -bottom-8 -left-8 h-32 w-32 rounded-full bg-green/8 blur-2xl" aria-hidden="true" />
 
-                  {/* Animated ring decoration */}
-                  <motion.div
-                    className="pointer-events-none absolute inset-4 rounded-full border border-cyan/10"
-                    animate={{ rotate: 360 }}
-                    transition={{ duration: 30, repeat: Infinity, ease: 'linear' }}
+                  <div
+                    className="about-preview-ring pointer-events-none absolute inset-4 rounded-full border border-cyan/10"
                     aria-hidden="true"
                   />
 
@@ -112,17 +90,14 @@ export function AboutPreviewSection() {
                     {otherStats.length > 0 && (
                       <div className="mt-8 grid grid-cols-2 gap-3">
                         {otherStats.map((stat, i) => (
-                          <motion.div
+                          <div
                             key={stat.label}
-                            initial={{ opacity: 0, y: 12 }}
-                            whileInView={{ opacity: 1, y: 0 }}
-                            viewport={{ once: true }}
-                            transition={{ duration: 0.4, delay: 0.2 + i * 0.1 }}
-                            className="rounded-xl border border-border/40 bg-white px-3 py-4 text-center"
+                            className="animate-fade-up rounded-xl border border-border/40 bg-white px-3 py-4 text-center"
+                            style={{ animationDelay: `${200 + i * 100}ms` }}
                           >
                             <p className="text-2xl font-bold text-navy">{stat.value}</p>
                             <p className="mt-1 text-[11px] leading-tight text-muted">{stat.label}</p>
-                          </motion.div>
+                          </div>
                         ))}
                       </div>
                     )}
@@ -131,7 +106,7 @@ export function AboutPreviewSection() {
               </div>
             </div>
           </div>
-        </motion.div>
+        </div>
       </Container>
     </section>
   )

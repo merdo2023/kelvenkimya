@@ -77,7 +77,7 @@ function PillarCard({ title, description, index, variant }: PillarCardProps) {
           <h2 className={`mt-6 text-2xl font-bold sm:text-3xl ${isDark ? 'text-white' : 'text-navy'}`}>
             {title}
           </h2>
-          <p className={`mt-4 text-base leading-[1.8] ${isDark ? 'text-white/70' : 'text-muted'}`}>
+          <p className={`mt-4 text-base leading-[1.8] ${isDark ? 'text-white/85' : 'text-muted'}`}>
             {description}
           </p>
         </div>

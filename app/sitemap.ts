@@ -1,17 +1,29 @@
 import type { MetadataRoute } from 'next'
 import { routing } from '@/i18n/routing'
-
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://kelvenkimya.com'
+import { siteLastModified, siteUrl } from '@/lib/site'
 
 const paths = ['', '/products', '/about', '/projects', '/contact'] as const
 
+function buildLanguageAlternates(path: string): Record<string, string> {
+  const alternates: Record<string, string> = {}
+
+  for (const locale of routing.locales) {
+    alternates[locale] = `${siteUrl}/${locale}${path}`
+  }
+
+  alternates['x-default'] = `${siteUrl}/${routing.defaultLocale}${path}`
+
+  return alternates
+}
+
 export default function sitemap(): MetadataRoute.Sitemap {
-  return routing.locales.flatMap((locale) =>
-    paths.map((path) => ({
-      url: `${siteUrl}/${locale}${path}`,
-      lastModified: new Date(),
-      changeFrequency: path === '' ? 'weekly' : 'monthly',
-      priority: path === '' ? 1 : 0.8,
-    })),
-  )
+  return paths.map((path) => ({
+    url: `${siteUrl}/${routing.defaultLocale}${path}`,
+    lastModified: siteLastModified,
+    changeFrequency: path === '' ? 'weekly' : 'monthly',
+    priority: path === '' ? 1 : 0.8,
+    alternates: {
+      languages: buildLanguageAlternates(path),
+    },
+  }))
 }

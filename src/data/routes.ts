@@ -5,5 +5,3 @@ export const routes = {
   projects: '/projects',
   contact: '/contact',
 } as const
-
-export type RouteKey = keyof typeof routes

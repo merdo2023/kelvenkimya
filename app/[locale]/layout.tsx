@@ -1,20 +1,42 @@
+import type { Metadata } from 'next'
 import { NextIntlClientProvider } from 'next-intl'
-import { getMessages, setRequestLocale } from 'next-intl/server'
+import { getMessages, getTranslations, setRequestLocale } from 'next-intl/server'
 import { notFound } from 'next/navigation'
 import { Inter } from 'next/font/google'
+import { MotionProvider } from '@/components/common/MotionProvider'
 import { Navbar } from '@/components/layout/Navbar'
 import { Footer } from '@/components/layout/Footer'
-import { routing } from '@/i18n/routing'
+import { OrganizationJsonLd } from '@/components/seo/OrganizationJsonLd'
+import { criticalHeroCss } from '@/lib/criticalCss'
+import { pickClientMessages } from '@/lib/clientMessages'
+import { getServices } from '@/data/localeCatalog'
+import { routing, type AppLocale } from '@/i18n/routing'
 import '../globals.css'
 
 const inter = Inter({
   subsets: ['latin'],
+  weight: ['400', '600', '700', '800'],
   variable: '--font-inter',
   display: 'swap',
+  preload: true,
+  adjustFontFallback: true,
 })
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }))
+}
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>
+}): Promise<Metadata> {
+  const { locale } = await params
+  const t = await getTranslations({ locale, namespace: 'home.seo' })
+
+  return {
+    description: t('description'),
+  }
 }
 
 export default async function LocaleLayout({
@@ -26,22 +48,33 @@ export default async function LocaleLayout({
 }) {
   const { locale } = await params
 
-  if (!routing.locales.includes(locale as (typeof routing.locales)[number])) {
+  if (!routing.locales.includes(locale as AppLocale)) {
     notFound()
   }
 
-  setRequestLocale(locale)
-  const messages = await getMessages()
+  const appLocale = locale as AppLocale
+  setRequestLocale(appLocale)
+
+  const [messages, services] = await Promise.all([
+    getMessages(),
+    getServices(appLocale),
+  ])
 
   return (
     <html lang={locale} className={inter.variable}>
+      <head>
+        <style dangerouslySetInnerHTML={{ __html: criticalHeroCss }} />
+      </head>
       <body className="font-sans">
-        <NextIntlClientProvider messages={messages}>
-          <div className="flex min-h-screen flex-col">
-            <Navbar />
-            <main className="flex-1">{children}</main>
-            <Footer />
-          </div>
+        <OrganizationJsonLd locale={locale} />
+        <NextIntlClientProvider messages={pickClientMessages(messages)}>
+          <MotionProvider>
+            <div className="flex min-h-screen flex-col">
+              <Navbar />
+              <main className="flex-1">{children}</main>
+              <Footer services={services} />
+            </div>
+          </MotionProvider>
         </NextIntlClientProvider>
       </body>
     </html>

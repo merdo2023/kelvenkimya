@@ -8,11 +8,17 @@ export async function generateMetadata({
 }) {
   const { locale } = await params
   return buildPageMetadata(locale, {
-    title: 'contact.title',
-    description: 'contact.subtitle',
+    title: 'contact.seo.title',
+    description: 'contact.seo.description',
+    path: '/contact',
   })
 }
 
-export default function Page() {
-  return <ContactPage />
+export default async function Page({
+  params,
+}: {
+  params: Promise<{ locale: string }>
+}) {
+  const { locale } = await params
+  return <ContactPage locale={locale} />
 }

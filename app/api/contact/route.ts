@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { z } from 'zod'
+import { sendContactEmail } from '@/lib/sendContactEmail'
 
 const contactSchema = z.object({
   name: z.string().min(1).max(120),
@@ -15,14 +16,7 @@ export async function POST(request: NextRequest) {
     const body = await request.json()
     const data = contactSchema.parse(body)
 
-    // TODO: E-posta servisi entegrasyonu (Resend, Nodemailer vb.)
-    // Örnek: await sendContactEmail(data)
-    console.info('[contact]', {
-      name: data.name,
-      email: data.email,
-      company: data.company,
-      locale: data.locale,
-    })
+    await sendContactEmail(data)
 
     return NextResponse.json({ success: true })
   } catch (error) {
@@ -32,6 +26,8 @@ export async function POST(request: NextRequest) {
         { status: 400 },
       )
     }
+
+    console.error('[contact]', error)
 
     return NextResponse.json(
       { success: false, error: 'internal_error' },

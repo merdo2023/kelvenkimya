@@ -28,13 +28,16 @@ export interface ProductCategory {
   products: ProductItem[]
 }
 
+export type ProjectRegion = 'turkey' | 'turkmenistan'
+
 export interface ProjectItem {
   id: string
   projectName: string
-  country: string
-  sector: string
-  serviceType: string
+  location: string
+  date?: string
   description: string
+  region: ProjectRegion
+  videoUrl?: string
 }
 
 export interface ExpertiseItem {
@@ -45,16 +48,4 @@ export interface ExpertiseItem {
 export interface ValueItem {
   title: string
   description: string
-}
-
-export interface ContactInfo {
-  address: string
-  email: string
-  phone: string
-  phoneHref: string
-}
-
-export interface FormField {
-  label: string
-  placeholder: string
 }

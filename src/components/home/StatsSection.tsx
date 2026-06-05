@@ -12,7 +12,6 @@ export function StatsSection() {
   return (
     <section className="relative z-10 -mt-20 pb-24 sm:-mt-24">
       <Container className="relative">
-        {/* Soft ambient glow — no box frame */}
         <div
           className="pointer-events-none absolute left-1/2 top-1/2 h-40 w-[90%] -translate-x-1/2 -translate-y-1/2 rounded-full bg-gradient-to-r from-cyan/6 via-brand-blue/4 to-green/6 blur-3xl"
           aria-hidden="true"

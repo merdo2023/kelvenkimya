@@ -16,7 +16,7 @@ export function SectionHeader({
   const alignClass = align === 'center' ? 'mx-auto text-center' : 'text-left'
   const accentAlign = align === 'center' ? 'justify-center' : 'justify-start'
   const titleColor = light ? 'text-white' : 'text-navy'
-  const subtitleColor = light ? 'text-white/70' : 'text-muted'
+  const subtitleColor = light ? 'text-white/85' : 'text-muted'
 
   return (
     <div className={`mb-14 max-w-3xl ${alignClass}`}>

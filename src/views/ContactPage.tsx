@@ -1,19 +1,21 @@
-'use client'
-
-import { useTranslation } from '@/hooks/useTranslation'
 import { Container } from '@/components/common/Container'
 import { PageHero } from '@/components/common/PageHero'
 import { ContactHeroHighlights } from '@/components/contact/ContactHeroHighlights'
 import { ContactInfoSection } from '@/components/contact/ContactInfoSection'
 import { ContactMapPanel } from '@/components/contact/ContactMapPanel'
 import { ContactForm } from '@/components/contact/ContactForm'
+import { getTranslations } from 'next-intl/server'
 
-export function ContactPage() {
-  const { t } = useTranslation()
+type ContactPageProps = {
+  locale: string
+}
+
+export async function ContactPage({ locale }: ContactPageProps) {
+  const t = await getTranslations({ locale, namespace: 'contact' })
 
   return (
     <>
-      <PageHero title={t('contact.title')} subtitle={t('contact.subtitle')}>
+      <PageHero title={t('title')} subtitle={t('subtitle')}>
         <ContactHeroHighlights />
       </PageHero>
 

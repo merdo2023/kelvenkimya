@@ -52,7 +52,7 @@ export function ContactMapPanel() {
           </div>
 
           <h3 className="mt-5 text-2xl font-bold text-white">{t('contact.map.title')}</h3>
-          <p className="mt-2 text-sm text-white/55">{t('contact.map.placeholder')}</p>
+          <p className="mt-2 text-sm text-white/80">{t('contact.map.placeholder')}</p>
           <p className="mt-5 max-w-sm text-base leading-relaxed text-white/80">{address}</p>
         </div>
       </div>

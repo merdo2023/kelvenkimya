@@ -8,12 +8,15 @@ import { Logo } from '../common/Logo'
 import { useLocaleArray } from '@/hooks/useLocaleArray'
 import type { NavItem, ServiceItem } from '@/types/locale'
 
-export function Footer() {
+type FooterProps = {
+  services: ServiceItem[]
+}
+
+export function Footer({ services }: FooterProps) {
   const { t } = useTranslation()
   const year = new Date().getFullYear()
 
   const navItems = useLocaleArray<NavItem>('nav.items')
-  const services = useLocaleArray<ServiceItem>('home.services.items')
 
   const address = t('contact.info.address')
   const email = t('contact.info.email')
@@ -28,7 +31,7 @@ export function Footer() {
         <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-4">
           <div className="lg:col-span-1">
             <Logo variant="footer" className="mb-6" />
-            <p className="text-sm leading-relaxed text-white/65">{t('footer.description')}</p>
+            <p className="text-sm leading-relaxed text-white/80">{t('footer.description')}</p>
           </div>
 
           <div>
@@ -40,7 +43,7 @@ export function Footer() {
                 <li key={link.key}>
                   <Link
                     href={link.path as '/'}
-                    className="text-sm text-white/65 transition-colors hover:text-white"
+                    className="text-sm text-white/80 transition-colors hover:text-white"
                   >
                     {t(`nav.labels.${link.key}`)}
                   </Link>
@@ -55,7 +58,7 @@ export function Footer() {
             </h3>
             <ul className="space-y-2.5">
               {services.map((service) => (
-                <li key={service.id} className="text-sm text-white/65">
+                <li key={service.id} className="text-sm text-white/80">
                   {service.title}
                 </li>
               ))}
@@ -70,7 +73,7 @@ export function Footer() {
               <li>
                 <a
                   href={`tel:${phoneHref}`}
-                  className="flex items-start gap-3 text-sm text-white/65 transition-colors hover:text-white"
+                  className="flex items-start gap-3 text-sm text-white/80 transition-colors hover:text-white"
                 >
                   <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-white/5 ring-1 ring-white/10">
                     <Phone className="h-4 w-4 text-cyan" />
@@ -81,7 +84,7 @@ export function Footer() {
               <li>
                 <a
                   href={`mailto:${email}`}
-                  className="flex items-start gap-3 text-sm text-white/65 transition-colors hover:text-white"
+                  className="flex items-start gap-3 text-sm text-white/80 transition-colors hover:text-white"
                 >
                   <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-white/5 ring-1 ring-white/10">
                     <Mail className="h-4 w-4 text-cyan" />
@@ -90,7 +93,7 @@ export function Footer() {
                 </a>
               </li>
               <li>
-                <span className="flex items-start gap-3 text-sm text-white/65">
+                <span className="flex items-start gap-3 text-sm text-white/80">
                   <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-white/5 ring-1 ring-white/10">
                     <MapPin className="h-4 w-4 text-cyan" />
                   </span>

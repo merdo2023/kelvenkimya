@@ -1,7 +1,6 @@
 'use client'
 
 import { Link } from '@/i18n/navigation'
-import { motion } from 'framer-motion'
 import { ArrowUpRight } from 'lucide-react'
 import { cardAccentColors } from '@/data/accentColors'
 import { routes } from '@/data/routes'
@@ -18,13 +17,9 @@ export function ServiceCard({ service, index, learnMoreLabel }: ServiceCardProps
   const number = String(index + 1).padStart(2, '0')
 
   return (
-    <motion.div
-      initial={{ opacity: 0, y: 28 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, margin: '-40px' }}
-      transition={{ duration: 0.5, delay: index * 0.08, ease: [0.22, 1, 0.36, 1] }}
-      whileHover={{ y: -5, transition: { duration: 0.25 } }}
-      className="group relative h-full"
+    <div
+      className="group relative h-full animate-fade-up transition-transform duration-300 hover:-translate-y-1"
+      style={{ animationDelay: `${index * 80}ms` }}
     >
       <div className="absolute -inset-px rounded-3xl bg-gradient-to-br from-white via-border/20 to-white opacity-90 transition-opacity duration-300 group-hover:opacity-100" aria-hidden="true" />
       <div
@@ -37,13 +32,9 @@ export function ServiceCard({ service, index, learnMoreLabel }: ServiceCardProps
         className="relative flex h-full flex-col overflow-hidden rounded-3xl bg-white p-7 shadow-[0_4px_32px_-8px_rgba(11,31,51,0.08)] transition-all duration-300 group-hover:shadow-[0_16px_48px_-12px_rgba(11,31,51,0.14)] sm:p-8"
         aria-label={`${service.title} — ${learnMoreLabel}`}
       >
-        <motion.div
-          className={`absolute bottom-8 left-0 top-8 w-[3px] rounded-r-full bg-gradient-to-b ${accent.gradient}`}
-          initial={{ scaleY: 0.3, opacity: 0.4 }}
-          whileInView={{ scaleY: 1, opacity: 1 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6, delay: 0.15 + index * 0.08 }}
-          style={{ originY: 0 }}
+        <div
+          className={`absolute bottom-8 left-0 top-8 w-[3px] origin-top rounded-r-full bg-gradient-to-b ${accent.gradient} opacity-80`}
+          aria-hidden="true"
         />
 
         <span
@@ -56,13 +47,7 @@ export function ServiceCard({ service, index, learnMoreLabel }: ServiceCardProps
         <div className="relative pl-4">
           <div className="flex items-center gap-3">
             <span className={`h-1.5 w-1.5 rounded-full ${accent.dot}`} aria-hidden="true" />
-            <motion.div
-              className={`h-px bg-gradient-to-r ${accent.gradient}`}
-              initial={{ width: 0 }}
-              whileInView={{ width: 48 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.7, delay: 0.2 + index * 0.08 }}
-            />
+            <div className={`h-px w-12 bg-gradient-to-r ${accent.gradient}`} aria-hidden="true" />
           </div>
 
           <h3 className="mt-5 text-xl font-bold leading-snug text-navy transition-colors duration-300 group-hover:text-brand-blue sm:text-[1.35rem]">
@@ -83,6 +68,6 @@ export function ServiceCard({ service, index, learnMoreLabel }: ServiceCardProps
           </span>
         </div>
       </Link>
-    </motion.div>
+    </div>
   )
 }

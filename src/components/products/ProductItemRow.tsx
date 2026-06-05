@@ -1,6 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
+import { highlightText } from '@/lib/highlightText'
 import type { cardAccentColors } from '@/data/accentColors'
 import type { ProductItem } from '@/types/locale'
 
@@ -10,27 +11,30 @@ interface ProductItemRowProps {
   product: ProductItem
   index: number
   accent: Accent
+  searchQuery?: string
 }
 
-export function ProductItemRow({ product, index, accent }: ProductItemRowProps) {
+export function ProductItemRow({ product, index, accent, searchQuery = '' }: ProductItemRowProps) {
   return (
     <motion.li
-      initial={{ opacity: 0, x: -12 }}
-      whileInView={{ opacity: 1, x: 0 }}
+      initial={{ opacity: 0, y: 8 }}
+      whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: '-20px' }}
-      transition={{ duration: 0.4, delay: 0.15 + index * 0.06, ease: [0.22, 1, 0.36, 1] }}
-      className="group/item relative overflow-hidden rounded-2xl border border-border/50 bg-light-bg/50 p-4 transition-all duration-300 hover:border-border hover:bg-white hover:shadow-[0_8px_24px_-8px_rgba(11,31,51,0.1)] sm:p-5"
+      transition={{ duration: 0.35, delay: Math.min(index * 0.04, 0.2), ease: [0.22, 1, 0.36, 1] }}
+      className="group/item relative rounded-xl border border-border/40 bg-light-bg/40 p-4 transition-all duration-200 hover:border-border/70 hover:bg-white hover:shadow-sm"
     >
       <div
-        className={`absolute bottom-3 left-0 top-3 w-[2px] rounded-r-full bg-gradient-to-b ${accent.gradient} opacity-60 transition-opacity duration-300 group-hover/item:opacity-100`}
+        className={`absolute bottom-3 left-0 top-3 w-[2px] rounded-r-full bg-gradient-to-b ${accent.gradient} opacity-50 transition-opacity duration-300 group-hover/item:opacity-100`}
         aria-hidden="true"
       />
       <div className="pl-3">
-        <p className="font-semibold text-navy transition-colors duration-300 group-hover/item:text-brand-blue">
-          {product.name}
+        <p className="font-semibold leading-snug text-navy">
+          {highlightText(product.name, searchQuery)}
         </p>
         {product.description && (
-          <p className="mt-1.5 text-sm leading-relaxed text-muted">{product.description}</p>
+          <p className="mt-1.5 text-sm leading-relaxed text-muted">
+            {highlightText(product.description, searchQuery)}
+          </p>
         )}
       </div>
     </motion.li>

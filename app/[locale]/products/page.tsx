@@ -8,11 +8,17 @@ export async function generateMetadata({
 }) {
   const { locale } = await params
   return buildPageMetadata(locale, {
-    title: 'products.title',
-    description: 'products.subtitle',
+    title: 'products.seo.title',
+    description: 'products.seo.description',
+    path: '/products',
   })
 }
 
-export default function Page() {
-  return <ProductsPage />
+export default async function Page({
+  params,
+}: {
+  params: Promise<{ locale: string }>
+}) {
+  const { locale } = await params
+  return <ProductsPage locale={locale as 'tr' | 'en'} />
 }

@@ -1,15 +1,22 @@
 'use client'
 
 import { useTranslation } from '@/hooks/useTranslation'
+import { Button } from '../common/Button'
 import { Container } from '../common/Container'
 import { SectionHeader } from '../common/SectionHeader'
+import { routes } from '@/data/routes'
 import { ProductCategoryCard } from './ProductCategoryCard'
-import { useLocaleArray } from '@/hooks/useLocaleArray'
 import type { ProductCategory } from '@/types/locale'
 
-export function ProductPreviewSection() {
+const PREVIEW_CATEGORY_COUNT = 4
+
+type ProductPreviewSectionProps = {
+  categories: ProductCategory[]
+}
+
+export function ProductPreviewSection({ categories }: ProductPreviewSectionProps) {
   const { t } = useTranslation()
-  const categories = useLocaleArray<ProductCategory>('products.categories')
+  const previewCategories = categories.slice(0, PREVIEW_CATEGORY_COUNT)
 
   return (
     <section className="relative overflow-hidden bg-surface py-24">
@@ -23,7 +30,7 @@ export function ProductPreviewSection() {
         />
 
         <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:gap-6">
-          {categories.map((category, index) => (
+          {previewCategories.map((category, index) => (
             <ProductCategoryCard
               key={category.id}
               category={category}
@@ -33,6 +40,14 @@ export function ProductPreviewSection() {
             />
           ))}
         </div>
+
+        {categories.length > PREVIEW_CATEGORY_COUNT && (
+          <div className="mt-10 flex justify-center sm:mt-12">
+            <Button to={routes.products} variant="outline-dark" size="lg">
+              {t('home.productCategories.viewAll')}
+            </Button>
+          </div>
+        )}
       </Container>
     </section>
   )

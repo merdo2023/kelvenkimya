@@ -19,7 +19,7 @@ export function AboutHeroStats() {
           className="rounded-2xl border border-white/15 bg-white/10 px-6 py-4 backdrop-blur-sm"
         >
           <AnimatedCounter value={stat.value} className="text-3xl font-extrabold text-white" />
-          <p className="mt-1 text-sm font-medium text-white/65">{stat.label}</p>
+          <p className="mt-1 text-sm font-medium text-white/80">{stat.label}</p>
         </motion.div>
       ))}
     </div>

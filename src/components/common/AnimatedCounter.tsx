@@ -1,7 +1,7 @@
 'use client'
 
-import { useEffect, useRef, useState } from 'react'
-import { useInView } from 'framer-motion'
+import { useEffect, useState } from 'react'
+import { useInViewOnce } from '@/hooks/useInViewOnce'
 
 interface AnimatedCounterProps {
   value: string
@@ -15,8 +15,7 @@ function parseStatValue(value: string): { target: number; suffix: string } {
 }
 
 export function AnimatedCounter({ value, className = '' }: AnimatedCounterProps) {
-  const ref = useRef<HTMLSpanElement>(null)
-  const inView = useInView(ref, { once: true, margin: '-40px' })
+  const { ref, inView } = useInViewOnce<HTMLSpanElement>({ rootMargin: '-40px' })
   const { target, suffix } = parseStatValue(value)
   const [display, setDisplay] = useState(0)
 

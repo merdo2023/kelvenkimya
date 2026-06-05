@@ -51,7 +51,7 @@ export function AboutPageCTA() {
                 <h2 className="mt-4 text-2xl font-bold text-white sm:text-3xl">
                   {t('about.ctaTitle')}
                 </h2>
-                <p className="mt-3 text-base leading-relaxed text-white/70">
+                <p className="mt-3 text-base leading-relaxed text-white/85">
                   {t('about.ctaDescription')}
                 </p>
               </div>

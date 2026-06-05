@@ -1,8 +1,9 @@
 'use client'
 
+import Image from 'next/image'
 import { useTranslation } from '@/hooks/useTranslation'
 
-export const LOGO_PATH = '/kelvenkimya.png'
+const LOGO_PATH = '/kelvenkimya.png'
 
 interface LogoProps {
   className?: string
@@ -19,13 +20,13 @@ export function Logo({ className, variant = 'default' }: LogoProps) {
   const { t } = useTranslation()
 
   return (
-    <img
+    <Image
       src={LOGO_PATH}
       alt={t('common.companyName')}
       className={className ?? variantSizes[variant]}
       width={320}
       height={80}
-      decoding="async"
+      priority={variant === 'navbar'}
     />
   )
 }

@@ -31,7 +31,7 @@ export function ProductsHeroStats({ categoryCount, productCount }: ProductsHeroS
             value={String(stat.value)}
             className="text-3xl font-extrabold text-white"
           />
-          <p className="mt-1 text-sm font-medium text-white/65">{stat.label}</p>
+          <p className="mt-1 text-sm font-medium text-white/80">{stat.label}</p>
         </motion.div>
       ))}
     </div>

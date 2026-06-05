@@ -1,7 +1,7 @@
 {
   "common": {
     "companyName": "Kelven Kimya",
-    "tagline": "Endüstriyel Su Şartlandırma ve Kimyasal Çözümler",
+    "tagline": "Endüstriyel Kimyasal Temizlik ve Su Şartlandırma Çözümleri ",
     "learnMore": "Daha Fazla Bilgi",
     "viewAll": "Tümünü Gör",
     "getQuote": "Teklif Al",
@@ -20,11 +20,26 @@
   },
   "nav": {
     "items": [
-      { "key": "home", "path": "/" },
-      { "key": "products", "path": "/products" },
-      { "key": "about", "path": "/about" },
-      { "key": "projects", "path": "/projects" },
-      { "key": "contact", "path": "/contact" }
+      {
+        "key": "home",
+        "path": "/"
+      },
+      {
+        "key": "products",
+        "path": "/products"
+      },
+      {
+        "key": "about",
+        "path": "/about"
+      },
+      {
+        "key": "projects",
+        "path": "/projects"
+      },
+      {
+        "key": "contact",
+        "path": "/contact"
+      }
     ],
     "labels": {
       "home": "Ana Sayfa",
@@ -38,9 +53,13 @@
     "menuClose": "Menüyü Kapat"
   },
   "home": {
+    "seo": {
+      "title": "Endüstriyel Su Şartlandırma",
+      "description": "Kazan, soğutma kulesi ve proses sistemleri için kimyasal temizlik ve su şartlandırma çözümleri."
+    },
     "hero": {
       "badge": "40+ Yıllık Endüstriyel Deneyim",
-      "title": "Endüstriyel Su Şartlandırma ve Kimyasal Çözümler",
+      "title": "Endüstriyel Kimyasal Temizlik ve Su Şartlandırma Çözümleri ",
       "subtitle": "Endüstriyel tesisler için güvenilir su şartlandırma, kimyasal temizlik ve sistem koruma çözümleri sunuyoruz. Kazan, soğutma kulesi ve proses sistemleriniz için uzman teknik destek.",
       "primaryCta": "Ürünleri İncele",
       "secondaryCta": "Teklif Al",
@@ -51,44 +70,57 @@
       ]
     },
     "stats": [
-      { "value": "41", "label": "Yıl Deneyim", "icon": "award" },
-      { "value": "93", "label": "Tamamlanan Proje", "icon": "building" },
-      { "value": "5", "label": "Hizmet Verilen Ülke", "icon": "globe" }
+      {
+        "value": "41",
+        "label": "Yıl Deneyim",
+        "icon": "award"
+      },
+      {
+        "value": "93",
+        "label": "Tamamlanan Proje",
+        "icon": "building"
+      },
+      {
+        "value": "5",
+        "label": "Hizmet Verilen Ülke",
+        "icon": "globe"
+      }
     ],
     "services": {
       "title": "Hizmetlerimiz",
       "subtitle": "Endüstriyel tesislerinizin su ve kimyasal ihtiyaçlarına yönelik kapsamlı çözümler sunuyoruz.",
       "items": [
         {
-          "id": "boiler",
-          "title": "Kazan Kimyasal Temizliği",
-          "description": "Endüstriyel kazan sistemleriniz için korozyon önleyici, ölçek giderici ve sistem temizlik kimyasalları."
+          "id": "endustriyel-kimyasal-temizlik",
+          "title": "Endüstriyel Kimyasal Temizlik",
+          "description": "Buhar kazanları, eşanjörler, soğutma kuleleri, chiller sistemleri, proses boru hatları ve endüstriyel ekipmanlar için profesyonel kimyasal temizlik uygulamaları sunulur."
         },
         {
-          "id": "cooling",
-          "title": "Soğutma Kulesi Kimyasalları",
-          "description": "Soğutma kulelerinde biyolojik kontrol, ölçek ve korozyon önleme için profesyonel kimyasal çözümler."
+          "id": "su-yumusatma-uniteleri-revizyonu",
+          "title": "Su Yumuşatma Üniteleri Revizyonu",
+          "description": "Su yumuşatma sistemlerinde reçine değişimi, valf bakımı, sistem optimizasyonu ve kapsamlı revizyon hizmetleri gerçekleştirilir."
         },
         {
-          "id": "cleaning",
-          "title": "Endüstriyel Sistem Temizliği",
-          "description": "Proses hatları, ısı eşanjörleri ve endüstriyel ekipmanlar için etkin temizlik ve bakım çözümleri."
+          "id": "su-sartlandirma-kimyasallari",
+          "title": "Su Şartlandırma Kimyasalları",
+          "description": "Buhar kazanları, soğutma kuleleri ve kapalı devre sistemlerde kireçlenme, korozyon ve biyolojik oluşumların kontrol altına alınmasına yönelik etkili kimyasal çözümler sunulur."
         },
         {
-          "id": "analysis",
-          "title": "Su Analizi ve Danışmanlık",
-          "description": "Detaylı su analizi, proses optimizasyonu ve teknik danışmanlık hizmetleri ile sistem verimliliğinizi artırın."
+          "id": "kimyasal-temizlik-kimyasallari",
+          "title": "Kimyasal Temizlik Kimyasalları",
+          "description": "Kireç çözücü, pas giderici, yağ temizleyici ve pasivasyon ürünleri başta olmak üzere endüstriyel temizlik uygulamalarına yönelik kimyasal ürün tedariği sağlanır."
         },
         {
-          "id": "filtration",
-          "title": "Filtrasyon ve Arıtma Medyaları",
-          "description": "İyon değiştirici reçineler, aktif karbon ve su arıtma filtrasyon medyaları tedariki."
+          "id": "laboratuvar-analiz-hizmetleri",
+          "title": "Laboratuvar Analiz Hizmetleri",
+          "description": "Ham su, kazan suyu ve soğutma suyu analizleri yapılarak sistem performansı değerlendirilir ve teknik raporlama hizmetleri sunulur."
         }
       ]
     },
     "productCategories": {
       "title": "Ürün Kategorileri",
-      "subtitle": "Endüstriyel su şartlandırma ihtiyaçlarınız için geniş ürün yelpazemizi keşfedin."
+      "subtitle": "Endüstriyel su şartlandırma ihtiyaçlarınız için geniş ürün yelpazemizi keşfedin.",
+      "viewAll": "Tamamını Görüntüle"
     },
     "aboutPreview": {
       "title": "Kelven Kimya Hakkında",
@@ -99,13 +131,21 @@
       "title": "Referanslarımız",
       "subtitle": "Türkiye'nin önde gelen endüstriyel kuruluşlarına güvenilir çözümler sunuyoruz.",
       "badge": "Güvenilir İş Ortakları",
-      "statLabel": "Kurumsal Referans",
-      "companies": [
-        "Tei Alasim",
-        "Rönesans Holding",
-        "Karaman Döküm",
+      "statLabel": "Kurumsal referans",
+      "cardLabel": "Referans",
+      "rowFirst": [
+        "Rönesans",
         "Şişecam",
-        "Mersin Soda Fabrikası"
+        "Mersin Soda",
+        "Koç Grubu",
+        "TEI Alaşım"
+      ],
+      "rowSecond": [
+        "Aksa Enerji",
+        "Nuh Enerji",
+        "BIS Enerji",
+        "Karaman Döküm",
+        "Mary Amonyak (Türkmenistan)"
       ]
     },
     "contactCta": {
@@ -116,6 +156,10 @@
     }
   },
   "products": {
+    "seo": {
+      "title": "Endüstriyel Su Şartlandırma Ürünleri",
+      "description": "Kimyasal temizlik, su yumuşatma, filtreleme ve korozyon önleme ürün portföyümüz."
+    },
     "title": "Ürünlerimiz",
     "subtitle": "Endüstriyel su şartlandırma ve kimyasal çözümler için kapsamlı ürün portföyümüz.",
     "cta": "Teklif Al",
@@ -123,55 +167,342 @@
     "ctaDescription": "Ürünlerimiz hakkında detaylı bilgi ve fiyat teklifi için bizimle iletişime geçin.",
     "itemLabel": "ürün",
     "categoriesNav": "Kategoriler",
+    "searchLabel": "Ürün ara",
+    "searchPlaceholder": "Kategori, ürün adı veya açıklama ara…",
+    "clearSearch": "Aramayı temizle",
+    "filterAll": "Tüm kategoriler",
+    "clearFilters": "Filtreleri temizle",
+    "resultsTotal": "Toplam {total} ürün",
+    "resultsFiltered": "{visible} / {total} ürün gösteriliyor",
+    "noResultsTitle": "Sonuç bulunamadı",
+    "noResultsDescription": "Arama veya kategori filtrenize uygun ürün yok. Farklı bir terim deneyin veya filtreleri temizleyin.",
     "stats": {
       "categories": "Kategori",
       "products": "Toplam Ürün"
     },
     "categories": [
       {
-        "id": "kelvenoks",
-        "title": "Kelvenoks Serisi",
-        "description": "Endüstriyel su şartlandırma sistemleri için geliştirilmiş, yüksek performanslı kimyasal formülasyonlar. Korozyon önleme, ölçek kontrolü ve sistem koruması için özel olarak tasarlanmıştır.",
+        "id": "kimyasal_temizlik_urunleri",
+        "title": "Kimyasal Temizlik Ürünleri",
+        "description": "Demir, çelik ve döküm malzemelerin kimyasal temizliğinde kullanılır.",
         "products": [
-          { "name": "Kelvenoks Ferlin 123", "description": "Çok amaçlı endüstriyel su şartlandırma kimyasalı." },
-          { "name": "Kelvenoks Ferlin 124", "description": "Yüksek sıcaklık uygulamaları için özel formülasyon." },
-          { "name": "Kelvenoks Ferlin 128", "description": "Korozyon ve ölçek önleyici konsantre çözüm." },
-          { "name": "Kelvenoks Ferlin 130", "description": "Proses suyu şartlandırma için gelişmiş formül." }
+          {
+            "name": "Kelvenoks Ferlin - 123",
+            "description": "Demir, çelik ve döküm malzemelerin kimyasal temizliğinde kullanılır."
+          },
+          {
+            "name": "Kelvenoks Ferlin - 124",
+            "description": "Her türlü bakır ve bakır alaşımlı sistemlerin temizliğinde kullanılır."
+          },
+          {
+            "name": "Kelvenoks Ferlin - 128",
+            "description": "Paslanmaz ve paslanmaz alaşımlı metal yüzeylerin ve tesislerin kimyasal temizliğinde kullanılır."
+          },
+          {
+            "name": "Kelvenoks Ferlin - 130",
+            "description": "Alüminyum ve alüminyum alaşımlı metal yüzeylerin ve tesislerin kimyasal temizliğinde kullanılır."
+          },
+          {
+            "name": "Kelvenoks Ferlin - 150",
+            "description": "Beton zayıflatma, parçalanması ve kırılma işlemlerinde kullanılır."
+          },
+          {
+            "name": "Kelvenoks Ferlin 101 Pickling Sıvı",
+            "description": "Paslanmaz kaynak izi temizleyici; her türlü paslanmaz kaynak izi temizlemede kullanılır."
+          },
+          {
+            "name": "Alkalen NP-100",
+            "description": "Kimyasal temizlik sonrası pasivasyon temizlik kimyasalı."
+          },
+          {
+            "name": "Alkalen NP-150",
+            "description": "Ağır yağ, karbon, gres ve proses kalıntılarını temizlemek için geliştirilmiş yüksek alkali endüstriyel kimyasal temizlik ürünü."
+          }
         ]
       },
       {
-        "id": "boiler",
-        "title": "Kazan Kimyasalları",
-        "description": "Endüstriyel kazan sistemlerinde buhar kalitesi, korozyon kontrolü ve enerji verimliliği için profesyonel kimyasal çözümler.",
+        "id": "kabinetler_ve_tuz_tanklari",
+        "title": "Kabinetler & Tuz Tankları",
+        "description": "",
         "products": [
-          { "name": "Polyquestamin", "description": "Kazan besleme suyu şartlandırma ve korozyon önleyici." },
-          { "name": "Polyquest K-400", "description": "Alkalin kazan kimyasalı, ölçek ve korozyon kontrolü." },
-          { "name": "Polyquest K-410", "description": "Gelişmiş kazan suyu şartlandırma formülasyonu." }
+          {
+            "name": "Aqualine Kabinetler"
+          },
+          {
+            "name": "Tuz tankları"
+          }
         ]
       },
       {
-        "id": "cooling",
-        "title": "Soğutma Kulesi Kimyasalları",
-        "description": "Soğutma kulelerinde biyolojik kontaminasyon, ölçek birikimi ve korozyon sorunlarına karşı etkin çözümler.",
+        "id": "su_yumusatma_sistemleri",
+        "title": "Su Yumuşatma Sistemleri",
+        "description": "İstenilen debi ve verim özelliklerine uygun manuel, yarı ve tam otomatik olarak projelendirilen su yumuşatma sistemleri.",
         "products": [
-          { "name": "ORGC Serisi", "description": "Organik biyosit ve mikrobiyolojik kontrol ürünleri." },
-          { "name": "ABACIDE", "description": "Geniş spektrumlu biyosit ve algisit çözümü." },
-          { "name": "Silifoom", "description": "Köpük kontrolü ve yüzey aktif madde giderici." }
+          {
+            "name": "Su yumuşatma sistemleri",
+            "description": "İstenilen debi ve verim özelliklerine uygun manuel, yarı ve tam otomatik olarak projelendirilen su yumuşatma sistemleri."
+          }
         ]
       },
       {
-        "id": "filtration",
-        "title": "Filtrasyon ve Arıtma Medyaları",
-        "description": "Su arıtma ve filtrasyon sistemleri için yüksek kaliteli medya ve reçine çözümleri.",
+        "id": "filtrasyon_sistemleri",
+        "title": "Filtrasyon Sistemleri",
+        "description": "Suda mevcut katı madde, tortu ve partikülleri tutan manuel, yarı ve tam otomatik multimedya filtre sistemleri.",
         "products": [
-          { "name": "İyon Değiştirici Reçineler", "description": "Yumuşatma ve demineralizasyon uygulamaları için reçineler." },
-          { "name": "Granül Aktif Karbon", "description": "Organik madde ve klor giderimi için aktif karbon." },
-          { "name": "Su Arıtma Filtrasyon Medyası", "description": "Çok katmanlı filtrasyon sistemleri için medya." }
+          {
+            "name": "Manuel ve tam otomatik multimedya filtre sistemleri",
+            "description": "Suda mevcut katı madde, tortu ve partikülleri tutan manuel, yarı ve tam otomatik multimedya filtre sistemleri."
+          },
+          {
+            "name": "Manuel ve tam otomatik aktif karbon filtreleri",
+            "description": "Suda koku ve tat kontrolünü sağlayan, organik madde ile serbest kloru tutan manuel, yarı ve tam otomatik aktif karbon filtreleri."
+          },
+          {
+            "name": "Manuel ve tam otomatik demir mangan giderme sistemleri",
+            "description": "Suda mevcut demir ve manganın giderilmesi amacıyla uygulanan manuel, yarı ve tam otomatik demir mangan giderme sistemleri."
+          },
+          {
+            "name": "Reverse osmosis ünitesi"
+          }
+        ]
+      },
+      {
+        "id": "demineralize_ve_ters_osmos_sistemleri",
+        "title": "Demineralize ve Ters Osmos Sistemleri",
+        "description": "Suyu yüksek basınçla özel membranlardan geçirerek çözünmüş tuzları, sülfat, klorür, ağır metaller, sertlik ve organik kirleticileri büyük oranda uzaklaştıran sistem.",
+        "products": [
+          {
+            "name": "Ters Osmos",
+            "description": "Suyu yüksek basınçla özel membranlardan geçirerek çözünmüş tuzları, sülfat, klorür, ağır metaller, sertlik ve organik kirleticileri büyük oranda uzaklaştıran sistem."
+          },
+          {
+            "name": "Demineralize",
+            "description": "Sudaki iyonları reçineler yardımıyla tamamen veya çok yüksek oranda uzaklaştıran, yüksek saflıkta su üretimi sağlayan sistem."
+          }
+        ]
+      },
+      {
+        "id": "mineraller_ve_kimyasallar",
+        "title": "Mineraller ve Kimyasallar",
+        "description": "pH yükseltici ve remineralizasyon ürünü.",
+        "products": [
+          {
+            "name": "Reçine Mineralleri"
+          },
+          {
+            "name": "Aktif Karbon Mineralleri"
+          },
+          {
+            "name": "Filtrasyon Mineralleri"
+          },
+          {
+            "name": "Diğer Mineraller"
+          },
+          {
+            "name": "Kimyasallar"
+          },
+          {
+            "name": "Antiskalantlar"
+          },
+          {
+            "name": "Dolomit Juraperle",
+            "description": "pH yükseltici ve remineralizasyon ürünü."
+          },
+          {
+            "name": "Corosex",
+            "description": "pH yükseltici ve remineralizasyon ürünü."
+          },
+          {
+            "name": "As-Fe-Mn",
+            "description": "Arsenik, demir ve mangan giderimi için kullanılır."
+          },
+          {
+            "name": "Aquamandix",
+            "description": "Demir ve mangan giderimi için kullanılır."
+          },
+          {
+            "name": "Birm",
+            "description": "Demir ve mangan giderimi için kullanılır."
+          },
+          {
+            "name": "Siliphos",
+            "description": "Su tesisatları ve cihazları için kireç önleyici."
+          },
+          {
+            "name": "Dosal Kristal Polifosfat 0,5 Kg",
+            "description": "Kireç önleyici."
+          },
+          {
+            "name": "Dosal Kristal Polifosfat 1,5 Kg",
+            "description": "Kireç önleyici."
+          }
+        ]
+      },
+      {
+        "id": "dezenfeksiyon_sistemleri",
+        "title": "Dezenfeksiyon Sistemleri",
+        "description": "",
+        "products": [
+          {
+            "name": "Otomatik klor dozaj sistemleri"
+          },
+          {
+            "name": "Ozonlama sistemleri"
+          }
+        ]
+      },
+      {
+        "id": "kazan_suyu_kimyasallari",
+        "title": "Kazan Suyu Kimyasalları",
+        "description": "Kazanlarda kışır ve korozyon önleyici olarak kullanılır; oksijen tutucu özelliği ile buhar ve kondens hatlarını güvenle korur.",
+        "products": [
+          {
+            "name": "Polyquestamin",
+            "description": "Kazanlarda kışır ve korozyon önleyici olarak kullanılır; oksijen tutucu özelliği ile buhar ve kondens hatlarını güvenle korur."
+          },
+          {
+            "name": "Polyox-432",
+            "description": "Buhar hattında kondenste çözünmüş oksijeni bağlayarak sistemde korozyonu önler."
+          },
+          {
+            "name": "Carbohydrazide",
+            "description": "Kazan sistemlerinde oksijen kaynaklı korozyonu önler, buhar hattında koruyucu film oluşturur, yüksek sıcaklıklarda etkilidir, sistem verimini artırır ve kazan ömrünü uzatır."
+          }
+        ]
+      },
+      {
+        "id": "sogutma_suyu_kimyasallari",
+        "title": "Soğutma Suyu Kimyasalları",
+        "description": "Kapalı ve yarı açık soğutma suyu ünitelerinde scale inhibitörü olarak kullanılır.",
+        "products": [
+          {
+            "name": "ORG-211",
+            "description": "Kapalı ve yarı açık soğutma suyu ünitelerinde scale inhibitörü olarak kullanılır."
+          },
+          {
+            "name": "ORG-311",
+            "description": "Kapalı ve açık soğutma sistemlerinde kışır ve korozyonu önler."
+          },
+          {
+            "name": "ORG 400",
+            "description": "HEDP bazlı antiskalant; sertlik kaynaklı çökelmeleri önler, yüksek sıcaklıklarda stabil çalışır, demir ve kalsiyum dispersiyonu sağlar."
+          },
+          {
+            "name": "ORG-411",
+            "description": "Soğutma kulelerinde bio dispersant olarak kullanılır."
+          },
+          {
+            "name": "Abacide",
+            "description": "Biosit; soğutma sistemlerinde yosun ve bakteri öldürücü olarak kullanılır."
+          },
+          {
+            "name": "Silifoam-101",
+            "description": "Kazan ve soğutma suyu devrelerinde köpük önleyici olarak kullanılır."
+          },
+          {
+            "name": "Monoetilen Glikol",
+            "description": "Endüstriyel soğutma sistemlerinde antifriz olarak kullanılır."
+          },
+          {
+            "name": "Monopropilen Glikol",
+            "description": "Endüstriyel soğutma sistemlerinde antifriz olarak kullanılır."
+          }
+        ]
+      },
+      {
+        "id": "havuz_kimyasallari",
+        "title": "Havuz Kimyasalları",
+        "description": "",
+        "products": [
+          {
+            "name": "Klor"
+          },
+          {
+            "name": "pH düşürücü"
+          },
+          {
+            "name": "pH yükseltici"
+          },
+          {
+            "name": "Yüzey dezenfektanı"
+          },
+          {
+            "name": "Yosun önleyici"
+          },
+          {
+            "name": "Yosun giderici"
+          },
+          {
+            "name": "Köpük kesici"
+          },
+          {
+            "name": "Parlatıcı"
+          },
+          {
+            "name": "Çöktürücü"
+          },
+          {
+            "name": "Ayak dezenfektanı"
+          },
+          {
+            "name": "Dozaj pompaları"
+          }
+        ]
+      },
+      {
+        "id": "su_sartlandirma_yardimcilari",
+        "title": "Su Şartlandırma Yardımcıları",
+        "description": "Suda çözünmüş pozitif yüklü iyonları tutarak iyon değişimi sağlayan sentetik malzemedir. Kalsiyum ve magnezyum gibi mineralleri tutarak suyun sertliğini ve kirecini gidermek için kullanılır.",
+        "products": [
+          {
+            "name": "Aktif karbon mineralleri"
+          },
+          {
+            "name": "Anyon reçine"
+          },
+          {
+            "name": "Katyon reçine",
+            "description": "Suda çözünmüş pozitif yüklü iyonları tutarak iyon değişimi sağlayan sentetik malzemedir. Kalsiyum ve magnezyum gibi mineralleri tutarak suyun sertliğini ve kirecini gidermek için kullanılır."
+          },
+          {
+            "name": "İyon değiştirici reçineler"
+          },
+          {
+            "name": "Filtre malzemeleri",
+            "description": "Nozul, toplama ve dağıtıcı ekipmanları."
+          },
+          {
+            "name": "Kalibre edilmiş filtrasyon kumu",
+            "description": "Yüzme havuzları, içme suyu arıtma tesisleri ve endüstriyel su arıtma sistemlerinde kullanılan yüksek saflıkta, yıkanmış ve belirli tane boyutlarına göre elenmiş doğal kuvars kumudur."
+          },
+          {
+            "name": "Pallas MB 444 Reçine",
+            "description": "Akvaryum, laboratuvar veya endüstriyel proseslerde ultra saf su elde etmek için kullanılan yüksek kaliteli mixbed iyon değiştirici reçinedir."
+          },
+          {
+            "name": "Mixbed Reçine MB400",
+            "description": "Su içerisindeki pozitif ve negatif yüklü tüm mineralleri iyon değişimi yoluyla tutarak sıfıra yakın iletkenlikte ultra saf su elde edilmesini sağlayan özel arıtma malzemesidir."
+          }
+        ]
+      },
+      {
+        "id": "endustriyel_tablet_tuz",
+        "title": "Endüstriyel Tablet Tuz",
+        "description": "Su yumuşatma sistemleri için yüksek kaliteli tablet tuz. Reçine performansını artırır, sistem ömrünü uzatır ve kireç oluşumunu engeller.",
+        "products": [
+          {
+            "name": "Endüstriyel Tablet Tuz",
+            "description": "Su yumuşatma sistemleri için yüksek kaliteli tablet tuz. Reçine performansını artırır, sistem ömrünü uzatır ve kireç oluşumunu engeller."
+          }
         ]
       }
     ]
   },
   "about": {
+    "seo": {
+      "title": "Hakkımızda",
+      "description": "40 yılı aşkın endüstriyel su şartlandırma deneyimi ve teknik uzmanlık."
+    },
     "title": "Hakkımızda",
     "subtitle": "Endüstriyel su şartlandırma alanında 40 yılı aşkın deneyim ve güven.",
     "cta": "İletişime Geç",
@@ -186,15 +517,33 @@
       ]
     },
     "expertise": {
-      "title": "Uzmanlık Alanlarımız",
-      "subtitle": "Endüstriyel tesislerin su ve kimyasal ihtiyaçlarına yönelik kapsamlı teknik yetkinlik.",
+      "title": "Hizmetlerimiz",
+      "subtitle": "Endüstriyel tesisleriniz için sunduğumuz temel hizmet alanları.",
       "items": [
-        { "title": "Endüstriyel Su Şartlandırma", "description": "Proses suyu, kazan besleme suyu ve soğutma suyu şartlandırma çözümleri." },
-        { "title": "Kazan Kimyasalları", "description": "Korozyon, ölçek ve buhar kalitesi kontrolü için profesyonel ürünler." },
-        { "title": "Soğutma Kulesi Kimyasalları", "description": "Biyolojik kontrol, ölçek ve korozyon önleme çözümleri." },
-        { "title": "Sistem Temizliği", "description": "Endüstriyel ekipman ve proses hatları için etkin temizlik." },
-        { "title": "Su Analizi", "description": "Detaylı laboratuvar analizi ve proses optimizasyonu." },
-        { "title": "Teknik Danışmanlık", "description": "Tesis ihtiyaçlarına özel teknik çözüm geliştirme." }
+        {
+          "title": "Endüstriyel Kimyasal Temizlik",
+          "description": "Buhar kazanları, eşanjörler, soğutma kuleleri ve proses hatlarında profesyonel kimyasal temizlik uygulamaları."
+        },
+        {
+          "title": "Endüstriyel Su Şartlandırma",
+          "description": "Proses suyu, kazan besleme suyu ve soğutma suyu için şartlandırma çözümleri."
+        },
+        {
+          "title": "Soğutma Kulesi Kimyasalları",
+          "description": "Soğutma kulelerinde biyolojik kontrol, ölçek ve korozyon önleme kimyasal programları."
+        },
+        {
+          "title": "Kazan Suyu Şartlandırma Kimyasalları",
+          "description": "Korozyon, kireç ve buhar kalitesi kontrolü için kazan suyu şartlandırma kimyasalları."
+        },
+        {
+          "title": "Laboratuvar Analizi",
+          "description": "Ham su, kazan suyu ve soğutma suyu analizleri ile teknik raporlama hizmetleri."
+        },
+        {
+          "title": "Teknik Danışmanlık",
+          "description": "Tesis ihtiyaçlarına özel su şartlandırma ve kimyasal çözüm danışmanlığı."
+        }
       ]
     },
     "mission": {
@@ -209,10 +558,22 @@
       "title": "Değerlerimiz",
       "subtitle": "Her projede rehberimiz olan temel ilkelerimiz.",
       "items": [
-        { "title": "Güvenilirlik", "description": "Müşterilerimize uzun vadeli, tutarlı ve güvenilir çözümler sunuyoruz." },
-        { "title": "Teknik Mükemmellik", "description": "Uzman ekibimizle en yüksek teknik standartlarda hizmet veriyoruz." },
-        { "title": "Sürdürülebilirlik", "description": "Çevreye duyarlı, verimli ve sürdürülebilir kimyasal çözümler geliştiriyoruz." },
-        { "title": "Müşteri Odaklılık", "description": "Her tesisin ihtiyacına özel çözümler tasarlıyoruz." }
+        {
+          "title": "Güvenilirlik",
+          "description": "Müşterilerimize uzun vadeli, tutarlı ve güvenilir çözümler sunuyoruz."
+        },
+        {
+          "title": "Teknik Mükemmellik",
+          "description": "Uzman ekibimizle en yüksek teknik standartlarda hizmet veriyoruz."
+        },
+        {
+          "title": "Sürdürülebilirlik",
+          "description": "Çevreye duyarlı, verimli ve sürdürülebilir kimyasal çözümler geliştiriyoruz."
+        },
+        {
+          "title": "Müşteri Odaklılık",
+          "description": "Her tesisin ihtiyacına özel çözümler tasarlıyoruz."
+        }
       ]
     },
     "team": {
@@ -225,56 +586,88 @@
     }
   },
   "projects": {
+    "seo": {
+      "title": "Endüstriyel Projeler",
+      "description": "Türkiye ve uluslararası endüstriyel tesislerde gerçekleştirdiğimiz kimyasal temizlik projeleri."
+    },
     "title": "Projelerimiz",
-    "subtitle": "Türkiye ve uluslararası endüstriyel tesislerde gerçekleştirdiğimiz projeler.",
+    "subtitle": "Türkiye ve uluslararası endüstriyel tesislerde gerçekleştirdiğimiz kimyasal temizlik projeleri.",
+    "resultsCount": "{count} proje listeleniyor",
+    "cta": "Teklif Al",
+    "ctaTitle": "Tesisiniz için proje planlayalım",
+    "ctaDescription": "Kimyasal temizlik ihtiyaçlarınız için teknik değerlendirme ve çözüm önerisi almak üzere bizimle iletişime geçin.",
+    "stats": {
+      "total": "Toplam Proje",
+      "turkey": "Türkiye",
+      "turkmenistan": "Türkmenistan"
+    },
+    "filters": {
+      "label": "Projeleri konuma göre filtrele",
+      "all": "Tümü",
+      "turkey": "Türkiye",
+      "turkmenistan": "Türkmenistan"
+    },
     "emptyState": {
-      "title": "Proje Bilgisi Bulunmuyor",
-      "description": "Projelerimiz hakkında detaylı bilgiler yakında eklenecektir. Güncel projelerimiz için bizimle iletişime geçebilirsiniz."
+      "title": "Proje Bulunamadı",
+      "description": "Seçilen filtreye uygun proje bulunmuyor. Farklı bir konum filtresi deneyin."
+    },
+    "video": "Video",
+    "videoModal": {
+      "close": "Videoyu kapat"
     },
     "items": [
       {
-        "id": "ref-1",
-        "projectName": "Türkmenistan Enerji Tesisi Su Şartlandırma",
-        "country": "Türkmenistan",
-        "sector": "Enerji",
-        "serviceType": "Kazan Kimyasalları ve Su Analizi",
-        "description": "Endüstriyel enerji tesisinde kazan besleme suyu şartlandırma, kimyasal dozaj sistemi kurulumu ve periyodik su analizi hizmetleri."
+        "id": "gtg-int-projesi-0",
+        "projectName": "GTG-INT Projesi",
+        "location": "Ahal, Türkmenistan",
+        "description": "Paslanmaz spool boruları, liquid storage tankları, oxygen ve nitrogen tankları ile HP-01, DV-01, MP-03, DV-03 ve 1FU-02 sistemlerinde asidik ve alkali kimyasal temizlik uygulamaları gerçekleştirilmiştir.",
+        "date": "2016–2019",
+        "videoUrl": "/videos/ronesans.mp4"
       },
       {
-        "id": "ref-2",
-        "projectName": "Petrokimya Tesisi Soğutma Kulesi Kimyasalları",
-        "country": "Türkmenistan",
-        "sector": "Petrokimya",
-        "serviceType": "Soğutma Kulesi Kimyasalları",
-        "description": "Büyük ölçekli petrokimya tesisinde soğutma kulesi biyolojik kontrol, ölçek önleme ve korozyon koruma programı."
+        "id": "mary-amonyak-sanayi-tesisi-1",
+        "projectName": "Mary Amonyak Sanayi Tesisi",
+        "location": "Türkmenistan",
+        "description": "Atık ısı kazanları, güç buhar kazanları ve removal ünitelerinde kimyasal temizlik uygulamaları gerçekleştirilmiştir."
       },
       {
-        "id": "ref-3",
-        "projectName": "Tekstil Fabrikası Proses Suyu Arıtma",
-        "country": "Türkiye",
-        "sector": "Tekstil",
-        "serviceType": "Filtrasyon Medyaları ve Danışmanlık",
-        "description": "Tekstil üretim tesisinde proses suyu arıtma, filtrasyon medyası tedariki ve su kalitesi optimizasyonu danışmanlığı."
+        "id": "mersin-soda-sanayi-a-s-2",
+        "projectName": "Mersin Soda Sanayi A.Ş.",
+        "location": "Mersin, Türkiye",
+        "description": "Unit #1 CCPP-HRSG 130 MW tesisinde devreye alma öncesi kimyasal temizlik hizmetleri gerçekleştirilmiştir.",
+        "videoUrl": "/videos/mersin.mp4"
       },
       {
-        "id": "ref-4",
-        "projectName": "Gıda İşleme Tesisi Sistem Temizliği",
-        "country": "Türkiye",
-        "sector": "Gıda",
-        "serviceType": "Endüstriyel Sistem Temizliği",
-        "description": "Gıda işleme tesisinde ısı eşanjörü ve proses hattı kimyasal temizliği, periyodik bakım programı."
+        "id": "nuh-enerji-elektrik-uretim-a-s-3",
+        "projectName": "Nuh Enerji Elektrik Üretim A.Ş.",
+        "location": "Kocaeli, Türkiye",
+        "description": "Unit #2 CCPP-HRSG 60 MW tesisinde kimyasal temizlik uygulamaları gerçekleştirilmiştir."
       },
       {
-        "id": "ref-5",
-        "projectName": "Endüstriyel Kazan Kimyasal Programı",
-        "country": "Türkiye",
-        "sector": "Üretim",
-        "serviceType": "Kazan Kimyasalları",
-        "description": "Büyük ölçekli üretim tesisinde kapsamlı kazan kimyasal programı, su analizi ve teknik danışmanlık hizmetleri."
+        "id": "mersin-soda-sanayi-a-s-4",
+        "projectName": "Mersin Soda Sanayi A.Ş.",
+        "location": "Mersin, Türkiye",
+        "description": "Unit #2 ve Unit #4 CCPP-HRSG 120 MW tesislerinde kimyasal temizlik hizmetleri gerçekleştirilmiştir."
+      },
+      {
+        "id": "aksa-enerji-uretim-a-s-5",
+        "projectName": "Aksa Enerji Üretim A.Ş.",
+        "location": "Antalya, Türkiye",
+        "description": "Unit #5 ve Unit #6 CCPP-HRSG 820 MW enerji santralinde kimyasal temizlik uygulamaları gerçekleştirilmiştir."
+      },
+      {
+        "id": "bis-enerji-elektrik-uretim-a-s-6",
+        "projectName": "Bis Enerji Elektrik Üretim A.Ş.",
+        "location": "Bursa, Türkiye",
+        "description": "Unit #7 ve Unit #8 CCPP-HRSG 120 MW tesislerinde kimyasal temizlik hizmetleri gerçekleştirilmiştir."
       }
     ]
   },
   "contact": {
+    "seo": {
+      "title": "İletişim",
+      "description": "Endüstriyel su şartlandırma ihtiyaçlarınız için Kelven Kimya ile iletişime geçin."
+    },
     "title": "İletişim",
     "subtitle": "Endüstriyel su şartlandırma ihtiyaçlarınız için bizimle iletişime geçin.",
     "highlights": [
@@ -287,23 +680,47 @@
       "subtitle": "Size en uygun kanaldan ulaşabilir veya formu doldurarak bize yazabilirsiniz.",
       "address": "Defterdar Mah. Hacı Bilgin Sokak No:35 Eyüpsultan / İstanbul",
       "email": "info@kelvenkimya.com",
-      "phone": "+90 543 522 80 14",
-      "phoneHref": "+905435228014"
+      "phone": "+90 211 567 47 12",
+      "phoneHref": "+902115674712"
     },
     "cards": {
-      "phone": { "title": "Telefon", "description": "Teknik destek ve bilgi için bizi arayın." },
-      "email": { "title": "E-posta", "description": "Detaylı bilgi ve teklif talepleri için yazın." },
-      "address": { "title": "Adres", "description": "Ofisimize ulaşım için adres bilgilerimiz." }
+      "phone": {
+        "title": "Telefon",
+        "description": "Teknik destek ve bilgi için bizi arayın."
+      },
+      "email": {
+        "title": "E-posta",
+        "description": "Detaylı bilgi ve teklif talepleri için yazın."
+      },
+      "address": {
+        "title": "Adres",
+        "description": "Ofisimize ulaşım için adres bilgilerimiz."
+      }
     },
     "form": {
       "title": "Bize Ulaşın",
       "subtitle": "Formu doldurun, en kısa sürede size dönüş yapalım.",
       "fields": {
-        "name": { "label": "Ad Soyad", "placeholder": "Adınız ve soyadınız" },
-        "email": { "label": "E-posta", "placeholder": "ornek@firma.com" },
-        "phone": { "label": "Telefon", "placeholder": "+90 5XX XXX XX XX" },
-        "company": { "label": "Firma", "placeholder": "Firma adınız" },
-        "message": { "label": "Mesaj", "placeholder": "Mesajınızı buraya yazın..." }
+        "name": {
+          "label": "Ad Soyad",
+          "placeholder": "Adınız ve soyadınız"
+        },
+        "email": {
+          "label": "E-posta",
+          "placeholder": "ornek@firma.com"
+        },
+        "phone": {
+          "label": "Telefon",
+          "placeholder": "+90 5XX XXX XX XX"
+        },
+        "company": {
+          "label": "Firma",
+          "placeholder": "Firma adınız"
+        },
+        "message": {
+          "label": "Mesaj",
+          "placeholder": "Mesajınızı buraya yazın..."
+        }
       },
       "submit": "Mesaj Gönder",
       "submitting": "Gönderiliyor...",
