@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import { getTranslations } from 'next-intl/server'
-import { routing, type AppLocale } from '@/i18n/routing'
+import { getLocalePath, routing, type AppLocale } from '@/i18n/routing'
 import { ogImagePath, siteUrl } from '@/lib/site'
 
 type PageMetaKeys = {
@@ -19,10 +19,10 @@ function buildLanguageAlternates(path: string): Record<string, string> {
   const alternates: Record<string, string> = {}
 
   for (const locale of routing.locales) {
-    alternates[locale] = `/${locale}${path}`
+    alternates[locale] = getLocalePath(locale, path)
   }
 
-  alternates['x-default'] = `/${routing.defaultLocale}${path}`
+  alternates['x-default'] = getLocalePath(routing.defaultLocale, path)
 
   return alternates
 }
@@ -34,7 +34,7 @@ export async function buildPageMetadata(
   const title = await translateKey(locale, keys.title)
   const company = await translateKey(locale, 'common.companyName')
   const description = await translateKey(locale, keys.description)
-  const canonicalPath = `/${locale}${keys.path}`
+  const canonicalPath = getLocalePath(locale, keys.path)
   const pageTitle = `${title} | ${company}`
   const openGraphLocale = locale === 'tr' ? 'tr_TR' : 'en_US'
 

@@ -1,4 +1,5 @@
 import { getTranslations } from 'next-intl/server'
+import { getLocalePath } from '@/i18n/routing'
 import { siteUrl } from '@/lib/site'
 
 type OrganizationJsonLdProps = {
@@ -16,7 +17,7 @@ export async function OrganizationJsonLd({ locale }: OrganizationJsonLdProps) {
         '@type': 'Organization',
         '@id': `${siteUrl}/#organization`,
         name: company('companyName'),
-        url: `${siteUrl}/${locale}`,
+        url: `${siteUrl}${getLocalePath(locale)}`,
         logo: `${siteUrl}/kelvenkimya.png`,
         email: t('email'),
         telephone: t('phone'),
@@ -32,7 +33,7 @@ export async function OrganizationJsonLd({ locale }: OrganizationJsonLdProps) {
         '@type': 'LocalBusiness',
         '@id': `${siteUrl}/#localbusiness`,
         name: company('companyName'),
-        url: `${siteUrl}/${locale}`,
+        url: `${siteUrl}${getLocalePath(locale)}`,
         image: `${siteUrl}/og-image.jpg`,
         telephone: t('phone'),
         email: t('email'),

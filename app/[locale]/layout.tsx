@@ -6,6 +6,7 @@ import { Inter } from 'next/font/google'
 import { MotionProvider } from '@/components/common/MotionProvider'
 import { Navbar } from '@/components/layout/Navbar'
 import { Footer } from '@/components/layout/Footer'
+import { WhatsAppFloatingButton } from '@/components/layout/WhatsAppFloatingButton'
 import { OrganizationJsonLd } from '@/components/seo/OrganizationJsonLd'
 import { criticalHeroCss } from '@/lib/criticalCss'
 import { pickClientMessages } from '@/lib/clientMessages'
@@ -69,10 +70,11 @@ export default async function LocaleLayout({
         <OrganizationJsonLd locale={locale} />
         <NextIntlClientProvider messages={pickClientMessages(messages)}>
           <MotionProvider>
-            <div className="flex min-h-screen flex-col">
+            <div className="flex min-h-screen flex-col overflow-x-clip">
               <Navbar />
-              <main className="flex-1">{children}</main>
+              <main className="min-w-0 flex-1">{children}</main>
               <Footer services={services} />
+              <WhatsAppFloatingButton />
             </div>
           </MotionProvider>
         </NextIntlClientProvider>

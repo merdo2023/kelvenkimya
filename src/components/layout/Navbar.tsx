@@ -17,6 +17,47 @@ function isNavActive(pathname: string, path: string) {
   return pathname === path || pathname.startsWith(`${path}/`)
 }
 
+interface NavLinkProps {
+  href: string
+  label: string
+  active: boolean
+  isTransparent: boolean
+}
+
+function NavLink({ href, label, active, isTransparent }: NavLinkProps) {
+  const textClass = isTransparent
+    ? active
+      ? 'text-white'
+      : 'text-white/78 group-hover:text-white'
+    : active
+      ? 'text-brand-blue'
+      : 'text-navy/75 group-hover:text-navy'
+
+  const hoverBg = isTransparent ? 'hover:bg-white/10' : 'hover:bg-navy/[0.04]'
+  const indicatorClass = isTransparent
+    ? 'bg-gradient-to-r from-cyan via-cyan to-green/80'
+    : 'bg-gradient-to-r from-brand-blue via-cyan to-green'
+
+  return (
+    <Link
+      href={href as '/'}
+      aria-current={active ? 'page' : undefined}
+      className={`group relative rounded-lg px-3 py-2 text-sm font-medium transition-colors duration-300 ${hoverBg} motion-reduce:transition-none`}
+    >
+      <span className={`relative z-[1] transition-colors duration-300 ${textClass}`}>{label}</span>
+      <span
+        className={`absolute inset-x-2 bottom-1 h-0.5 origin-center rounded-full transition-transform duration-300 motion-reduce:transition-none ${indicatorClass} ${
+          active ? 'scale-x-100' : 'scale-x-0 group-hover:scale-x-100'
+        }`}
+        aria-hidden="true"
+      />
+    </Link>
+  )
+}
+
+const quoteButtonClass =
+  'shadow-[0_4px_16px_-6px_rgba(0,166,214,0.45)] transition-all duration-300 hover:-translate-y-px hover:shadow-[0_8px_24px_-8px_rgba(0,166,214,0.5)] motion-reduce:transform-none motion-reduce:transition-none'
+
 export function Navbar() {
   const { t } = useTranslation()
   const pathname = usePathname()
@@ -24,9 +65,11 @@ export function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false)
 
   const navItems = useLocaleArray<NavItem>('nav.items')
+  const isHomeHero = pathname === '/'
+  const isTransparent = isHomeHero && !isScrolled && !isOpen
 
   useEffect(() => {
-    const handleScroll = () => setIsScrolled(window.scrollY > 16)
+    const handleScroll = () => setIsScrolled(window.scrollY > 20)
     handleScroll()
     window.addEventListener('scroll', handleScroll, { passive: true })
     return () => window.removeEventListener('scroll', handleScroll)
@@ -43,62 +86,66 @@ export function Navbar() {
     }
   }, [isOpen])
 
-  const linkClass = (path: string) => {
-    const active = isNavActive(pathname, path)
-    return `rounded-lg px-3 py-2 text-sm font-medium transition-all duration-200 ${
-      active
-        ? 'bg-brand-blue/10 text-brand-blue'
-        : 'text-navy/75 hover:bg-navy/5 hover:text-navy'
-    }`
-  }
-
   const mobileLinkClass = (path: string) => {
     const active = isNavActive(pathname, path)
-    return `block rounded-xl px-4 py-3.5 text-base font-medium transition-colors ${
-      active ? 'bg-brand-blue/10 text-brand-blue' : 'text-navy hover:bg-navy/5'
+    return `block rounded-xl border px-4 py-3 text-[0.9375rem] font-medium transition-all duration-200 ${
+      active
+        ? 'border-cyan/20 bg-gradient-to-r from-brand-blue/[0.08] to-cyan/[0.06] text-brand-blue'
+        : 'border-transparent text-navy hover:border-border/50 hover:bg-navy/[0.03]'
     }`
   }
 
   return (
     <header
-      className={`fixed inset-x-0 top-0 z-50 transition-all duration-300 ${
-        isScrolled || isOpen
-          ? 'border-b border-border/60 bg-white/95 shadow-soft backdrop-blur-xl'
-          : 'bg-white/70 backdrop-blur-md'
-      }`}
+      className={`fixed inset-x-0 top-0 z-50 overflow-x-clip transition-all duration-300 motion-reduce:transition-none ${
+        isTransparent ? 'glass-nav' : 'glass-nav-solid'
+      } ${isScrolled && !isOpen ? 'shadow-[0_6px_28px_-14px_rgba(11,31,51,0.12)]' : ''}`}
     >
       <Container>
         <nav
-          className="flex min-h-[5.25rem] items-center justify-between gap-4 py-2 sm:min-h-[5.75rem]"
+          className={`flex items-center justify-between gap-2 py-1.5 transition-[min-height] duration-300 motion-reduce:transition-none sm:gap-3 ${
+            isScrolled ? 'min-h-[3.75rem] sm:min-h-[4.25rem]' : 'min-h-[4rem] sm:min-h-[4.75rem]'
+          }`}
           aria-label={t('nav.ariaLabel')}
         >
           <Link href="/" className="shrink-0" onClick={() => setIsOpen(false)}>
-            <Logo variant="navbar" />
+            <Logo variant="navbar" tone={isTransparent ? 'light' : 'dark'} />
           </Link>
 
-          <div className="hidden items-center gap-2 lg:flex">
-            <ul className="flex items-center gap-1 rounded-xl bg-navy/[0.03] p-1">
+          <div className="hidden items-center gap-2.5 lg:flex">
+            <ul
+              className={`flex items-center gap-0.5 rounded-full p-1 transition-colors duration-300 ${
+                isTransparent ? 'nav-pill-dark' : 'nav-pill-light'
+              }`}
+            >
               {navItems.map((item) => (
                 <li key={item.key}>
-                  <Link href={item.path as '/'} className={linkClass(item.path)}>
-                    {t(`nav.labels.${item.key}`)}
-                  </Link>
+                  <NavLink
+                    href={item.path}
+                    label={t(`nav.labels.${item.key}`)}
+                    active={isNavActive(pathname, item.path)}
+                    isTransparent={isTransparent}
+                  />
                 </li>
               ))}
             </ul>
-            <div className="ml-4 flex items-center gap-3">
-              <LanguageSwitcher />
-              <Button href={routes.contact} size="sm">
+            <div className="ml-3 flex items-center gap-2.5">
+              <LanguageSwitcher tone={isTransparent ? 'light' : 'dark'} />
+              <Button href={routes.contact} size="sm" className={quoteButtonClass}>
                 {t('common.getQuote')}
               </Button>
             </div>
           </div>
 
-          <div className="flex items-center gap-2 lg:hidden">
-            <LanguageSwitcher />
+          <div className="flex shrink-0 items-center gap-1.5 sm:gap-2 lg:hidden">
+            <LanguageSwitcher tone={isTransparent ? 'light' : 'dark'} compact />
             <button
               type="button"
-              className="rounded-xl p-2.5 text-navy transition-colors hover:bg-navy/5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan"
+              className={`rounded-full border p-2.5 transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan focus-visible:ring-offset-2 motion-reduce:transition-none ${
+                isTransparent
+                  ? 'border-white/15 bg-white/8 text-white hover:border-white/25 hover:bg-white/12'
+                  : 'border-border/60 bg-white/80 text-navy hover:border-cyan/25 hover:bg-cyan/[0.04]'
+              }`}
               onClick={() => setIsOpen(!isOpen)}
               aria-expanded={isOpen}
               aria-controls="mobile-nav"
@@ -112,17 +159,20 @@ export function Navbar() {
 
       <div
         id="mobile-nav"
-        className={`overflow-hidden border-t border-border/60 bg-white transition-all duration-300 lg:hidden ${
-          isOpen ? 'visible max-h-[28rem] opacity-100' : 'invisible max-h-0 opacity-0'
+        className={`overflow-hidden border-t transition-all duration-300 ease-out motion-reduce:transition-none lg:hidden ${
+          isOpen
+            ? 'visible max-h-[32rem] border-border/50 bg-white/98 opacity-100 shadow-[0_16px_40px_-20px_rgba(11,31,51,0.18)] backdrop-blur-xl'
+            : 'invisible max-h-0 border-transparent opacity-0'
         }`}
       >
         <Container className="py-4">
-          <ul className="flex flex-col gap-1">
+          <ul className="flex flex-col gap-1.5">
             {navItems.map((item) => (
               <li key={item.key}>
                 <Link
                   href={item.path as '/'}
                   className={mobileLinkClass(item.path)}
+                  aria-current={isNavActive(pathname, item.path) ? 'page' : undefined}
                   onClick={() => setIsOpen(false)}
                 >
                   {t(`nav.labels.${item.key}`)}
@@ -130,8 +180,12 @@ export function Navbar() {
               </li>
             ))}
           </ul>
-          <div className="mt-4 border-t border-border/60 pt-4">
-            <Button href={routes.contact} className="w-full" onClick={() => setIsOpen(false)}>
+          <div className="mt-4 border-t border-border/50 pt-4">
+            <Button
+              href={routes.contact}
+              className={`w-full ${quoteButtonClass}`}
+              onClick={() => setIsOpen(false)}
+            >
               {t('common.getQuote')}
             </Button>
           </div>

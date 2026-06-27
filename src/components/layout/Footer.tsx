@@ -22,6 +22,8 @@ export function Footer({ services }: FooterProps) {
   const email = t('contact.info.email')
   const phone = t('contact.info.phone')
   const phoneHref = t('contact.info.phoneHref')
+  const phoneSecondary = t('contact.info.phoneSecondary')
+  const phoneSecondaryHref = t('contact.info.phoneSecondaryHref')
 
   return (
     <footer className="relative bg-navy text-white">
@@ -71,15 +73,25 @@ export function Footer({ services }: FooterProps) {
             </h3>
             <ul className="space-y-4">
               <li>
-                <a
-                  href={`tel:${phoneHref}`}
-                  className="flex items-start gap-3 text-sm text-white/80 transition-colors hover:text-white"
-                >
+                <div className="flex items-start gap-3 text-sm text-white/80">
                   <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-white/5 ring-1 ring-white/10">
                     <Phone className="h-4 w-4 text-cyan" />
                   </span>
-                  {phone}
-                </a>
+                  <div className="space-y-1">
+                    <a
+                      href={`tel:${phoneHref}`}
+                      className="block transition-colors hover:text-white"
+                    >
+                      {phone}
+                    </a>
+                    <a
+                      href={`tel:${phoneSecondaryHref}`}
+                      className="block transition-colors hover:text-white"
+                    >
+                      {phoneSecondary}
+                    </a>
+                  </div>
+                </div>
               </li>
               <li>
                 <a

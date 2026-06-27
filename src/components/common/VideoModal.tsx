@@ -74,7 +74,7 @@ export function VideoModal({ isOpen, videoUrl, title, closeLabel, onClose }: Vid
           <track kind="captions" />
         </video>
 
-        <p className="border-t border-white/10 px-4 py-3 text-sm font-medium text-white/80">{title}</p>
+        <p className="break-words border-t border-white/10 px-4 py-3 text-sm font-medium text-white/80">{title}</p>
       </div>
     </div>,
     document.body,

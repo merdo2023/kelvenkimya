@@ -5,84 +5,72 @@ import { AnimatedCounter } from '../common/AnimatedCounter'
 import type { StatItem } from '@/types/locale'
 
 const accentColors = [
-  {
-    gradient: 'from-cyan/50 via-cyan/20 to-transparent',
-    iconBg: 'bg-cyan/10',
-    icon: 'text-cyan',
-    bar: 'from-cyan to-cyan/30',
-    dot: 'bg-cyan',
-  },
-  {
-    gradient: 'from-brand-blue/50 via-brand-blue/20 to-transparent',
-    iconBg: 'bg-brand-blue/10',
-    icon: 'text-brand-blue',
-    bar: 'from-brand-blue to-brand-blue/30',
-    dot: 'bg-brand-blue',
-  },
-  {
-    gradient: 'from-green/50 via-green/20 to-transparent',
-    iconBg: 'bg-green/10',
-    icon: 'text-green',
-    bar: 'from-green to-green/30',
-    dot: 'bg-green',
-  },
+  { iconBg: 'bg-cyan/10', icon: 'text-cyan', gradient: 'from-cyan to-cyan/40' },
+  { iconBg: 'bg-brand-blue/10', icon: 'text-brand-blue', gradient: 'from-brand-blue to-brand-blue/40' },
+  { iconBg: 'bg-green/10', icon: 'text-green', gradient: 'from-green to-green/40' },
 ]
+
+interface StatMetricRowProps {
+  stat: StatItem
+  index: number
+  Icon: LucideIcon
+}
+
+export function StatMetricRow({ stat, index, Icon }: StatMetricRowProps) {
+  const accent = accentColors[index % accentColors.length]
+
+  return (
+    <div className="flex min-h-[3.5rem] items-center gap-3 px-4 py-3 sm:px-5">
+      <div
+        className={`flex h-8 w-8 shrink-0 items-center justify-center rounded-lg ${accent.iconBg} ring-1 ring-border/35`}
+      >
+        <Icon className={`h-4 w-4 ${accent.icon}`} strokeWidth={1.5} />
+      </div>
+      <AnimatedCounter
+        value={stat.value}
+        className="w-14 shrink-0 text-2xl font-extrabold leading-none tracking-tight text-navy"
+      />
+      <p className="min-h-[2.5rem] flex-1 text-xs font-medium leading-snug text-muted sm:text-sm">
+        <span className="line-clamp-2">{stat.label}</span>
+      </p>
+    </div>
+  )
+}
 
 interface StatCardProps {
   stat: StatItem
   index: number
   Icon: LucideIcon
-  elevated?: boolean
 }
 
-export function StatCard({ stat, index, Icon, elevated = false }: StatCardProps) {
+export function StatCard({ stat, index, Icon }: StatCardProps) {
   const accent = accentColors[index % accentColors.length]
 
   return (
     <div
-      className={`group relative animate-fade-up transition-transform duration-300 hover:-translate-y-2 ${elevated ? 'sm:-translate-y-3' : ''}`}
-      style={{ animationDelay: `${index * 100}ms` }}
+      className="group relative animate-fade-up"
+      style={{ animationDelay: `${index * 80}ms` }}
     >
-      <div className="absolute -inset-px rounded-3xl bg-gradient-to-br from-white via-border/30 to-white opacity-80 transition-opacity duration-300 group-hover:opacity-100" aria-hidden="true" />
-      <div
-        className={`absolute -inset-px rounded-3xl bg-gradient-to-br ${accent.gradient} opacity-0 transition-opacity duration-300 group-hover:opacity-100`}
-        aria-hidden="true"
-      />
-
-      <div className="relative overflow-hidden rounded-3xl bg-white p-7 shadow-[0_8px_40px_-12px_rgba(11,31,51,0.12)] transition-shadow duration-300 group-hover:shadow-[0_20px_50px_-15px_rgba(11,31,51,0.18)] sm:p-9">
+      <div className="relative flex items-center gap-3.5 overflow-hidden rounded-xl border border-border/55 bg-gradient-to-br from-white to-light-bg/50 px-4 py-3.5 shadow-soft ring-1 ring-transparent transition-all duration-300 hover:-translate-y-0.5 hover:border-border/80 hover:shadow-elevated sm:gap-4 sm:px-5 sm:py-4">
         <div
-          className={`absolute inset-x-0 top-0 h-24 bg-gradient-to-b ${accent.gradient} opacity-[0.07]`}
+          className={`absolute bottom-3 left-0 top-3 w-[3px] rounded-r-full bg-gradient-to-b ${accent.gradient}`}
           aria-hidden="true"
         />
 
-        <div className="relative flex flex-col items-center text-center">
-          <div className="relative mb-6">
-            <div
-              className={`stat-icon-glow absolute -inset-2 rounded-full ${accent.iconBg} blur-lg`}
-              style={{ animationDelay: `${index * 0.5}s` }}
-              aria-hidden="true"
-            />
-            <div
-              className={`relative flex h-[4.5rem] w-[4.5rem] items-center justify-center rounded-2xl ${accent.iconBg} ring-1 ring-border/40`}
-            >
-              <Icon className={`h-8 w-8 ${accent.icon}`} strokeWidth={1.5} />
-            </div>
-          </div>
+        <div
+          className={`ml-2 flex h-10 w-10 shrink-0 items-center justify-center rounded-lg ${accent.iconBg} ring-1 ring-border/35`}
+        >
+          <Icon className={`h-5 w-5 ${accent.icon}`} strokeWidth={1.5} />
+        </div>
 
+        <div className="min-w-0 flex-1">
           <AnimatedCounter
             value={stat.value}
-            className="bg-gradient-to-br from-navy to-navy-light bg-clip-text text-5xl font-extrabold tracking-tight text-transparent sm:text-[3.25rem]"
+            className="text-3xl font-extrabold leading-none tracking-tight text-navy"
           />
-
-          <p className="mt-3 max-w-[11rem] text-sm font-medium leading-snug text-muted sm:whitespace-nowrap">
-            {stat.label}
+          <p className="mt-1 min-h-[2.5rem] text-xs font-medium leading-snug text-muted sm:text-sm">
+            <span className="line-clamp-2">{stat.label}</span>
           </p>
-
-          <div className="mt-5 flex items-center gap-2">
-            <span className={`h-1.5 w-1.5 rounded-full ${accent.dot}`} aria-hidden="true" />
-            <div className={`h-0.5 w-10 rounded-full bg-gradient-to-r ${accent.bar}`} aria-hidden="true" />
-            <span className={`h-1.5 w-1.5 rounded-full ${accent.dot} opacity-40`} aria-hidden="true" />
-          </div>
         </div>
       </div>
     </div>

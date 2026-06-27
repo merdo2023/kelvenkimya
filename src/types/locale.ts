@@ -13,11 +13,20 @@ export interface ServiceItem {
   id: string
   title: string
   description: string
+  category?: string
+  tags?: string[]
+  bullets?: string[]
+  resultLabel?: string
 }
 
 export interface ProductItem {
   name: string
   description?: string
+  image?: string
+  tags?: string[]
+  usageAreas?: string[]
+  sdsUrl?: string
+  technicalFormUrl?: string
 }
 
 export interface ProductCategory {
@@ -25,10 +34,26 @@ export interface ProductCategory {
   title: string
   description: string
   image?: string
+  icon?: string
+  tags?: string[]
+  usageAreas?: string[]
   products: ProductItem[]
 }
 
 export type ProjectRegion = 'turkey' | 'turkmenistan'
+
+export interface ReferenceItem {
+  name: string
+  logoUrl?: string
+  sector?: string
+  featured?: boolean
+}
+
+export interface HeroMedia {
+  image?: string
+  video?: string
+  poster?: string
+}
 
 export interface ProjectItem {
   id: string
@@ -38,6 +63,12 @@ export interface ProjectItem {
   description: string
   region: ProjectRegion
   videoUrl?: string
+  thumbnailUrl?: string
+  sector?: string
+  scope?: string[]
+  systemType?: string
+  year?: string
+  highlight?: string
 }
 
 export interface ExpertiseItem {

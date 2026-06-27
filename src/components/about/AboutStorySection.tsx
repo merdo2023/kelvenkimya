@@ -1,135 +1,97 @@
 'use client'
 
-import { useTranslation } from '@/hooks/useTranslation'
+import { Check } from 'lucide-react'
 import { motion } from 'framer-motion'
-import { Container } from '../common/Container'
-import { AnimatedCounter } from '../common/AnimatedCounter'
+import { useTranslation } from '@/hooks/useTranslation'
 import { useLocaleArray } from '@/hooks/useLocaleArray'
-import { cardAccentColors } from '@/data/accentColors'
-import type { StatItem } from '@/types/locale'
+import { Container } from '../common/Container'
 
 const ease = [0.22, 1, 0.36, 1] as const
 
 export function AboutStorySection() {
   const { t } = useTranslation()
   const paragraphs = useLocaleArray<string>('about.story.paragraphs')
-  const stats = useLocaleArray<StatItem>('home.stats')
-  const experienceStat = stats.find((stat) => stat.icon === 'award')
-  const otherStats = stats.filter((stat) => stat.icon !== 'award')
-  const accent = cardAccentColors[0]
+  const highlights = useLocaleArray<string>('about.story.highlights')
 
   return (
-    <section className="relative overflow-hidden py-24">
+    <section className="relative overflow-hidden py-12 sm:py-14">
       <div className="section-muted absolute inset-0" aria-hidden="true" />
-      <div className="pointer-events-none absolute right-0 top-1/3 h-80 w-80 rounded-full bg-cyan/5 blur-3xl" aria-hidden="true" />
+      <div className="pointer-events-none absolute inset-0 industrial-grid opacity-[0.35]" aria-hidden="true" />
 
       <Container className="relative">
-        <motion.div
-          initial={{ opacity: 0, y: 36 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: '-60px' }}
-          transition={{ duration: 0.6, ease }}
-          className="group relative"
-        >
-          <div className="absolute -inset-px rounded-3xl bg-gradient-to-br from-white via-border/20 to-white opacity-90" aria-hidden="true" />
-          <div
-            className={`absolute -inset-px rounded-3xl bg-gradient-to-br ${accent.wash} opacity-0 transition-opacity duration-500 group-hover:opacity-100`}
-            aria-hidden="true"
-          />
+        <div className="overflow-hidden rounded-3xl border border-border/40 bg-white/90 shadow-[0_8px_40px_-16px_rgba(11,31,51,0.12)]">
+          <div className="about-accent-line-top w-full" aria-hidden="true" />
 
-          <div className="relative overflow-hidden rounded-3xl bg-white shadow-[0_4px_40px_-10px_rgba(11,31,51,0.1)] transition-shadow duration-500 group-hover:shadow-[0_24px_64px_-16px_rgba(11,31,51,0.15)]">
-            <div className="grid items-center gap-10 p-8 sm:p-10 lg:grid-cols-12 lg:gap-12 lg:p-12">
-              <div className="relative lg:col-span-7">
-                <motion.div
-                  className={`absolute left-0 top-0 h-full w-[3px] rounded-full bg-gradient-to-b ${accent.gradient}`}
-                  initial={{ scaleY: 0.2, opacity: 0.3 }}
-                  whileInView={{ scaleY: 1, opacity: 1 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.7, ease }}
-                  style={{ originY: 0 }}
+          <div className="grid gap-0 lg:grid-cols-12">
+            <motion.div
+              initial={{ opacity: 0, y: 24 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: '-50px' }}
+              transition={{ duration: 0.55, ease }}
+              className="border-b border-border/35 p-7 sm:p-9 lg:col-span-7 lg:border-b-0 lg:border-r lg:p-10"
+            >
+              <div className="relative max-w-xl pl-5">
+                <div
+                  className="absolute left-0 top-1 h-[calc(100%-0.5rem)] w-px bg-gradient-to-b from-cyan/70 via-cyan/25 to-transparent"
+                  aria-hidden="true"
                 />
 
-                <div className="pl-6">
-                  <div className="flex items-center gap-3">
-                    <span className={`h-1.5 w-1.5 rounded-full ${accent.dot}`} aria-hidden="true" />
-                    <motion.div
-                      className={`h-px bg-gradient-to-r ${accent.gradient}`}
-                      initial={{ width: 0 }}
-                      whileInView={{ width: 56 }}
-                      viewport={{ once: true }}
-                      transition={{ duration: 0.7, delay: 0.1, ease }}
-                    />
-                  </div>
+                <span className="text-[11px] font-semibold uppercase tracking-[0.14em] text-cyan">
+                  {t('about.story.eyebrow')}
+                </span>
+                <h2 className="mt-3 text-2xl font-bold leading-tight text-navy sm:text-3xl">
+                  {t('about.story.title')}
+                </h2>
+                <p className="mt-2 text-sm text-muted sm:text-base">{t('about.story.subtitle')}</p>
 
-                  <h2 className="mt-6 text-3xl font-bold leading-tight text-navy sm:text-4xl">
-                    {t('about.story.title')}
-                  </h2>
+                <div className="mt-6 space-y-4">
+                  {paragraphs.map((paragraph, index) => (
+                    <p key={index} className="text-sm leading-[1.75] text-navy/82 sm:text-[0.9375rem]">
+                      {paragraph}
+                    </p>
+                  ))}
+                </div>
+              </div>
+            </motion.div>
 
-                  <div className="mt-6 space-y-5">
-                    {paragraphs.map((paragraph, index) => (
-                      <motion.p
-                        key={index}
-                        initial={{ opacity: 0, y: 16 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        viewport={{ once: true }}
-                        transition={{ duration: 0.5, delay: 0.15 + index * 0.1, ease }}
-                        className="text-base leading-[1.8] text-muted sm:text-lg"
-                      >
-                        {paragraph}
-                      </motion.p>
-                    ))}
-                  </div>
+            <motion.div
+              initial={{ opacity: 0, y: 24 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: '-50px' }}
+              transition={{ duration: 0.55, delay: 0.1, ease }}
+              className="flex flex-col gap-4 bg-gradient-to-br from-light-bg/80 via-white to-light-bg/50 p-7 sm:p-9 lg:col-span-5 lg:p-10"
+            >
+              <div className="about-glass-light card-border-glow relative overflow-hidden rounded-2xl p-5 sm:p-6">
+                <div className="absolute left-0 top-0 h-full w-1 rounded-r-full bg-gradient-to-b from-brand-blue to-cyan/60" aria-hidden="true" />
+                <h3 className="pl-3 text-xs font-bold uppercase tracking-[0.12em] text-brand-blue">
+                  {t('about.mission.title')}
+                </h3>
+                <p className="mt-2.5 pl-3 text-sm leading-relaxed text-muted">{t('about.mission.description')}</p>
+              </div>
+
+              <div className="relative overflow-hidden rounded-2xl border border-white/10 bg-gradient-to-br from-navy via-[#0f2840] to-[#123456] p-5 shadow-[0_8px_32px_-12px_rgba(11,31,51,0.35)] sm:p-6">
+                <div className="absolute inset-0 mesh-pattern opacity-15" aria-hidden="true" />
+                <div className="relative">
+                  <h3 className="text-xs font-bold uppercase tracking-[0.12em] text-cyan">{t('about.vision.title')}</h3>
+                  <p className="mt-2.5 text-sm leading-relaxed text-white/85">{t('about.vision.description')}</p>
                 </div>
               </div>
 
-              <div className="relative lg:col-span-5">
-                <div className="relative overflow-hidden rounded-2xl border border-border/50 bg-light-bg/80 p-8 sm:p-10">
-                  <div className="absolute -right-8 -top-8 h-32 w-32 rounded-full bg-cyan/10 blur-2xl" aria-hidden="true" />
-                  <div className="absolute -bottom-8 -left-8 h-32 w-32 rounded-full bg-green/8 blur-2xl" aria-hidden="true" />
-
-                  <motion.div
-                    className="pointer-events-none absolute inset-4 rounded-full border border-cyan/10"
-                    animate={{ rotate: 360 }}
-                    transition={{ duration: 32, repeat: Infinity, ease: 'linear' }}
-                    aria-hidden="true"
-                  />
-
-                  <div className="relative text-center">
-                    {experienceStat && (
-                      <>
-                        <AnimatedCounter
-                          value={experienceStat.value}
-                          className="bg-gradient-to-br from-navy via-brand-blue to-cyan bg-clip-text text-6xl font-extrabold tracking-tight text-transparent sm:text-7xl"
-                        />
-                        <p className="mt-2 text-sm font-semibold uppercase tracking-[0.15em] text-muted">
-                          {experienceStat.label}
-                        </p>
-                      </>
-                    )}
-
-                    {otherStats.length > 0 && (
-                      <div className="mt-8 grid grid-cols-2 gap-3">
-                        {otherStats.map((stat, i) => (
-                          <motion.div
-                            key={stat.label}
-                            initial={{ opacity: 0, y: 12 }}
-                            whileInView={{ opacity: 1, y: 0 }}
-                            viewport={{ once: true }}
-                            transition={{ duration: 0.4, delay: 0.25 + i * 0.1, ease }}
-                            className="rounded-xl border border-border/40 bg-white px-3 py-4 text-center transition-shadow duration-300 hover:shadow-md"
-                          >
-                            <p className="text-2xl font-bold text-navy">{stat.value}</p>
-                            <p className="mt-1 text-[11px] leading-tight text-muted">{stat.label}</p>
-                          </motion.div>
-                        ))}
-                      </div>
-                    )}
-                  </div>
-                </div>
-              </div>
-            </div>
+              {highlights.length > 0 && (
+                <ul className="space-y-2.5 rounded-2xl border border-border/35 bg-white/70 p-5 sm:p-6">
+                  {highlights.map((item) => (
+                    <li key={item} className="flex items-start gap-2.5 text-sm text-navy/80">
+                      <span className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-green/[0.1] text-green">
+                        <Check className="h-3 w-3" strokeWidth={2.5} />
+                      </span>
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
+              )}
+            </motion.div>
           </div>
-        </motion.div>
+        </div>
       </Container>
     </section>
   )

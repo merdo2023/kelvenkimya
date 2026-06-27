@@ -51,7 +51,7 @@ export function ProductsPageClient({ categories }: ProductsPageClientProps) {
 
         <Container className="relative py-12 lg:py-16">
           <div className="flex flex-col gap-10 lg:flex-row lg:items-start lg:gap-12">
-            <aside className="lg:sticky lg:top-24 lg:w-80 lg:shrink-0">
+            <aside className="min-w-0 w-full lg:sticky lg:top-24 lg:w-80 lg:shrink-0">
               <div className="space-y-6 rounded-2xl border border-border/50 bg-white/80 p-5 shadow-sm backdrop-blur-sm sm:p-6">
                 <ProductsToolbar
                   search={search}

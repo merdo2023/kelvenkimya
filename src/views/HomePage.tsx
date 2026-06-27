@@ -2,7 +2,7 @@ import dynamic from 'next/dynamic'
 import { HeroSection } from '@/components/home/HeroSection'
 import { getProductCategories, getServices } from '@/data/localeCatalog'
 import type { AppLocale } from '@/i18n/routing'
-import type { StatItem } from '@/types/locale'
+import type { HeroMedia } from '@/types/locale'
 
 const StatsSection = dynamic(() =>
   import('@/components/home/StatsSection').then((module) => ({
@@ -46,8 +46,10 @@ type HomePageProps = {
 
 type HomeMessages = {
   home: {
-    hero: { trustIndicators: string[] }
-    stats: StatItem[]
+    hero: {
+      trustIndicators: string[]
+      media?: HeroMedia
+    }
   }
 }
 
@@ -59,7 +61,7 @@ async function getHomeContent(locale: AppLocale) {
 
   return {
     trustIndicators: messages.home.hero.trustIndicators,
-    stats: messages.home.stats,
+    media: messages.home.hero.media,
   }
 }
 
@@ -74,8 +76,8 @@ export async function HomePage({ locale }: HomePageProps) {
     <>
       <HeroSection
         locale={locale}
-        stats={homeContent.stats}
         trustIndicators={homeContent.trustIndicators}
+        media={homeContent.media}
       />
       <StatsSection />
       <ServicesSection services={services} />

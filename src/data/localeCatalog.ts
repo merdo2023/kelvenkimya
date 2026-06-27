@@ -2,6 +2,7 @@ import 'server-only'
 
 import type { AppLocale } from '@/i18n/routing'
 import type { ProductCategory, ServiceItem } from '@/types/locale'
+import { sortProductCategories } from './productPreview'
 import { mapProjects, type ProjectMessage } from './projeler'
 
 type LocaleMessages = {
@@ -21,7 +22,7 @@ async function loadLocaleMessages(locale: AppLocale): Promise<LocaleMessages> {
 
 export async function getProductCategories(locale: AppLocale): Promise<ProductCategory[]> {
   const messages = await loadLocaleMessages(locale)
-  return messages.products.categories
+  return sortProductCategories(messages.products.categories)
 }
 
 export async function getServices(locale: AppLocale): Promise<ServiceItem[]> {

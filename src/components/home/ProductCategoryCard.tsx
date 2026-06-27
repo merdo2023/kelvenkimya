@@ -1,15 +1,39 @@
 'use client'
 
 import { Link } from '@/i18n/navigation'
-import { ArrowUpRight } from 'lucide-react'
+import { ArrowRight, Beaker, Droplets, Factory, FlaskConical, Layers, Pipette, type LucideIcon } from 'lucide-react'
+import { AssetImage } from '@/components/common/AssetImage'
+import { resolveMediaPath } from '@/lib/media'
 import { cardAccentColors } from '@/data/accentColors'
 import type { ProductCategory } from '@/types/locale'
+
+const categoryIcons: Record<string, LucideIcon> = {
+  beaker: Beaker,
+  droplets: Droplets,
+  factory: Factory,
+  flask: FlaskConical,
+  layers: Layers,
+  pipette: Pipette,
+}
+
+const iconStyles = [
+  { box: 'from-cyan/20 to-cyan/5', icon: 'text-cyan' },
+  { box: 'from-brand-blue/20 to-brand-blue/5', icon: 'text-brand-blue' },
+  { box: 'from-green/20 to-green/5', icon: 'text-green' },
+  { box: 'from-cyan/20 to-cyan/5', icon: 'text-cyan' },
+  { box: 'from-brand-blue/20 to-brand-blue/5', icon: 'text-brand-blue' },
+  { box: 'from-green/20 to-green/5', icon: 'text-green' },
+]
 
 interface ProductCategoryCardProps {
   category: ProductCategory
   index: number
   ctaLabel: string
   itemLabel: string
+}
+
+function getCategoryIcon(icon?: string): LucideIcon {
+  return (icon && categoryIcons[icon]) || Droplets
 }
 
 export function ProductCategoryCard({
@@ -19,65 +43,74 @@ export function ProductCategoryCard({
   itemLabel,
 }: ProductCategoryCardProps) {
   const accent = cardAccentColors[index % cardAccentColors.length]
-  const number = String(index + 1).padStart(2, '0')
+  const iconStyle = iconStyles[index % iconStyles.length]
+  const imagePath = resolveMediaPath(category.image)
+  const Icon = getCategoryIcon(category.icon)
   const productCount = category.products.length
+  const summary =
+    category.description?.trim() ||
+    category.usageAreas?.[0] ||
+    category.tags?.[0] ||
+    ''
 
   return (
     <div
-      className="group relative h-full animate-fade-up transition-transform duration-300 hover:-translate-y-1"
-      style={{ animationDelay: `${index * 80}ms` }}
+      className="group animate-fade-up"
+      style={{ animationDelay: `${index * 60}ms` }}
     >
-      <div className="absolute -inset-px rounded-3xl bg-gradient-to-br from-white via-border/20 to-white opacity-90 transition-opacity duration-300 group-hover:opacity-100" aria-hidden="true" />
-      <div
-        className={`absolute -inset-px rounded-3xl bg-gradient-to-br ${accent.wash} opacity-0 transition-opacity duration-500 group-hover:opacity-100`}
-        aria-hidden="true"
-      />
-
       <Link
         href={{ pathname: '/products', hash: category.id }}
-        className="relative flex h-full flex-col overflow-hidden rounded-3xl bg-white p-7 shadow-[0_4px_32px_-8px_rgba(11,31,51,0.08)] transition-all duration-300 group-hover:shadow-[0_16px_48px_-12px_rgba(11,31,51,0.14)] sm:p-8"
+        className="relative flex h-full flex-col rounded-xl border border-white/10 bg-gradient-to-br from-white/[0.09] to-white/[0.03] p-4 shadow-[0_4px_24px_-8px_rgba(0,0,0,0.35)] ring-1 ring-transparent backdrop-blur-sm transition-all duration-300 hover:-translate-y-0.5 hover:border-cyan/25 hover:shadow-[0_8px_28px_-8px_rgba(0,166,214,0.2)] hover:ring-cyan/10"
         aria-label={`${category.title} — ${ctaLabel}`}
       >
         <div
-          className={`absolute bottom-8 left-0 top-8 w-[3px] origin-top rounded-r-full bg-gradient-to-b ${accent.gradient} opacity-80`}
+          className={`absolute inset-x-0 top-0 h-px bg-gradient-to-r ${accent.gradient} opacity-40 transition-opacity duration-300 group-hover:opacity-80`}
           aria-hidden="true"
         />
 
-        <span
-          className={`pointer-events-none absolute -right-2 -top-4 select-none bg-gradient-to-br ${accent.num} bg-clip-text text-[5.5rem] font-extrabold leading-none text-transparent opacity-80 transition-all duration-500 group-hover:scale-105 group-hover:opacity-100 sm:text-[6rem]`}
-          aria-hidden="true"
-        >
-          {number}
-        </span>
-
-        <div className="relative pl-4">
-          <div className="flex items-center justify-between gap-4">
-            <div className="flex items-center gap-3">
-              <span className={`h-1.5 w-1.5 rounded-full ${accent.dot}`} aria-hidden="true" />
-              <div className={`h-px w-12 bg-gradient-to-r ${accent.gradient}`} aria-hidden="true" />
-            </div>
-            <span className="shrink-0 rounded-full border border-border/50 bg-light-bg px-3 py-1 text-xs font-semibold text-muted">
-              {productCount} {itemLabel}
-            </span>
+        <div className="flex items-start gap-3">
+          <div
+            className={`product-icon-glow relative h-11 w-11 shrink-0 overflow-hidden rounded-lg ring-1 ring-white/15 bg-gradient-to-br ${iconStyle.box}`}
+          >
+            {imagePath ? (
+              <AssetImage
+                src={imagePath}
+                alt=""
+                fill
+                className="object-cover"
+                sizes="44px"
+              />
+            ) : (
+              <div className="flex h-full w-full items-center justify-center">
+                <Icon className={`h-5 w-5 ${iconStyle.icon}`} strokeWidth={1.6} />
+              </div>
+            )}
           </div>
 
-          <h3 className="mt-5 text-xl font-bold leading-snug text-navy transition-colors duration-300 group-hover:text-brand-blue sm:text-[1.35rem]">
-            {category.title}
-          </h3>
-
-          <p className="mt-3 line-clamp-3 flex-1 text-sm leading-[1.7] text-muted">
-            {category.description}
-          </p>
+          <div className="min-w-0 flex-1">
+            <div className="flex items-start justify-between gap-2">
+              <h3 className="text-sm font-bold leading-snug text-white transition-colors duration-300 group-hover:text-cyan sm:text-[0.9375rem]">
+                {category.title}
+              </h3>
+              <span className="shrink-0 rounded-full border border-white/15 bg-white/10 px-2 py-0.5 text-[10px] font-bold uppercase tracking-wide text-white/75">
+                {productCount} {itemLabel}
+              </span>
+            </div>
+            {summary && (
+              <p className="mt-1.5 line-clamp-2 text-xs leading-relaxed text-white/60">
+                {summary}
+              </p>
+            )}
+          </div>
         </div>
 
-        <div className="relative mt-8 flex items-center justify-end border-t border-border/40 pt-5 pl-4">
-          <span className="inline-flex items-center gap-2 text-sm font-semibold tracking-wide text-brand-blue transition-all duration-300 group-hover:gap-3 group-hover:text-cyan">
-            {ctaLabel}
-            <span className="flex h-8 w-8 items-center justify-center rounded-full border border-border/60 bg-light-bg transition-all duration-300 group-hover:border-cyan/30 group-hover:bg-cyan/5">
-              <ArrowUpRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
-            </span>
-          </span>
-        </div>
+        <span className="mt-3 inline-flex items-center gap-1 text-xs font-semibold text-cyan/90 transition-colors duration-300 group-hover:text-cyan">
+          {ctaLabel}
+          <ArrowRight
+            className="h-3.5 w-3.5 transition-transform duration-300 group-hover:translate-x-0.5"
+            aria-hidden="true"
+          />
+        </span>
       </Link>
     </div>
   )

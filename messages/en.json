@@ -11,6 +11,12 @@
     "backToHome": "Back to Home",
     "loading": "Loading..."
   },
+  "whatsapp": {
+    "label": "WhatsApp support line",
+    "shortLabel": "WhatsApp",
+    "number": "0543 522 80 14",
+    "href": "https://wa.me/905435228014?text=Hello%2C%20I%20would%20like%20to%20get%20information%20about%20Kelven%20Kimya."
+  },
   "language": {
     "groupLabel": "Language selection",
     "tr": "TR",
@@ -59,15 +65,20 @@
     },
     "hero": {
       "badge": "40+ Years of Industrial Experience",
-      "title": "Industrial Water Treatment and Chemical Solutions",
-      "subtitle": "We provide reliable industrial water treatment, chemical cleaning and system protection solutions for industrial facilities. Expert technical support for boilers, cooling towers and process systems.",
+      "title": "Industrial Chemical Cleaning and Water Treatment Solutions",
+      "subtitle": "Your end-to-end technical partner for boilers, cooling towers and process lines. We secure plant efficiency through chemical cleaning, water treatment and laboratory analysis.",
       "primaryCta": "Explore Products",
       "secondaryCta": "Get a Quote",
       "trustIndicators": [
         "40+ Years",
         "International Projects",
         "Expert Team"
-      ]
+      ],
+      "media": {
+        "image": "/images/hero/hero.png",
+        "video": "",
+        "poster": ""
+      }
     },
     "stats": [
       {
@@ -89,64 +100,121 @@
     "services": {
       "title": "Our Services",
       "subtitle": "Comprehensive solutions for your industrial water and chemical treatment needs.",
+      "applicationsLabel": "Application Areas",
+      "bulletsLabel": "What We Deliver",
       "items": [
         {
           "id": "endustriyel-kimyasal-temizlik",
           "title": "Industrial Chemical Cleaning",
-          "description": "Professional chemical cleaning for steam boilers, heat exchangers, cooling towers, chiller systems, process pipelines and industrial equipment."
+          "category": "Field Application",
+          "description": "Professional chemical cleaning for steam boilers, heat exchangers, cooling towers, chiller systems, process pipelines and industrial equipment.",
+          "tags": ["Boiler", "Heat Exchanger", "Process Line"],
+          "bullets": [
+            "Chemical cleaning plans tailored to on-site conditions.",
+            "Controlled removal of scale, rust and deposit build-up.",
+            "Post-application support for system efficiency."
+          ],
+          "resultLabel": "Field application and technical verification"
         },
         {
           "id": "su-yumusatma-uniteleri-revizyonu",
           "title": "Water Softening Unit Revision",
-          "description": "Resin replacement, valve maintenance, system optimization and revision services for water softening systems."
+          "category": "System Revision",
+          "description": "Resin replacement, valve maintenance, system optimization and revision services for water softening systems.",
+          "tags": ["Resin", "Valve Maintenance", "Optimization"],
+          "bullets": [
+            "Resin replacement and system inspection.",
+            "Performance review of valves, tanks and equipment.",
+            "Revision planning to maintain system continuity."
+          ],
+          "resultLabel": "System continuity and performance monitoring"
         },
         {
           "id": "su-sartlandirma-kimyasallari",
           "title": "Water Treatment Chemicals",
-          "description": "Chemical solutions for scale, corrosion and biological formation control in steam boilers, cooling towers and closed-loop systems."
+          "category": "Chemical Program",
+          "description": "Chemical solutions for scale, corrosion and biological formation control in steam boilers, cooling towers and closed-loop systems.",
+          "tags": ["Corrosion", "Scale", "Biological Control"],
+          "bullets": [
+            "Chemical programs for boiler and cooling systems.",
+            "Protection against corrosion and scale formation.",
+            "System parameters tracked through analysis."
+          ],
+          "resultLabel": "System protection and chemical balance"
         },
         {
           "id": "kimyasal-temizlik-kimyasallari",
           "title": "Chemical Cleaning Products",
-          "description": "Supply of industrial cleaning chemicals including descalers, rust removers, degreasers and passivation products."
+          "category": "Product Supply",
+          "description": "Supply of industrial cleaning chemicals including descalers, rust removers, degreasers and passivation products.",
+          "tags": ["Rust Remover", "Degreaser", "Passivation"],
+          "bullets": [
+            "Product selection aligned with industrial cleaning needs.",
+            "Product groups defined by surface and system type.",
+            "Application process planned with technical support."
+          ],
+          "resultLabel": "Technical support and application planning"
         },
         {
           "id": "laboratuvar-analiz-hizmetleri",
           "title": "Laboratory Analysis Services",
-          "description": "Raw water, boiler water and cooling water analyses with system performance evaluation and technical reporting."
+          "category": "Laboratory & Reporting",
+          "description": "Raw water, boiler water and cooling water analyses with system performance evaluation and technical reporting.",
+          "tags": ["Water Analysis", "Reporting", "Performance"],
+          "bullets": [
+            "Analysis of raw, boiler and cooling water.",
+            "System performance evaluated with technical data.",
+            "Chemical program recommendations based on results."
+          ],
+          "resultLabel": "Technical reporting and performance evaluation"
         }
       ]
     },
     "productCategories": {
-      "title": "Product Categories",
-      "subtitle": "Explore our extensive product range for industrial water treatment needs.",
-      "viewAll": "View All Categories"
+      "title": "Product & Chemical Solution Portfolio",
+      "subtitle": "Explore our technical product groups for boiler, cooling, filtration, reverse osmosis and industrial cleaning processes.",
+      "viewAll": "View All Products",
+      "explore": "Explore",
+      "metrics": {
+        "categories": "Categories",
+        "products": "Products",
+        "support": "Technical Support",
+        "supportValue": "Expert Team"
+      }
     },
     "aboutPreview": {
-      "title": "About Kelven Kimya",
+      "eyebrow": "Since 1985",
+      "title": "Industrial system protection solutions backed by 40+ years of field experience",
       "description": "With over 40 years of industrial experience, we deliver reliable solutions in industrial water treatment, chemical cleaning and system protection across Turkey and international projects. Our expert technical team develops customized solutions for your facility's needs.",
-      "cta": "About Us"
+      "cta": "About Us",
+      "trustItems": [
+        "Industrial water conditioning",
+        "Chemical cleaning applications",
+        "Analysis, reporting and technical consulting"
+      ]
     },
     "clientReferences": {
       "title": "Our References",
       "subtitle": "We provide reliable solutions to leading industrial organizations in Turkey.",
       "badge": "Trusted Partners",
-      "statLabel": "Corporate references",
-      "rowFirst": [
-        "Rönesans",
-        "Şişecam",
-        "Mersin Soda",
-        "Koç Grubu",
-        "TEI Alaşım"
-      ],
-      "rowSecond": [
-        "Aksa Enerji",
-        "Nuh Enerji",
-        "BIS Enerji",
-        "Karaman Döküm",
-        "Mary Amonyak (Türkmenistan)"
-      ],
-      "cardLabel": "Reference"
+      "items": [
+        { "name": "Rönesans", "logoUrl": "/images/references/1.jpeg", "featured": true },
+        { "name": "Şişecam", "logoUrl": "/images/references/2.png", "featured": true },
+        { "name": "Mersin Soda", "logoUrl": "/images/references/3.png", "featured": true },
+        { "name": "Koç Grubu", "logoUrl": "/images/references/4.jpg", "featured": true },
+        { "name": "TEI Alaşım", "logoUrl": "/images/references/5.png", "featured": true },
+        { "name": "Aksa Enerji", "logoUrl": "/images/references/6.png", "featured": true },
+        { "name": "Nuh Enerji", "logoUrl": "/images/references/7.jpg", "featured": true },
+        { "name": "BIS Enerji", "logoUrl": "/images/references/8.png", "featured": true },
+        { "name": "Karaman Döküm", "logoUrl": "/images/references/9.png", "featured": true },
+        { "name": "Mary Amonyak", "logoUrl": "/images/references/10.png", "sector": "Turkmenistan", "featured": true },
+        { "name": "Reference 11", "logoUrl": "/images/references/11.png" },
+        { "name": "Reference 12", "logoUrl": "/images/references/12.png" },
+        { "name": "Reference 13", "logoUrl": "/images/references/13.png" },
+        { "name": "Reference 14", "logoUrl": "/images/references/14.png" },
+        { "name": "Reference 15", "logoUrl": "/images/references/15.png" },
+        { "name": "Reference 16", "logoUrl": "/images/references/16.png" }
+      ]
     },
     "contactCta": {
       "title": "Let's determine the right chemical solution for your industrial facility together.",
@@ -176,6 +244,16 @@
     "resultsFiltered": "Showing {visible} of {total} products",
     "noResultsTitle": "No results found",
     "noResultsDescription": "No products match your search or category filter. Try a different term or clear the filters.",
+    "sdsLabel": "SDS",
+    "technicalFormLabel": "Technical Sheet",
+    "zoomImage": "Enlarge image",
+    "closeImage": "Close image",
+    "viewDetails": "View Details",
+    "detailTitle": "Product Details",
+    "featuresLabel": "Features",
+    "usageNoteLabel": "Usage Note",
+    "closeDetail": "Close",
+    "moreTags": "+{count} tags",
     "stats": {
       "categories": "Categories",
       "products": "Total Products"
@@ -183,40 +261,49 @@
     "categories": [
       {
         "id": "kimyasal_temizlik_urunleri",
-        "title": "Chemical Cleaning Products",
+        "title": "Industrial Cleaning and Maintenance Chemicals",
         "description": "Used for chemical cleaning of iron, steel and cast materials.",
+        "icon": "flask",
         "products": [
           {
-            "name": "Kelvenoks Ferlin - 123",
+            "name": "Kelvenoks 123",
+            "image": "/images/products/2/1.png",
             "description": "Used for chemical cleaning of iron, steel and cast materials."
           },
           {
-            "name": "Kelvenoks Ferlin - 124",
+            "name": "Kelvenoks 124",
+            "image": "/images/products/2/2.png",
             "description": "Used for cleaning all types of copper and copper alloy systems."
           },
           {
-            "name": "Kelvenoks Ferlin - 128",
+            "name": "Kelvenoks 128",
+            "image": "/images/products/2/3.png",
             "description": "Used for chemical cleaning of stainless and stainless alloy metal surfaces and facilities."
           },
           {
-            "name": "Kelvenoks Ferlin - 130",
+            "name": "Kelvenoks 130",
+            "image": "/images/products/2/4.png",
             "description": "Used for chemical cleaning of aluminum and aluminum alloy metal surfaces and facilities."
           },
           {
-            "name": "Kelvenoks Ferlin - 150",
-            "description": "Used for concrete weakening, fracturing and breaking operations."
-          },
-          {
-            "name": "Kelvenoks Ferlin 101 Pickling Liquid",
-            "description": "Stainless weld mark cleaner; used for cleaning all types of stainless weld marks."
-          },
-          {
-            "name": "Alkalen NP-100",
+            "name": "Alkelen np100",
+            "image": "/images/products/2/5.png",
             "description": "Passivation cleaning chemical applied after chemical cleaning."
           },
           {
-            "name": "Alkalen NP-150",
+            "name": "Alkelen np150",
+            "image": "/images/products/2/6.png",
             "description": "High-alkaline industrial chemical cleaning product developed to remove heavy oil, carbon, grease and process residues."
+          },
+          {
+            "name": "Kelvenoks Ferlin 101",
+            "image": "/images/products/2/7.png",
+            "description": "Stainless weld mark cleaner; used for cleaning all types of stainless weld marks."
+          },
+          {
+            "name": "Kelvenoks 150",
+            "image": "/images/products/2/8.png",
+            "description": "Used for concrete weakening, fracturing and breaking operations."
           }
         ]
       },
@@ -353,59 +440,70 @@
       },
       {
         "id": "kazan_suyu_kimyasallari",
-        "title": "Boiler Water Chemicals",
+        "title": "Boiler Water Conditioning Chemicals",
         "description": "Used as a scale and corrosion inhibitor in boilers; protects steam and condensate lines safely with its oxygen scavenger property.",
         "products": [
           {
-            "name": "Polyquestamin",
-            "description": "Used as a scale and corrosion inhibitor in boilers; protects steam and condensate lines safely with its oxygen scavenger property."
-          },
-          {
-            "name": "Polyox-432",
+            "name": "Polyox 432 - Boiler & Steam System",
+            "image": "/images/products/1/1.png",
             "description": "Prevents corrosion in the system by binding dissolved oxygen in condensate within the steam line."
           },
           {
-            "name": "Carbohydrazide",
+            "name": "Carbohydrazide - Boiler & Steam System",
+            "image": "/images/products/1/2.png",
             "description": "Prevents oxygen-related corrosion in boiler systems, forms a protective film in the steam line, remains effective at high temperatures, increases system efficiency and extends boiler life."
+          },
+          {
+            "name": "Polyquestamin - Boiler & Steam System",
+            "image": "/images/products/1/3.png",
+            "description": "Used as a scale and corrosion inhibitor in boilers; protects steam and condensate lines safely with its oxygen scavenger property."
           }
         ]
       },
       {
         "id": "sogutma_suyu_kimyasallari",
-        "title": "Cooling Water Chemicals",
+        "title": "Cooling Tower Water Conditioning Chemicals",
         "description": "Used as a scale inhibitor in closed and semi-open cooling water units.",
         "products": [
           {
-            "name": "ORG-211",
-            "description": "Used as a scale inhibitor in closed and semi-open cooling water units."
-          },
-          {
-            "name": "ORG-311",
-            "description": "Prevents scale and corrosion in closed and open cooling systems."
-          },
-          {
-            "name": "ORG 400",
-            "description": "HEDP-based antiscalant; prevents hardness-related precipitates, operates stably at high temperatures and provides iron and calcium dispersion."
-          },
-          {
-            "name": "ORG-411",
-            "description": "Used as a bio dispersant in cooling towers."
-          },
-          {
-            "name": "Abacide",
+            "name": "ABACIDE - Algaecide",
+            "image": "/images/products/4/1.png",
             "description": "Biocide; used as an algaecide and bactericide in cooling systems."
           },
           {
-            "name": "Silifoam-101",
+            "name": "Monoethylene Glycol 250kg",
+            "image": "/images/products/4/2.png",
+            "description": "Used as antifreeze in industrial cooling systems."
+          },
+          {
+            "name": "Monopropylene Glycol 250kg",
+            "image": "/images/products/4/3.png",
+            "description": "Used as antifreeze in industrial cooling systems."
+          },
+          {
+            "name": "ORG211",
+            "image": "/images/products/4/4.png",
+            "description": "Used as a scale inhibitor in closed and semi-open cooling water units."
+          },
+          {
+            "name": "ORG311",
+            "image": "/images/products/4/5.png",
+            "description": "Prevents scale and corrosion in closed and open cooling systems."
+          },
+          {
+            "name": "ORG400",
+            "image": "/images/products/4/6.png",
+            "description": "HEDP-based antiscalant; prevents hardness-related precipitates, operates stably at high temperatures and provides iron and calcium dispersion."
+          },
+          {
+            "name": "ORG411",
+            "image": "/images/products/4/7.png",
+            "description": "Used as a bio dispersant in cooling towers."
+          },
+          {
+            "name": "SILIFOAM 101",
+            "image": "/images/products/4/8.png",
             "description": "Used as an antifoam agent in boiler and cooling water circuits."
-          },
-          {
-            "name": "Monoethylene Glycol",
-            "description": "Used as antifreeze in industrial cooling systems."
-          },
-          {
-            "name": "Monopropylene Glycol",
-            "description": "Used as antifreeze in industrial cooling systems."
           }
         ]
       },
@@ -415,37 +513,88 @@
         "description": "",
         "products": [
           {
-            "name": "Chlorine"
+            "name": "Powder Chlorine 56%",
+            "image": "/images/products/3/4.png",
+            "description": "Powder Chlorine 56% is a granular disinfection product used to maintain hygiene and water quality in pool water. Its fast-dissolving structure delivers rapid action and helps keep bacteria, algae and microorganisms under control.\n\nUsage Note: Dosage should be determined based on pool volume, water temperature, bather load and current free chlorine levels. pH and chlorine measurements are recommended before application. Do not mix directly with other chemicals.",
+            "tags": ["Disinfection", "Shock Chlorination", "Granular"],
+            "usageAreas": [
+              "Contains 56% available chlorine.",
+              "Granular powder form.",
+              "Dissolves quickly and acts within a short time.",
+              "Helps keep pool water clean and clear.",
+              "Suitable for shock chlorination and routine pool maintenance.",
+              "Appropriate for villa, residential complex, hotel and commercial pools."
+            ]
           },
           {
-            "name": "pH reducer"
+            "name": "Chlorine Tablet 90%",
+            "image": "/images/products/3/3.png",
+            "description": "Chlorine Tablet 90% is a slow-dissolving chlorine tablet used to provide long-lasting disinfection in pool water. Its controlled dissolution helps maintain a balanced chlorine level throughout the pool.\n\nUsage Note: Chlorine tablets should be applied in a controlled manner according to pool volume and daily chlorine demand. They can be used in skimmers, floating dispensers or suitable dosing systems. Chlorine levels should be monitored regularly and the product should not be placed in direct contact with other chemicals.",
+            "tags": ["Disinfection", "Tablet", "Long-Lasting Effect"],
+            "usageAreas": [
+              "Contains 90% available chlorine.",
+              "Slow-dissolving tablet form.",
+              "Provides long-lasting disinfection.",
+              "Effective against bacteria, algae and microorganisms.",
+              "Supports stable chlorine levels in pool water.",
+              "Can be used in skimmers, floating dispensers or automatic dosing systems."
+            ]
           },
           {
-            "name": "pH increaser"
+            "name": "pH Reducer Powder",
+            "image": "/images/products/3/2.png",
+            "description": "pH Reducer Powder is a powdered pool chemical used to lower elevated pH values to the ideal range. Maintaining pH balance helps chlorine work more efficiently and keeps water quality stable.\n\nUsage Note: Measure pool water pH before application. Dosage should be determined based on the current pH value, target pH range and pool volume. Do not mix directly with chlorine or other chemicals.",
+            "tags": ["pH Control", "Water Balance", "Powder"],
+            "usageAreas": [
+              "Helps reduce high pH values.",
+              "Regulates the chemical balance of pool water.",
+              "Supports the disinfection performance of chlorine.",
+              "Helps reduce scaling, cloudiness and sediment formation.",
+              "Fast-dissolving powder form for practical application.",
+              "Can be applied in a controlled manner after regular water testing."
+            ]
           },
           {
-            "name": "Surface disinfectant"
+            "name": "Algaecide",
+            "image": "/images/products/3/5.png",
+            "description": "Algaecide is a maintenance chemical that helps prevent algae, biofilm and green water formation in pool water. It is especially useful during hot weather, intense sunlight and periods of heavy pool use.\n\nUsage Note: Algaecide should be applied at regular intervals based on pool volume, bather load and algae growth risk. For best results, use after confirming that pH and chlorine levels are balanced.",
+            "tags": ["Algae Control", "Maintenance", "Clarity"],
+            "usageAreas": [
+              "Helps prevent algae and biofilm formation.",
+              "Reduces green discoloration in pool water.",
+              "Supports water clarity.",
+              "Helps reduce slippery film on pool walls and floors.",
+              "Can be used as a complementary product to chlorine treatment.",
+              "Suitable for both indoor and outdoor pools."
+            ]
           },
           {
-            "name": "Algae preventive"
+            "name": "Flocculant / Clarifier",
+            "image": "/images/products/3/1.png",
+            "description": "Flocculant / Clarifier is a pool maintenance product that helps fine suspended dirt and particles combine and settle in pool water. This allows cloudy pool water to regain a clearer, cleaner appearance.\n\nUsage Note: Dosage should be determined based on the level of cloudiness and pool volume. Run the filtration system after application and remove settled sediment with a pool vacuum when necessary.",
+            "tags": ["Clarifier", "Filtration", "Sediment Control"],
+            "usageAreas": [
+              "Helps clarify cloudy pool water.",
+              "Brings fine dirt and particles together.",
+              "Supports more efficient filtration system operation.",
+              "Helps suspended sediment settle.",
+              "Preferred after heavy use, rainfall or water balance disruption.",
+              "Suitable for residential, hotel, villa and commercial pools."
+            ]
           },
           {
-            "name": "Algae remover"
-          },
-          {
-            "name": "Defoamer"
-          },
-          {
-            "name": "Clarifier"
-          },
-          {
-            "name": "Flocculant"
-          },
-          {
-            "name": "Foot disinfectant"
-          },
-          {
-            "name": "Dosing pumps"
+            "name": "Pool Surface Cleaner",
+            "image": "/images/products/3/6.png",
+            "description": "Pool Surface Cleaner is a specialised cleaning product that helps remove dirt, oil, limescale, rust and metal stains from pool walls, floors, waterlines, tiles, ceramics and equipment surfaces.\n\nUsage Note: Apply an appropriate amount to the surface to be cleaned, allow brief contact time, then scrub with a brush or sponge. Rinse the surface thoroughly with plenty of water after cleaning. Do not mix with other chemicals.",
+            "tags": ["Surface Cleaning", "Limescale", "Stain Removal"],
+            "usageAreas": [
+              "Helps clean dirt and stains on pool surfaces.",
+              "Supports removal of limescale and mineral deposits.",
+              "Dissolves oil, sunscreen residue and dirt films.",
+              "Helps remove rust and metal stains.",
+              "Keeps the pool looking hygienic and well maintained.",
+              "Suitable for seasonal opening, closing and periodic pool cleaning."
+            ]
           }
         ]
       },
@@ -505,18 +654,81 @@
     },
     "title": "About Us",
     "subtitle": "Over 40 years of experience and trust in industrial water treatment.",
+    "hero": {
+      "eyebrow": "Since 1985",
+      "title": "Industrial system protection solutions with over 40 years of field experience",
+      "description": "With over 40 years of field experience, we provide reliable solutions for boilers, cooling systems, process lines and industrial facilities.",
+      "imageAlt": "Kelven Kimya industrial facility"
+    },
     "cta": "Contact Us",
-    "ctaTitle": "Let's find the right solution partner for your facility together",
+    "ctaPrimary": "Contact Us",
+    "ctaSecondary": "Explore Products",
+    "ctaTitle": "Let's plan the right solution together for your industrial water conditioning and chemical cleaning needs.",
     "ctaDescription": "Our expert team provides technical consultancy and solution recommendations for your industrial water treatment needs.",
     "story": {
+      "eyebrow": "Corporate Identity",
       "title": "Our Company Story",
+      "subtitle": "Long-standing field experience in industrial water treatment and chemical solutions.",
+      "highlights": [
+        "Industrial facility experience across Turkey",
+        "International project implementations",
+        "Analysis, application and technical support processes"
+      ],
       "paragraphs": [
         "Kelven Kimya is a company with over 40 years of experience in industrial water treatment and chemical solutions. We provide reliable solutions for industrial facilities across Turkey and internationally.",
         "Through our boiler chemicals, cooling tower chemicals, industrial system cleaning, water analysis and technical consultancy services, we aim to maximize operational efficiency and extend system lifespan for industrial facilities.",
         "Our experience in international industrial projects, particularly in Turkmenistan, strengthens our technical competence and capacity to deliver services at global standards."
       ]
     },
+    "why": {
+      "eyebrow": "Our Strengths",
+      "title": "Why Kelven Kimya?",
+      "subtitle": "Our focus on field experience, technical approach and sustainable solutions.",
+      "items": [
+        {
+          "title": "Field Experience",
+          "description": "Application experience across different systems in industrial facilities."
+        },
+        {
+          "title": "Technical Approach",
+          "description": "The right chemical and maintenance approach based on system requirements."
+        },
+        {
+          "title": "Trusted Solution Partner",
+          "description": "A sustainable solution focus across project, product and technical support processes."
+        }
+      ]
+    },
+    "process": {
+      "eyebrow": "Technical Process",
+      "title": "Our Working Approach",
+      "subtitle": "A structured technical process tailored to system needs.",
+      "items": [
+        {
+          "title": "Analysis and Assessment",
+          "description": "Water analysis and system performance evaluation with technical data."
+        },
+        {
+          "title": "Tailored Solution Plan",
+          "description": "Custom chemical programs and application plans for facility needs."
+        },
+        {
+          "title": "Field Implementation",
+          "description": "Professional chemical cleaning and conditioning applications at industrial sites."
+        },
+        {
+          "title": "Monitoring and Reporting",
+          "description": "System performance monitoring and technical reporting services."
+        }
+      ]
+    },
+    "proof": {
+      "title": "Field Experience",
+      "strip": "40+ years of field experience · 93 completed projects · service in 5 countries",
+      "subtitle": "Proven application experience at industrial facilities across Turkey and internationally."
+    },
     "expertise": {
+      "eyebrow": "Areas of Expertise",
       "title": "Our Services",
       "subtitle": "Core service areas we provide for your industrial facilities.",
       "items": [
@@ -612,6 +824,7 @@
       "description": "No projects match the selected filter. Try a different location filter."
     },
     "video": "Video",
+    "watchVideo": "Watch Video",
     "videoModal": {
       "close": "Close video"
     },
@@ -635,7 +848,11 @@
         "projectName": "Mersin Soda Industry Inc.",
         "location": "Mersin, Turkey",
         "description": "Pre-commissioning chemical cleaning services were provided at Unit #1 CCPP-HRSG 130 MW facility.",
-        "videoUrl": "/videos/mersin.mp4"
+        "videoUrl": "/videos/mersin.mp4",
+        "sector": "Energy",
+        "systemType": "CCPP-HRSG 130 MW",
+        "year": "2019",
+        "highlight": "Pre-commissioning cleaning"
       },
       {
         "id": "nuh-enerji-elektrik-uretim-a-s-3",
@@ -660,6 +877,136 @@
         "projectName": "Bis Energy Electricity Generation Inc.",
         "location": "Bursa, Turkey",
         "description": "Chemical cleaning services were provided at Unit #7 and Unit #8 CCPP-HRSG 120 MW facilities."
+      },
+      {
+        "id": "komando-tugay-komutanligi",
+        "projectName": "Command Brigade Headquarters",
+        "location": "Bolu, Turkey",
+        "description": "Industrial chemical cleaning services were performed on heat plant and water installation circuits.",
+        "sector": "Public / Military Facility",
+        "systemType": "Heat plant and water installation circuits",
+        "scope": ["Industrial chemical cleaning", "Heat plant", "Water installation"],
+        "highlight": "Chemical cleaning on heat plant and water installation circuits"
+      },
+      {
+        "id": "otosan-otomobil-sanayii",
+        "projectName": "Otosan Otomobil Sanayii A.Ş.",
+        "location": "Istanbul, Turkey",
+        "description": "Chemical cleaning services were performed on six steam boilers within the factory.",
+        "sector": "Automotive",
+        "systemType": "6 steam boilers",
+        "scope": ["Steam boiler", "Chemical cleaning", "Factory facility"],
+        "highlight": "Chemical cleaning on six steam boilers"
+      },
+      {
+        "id": "goodyear-lastikleri",
+        "projectName": "Goodyear Lastikleri T.A.Ş.",
+        "location": "Adapazarı, Turkey",
+        "description": "Industrial chemical cleaning services were performed on a 430 m² water-tube boiler.",
+        "sector": "Tire / Manufacturing",
+        "systemType": "430 m² water-tube boiler",
+        "scope": ["Water-tube boiler", "Industrial chemical cleaning"],
+        "highlight": "Chemical cleaning on a 430 m² water-tube boiler"
+      },
+      {
+        "id": "camis-ambalaj-sisecam",
+        "projectName": "Camiş Ambalaj Sanayi A.Ş. / Şişecam",
+        "location": "Tuzla, Istanbul",
+        "description": "Chemical cleaning services were performed on one 160 m² Scotch marine steam boiler.",
+        "sector": "Glass / Packaging",
+        "systemType": "160 m² Scotch marine steam boiler",
+        "scope": ["Scotch marine steam boiler", "Chemical cleaning"],
+        "highlight": "Chemical cleaning on a 160 m² Scotch marine steam boiler"
+      },
+      {
+        "id": "trakya-yag-sanayii",
+        "projectName": "Trakya Yağ Sanayii A.Ş.",
+        "location": "Tekirdağ, Turkey",
+        "description": "Industrial chemical cleaning services were performed on two 225 m² front-fired Scotch cylindrical steam boilers.",
+        "sector": "Food / Oil Industry",
+        "systemType": "2 front-fired 225 m² Scotch cylindrical steam boilers",
+        "scope": ["Steam boiler", "Scotch cylindrical boiler", "Industrial chemical cleaning"],
+        "highlight": "Chemical cleaning on two 225 m² steam boilers"
+      },
+      {
+        "id": "lassa-lastik",
+        "projectName": "Lassa Lastik Sanayii ve Ticaret A.Ş.",
+        "location": "Kocaeli, Turkey",
+        "description": "Chemical cleaning services were performed on three 510 m² water-tube steam boilers.",
+        "sector": "Tire / Manufacturing",
+        "systemType": "3 water-tube 510 m² steam boilers",
+        "scope": ["Water-tube steam boiler", "Chemical cleaning"],
+        "highlight": "Chemical cleaning on three 510 m² water-tube steam boilers"
+      },
+      {
+        "id": "petlas-lastik",
+        "projectName": "Petlas Lastik San. ve Tic. A.Ş.",
+        "location": "Kırşehir, Turkey",
+        "description": "Chemical cleaning services were performed on equipment within the cooling unit circuit.",
+        "sector": "Tire / Manufacturing",
+        "systemType": "Cooling unit circuit",
+        "scope": ["Cooling unit", "Equipment cleaning", "Chemical cleaning"],
+        "highlight": "Chemical cleaning within the cooling unit circuit"
+      },
+      {
+        "id": "gungor-ciftligi",
+        "projectName": "Güngör Çiftliği Tarım Hayv. Gıda ve Amb. San. Tic. A.Ş.",
+        "location": "Ankara, Turkey",
+        "description": "Chemical cleaning and boiler water treatment services were performed on two 100 m² steam boilers.",
+        "sector": "Agriculture / Food",
+        "systemType": "2 steam boilers (100 m² each)",
+        "scope": ["Steam boiler", "Chemical cleaning", "Boiler water treatment"],
+        "highlight": "Boiler cleaning and boiler water treatment"
+      },
+      {
+        "id": "beypilic",
+        "projectName": "Beypiliç A.Ş.",
+        "location": "Bolu, Turkey",
+        "description": "Chemical cleaning services were performed on two Evapko-France cooling towers.",
+        "sector": "Food",
+        "systemType": "2 Evapko-France cooling towers",
+        "scope": ["Cooling tower", "Chemical cleaning"],
+        "highlight": "Chemical cleaning on two cooling towers"
+      },
+      {
+        "id": "erpilic-bolu-kesimhanesi",
+        "projectName": "Erpiliç Bolu Processing Plant",
+        "location": "Bolu, Turkey",
+        "description": "Industrial chemical cleaning services were performed on three cooling towers.",
+        "sector": "Food",
+        "systemType": "3 cooling towers",
+        "scope": ["Cooling tower", "Industrial chemical cleaning"],
+        "highlight": "Chemical cleaning on three cooling towers"
+      },
+      {
+        "id": "camis-elektrik-uretim",
+        "projectName": "Camiş Elektrik Üretim A.Ş.",
+        "location": "Mersin, Turkey",
+        "description": "Industrial chemical cleaning services were performed on Cogeneration-II Plant waste heat boiler circuits.",
+        "sector": "Energy",
+        "systemType": "Cogeneration-II Plant waste heat boiler circuits",
+        "scope": ["Waste heat boiler", "Cogeneration plant", "Industrial chemical cleaning"],
+        "highlight": "Chemical cleaning on waste heat boiler circuits"
+      },
+      {
+        "id": "ramada-istanbul-city",
+        "projectName": "Ramada Istanbul City",
+        "location": "Istanbul, Turkey",
+        "description": "Industrial chemical cleaning services were performed on two condenser chiller units.",
+        "sector": "Hotel / Facility Management",
+        "systemType": "2 condenser chiller units",
+        "scope": ["Chiller", "Condenser", "Industrial chemical cleaning"],
+        "highlight": "Chemical cleaning on chiller condenser units"
+      },
+      {
+        "id": "tup-merserize",
+        "projectName": "Tüp Merserize Tekstil Elektrik Üretim San. ve Tic. A.Ş.",
+        "location": "Turkey",
+        "description": "Activated carbon refill was performed on three activated carbon columns; resin and inert resin replacement was carried out on three water treatment units.",
+        "sector": "Textile / Energy",
+        "systemType": "Activated carbon columns and water treatment units",
+        "scope": ["Activated carbon refill", "Resin replacement", "Inert resin replacement", "Water treatment"],
+        "highlight": "Activated carbon refill and resin replacement"
       }
     ]
   },
@@ -669,7 +1016,7 @@
       "description": "Contact Kelven Kimya for your industrial water treatment needs."
     },
     "title": "Contact",
-    "subtitle": "Get in touch with us for your industrial water treatment needs.",
+    "subtitle": "Contact us for industrial water conditioning, chemical cleaning and technical support requests.",
     "highlights": [
       "Expert Technical Support",
       "Fast Response",
@@ -677,11 +1024,15 @@
     ],
     "info": {
       "title": "Contact Information",
-      "subtitle": "Reach us through your preferred channel or fill out the form to get in touch.",
+      "subtitle": "Reach us by phone, email, or visit us at the address below.",
       "address": "Defterdar Neighborhood, Hacı Bilgin Street No:35, Eyüpsultan / Istanbul",
+      "addressLine1": "Defterdar Mah. Hacı Bilgin Sokak No:35",
+      "addressLine2": "Eyüpsultan / Istanbul",
       "email": "info@kelvenkimya.com",
-      "phone": "+90 211 567 47 12",
-      "phoneHref": "+902115674712"
+      "phone": "+90 212 567 47 12",
+      "phoneHref": "+902125674712",
+      "phoneSecondary": "+90 212 576 74 80",
+      "phoneSecondaryHref": "+902125767480"
     },
     "cards": {
       "phone": {
@@ -697,48 +1048,25 @@
         "description": "Our office address for your visit."
       }
     },
-    "form": {
-      "title": "Get in Touch",
-      "subtitle": "Fill out the form and we will get back to you shortly.",
-      "fields": {
-        "name": {
-          "label": "Full Name",
-          "placeholder": "Your full name"
-        },
-        "email": {
-          "label": "Email",
-          "placeholder": "example@company.com"
-        },
-        "phone": {
-          "label": "Phone",
-          "placeholder": "+90 5XX XXX XX XX"
-        },
-        "company": {
-          "label": "Company",
-          "placeholder": "Your company name"
-        },
-        "message": {
-          "label": "Message",
-          "placeholder": "Write your message here..."
-        }
-      },
-      "submit": "Send Message",
-      "submitting": "Sending...",
-      "error": "Could not send your message. Please try again or contact us directly by email.",
-      "validation": {
-        "nameRequired": "Full name is required.",
-        "emailRequired": "Email is required.",
-        "emailInvalid": "Please enter a valid email address.",
-        "messageRequired": "Message is required."
-      },
-      "success": {
-        "title": "Message Received",
-        "description": "We will contact you as soon as possible. Thank you for your interest."
-      }
+    "panel": {
+      "eyebrow": "Get in Touch",
+      "title": "Reach us quickly through your preferred channel",
+      "description": "Contact us for technical support, product information, quotes and project requests.",
+      "supportItems": [
+        "Technical support and product information",
+        "Project and quote requests",
+        "On-site application consulting"
+      ]
+    },
+    "actions": {
+      "call": "Call Now",
+      "mail": "Send Email",
+      "location": "View Location"
     },
     "map": {
       "title": "Location",
-      "placeholder": "Map will be added soon."
+      "subtitle": "Defterdar Mah. Hacı Bilgin Sokak No:35 Eyüpsultan / Istanbul",
+      "iframeTitle": "Kelven Kimya Location"
     }
   },
   "footer": {

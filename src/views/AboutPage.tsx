@@ -1,32 +1,25 @@
-import { PageHero } from '@/components/common/PageHero'
-import { AboutHeroStats } from '@/components/about/AboutHeroStats'
+import { AboutPageHero } from '@/components/about/AboutPageHero'
 import { AboutStorySection } from '@/components/about/AboutStorySection'
+import { AboutWhySection } from '@/components/about/AboutWhySection'
+import { AboutProcessSection } from '@/components/about/AboutProcessSection'
+import { AboutProofSection } from '@/components/about/AboutProofSection'
 import { AboutExpertiseSection } from '@/components/about/AboutExpertiseSection'
-import { AboutMissionVisionSection } from '@/components/about/AboutMissionVisionSection'
-import { AboutValuesSection } from '@/components/about/AboutValuesSection'
-import { AboutTeamSection } from '@/components/about/AboutTeamSection'
 import { AboutPageCTA } from '@/components/about/AboutPageCTA'
-import { getTranslations } from 'next-intl/server'
 
 type AboutPageProps = {
   locale: string
 }
 
-export async function AboutPage({ locale }: AboutPageProps) {
-  const t = await getTranslations({ locale, namespace: 'about' })
-
+export function AboutPage({ locale: _locale }: AboutPageProps) {
   return (
-    <>
-      <PageHero title={t('title')} subtitle={t('subtitle')}>
-        <AboutHeroStats />
-      </PageHero>
-
+    <div className="about-showcase">
+      <AboutPageHero />
       <AboutStorySection />
+      <AboutWhySection />
+      <AboutProcessSection />
+      <AboutProofSection />
       <AboutExpertiseSection />
-      <AboutMissionVisionSection />
-      <AboutValuesSection />
-      <AboutTeamSection />
       <AboutPageCTA />
-    </>
+    </div>
   )
 }

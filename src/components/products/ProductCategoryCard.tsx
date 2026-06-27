@@ -30,38 +30,38 @@ export function ProductCategoryCard({
   return (
     <motion.article
       id={category.id}
-      initial={{ opacity: 0, y: 24 }}
+      initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: '-60px' }}
-      transition={{ duration: 0.5, ease }}
+      transition={{ duration: 0.45, ease }}
       className="scroll-mt-36"
     >
-      <div className="overflow-hidden rounded-2xl border border-border/50 bg-white shadow-[0_4px_32px_-12px_rgba(11,31,51,0.08)]">
-        <header className="border-b border-border/40 bg-light-bg/40 px-5 py-5 sm:px-7 sm:py-6">
-          <div className="flex flex-wrap items-start justify-between gap-4">
-            <div className="min-w-0 flex-1">
-              <div className="flex items-center gap-3">
-                <span className={`h-1.5 w-1.5 shrink-0 rounded-full ${accent.dot}`} aria-hidden="true" />
-                <span className="text-xs font-semibold uppercase tracking-wider text-muted">
-                  {number}
-                </span>
-              </div>
-              <h2 className="mt-2 text-xl font-bold leading-snug text-navy sm:text-2xl">
-                {highlightText(category.title, searchQuery)}
-              </h2>
-              {category.description && (
-                <p className="mt-2 max-w-2xl text-sm leading-relaxed text-muted sm:text-base">
-                  {highlightText(category.description, searchQuery)}
-                </p>
-              )}
+      <div className="overflow-hidden rounded-2xl border border-border/45 bg-white shadow-[0_2px_20px_-8px_rgba(11,31,51,0.08)]">
+        <header className="border-b border-border/35 px-4 py-4 sm:px-6 sm:py-5">
+          <div className="flex items-center justify-between gap-3">
+            <div className="flex items-center gap-2">
+              <span className={`h-1.5 w-1.5 shrink-0 rounded-full ${accent.dot}`} aria-hidden="true" />
+              <span className="text-[11px] font-semibold uppercase tracking-[0.12em] text-muted">
+                {number}
+              </span>
             </div>
-            <span className="shrink-0 rounded-full border border-border/50 bg-white px-3 py-1.5 text-xs font-semibold text-muted">
+            <span className="shrink-0 rounded-full border border-border/45 bg-light-bg/80 px-2.5 py-1 text-[11px] font-semibold text-muted">
               {category.products.length} {t('products.itemLabel')}
             </span>
           </div>
+
+          <h2 className="mt-2.5 break-words text-lg font-bold leading-snug text-navy sm:text-xl">
+            {highlightText(category.title, searchQuery)}
+          </h2>
+
+          {category.description ? (
+            <p className="mt-1.5 max-w-3xl text-sm leading-relaxed text-muted">
+              {highlightText(category.description, searchQuery)}
+            </p>
+          ) : null}
         </header>
 
-        <ul className="grid gap-2 p-4 sm:grid-cols-2 sm:gap-3 sm:p-6 lg:grid-cols-1 xl:grid-cols-2">
+        <ul className="grid gap-3 p-4 sm:grid-cols-2 sm:gap-3 sm:p-5 lg:grid-cols-1 xl:grid-cols-2">
           {category.products.map((product, productIndex) => (
             <ProductItemRow
               key={product.name}
@@ -73,15 +73,16 @@ export function ProductCategoryCard({
           ))}
         </ul>
 
-        <div className="flex items-center justify-end border-t border-border/40 px-5 py-4 sm:px-7">
+        <div className="flex items-center justify-end border-t border-border/35 px-4 py-3.5 sm:px-6">
           <Link
             href={routes.contact}
-            className="group/cta inline-flex items-center gap-2 text-sm font-semibold tracking-wide text-brand-blue transition-all duration-300 hover:gap-3 hover:text-cyan"
+            className="group/cta inline-flex items-center gap-1.5 text-sm font-semibold text-brand-blue transition-colors duration-200 hover:text-cyan"
           >
             {t('products.cta')}
-            <span className="flex h-8 w-8 items-center justify-center rounded-full border border-border/60 bg-light-bg transition-all duration-300 group-hover/cta:border-cyan/30 group-hover/cta:bg-cyan/5">
-              <ArrowUpRight className="h-4 w-4 transition-transform duration-300 group-hover/cta:translate-x-0.5 group-hover/cta:-translate-y-0.5" />
-            </span>
+            <ArrowUpRight
+              className="h-4 w-4 transition-transform duration-200 group-hover/cta:translate-x-0.5 group-hover/cta:-translate-y-0.5"
+              aria-hidden="true"
+            />
           </Link>
         </div>
       </div>
