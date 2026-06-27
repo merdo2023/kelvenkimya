@@ -177,9 +177,7 @@
       "explore": "Explore",
       "metrics": {
         "categories": "Categories",
-        "products": "Products",
-        "support": "Technical Support",
-        "supportValue": "Expert Team"
+        "products": "Products"
       }
     },
     "aboutPreview": {

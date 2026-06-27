@@ -54,7 +54,7 @@ export function ProductPreviewSection({ categories }: ProductPreviewSectionProps
               {t('home.productCategories.subtitle')}
             </p>
 
-            <dl className="mt-6 grid grid-cols-3 gap-3 sm:max-w-md">
+            <dl className="mt-6 grid max-w-xs grid-cols-2 gap-3">
               <div className="rounded-lg border border-white/10 bg-white/[0.05] px-3 py-2.5">
                 <dt className="text-[10px] font-bold uppercase tracking-wider text-white/50">
                   {t('home.productCategories.metrics.categories')}
@@ -66,14 +66,6 @@ export function ProductPreviewSection({ categories }: ProductPreviewSectionProps
                   {t('home.productCategories.metrics.products')}
                 </dt>
                 <dd className="mt-1 text-xl font-extrabold text-white">{productCount}+</dd>
-              </div>
-              <div className="rounded-lg border border-white/10 bg-white/[0.05] px-3 py-2.5">
-                <dt className="text-[10px] font-bold uppercase tracking-wider text-white/50">
-                  {t('home.productCategories.metrics.support')}
-                </dt>
-                <dd className="mt-1 text-sm font-bold leading-snug text-cyan">
-                  {t('home.productCategories.metrics.supportValue')}
-                </dd>
               </div>
             </dl>
 

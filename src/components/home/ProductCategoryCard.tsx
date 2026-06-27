@@ -60,11 +60,11 @@ export function ProductCategoryCard({
     >
       <Link
         href={{ pathname: '/products', hash: category.id }}
-        className="relative flex h-full flex-col rounded-xl border border-white/10 bg-gradient-to-br from-white/[0.09] to-white/[0.03] p-4 shadow-[0_4px_24px_-8px_rgba(0,0,0,0.35)] ring-1 ring-transparent backdrop-blur-sm transition-all duration-300 hover:-translate-y-0.5 hover:border-cyan/25 hover:shadow-[0_8px_28px_-8px_rgba(0,166,214,0.2)] hover:ring-cyan/10"
+        className="relative flex h-full flex-col overflow-hidden rounded-xl border border-white/10 bg-gradient-to-br from-white/[0.09] to-white/[0.03] p-4 shadow-[0_4px_24px_-8px_rgba(0,0,0,0.35)] ring-1 ring-transparent backdrop-blur-sm transition-all duration-300 hover:-translate-y-0.5 hover:border-cyan/25 hover:shadow-[0_8px_28px_-8px_rgba(0,166,214,0.2)] hover:ring-cyan/10"
         aria-label={`${category.title} — ${ctaLabel}`}
       >
         <div
-          className={`absolute inset-x-0 top-0 h-px bg-gradient-to-r ${accent.gradient} opacity-40 transition-opacity duration-300 group-hover:opacity-80`}
+          className={`absolute inset-x-0 top-0 h-px rounded-t-xl bg-gradient-to-r ${accent.gradient} opacity-40 transition-opacity duration-300 group-hover:opacity-80`}
           aria-hidden="true"
         />
 
