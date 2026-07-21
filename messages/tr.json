@@ -35,6 +35,10 @@
         "path": "/products"
       },
       {
+        "key": "services",
+        "path": "/services"
+      },
+      {
         "key": "about",
         "path": "/about"
       },
@@ -50,6 +54,7 @@
     "labels": {
       "home": "Ana Sayfa",
       "products": "Ürünler",
+      "services": "Hizmetlerimiz",
       "about": "Hakkımızda",
       "projects": "Projeler",
       "contact": "İletişim"
@@ -336,18 +341,22 @@
         "products": [
           {
             "name": "Manuel ve tam otomatik multimedya filtre sistemleri",
+            "image": "/images/products/6/3.png",
             "description": "Suda mevcut katı madde, tortu ve partikülleri tutan manuel, yarı ve tam otomatik multimedya filtre sistemleri."
           },
           {
             "name": "Manuel ve tam otomatik aktif karbon filtreleri",
+            "image": "/images/products/6/1.png",
             "description": "Suda koku ve tat kontrolünü sağlayan, organik madde ile serbest kloru tutan manuel, yarı ve tam otomatik aktif karbon filtreleri."
           },
           {
             "name": "Manuel ve tam otomatik demir mangan giderme sistemleri",
+            "image": "/images/products/6/2.png",
             "description": "Suda mevcut demir ve manganın giderilmesi amacıyla uygulanan manuel, yarı ve tam otomatik demir mangan giderme sistemleri."
           },
           {
-            "name": "Reverse osmosis ünitesi"
+            "name": "Reverse osmosis ünitesi",
+            "image": "/images/products/6/4.png"
           }
         ]
       },
@@ -358,10 +367,12 @@
         "products": [
           {
             "name": "Ters Osmos",
+            "image": "/images/products/7/1.png",
             "description": "Suyu yüksek basınçla özel membranlardan geçirerek çözünmüş tuzları, sülfat, klorür, ağır metaller, sertlik ve organik kirleticileri büyük oranda uzaklaştıran sistem."
           },
           {
             "name": "Demineralize",
+            "image": "/images/products/7/2.png",
             "description": "Sudaki iyonları reçineler yardımıyla tamamen veya çok yüksek oranda uzaklaştıran, yüksek saflıkta su üretimi sağlayan sistem."
           }
         ]
@@ -429,10 +440,12 @@
         "description": "",
         "products": [
           {
-            "name": "Otomatik klor dozaj sistemleri"
+            "name": "Otomatik klor dozaj sistemleri",
+            "image": "/images/products/8/1.png"
           },
           {
-            "name": "Ozonlama sistemleri"
+            "name": "Ozonlama sistemleri",
+            "image": "/images/products/8/2.png"
           }
         ]
       },
@@ -602,13 +615,16 @@
         "description": "Suda çözünmüş pozitif yüklü iyonları tutarak iyon değişimi sağlayan sentetik malzemedir. Kalsiyum ve magnezyum gibi mineralleri tutarak suyun sertliğini ve kirecini gidermek için kullanılır.",
         "products": [
           {
-            "name": "Aktif karbon mineralleri"
+            "name": "Aktif karbon mineralleri",
+            "image": "/images/products/9/1.png"
           },
           {
-            "name": "Anyon reçine"
+            "name": "Anyon reçine",
+            "image": "/images/products/9/2.png"
           },
           {
             "name": "Katyon reçine",
+            "image": "/images/products/9/3.png",
             "description": "Suda çözünmüş pozitif yüklü iyonları tutarak iyon değişimi sağlayan sentetik malzemedir. Kalsiyum ve magnezyum gibi mineralleri tutarak suyun sertliğini ve kirecini gidermek için kullanılır."
           },
           {
@@ -616,10 +632,12 @@
           },
           {
             "name": "Filtre malzemeleri",
+            "image": "/images/products/9/4.png",
             "description": "Nozul, toplama ve dağıtıcı ekipmanları."
           },
           {
             "name": "Kalibre edilmiş filtrasyon kumu",
+            "image": "/images/products/9/5.png",
             "description": "Yüzme havuzları, içme suyu arıtma tesisleri ve endüstriyel su arıtma sistemlerinde kullanılan yüksek saflıkta, yıkanmış ve belirli tane boyutlarına göre elenmiş doğal kuvars kumudur."
           },
           {
@@ -644,6 +662,120 @@
         ]
       }
     ]
+  },
+  "services": {
+    "seo": {
+      "title": "Hizmetlerimiz",
+      "description": "Endüstriyel kimyasal temizlik, su şartlandırma ve teknik danışmanlık hizmetleri. Kazan, kondenser, soğutma kulesi ve eşanjör temizliği."
+    },
+    "hero": {
+      "eyebrow": "Hizmetlerimiz",
+      "title": "Endüstriyel Kimyasal Temizlik ve Su Şartlandırma",
+      "description": "Sistemlerinizin verimli, güvenli ve uzun ömürlü çalışması için analiz, uygulama, takip ve teknik destek sunuyoruz."
+    },
+    "intro": {
+      "eyebrow": "Hakkımızda",
+      "title": "Çözüm Ortağınız",
+      "subtitle": "Ürün tedarikinin ötesinde, sahada yanınızdayız.",
+      "paragraphs": [
+        "Kelven Su Şartlandırma, endüstriyel su sistemlerinin verimli, güvenli ve uzun ömürlü çalışmasını sağlamak amacıyla kimyasal temizlik, su şartlandırma ve teknik danışmanlık hizmetleri sunmaktadır.",
+        "Faaliyet alanlarımız arasında buhar kazanı kimyasal temizliği, kondenserler, soğutma kuleleri, plakalı eşanjörler, boru hatları, chiller sistemleri ve diğer endüstriyel su devrelerinin kimyasal temizliği ile korozyon, kireç ve biyolojik oluşumların önlenmesine yönelik koruyucu kimyasal programların uygulanması bulunmaktadır.",
+        "Müşterilerimize yalnızca ürün tedarik etmekle kalmayıp; analiz, uygulama, takip ve teknik destek süreçlerinde de çözüm ortağı olmayı hedefliyoruz."
+      ]
+    },
+    "offerings": {
+      "eyebrow": "Kapsam",
+      "title": "Hizmetlerimiz",
+      "subtitle": "Endüstriyel su sistemleri için uçtan uca kimyasal temizlik ve koruma uygulamaları.",
+      "items": [
+        "Kondenser kimyasal temizliği",
+        "Soğutma kulesi kimyasal temizliği",
+        "Buhar kazanı kimyasal temizliği",
+        "Plakalı eşanjör temizliği",
+        "Chiller su devresi temizliği",
+        "Boru hattı temizliği",
+        "Kireç ve pas çözücü uygulamalar",
+        "Korozyon inhibitörü uygulamaları",
+        "Biyosit programları",
+        "Dispersant ve tortu önleyici uygulamalar",
+        "Düzenli su analizleri ve raporlama",
+        "Endüstriyel su şartlandırma programı"
+      ]
+    },
+    "why": {
+      "eyebrow": "Avantajlar",
+      "title": "Neden Kimyasal Temizlik?",
+      "subtitle": "Kimyasal temizlik sayesinde sistem performansı ve işletme verimliliği artar.",
+      "items": [
+        "Isı transferi artar.",
+        "Enerji tüketimi azalır.",
+        "Soğutma kapasitesi yükselir.",
+        "Ekipman ömrü uzar.",
+        "Plansız arızalar azalır.",
+        "Bakım maliyetleri düşer.",
+        "İşletme verimliliği artar."
+      ]
+    },
+    "process": {
+      "eyebrow": "Süreç",
+      "title": "Çalışma Prensibimiz",
+      "subtitle": "Her projede kontrollü, ölçülebilir ve raporlanabilir bir uygulama süreci izliyoruz.",
+      "items": [
+        "Sistem keşfi ve ön inceleme",
+        "Su analizi ve kirlilik tespiti",
+        "Uygun kimyasalın belirlenmesi",
+        "Kontrollü sirkülasyon ile kimyasal temizlik",
+        "Durulama ve nötralizasyon",
+        "Son kontroller",
+        "Koruyucu su şartlandırma programının oluşturulması",
+        "Teknik raporlama"
+      ]
+    },
+    "products": {
+      "eyebrow": "Kimyasallar",
+      "title": "Kullandığımız Ürünler",
+      "subtitle": "Uygulama ihtiyacına göre seçilen teknik ürün grupları.",
+      "items": [
+        "Kireç çözücüler",
+        "Pas çözücüler",
+        "Korozyon inhibitörleri",
+        "Biyositler",
+        "Dispersantlar",
+        "Köpük kesiciler",
+        "pH düzenleyiciler",
+        "Koruyucu su şartlandırma kimyasalları"
+      ]
+    },
+    "sectors": {
+      "eyebrow": "Uygulama Alanları",
+      "title": "Sektörler",
+      "subtitle": "Farklı ölçek ve sektörlerdeki endüstriyel tesisler için hizmet veriyoruz.",
+      "items": [
+        "Oteller",
+        "AVM'ler",
+        "Hastaneler",
+        "Fabrikalar",
+        "Organize Sanayi Bölgeleri",
+        "Gıda tesisleri",
+        "Kimya tesisleri",
+        "Enerji santralleri",
+        "Tekstil fabrikaları",
+        "Metal sanayi",
+        "Plastik üretim tesisleri"
+      ]
+    },
+    "mission": {
+      "title": "Misyonumuz",
+      "description": "Müşterilerimize kaliteli ürünler, güvenilir uygulamalar ve sürdürülebilir su şartlandırma çözümleri sunarak işletmelerin enerji verimliliğini artırmak ve ekipman ömrünü uzatmaktır."
+    },
+    "vision": {
+      "title": "Vizyonumuz",
+      "description": "Su şartlandırma ve endüstriyel kimyasal temizlik alanında güvenilir, yenilikçi ve tercih edilen çözüm ortağı olmak."
+    },
+    "ctaTitle": "Tesisiniz için teknik değerlendirme alın",
+    "ctaDescription": "Kimyasal temizlik ve su şartlandırma ihtiyaçlarınız için uzman ekibimizle iletişime geçin.",
+    "ctaPrimary": "İletişime Geç",
+    "ctaSecondary": "Ürünleri İncele"
   },
   "about": {
     "seo": {

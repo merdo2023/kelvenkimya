@@ -125,7 +125,7 @@ function ServiceDetailContent({
         )}
 
         <Link
-          href={routes.contact}
+          href={routes.services}
           className="group/cta inline-flex w-fit items-center gap-1.5 text-sm font-semibold text-brand-blue transition-colors duration-300 hover:text-cyan"
         >
           {learnMoreLabel}

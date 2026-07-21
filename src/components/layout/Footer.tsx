@@ -6,6 +6,7 @@ import { Mail, MapPin, Phone } from 'lucide-react'
 import { Container } from '../common/Container'
 import { Logo } from '../common/Logo'
 import { useLocaleArray } from '@/hooks/useLocaleArray'
+import { routes } from '@/data/routes'
 import type { NavItem, ServiceItem } from '@/types/locale'
 
 type FooterProps = {
@@ -56,12 +57,19 @@ export function Footer({ services }: FooterProps) {
 
           <div>
             <h3 className="mb-5 text-xs font-bold uppercase tracking-[0.15em] text-cyan">
-              {t('footer.services.title')}
+              <Link href={routes.services} className="transition-colors hover:text-white">
+                {t('footer.services.title')}
+              </Link>
             </h3>
             <ul className="space-y-2.5">
               {services.map((service) => (
-                <li key={service.id} className="text-sm text-white/80">
-                  {service.title}
+                <li key={service.id}>
+                  <Link
+                    href={routes.services}
+                    className="text-sm text-white/80 transition-colors hover:text-white"
+                  >
+                    {service.title}
+                  </Link>
                 </li>
               ))}
             </ul>

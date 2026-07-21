@@ -2,7 +2,7 @@ import type { MetadataRoute } from 'next'
 import { getLocalePath, routing } from '@/i18n/routing'
 import { siteLastModified, siteUrl } from '@/lib/site'
 
-const paths = ['', '/products', '/about', '/projects', '/contact'] as const
+const paths = ['', '/products', '/services', '/about', '/projects', '/contact'] as const
 
 function buildLanguageAlternates(path: string): Record<string, string> {
   const alternates: Record<string, string> = {}

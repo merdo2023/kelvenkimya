@@ -35,6 +35,10 @@
         "path": "/products"
       },
       {
+        "key": "services",
+        "path": "/services"
+      },
+      {
         "key": "about",
         "path": "/about"
       },
@@ -50,6 +54,7 @@
     "labels": {
       "home": "Home",
       "products": "Products",
+      "services": "Our Services",
       "about": "About Us",
       "projects": "Projects",
       "contact": "Contact"
@@ -336,18 +341,22 @@
         "products": [
           {
             "name": "Manual and fully automatic multimedia filter systems",
+            "image": "/images/products/6/3.png",
             "description": "Manual, semi-automatic and fully automatic multimedia filter systems that capture solids, sediment and particles in water."
           },
           {
             "name": "Manual and fully automatic activated carbon filters",
+            "image": "/images/products/6/1.png",
             "description": "Manual, semi-automatic and fully automatic activated carbon filters that control taste and odor in water and capture organic matter and free chlorine."
           },
           {
             "name": "Manual and fully automatic iron and manganese removal systems",
+            "image": "/images/products/6/2.png",
             "description": "Manual, semi-automatic and fully automatic iron and manganese removal systems applied to remove iron and manganese from water."
           },
           {
-            "name": "Reverse osmosis unit"
+            "name": "Reverse osmosis unit",
+            "image": "/images/products/6/4.png"
           }
         ]
       },
@@ -358,10 +367,12 @@
         "products": [
           {
             "name": "Reverse Osmosis",
+            "image": "/images/products/7/1.png",
             "description": "A system that removes dissolved salts, sulfates, chlorides, heavy metals, hardness and organic contaminants to a large extent by passing water through special membranes at high pressure."
           },
           {
             "name": "Demineralization",
+            "image": "/images/products/7/2.png",
             "description": "A system that removes ions from water completely or to a very high degree using resins, providing high-purity water production."
           }
         ]
@@ -429,10 +440,12 @@
         "description": "",
         "products": [
           {
-            "name": "Automatic chlorine dosing systems"
+            "name": "Automatic chlorine dosing systems",
+            "image": "/images/products/8/1.png"
           },
           {
-            "name": "Ozonation systems"
+            "name": "Ozonation systems",
+            "image": "/images/products/8/2.png"
           }
         ]
       },
@@ -602,13 +615,16 @@
         "description": "A synthetic material that enables ion exchange by capturing positively charged dissolved ions in water. Used to remove water hardness and limescale by capturing minerals such as calcium and magnesium.",
         "products": [
           {
-            "name": "Activated carbon minerals"
+            "name": "Activated carbon minerals",
+            "image": "/images/products/9/1.png"
           },
           {
-            "name": "Anion resin"
+            "name": "Anion resin",
+            "image": "/images/products/9/2.png"
           },
           {
             "name": "Cation resin",
+            "image": "/images/products/9/3.png",
             "description": "A synthetic material that enables ion exchange by capturing positively charged dissolved ions in water. Used to remove water hardness and limescale by capturing minerals such as calcium and magnesium."
           },
           {
@@ -616,10 +632,12 @@
           },
           {
             "name": "Filter media",
+            "image": "/images/products/9/4.png",
             "description": "Nozzles, collection and distribution equipment."
           },
           {
             "name": "Calibrated filtration sand",
+            "image": "/images/products/9/5.png",
             "description": "High-purity, washed natural quartz sand screened to specific grain sizes, used in swimming pools, drinking water treatment plants and industrial water treatment systems."
           },
           {
@@ -644,6 +662,120 @@
         ]
       }
     ]
+  },
+  "services": {
+    "seo": {
+      "title": "Our Services",
+      "description": "Industrial chemical cleaning, water treatment and technical consulting. Boiler, condenser, cooling tower and heat exchanger cleaning."
+    },
+    "hero": {
+      "eyebrow": "Our Services",
+      "title": "Industrial Chemical Cleaning & Water Treatment",
+      "description": "We provide analysis, application, monitoring and technical support so your systems run efficiently, safely and for longer."
+    },
+    "intro": {
+      "eyebrow": "About Our Work",
+      "title": "Your Solution Partner",
+      "subtitle": "Beyond product supply, we stand with you in the field.",
+      "paragraphs": [
+        "Kelven Water Treatment provides chemical cleaning, water conditioning and technical consulting services to keep industrial water systems running efficiently, safely and for a long service life.",
+        "Our scope includes chemical cleaning of steam boilers, condensers, cooling towers, plate heat exchangers, pipelines, chiller systems and other industrial water circuits, as well as protective chemical programs against corrosion, scale and biological growth.",
+        "We aim to be more than a product supplier — a solution partner through analysis, application, monitoring and technical support."
+      ]
+    },
+    "offerings": {
+      "eyebrow": "Scope",
+      "title": "Our Services",
+      "subtitle": "End-to-end chemical cleaning and protection for industrial water systems.",
+      "items": [
+        "Condenser chemical cleaning",
+        "Cooling tower chemical cleaning",
+        "Steam boiler chemical cleaning",
+        "Plate heat exchanger cleaning",
+        "Chiller water circuit cleaning",
+        "Pipeline cleaning",
+        "Descaling and rust-removal applications",
+        "Corrosion inhibitor applications",
+        "Biocide programs",
+        "Dispersant and deposit-control applications",
+        "Regular water analysis and reporting",
+        "Industrial water treatment program"
+      ]
+    },
+    "why": {
+      "eyebrow": "Benefits",
+      "title": "Why Chemical Cleaning?",
+      "subtitle": "Chemical cleaning improves system performance and operating efficiency.",
+      "items": [
+        "Heat transfer increases.",
+        "Energy consumption decreases.",
+        "Cooling capacity rises.",
+        "Equipment life extends.",
+        "Unplanned failures decrease.",
+        "Maintenance costs drop.",
+        "Operating efficiency improves."
+      ]
+    },
+    "process": {
+      "eyebrow": "Process",
+      "title": "How We Work",
+      "subtitle": "Every project follows a controlled, measurable and reportable application process.",
+      "items": [
+        "System survey and preliminary inspection",
+        "Water analysis and fouling assessment",
+        "Selection of the right chemistry",
+        "Chemical cleaning with controlled circulation",
+        "Rinsing and neutralization",
+        "Final checks",
+        "Protective water treatment program design",
+        "Technical reporting"
+      ]
+    },
+    "products": {
+      "eyebrow": "Chemicals",
+      "title": "Products We Use",
+      "subtitle": "Technical product groups selected for each application need.",
+      "items": [
+        "Descalers",
+        "Rust removers",
+        "Corrosion inhibitors",
+        "Biocides",
+        "Dispersants",
+        "Defoamers",
+        "pH regulators",
+        "Protective water treatment chemicals"
+      ]
+    },
+    "sectors": {
+      "eyebrow": "Application Areas",
+      "title": "Sectors",
+      "subtitle": "We serve industrial facilities across different scales and industries.",
+      "items": [
+        "Hotels",
+        "Shopping malls",
+        "Hospitals",
+        "Factories",
+        "Organized industrial zones",
+        "Food plants",
+        "Chemical plants",
+        "Power plants",
+        "Textile factories",
+        "Metal industry",
+        "Plastic manufacturing plants"
+      ]
+    },
+    "mission": {
+      "title": "Our Mission",
+      "description": "To increase energy efficiency and extend equipment life by delivering quality products, reliable applications and sustainable water treatment solutions."
+    },
+    "vision": {
+      "title": "Our Vision",
+      "description": "To be a trusted, innovative and preferred solution partner in water treatment and industrial chemical cleaning."
+    },
+    "ctaTitle": "Get a technical assessment for your facility",
+    "ctaDescription": "Contact our expert team for your chemical cleaning and water treatment needs.",
+    "ctaPrimary": "Contact Us",
+    "ctaSecondary": "Browse Products"
   },
   "about": {
     "seo": {
