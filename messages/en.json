@@ -960,6 +960,26 @@
     },
     "items": [
       {
+        "id": "ss-agakoy-tarimsal-kalkinma-kooperatifi",
+        "projectName": "S.S. Ağaköy Agricultural Development Cooperative Evaporative Condenser Chemical Cleaning",
+        "location": "Turkey",
+        "description": "Chemical cleaning was performed on the evaporative condenser at the S.S. Ağaköy Agricultural Development Cooperative facility.",
+        "videoUrl": "/videos/ss.agakoy.mp4",
+        "systemType": "Evaporative condenser",
+        "scope": ["Evaporative condenser", "Chemical cleaning"],
+        "highlight": "Evaporative condenser chemical cleaning"
+      },
+      {
+        "id": "apikoglu-sogutma-kulesi-kondenser",
+        "projectName": "Apikoğlu Cooling Tower Condenser Cleaning",
+        "location": "Turkey",
+        "description": "Chemical cleaning was performed on the Apikoğlu cooling tower condenser.",
+        "videoUrl": "/videos/apikoglu.mp4",
+        "systemType": "Cooling tower condenser",
+        "scope": ["Cooling tower", "Condenser", "Chemical cleaning"],
+        "highlight": "Cooling tower condenser cleaning"
+      },
+      {
         "id": "gtg-int-projesi-0",
         "projectName": "GTG-INT Project",
         "location": "Ahal, Turkmenistan",

@@ -960,6 +960,26 @@
     },
     "items": [
       {
+        "id": "ss-agakoy-tarimsal-kalkinma-kooperatifi",
+        "projectName": "S.S. Ağaköy Tarımsal Kalkınma Kooperatifi Evaporatif Kondenser Kimyasal Temizliği",
+        "location": "Türkiye",
+        "description": "S.S. Ağaköy Tarımsal Kalkınma Kooperatifi tesisinde evaporatif kondenser üzerinde kimyasal temizlik uygulaması gerçekleştirilmiştir.",
+        "videoUrl": "/videos/ss.agakoy.mp4",
+        "systemType": "Evaporatif kondenser",
+        "scope": ["Evaporatif kondenser", "Kimyasal temizlik"],
+        "highlight": "Evaporatif kondenser kimyasal temizliği"
+      },
+      {
+        "id": "apikoglu-sogutma-kulesi-kondenser",
+        "projectName": "Apikoğlu Soğutma Kulesi Kondenser Temizliği",
+        "location": "Türkiye",
+        "description": "Apikoğlu soğutma kulesi kondenserinde kimyasal temizlik uygulaması gerçekleştirilmiştir.",
+        "videoUrl": "/videos/apikoglu.mp4",
+        "systemType": "Soğutma kulesi kondenser",
+        "scope": ["Soğutma kulesi", "Kondenser", "Kimyasal temizlik"],
+        "highlight": "Soğutma kulesi kondenser temizliği"
+      },
+      {
         "id": "gtg-int-projesi-0",
         "projectName": "GTG-INT Projesi",
         "location": "Ahal, Türkmenistan",
