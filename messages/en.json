@@ -157,18 +157,18 @@
           "imageCaption": "Industrial water conditioning · System protection",
           "title": "Water Treatment Chemicals",
           "category": "Chemical Program",
-          "description": "Chemical solutions for scale, corrosion and biological formation control in steam boilers, cooling towers and closed-loop systems.",
+          "description": "We supply water treatment chemicals for cooling towers and steam boilers tailored to each facility's water quality and operating conditions. Through water analysis, product selection and dosage monitoring, we support equipment protection, heat transfer efficiency and operational continuity.",
           "tags": [
-            "Corrosion",
-            "Scale",
-            "Biological Control"
+            "Cooling Towers",
+            "Steam Boilers"
           ],
           "bullets": [
-            "Chemical programs for boiler and cooling systems.",
-            "Protection against corrosion and scale formation.",
-            "System parameters tracked through analysis."
+            "Water analysis and technical assessment: Evaluating water quality and system operating conditions.",
+            "Cooling tower chemical program: Selecting products and planning applications to control scale, corrosion and biological growth.",
+            "Steam boiler chemical program: Selecting water treatment products to control scale and corrosion.",
+            "Dosage and performance monitoring: Evaluating and adjusting the chemical program based on analysis results and application conditions."
           ],
-          "resultLabel": "System protection and chemical balance"
+          "resultLabel": "From water analysis to application monitoring, chemical treatment support tailored to your facility."
         },
         {
           "id": "kimyasal-temizlik-kimyasallari",

@@ -157,18 +157,18 @@
           "imageCaption": "Endüstriyel su şartlandırma · Sistem koruma",
           "title": "Su Şartlandırma Kimyasalları",
           "category": "Kimyasal Program",
-          "description": "Buhar kazanları, soğutma kuleleri ve kapalı devre sistemlerde kireçlenme, korozyon ve biyolojik oluşumların kontrol altına alınmasına yönelik etkili kimyasal çözümler sunulur.",
+          "description": "Soğutma kuleleri ve buhar kazanları için tesisin su kalitesine ve işletme koşullarına uygun su şartlandırma kimyasalları sunuyoruz. Su analizleri, ürün seçimi ve dozaj takibiyle ekipmanların korunmasını, ısı transfer verimliliğini ve işletme sürekliliğini destekliyoruz.",
           "tags": [
-            "Korozyon",
-            "Kireç",
-            "Biyolojik Kontrol"
+            "Soğutma Kuleleri",
+            "Buhar Kazanları"
           ],
           "bullets": [
-            "Kazan ve soğutma sistemleri için kimyasal program önerilir.",
-            "Korozyon ve kireç oluşumuna karşı koruma hedeflenir.",
-            "Sistem değerleri analizlerle takip edilir."
+            "Su analizi ve teknik değerlendirme: Su kalitesinin ve sistemin işletme koşullarının incelenmesi.",
+            "Soğutma kulesi kimyasal programı: Kireçlenme, korozyon ve biyolojik oluşumların kontrolüne yönelik ürün seçimi ve uygulama planlaması.",
+            "Buhar kazanı kimyasal programı: Kireçlenme ve korozyonun kontrolüne yönelik su şartlandırma ürünlerinin belirlenmesi.",
+            "Dozaj ve performans takibi: Analiz sonuçları ve uygulama koşulları doğrultusunda kimyasal programın değerlendirilmesi ve güncellenmesi."
           ],
-          "resultLabel": "Sistem koruma ve kimyasal denge"
+          "resultLabel": "Su analizinden uygulama takibine, tesisinize özel kimyasal şartlandırma desteği."
         },
         {
           "id": "kimyasal-temizlik-kimyasallari",
