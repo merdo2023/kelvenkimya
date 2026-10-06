@@ -106,7 +106,7 @@
       "title": "Endüstriyel Tesisler İçin Çözümlerimiz",
       "subtitle": "Büyük ölçekli proje uygulamalarından ekipman temizliğine ve kimyasal tedariğine, tesisiniz için doğru çözümü birlikte belirleyelim.",
       "applicationsLabel": "Uygulama Alanları",
-      "bulletsLabel": "Neler Sunuyoruz",
+      "bulletsLabel": "Hizmet Kapsamımız",
       "items": [
         {
           "id": "endustriyel-kimyasal-temizlik",
@@ -119,9 +119,10 @@
             "Kondenser & Eşanjör"
           ],
           "bullets": [
-            "Kendi temizlik ekipmanlarımız ve sirkülasyon pompalarımız.",
-            "Onaylı prosedüre göre projeye özel saha uygulaması.",
-            "Uygulama koşullarının takibi ve teknik kontrol."
+            "Teknik değerlendirme ve planlama: Ekipman, malzeme yapısı ve birikinti türüne göre temizlik yönteminin belirlenmesi.",
+            "Projeye özel uygulama: Onaylı prosedürler doğrultusunda, kendi ekipmanlarımız ve sirkülasyon sistemlerimizle saha uygulaması.",
+            "Proses takibi ve kontrol: Temizlik süresince uygulama parametrelerinin izlenmesi ve kimyasal analizlerle sürecin kontrolü.",
+            "Durulama ve pasivasyon: Proje gerekliliklerine göre temizlik sonrası işlemlerin gerçekleştirilmesi."
           ],
           "resultLabel": "Teknik hazırlıktan saha uygulamasına, sisteminize özel bir yaklaşım.",
           "imageAlt": "Ahal GTG projesinde kimyasal temizlik kapsamındaki paslanmaz boru grupları",

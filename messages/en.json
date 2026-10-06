@@ -106,7 +106,7 @@
       "title": "Solutions for Industrial Facilities",
       "subtitle": "From large-scale projects to equipment cleaning and chemical supply, let’s identify the right solution for your facility.",
       "applicationsLabel": "Application Areas",
-      "bulletsLabel": "What We Deliver",
+      "bulletsLabel": "Service Scope",
       "items": [
         {
           "id": "endustriyel-kimyasal-temizlik",
@@ -119,9 +119,10 @@
             "Condensers & Heat Exchangers"
           ],
           "bullets": [
-            "Our own cleaning equipment and circulation pumps.",
-            "Project-specific field work following approved procedures.",
-            "Monitoring of application conditions and technical checks."
+            "Technical assessment and planning: Selecting the cleaning method based on the equipment, material composition and deposit type.",
+            "Project-specific execution: On-site cleaning with our own equipment and circulation systems in accordance with approved procedures.",
+            "Process monitoring and control: Monitoring operating parameters and controlling the cleaning process through chemical analyses.",
+            "Rinsing and passivation: Performing post-cleaning procedures according to project requirements."
           ],
           "resultLabel": "From technical preparation to field execution, an approach tailored to your system.",
           "imageAlt": "Stainless steel piping groups in the chemical cleaning scope of the Ahal GTG project",
