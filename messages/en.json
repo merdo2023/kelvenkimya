@@ -177,16 +177,18 @@
           "imageCaption": "Industrial cleaning chemicals · Product supply",
           "title": "Chemical Cleaning Products",
           "category": "Product Supply",
-          "description": "Supply of industrial cleaning chemicals including descalers, rust removers, degreasers and passivation products.",
+          "description": "We supply chemicals for cleaning steam boilers, heat exchangers, condensers, cooling towers, tanks and process pipelines. For scale and mineral deposit removal, rust and oxide removal, degreasing and passivation, we support chemical selection based on equipment materials and deposit types. We provide product supply and application support to businesses that carry out cleaning with their own teams.",
           "tags": [
-            "Rust Remover",
-            "Degreaser",
-            "Passivation"
+            "Steam Boilers",
+            "Heat Exchangers & Condensers",
+            "Cooling Towers",
+            "Tanks & Pipelines"
           ],
           "bullets": [
-            "Product selection aligned with industrial cleaning needs.",
-            "Product groups defined by surface and system type.",
-            "Application process planned with technical support."
+            "Scale and mineral deposit removal: Selecting cleaning chemicals suited to deposit types and equipment materials.",
+            "Rust and oxide removal: Supplying products for rust and oxide layers on metal surfaces.",
+            "Degreasing and passivation: Selecting products according to cleaning needs and project requirements.",
+            "Product supply and technical support: Supporting product selection and usage conditions for businesses carrying out their own cleaning."
           ],
           "resultLabel": "Technical support and application planning"
         },
