@@ -163,10 +163,10 @@ Tailwind sınıfları: `bg-navy`, `text-brand-blue`, `text-cyan`, `bg-green`, `b
 | Rota           | Sayfa        |
 |----------------|--------------|
 | `/`            | Ana Sayfa    |
-| `/products`    | Ürünler      |
-| `/about`       | Hakkımızda   |
+| `/urunlerimiz`    | Ürünler      |
+| `/hakkimizda`       | Hakkımızda   |
 | `/references`  | Referanslar  |
-| `/contact`     | İletişim     |
+| `/iletisim`     | İletişim     |
 
 ## Lisans
 

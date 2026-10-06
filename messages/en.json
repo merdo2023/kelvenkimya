@@ -32,23 +32,23 @@
       },
       {
         "key": "products",
-        "path": "/products"
+        "path": "/urunlerimiz"
       },
       {
         "key": "services",
-        "path": "/services"
+        "path": "/hizmetlerimiz"
       },
       {
         "key": "about",
-        "path": "/about"
+        "path": "/hakkimizda"
       },
       {
         "key": "projects",
-        "path": "/projects"
+        "path": "/projelerimiz"
       },
       {
         "key": "contact",
-        "path": "/contact"
+        "path": "/iletisim"
       }
     ],
     "labels": {

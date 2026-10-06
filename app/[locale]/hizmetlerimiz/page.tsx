@@ -1,5 +1,5 @@
 import { buildPageMetadata } from '@/lib/metadata'
-import { ProjectsPage } from '@/views/ProjectsPage'
+import { ServicesPage } from '@/views/ServicesPage'
 
 export async function generateMetadata({
   params,
@@ -8,9 +8,9 @@ export async function generateMetadata({
 }) {
   const { locale } = await params
   return buildPageMetadata(locale, {
-    title: 'projects.seo.title',
-    description: 'projects.seo.description',
-    path: '/projects',
+    title: 'services.seo.title',
+    description: 'services.seo.description',
+    path: '/hizmetlerimiz',
   })
 }
 
@@ -20,5 +20,5 @@ export default async function Page({
   params: Promise<{ locale: string }>
 }) {
   const { locale } = await params
-  return <ProjectsPage locale={locale as 'tr' | 'en'} />
+  return <ServicesPage locale={locale} />
 }
