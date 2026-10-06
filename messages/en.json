@@ -103,8 +103,8 @@
       }
     ],
     "services": {
-      "title": "Our Services",
-      "subtitle": "Comprehensive solutions for your industrial water and chemical treatment needs.",
+      "title": "Solutions for Industrial Facilities",
+      "subtitle": "From large-scale projects to equipment cleaning and chemical supply, let’s identify the right solution for your facility.",
       "applicationsLabel": "Application Areas",
       "bulletsLabel": "What We Deliver",
       "items": [
@@ -112,21 +112,35 @@
           "id": "endustriyel-kimyasal-temizlik",
           "title": "Industrial Chemical Cleaning",
           "category": "Field Application",
-          "description": "Professional chemical cleaning for steam boilers, heat exchangers, cooling towers, chiller systems, process pipelines and industrial equipment.",
-          "tags": ["Boiler", "Heat Exchanger", "Process Line"],
-          "bullets": [
-            "Chemical cleaning plans tailored to on-site conditions.",
-            "Controlled removal of scale, rust and deposit build-up.",
-            "Post-application support for system efficiency."
+          "description": "Project-specific chemical cleaning for HRSGs, steam boilers, tanks and pipelines in power and process facilities. Equipment cleaning for cooling towers, condensers and heat exchangers.",
+          "tags": [
+            "HRSG & Boilers",
+            "Tanks & Pipelines",
+            "Condensers & Heat Exchangers"
           ],
-          "resultLabel": "Field application and technical verification"
+          "bullets": [
+            "Our own cleaning equipment and circulation pumps.",
+            "Project-specific field work following approved procedures.",
+            "Monitoring of application conditions and technical checks."
+          ],
+          "resultLabel": "From technical preparation to field execution, an approach tailored to your system.",
+          "imageAlt": "Stainless steel piping groups in the chemical cleaning scope of the Ahal GTG project",
+          "image": "/images/services/ahal-chemical-cleaning.jpeg",
+          "imageCaption": "Field experience · Ahal, Turkmenistan"
         },
         {
           "id": "su-yumusatma-uniteleri-revizyonu",
-          "title": "Water Softening Unit Revision",
+          "image": "/images/services/water-treatment-unit.png",
+          "imageAlt": "Industrial water treatment unit with control panel, pump and filtration equipment",
+          "imageCaption": "Water treatment systems · Maintenance and revision",
+          "title": "Water Pretreatment Units",
           "category": "System Revision",
           "description": "Resin replacement, valve maintenance, system optimization and revision services for water softening systems.",
-          "tags": ["Resin", "Valve Maintenance", "Optimization"],
+          "tags": [
+            "Resin",
+            "Valve Maintenance",
+            "Optimization"
+          ],
           "bullets": [
             "Resin replacement and system inspection.",
             "Performance review of valves, tanks and equipment.",
@@ -136,10 +150,17 @@
         },
         {
           "id": "su-sartlandirma-kimyasallari",
+          "image": "/images/services/water-conditioning.png",
+          "imageAlt": "Water conditioning illustration combining a water droplet, molecular shapes and industrial cooling systems",
+          "imageCaption": "Industrial water conditioning · System protection",
           "title": "Water Treatment Chemicals",
           "category": "Chemical Program",
           "description": "Chemical solutions for scale, corrosion and biological formation control in steam boilers, cooling towers and closed-loop systems.",
-          "tags": ["Corrosion", "Scale", "Biological Control"],
+          "tags": [
+            "Corrosion",
+            "Scale",
+            "Biological Control"
+          ],
           "bullets": [
             "Chemical programs for boiler and cooling systems.",
             "Protection against corrosion and scale formation.",
@@ -149,10 +170,17 @@
         },
         {
           "id": "kimyasal-temizlik-kimyasallari",
+          "image": "/images/services/chemical-cleaning-products.png",
+          "imageAlt": "Industrial chemical cleaning illustration comparing fouled and clean heat exchanger tubes",
+          "imageCaption": "Industrial cleaning chemicals · Product supply",
           "title": "Chemical Cleaning Products",
           "category": "Product Supply",
           "description": "Supply of industrial cleaning chemicals including descalers, rust removers, degreasers and passivation products.",
-          "tags": ["Rust Remover", "Degreaser", "Passivation"],
+          "tags": [
+            "Rust Remover",
+            "Degreaser",
+            "Passivation"
+          ],
           "bullets": [
             "Product selection aligned with industrial cleaning needs.",
             "Product groups defined by surface and system type.",
@@ -162,10 +190,18 @@
         },
         {
           "id": "laboratuvar-analiz-hizmetleri",
+          "image": "/images/services/field-analysis.jpg",
+          "imageAlt": "Team member working with analysis equipment at an industrial facility",
+          "imageCaption": "Field archive · Analysis and technical monitoring",
+          "imagePosition": "center 40%",
           "title": "Laboratory Analysis Services",
           "category": "Laboratory & Reporting",
           "description": "Raw water, boiler water and cooling water analyses with system performance evaluation and technical reporting.",
-          "tags": ["Water Analysis", "Reporting", "Performance"],
+          "tags": [
+            "Water Analysis",
+            "Reporting",
+            "Performance"
+          ],
           "bullets": [
             "Analysis of raw, boiler and cooling water.",
             "System performance evaluated with technical data.",
@@ -173,7 +209,11 @@
           ],
           "resultLabel": "Technical reporting and performance evaluation"
         }
-      ]
+      ],
+      "fieldExperience": "Field experience · Ahal, Turkmenistan",
+      "projectCta": "Discuss Your Requirements",
+      "projectsCta": "Explore Our Projects",
+      "productsCta": "Explore Products"
     },
     "productCategories": {
       "title": "Product & Chemical Solution Portfolio",
@@ -201,22 +241,81 @@
       "subtitle": "We provide reliable solutions to leading industrial organizations in Turkey.",
       "badge": "Trusted Partners",
       "items": [
-        { "name": "Rönesans", "logoUrl": "/images/references/1.jpeg", "featured": true },
-        { "name": "Şişecam", "logoUrl": "/images/references/2.png", "featured": true },
-        { "name": "Mersin Soda", "logoUrl": "/images/references/3.png", "featured": true },
-        { "name": "Koç Grubu", "logoUrl": "/images/references/4.jpg", "featured": true },
-        { "name": "TEI Alaşım", "logoUrl": "/images/references/5.png", "featured": true },
-        { "name": "Aksa Enerji", "logoUrl": "/images/references/6.png", "featured": true },
-        { "name": "Nuh Enerji", "logoUrl": "/images/references/7.jpg", "featured": true },
-        { "name": "BIS Enerji", "logoUrl": "/images/references/8.png", "featured": true },
-        { "name": "Karaman Döküm", "logoUrl": "/images/references/9.png", "featured": true },
-        { "name": "Mary Amonyak", "logoUrl": "/images/references/10.png", "sector": "Turkmenistan", "featured": true },
-        { "name": "Reference 11", "logoUrl": "/images/references/11.png" },
-        { "name": "Reference 12", "logoUrl": "/images/references/12.png" },
-        { "name": "Reference 13", "logoUrl": "/images/references/13.png" },
-        { "name": "Reference 14", "logoUrl": "/images/references/14.png" },
-        { "name": "Reference 15", "logoUrl": "/images/references/15.png" },
-        { "name": "Reference 16", "logoUrl": "/images/references/16.png" }
+        {
+          "name": "Rönesans",
+          "logoUrl": "/images/references/1.jpeg",
+          "featured": true
+        },
+        {
+          "name": "Şişecam",
+          "logoUrl": "/images/references/2.png",
+          "featured": true
+        },
+        {
+          "name": "Mersin Soda",
+          "logoUrl": "/images/references/3.png",
+          "featured": true
+        },
+        {
+          "name": "Koç Grubu",
+          "logoUrl": "/images/references/4.jpg",
+          "featured": true
+        },
+        {
+          "name": "TEI Alaşım",
+          "logoUrl": "/images/references/5.png",
+          "featured": true
+        },
+        {
+          "name": "Aksa Enerji",
+          "logoUrl": "/images/references/6.png",
+          "featured": true
+        },
+        {
+          "name": "Nuh Enerji",
+          "logoUrl": "/images/references/7.jpg",
+          "featured": true
+        },
+        {
+          "name": "BIS Enerji",
+          "logoUrl": "/images/references/8.png",
+          "featured": true
+        },
+        {
+          "name": "Karaman Döküm",
+          "logoUrl": "/images/references/9.png",
+          "featured": true
+        },
+        {
+          "name": "Mary Amonyak",
+          "logoUrl": "/images/references/10.png",
+          "sector": "Turkmenistan",
+          "featured": true
+        },
+        {
+          "name": "Reference 11",
+          "logoUrl": "/images/references/11.png"
+        },
+        {
+          "name": "Reference 12",
+          "logoUrl": "/images/references/12.png"
+        },
+        {
+          "name": "Reference 13",
+          "logoUrl": "/images/references/13.png"
+        },
+        {
+          "name": "Reference 14",
+          "logoUrl": "/images/references/14.png"
+        },
+        {
+          "name": "Reference 15",
+          "logoUrl": "/images/references/15.png"
+        },
+        {
+          "name": "Reference 16",
+          "logoUrl": "/images/references/16.png"
+        }
       ]
     },
     "contactCta": {
@@ -527,7 +626,11 @@
             "name": "Powder Chlorine 56%",
             "image": "/images/products/3/4.png",
             "description": "Powder Chlorine 56% is a granular disinfection product used to maintain hygiene and water quality in pool water. Its fast-dissolving structure delivers rapid action and helps keep bacteria, algae and microorganisms under control.\n\nUsage Note: Dosage should be determined based on pool volume, water temperature, bather load and current free chlorine levels. pH and chlorine measurements are recommended before application. Do not mix directly with other chemicals.",
-            "tags": ["Disinfection", "Shock Chlorination", "Granular"],
+            "tags": [
+              "Disinfection",
+              "Shock Chlorination",
+              "Granular"
+            ],
             "usageAreas": [
               "Contains 56% available chlorine.",
               "Granular powder form.",
@@ -541,7 +644,11 @@
             "name": "Chlorine Tablet 90%",
             "image": "/images/products/3/3.png",
             "description": "Chlorine Tablet 90% is a slow-dissolving chlorine tablet used to provide long-lasting disinfection in pool water. Its controlled dissolution helps maintain a balanced chlorine level throughout the pool.\n\nUsage Note: Chlorine tablets should be applied in a controlled manner according to pool volume and daily chlorine demand. They can be used in skimmers, floating dispensers or suitable dosing systems. Chlorine levels should be monitored regularly and the product should not be placed in direct contact with other chemicals.",
-            "tags": ["Disinfection", "Tablet", "Long-Lasting Effect"],
+            "tags": [
+              "Disinfection",
+              "Tablet",
+              "Long-Lasting Effect"
+            ],
             "usageAreas": [
               "Contains 90% available chlorine.",
               "Slow-dissolving tablet form.",
@@ -555,7 +662,11 @@
             "name": "pH Reducer Powder",
             "image": "/images/products/3/2.png",
             "description": "pH Reducer Powder is a powdered pool chemical used to lower elevated pH values to the ideal range. Maintaining pH balance helps chlorine work more efficiently and keeps water quality stable.\n\nUsage Note: Measure pool water pH before application. Dosage should be determined based on the current pH value, target pH range and pool volume. Do not mix directly with chlorine or other chemicals.",
-            "tags": ["pH Control", "Water Balance", "Powder"],
+            "tags": [
+              "pH Control",
+              "Water Balance",
+              "Powder"
+            ],
             "usageAreas": [
               "Helps reduce high pH values.",
               "Regulates the chemical balance of pool water.",
@@ -569,7 +680,11 @@
             "name": "Algaecide",
             "image": "/images/products/3/5.png",
             "description": "Algaecide is a maintenance chemical that helps prevent algae, biofilm and green water formation in pool water. It is especially useful during hot weather, intense sunlight and periods of heavy pool use.\n\nUsage Note: Algaecide should be applied at regular intervals based on pool volume, bather load and algae growth risk. For best results, use after confirming that pH and chlorine levels are balanced.",
-            "tags": ["Algae Control", "Maintenance", "Clarity"],
+            "tags": [
+              "Algae Control",
+              "Maintenance",
+              "Clarity"
+            ],
             "usageAreas": [
               "Helps prevent algae and biofilm formation.",
               "Reduces green discoloration in pool water.",
@@ -583,7 +698,11 @@
             "name": "Flocculant / Clarifier",
             "image": "/images/products/3/1.png",
             "description": "Flocculant / Clarifier is a pool maintenance product that helps fine suspended dirt and particles combine and settle in pool water. This allows cloudy pool water to regain a clearer, cleaner appearance.\n\nUsage Note: Dosage should be determined based on the level of cloudiness and pool volume. Run the filtration system after application and remove settled sediment with a pool vacuum when necessary.",
-            "tags": ["Clarifier", "Filtration", "Sediment Control"],
+            "tags": [
+              "Clarifier",
+              "Filtration",
+              "Sediment Control"
+            ],
             "usageAreas": [
               "Helps clarify cloudy pool water.",
               "Brings fine dirt and particles together.",
@@ -597,7 +716,11 @@
             "name": "Pool Surface Cleaner",
             "image": "/images/products/3/6.png",
             "description": "Pool Surface Cleaner is a specialised cleaning product that helps remove dirt, oil, limescale, rust and metal stains from pool walls, floors, waterlines, tiles, ceramics and equipment surfaces.\n\nUsage Note: Apply an appropriate amount to the surface to be cleaned, allow brief contact time, then scrub with a brush or sponge. Rinse the surface thoroughly with plenty of water after cleaning. Do not mix with other chemicals.",
-            "tags": ["Surface Cleaning", "Limescale", "Stain Removal"],
+            "tags": [
+              "Surface Cleaning",
+              "Limescale",
+              "Stain Removal"
+            ],
             "usageAreas": [
               "Helps clean dirt and stains on pool surfaces.",
               "Supports removal of limescale and mineral deposits.",
@@ -966,7 +1089,10 @@
         "description": "Chemical cleaning was performed on the evaporative condenser at the S.S. Ağaköy Agricultural Development Cooperative facility.",
         "videoUrl": "/videos/ss.agakoy.mp4",
         "systemType": "Evaporative condenser",
-        "scope": ["Evaporative condenser", "Chemical cleaning"],
+        "scope": [
+          "Evaporative condenser",
+          "Chemical cleaning"
+        ],
         "highlight": "Evaporative condenser chemical cleaning"
       },
       {
@@ -976,7 +1102,11 @@
         "description": "Chemical cleaning was performed on the Apikoğlu cooling tower condenser.",
         "videoUrl": "/videos/apikoglu.mp4",
         "systemType": "Cooling tower condenser",
-        "scope": ["Cooling tower", "Condenser", "Chemical cleaning"],
+        "scope": [
+          "Cooling tower",
+          "Condenser",
+          "Chemical cleaning"
+        ],
         "highlight": "Cooling tower condenser cleaning"
       },
       {
@@ -1035,7 +1165,11 @@
         "description": "Industrial chemical cleaning services were performed on heat plant and water installation circuits.",
         "sector": "Public / Military Facility",
         "systemType": "Heat plant and water installation circuits",
-        "scope": ["Industrial chemical cleaning", "Heat plant", "Water installation"],
+        "scope": [
+          "Industrial chemical cleaning",
+          "Heat plant",
+          "Water installation"
+        ],
         "highlight": "Chemical cleaning on heat plant and water installation circuits"
       },
       {
@@ -1045,7 +1179,11 @@
         "description": "Chemical cleaning services were performed on six steam boilers within the factory.",
         "sector": "Automotive",
         "systemType": "6 steam boilers",
-        "scope": ["Steam boiler", "Chemical cleaning", "Factory facility"],
+        "scope": [
+          "Steam boiler",
+          "Chemical cleaning",
+          "Factory facility"
+        ],
         "highlight": "Chemical cleaning on six steam boilers"
       },
       {
@@ -1055,7 +1193,10 @@
         "description": "Industrial chemical cleaning services were performed on a 430 m² water-tube boiler.",
         "sector": "Tire / Manufacturing",
         "systemType": "430 m² water-tube boiler",
-        "scope": ["Water-tube boiler", "Industrial chemical cleaning"],
+        "scope": [
+          "Water-tube boiler",
+          "Industrial chemical cleaning"
+        ],
         "highlight": "Chemical cleaning on a 430 m² water-tube boiler"
       },
       {
@@ -1065,7 +1206,10 @@
         "description": "Chemical cleaning services were performed on one 160 m² Scotch marine steam boiler.",
         "sector": "Glass / Packaging",
         "systemType": "160 m² Scotch marine steam boiler",
-        "scope": ["Scotch marine steam boiler", "Chemical cleaning"],
+        "scope": [
+          "Scotch marine steam boiler",
+          "Chemical cleaning"
+        ],
         "highlight": "Chemical cleaning on a 160 m² Scotch marine steam boiler"
       },
       {
@@ -1075,7 +1219,11 @@
         "description": "Industrial chemical cleaning services were performed on two 225 m² front-fired Scotch cylindrical steam boilers.",
         "sector": "Food / Oil Industry",
         "systemType": "2 front-fired 225 m² Scotch cylindrical steam boilers",
-        "scope": ["Steam boiler", "Scotch cylindrical boiler", "Industrial chemical cleaning"],
+        "scope": [
+          "Steam boiler",
+          "Scotch cylindrical boiler",
+          "Industrial chemical cleaning"
+        ],
         "highlight": "Chemical cleaning on two 225 m² steam boilers"
       },
       {
@@ -1085,7 +1233,10 @@
         "description": "Chemical cleaning services were performed on three 510 m² water-tube steam boilers.",
         "sector": "Tire / Manufacturing",
         "systemType": "3 water-tube 510 m² steam boilers",
-        "scope": ["Water-tube steam boiler", "Chemical cleaning"],
+        "scope": [
+          "Water-tube steam boiler",
+          "Chemical cleaning"
+        ],
         "highlight": "Chemical cleaning on three 510 m² water-tube steam boilers"
       },
       {
@@ -1095,7 +1246,11 @@
         "description": "Chemical cleaning services were performed on equipment within the cooling unit circuit.",
         "sector": "Tire / Manufacturing",
         "systemType": "Cooling unit circuit",
-        "scope": ["Cooling unit", "Equipment cleaning", "Chemical cleaning"],
+        "scope": [
+          "Cooling unit",
+          "Equipment cleaning",
+          "Chemical cleaning"
+        ],
         "highlight": "Chemical cleaning within the cooling unit circuit"
       },
       {
@@ -1105,7 +1260,11 @@
         "description": "Chemical cleaning and boiler water treatment services were performed on two 100 m² steam boilers.",
         "sector": "Agriculture / Food",
         "systemType": "2 steam boilers (100 m² each)",
-        "scope": ["Steam boiler", "Chemical cleaning", "Boiler water treatment"],
+        "scope": [
+          "Steam boiler",
+          "Chemical cleaning",
+          "Boiler water treatment"
+        ],
         "highlight": "Boiler cleaning and boiler water treatment"
       },
       {
@@ -1115,7 +1274,10 @@
         "description": "Chemical cleaning services were performed on two Evapko-France cooling towers.",
         "sector": "Food",
         "systemType": "2 Evapko-France cooling towers",
-        "scope": ["Cooling tower", "Chemical cleaning"],
+        "scope": [
+          "Cooling tower",
+          "Chemical cleaning"
+        ],
         "highlight": "Chemical cleaning on two cooling towers"
       },
       {
@@ -1125,7 +1287,10 @@
         "description": "Industrial chemical cleaning services were performed on three cooling towers.",
         "sector": "Food",
         "systemType": "3 cooling towers",
-        "scope": ["Cooling tower", "Industrial chemical cleaning"],
+        "scope": [
+          "Cooling tower",
+          "Industrial chemical cleaning"
+        ],
         "highlight": "Chemical cleaning on three cooling towers"
       },
       {
@@ -1135,7 +1300,11 @@
         "description": "Industrial chemical cleaning services were performed on Cogeneration-II Plant waste heat boiler circuits.",
         "sector": "Energy",
         "systemType": "Cogeneration-II Plant waste heat boiler circuits",
-        "scope": ["Waste heat boiler", "Cogeneration plant", "Industrial chemical cleaning"],
+        "scope": [
+          "Waste heat boiler",
+          "Cogeneration plant",
+          "Industrial chemical cleaning"
+        ],
         "highlight": "Chemical cleaning on waste heat boiler circuits"
       },
       {
@@ -1145,7 +1314,11 @@
         "description": "Industrial chemical cleaning services were performed on two condenser chiller units.",
         "sector": "Hotel / Facility Management",
         "systemType": "2 condenser chiller units",
-        "scope": ["Chiller", "Condenser", "Industrial chemical cleaning"],
+        "scope": [
+          "Chiller",
+          "Condenser",
+          "Industrial chemical cleaning"
+        ],
         "highlight": "Chemical cleaning on chiller condenser units"
       },
       {
@@ -1155,7 +1328,12 @@
         "description": "Activated carbon refill was performed on three activated carbon columns; resin and inert resin replacement was carried out on three water treatment units.",
         "sector": "Textile / Energy",
         "systemType": "Activated carbon columns and water treatment units",
-        "scope": ["Activated carbon refill", "Resin replacement", "Inert resin replacement", "Water treatment"],
+        "scope": [
+          "Activated carbon refill",
+          "Resin replacement",
+          "Inert resin replacement",
+          "Water treatment"
+        ],
         "highlight": "Activated carbon refill and resin replacement"
       }
     ]

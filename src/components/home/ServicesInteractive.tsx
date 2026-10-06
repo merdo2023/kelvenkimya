@@ -1,8 +1,9 @@
 'use client'
 
 import { useState, type ReactNode } from 'react'
+import Image from 'next/image'
 import { Link } from '@/i18n/navigation'
-import { ArrowRight, Check, ChevronDown } from 'lucide-react'
+import { ArrowRight, ArrowUpRight, Check, ChevronDown } from 'lucide-react'
 import { useTranslation } from '@/hooks/useTranslation'
 import { cardAccentColors } from '@/data/accentColors'
 import { getServiceIcon } from '@/data/icons'
@@ -80,24 +81,39 @@ function ServiceDetailContent({
   const iconStyle = iconStyles[index % iconStyles.length]
   const Icon = getServiceIcon(service.id)
   const isPanel = variant === 'panel'
+  const { t } = useTranslation()
+  const isCleaning = service.id === 'endustriyel-kimyasal-temizlik'
+  const isProduct = service.id === 'kimyasal-temizlik-kimyasallari'
 
   return (
-    <div className={`flex flex-col ${isPanel ? 'gap-4' : 'gap-3.5'}`}>
-      {isPanel && (
-        <header className="flex items-start gap-3 border-b border-border/35 pb-4">
+    <div className="flex h-full flex-col">
+      {service.image ? (
+        <div className={`relative isolate overflow-hidden bg-navy ${isPanel ? 'h-64 xl:h-72' : 'h-52'}`}>
+          <Image src={service.image} alt={service.imageAlt ?? service.title} fill sizes="(max-width: 1023px) 100vw, 65vw" className="object-cover" style={{ objectPosition: service.imagePosition ?? 'center' }} />
+          <div className="absolute inset-0 bg-gradient-to-t from-navy via-navy/30 to-navy/5" aria-hidden="true" />
+          <span className="absolute left-5 top-5 rounded-full border border-white/25 bg-navy/60 px-3 py-1.5 text-[10px] font-semibold uppercase tracking-widest text-white backdrop-blur-sm">{service.category}</span>
+          <div className="absolute inset-x-0 bottom-0 p-5 sm:p-7">
+            <p className="mb-2 text-[10px] font-bold uppercase tracking-[0.18em] text-cyan">{service.imageCaption ?? service.category}</p>
+            <h3 className="max-w-xl text-2xl font-bold leading-tight text-white sm:text-3xl">{service.title}</h3>
+          </div>
+        </div>
+      ) : isPanel ? (
+        <header className="flex items-start gap-4 border-b border-border/35 bg-gradient-to-br from-navy to-navy-light p-7">
           <div
             className={`service-icon-glow flex h-11 w-11 shrink-0 items-center justify-center rounded-xl ring-1 ring-border/40 ${iconStyle.box}`}
           >
-            <Icon className={`h-5 w-5 ${iconStyle.icon}`} strokeWidth={1.6} />
+            <Icon className="h-5 w-5 text-cyan" strokeWidth={1.6} />
           </div>
           <div className="min-w-0 flex-1">
             {service.category && (
               <p className="text-[10px] font-bold uppercase tracking-[0.14em] text-cyan">{service.category}</p>
             )}
-            <h3 className="mt-1 text-xl font-bold leading-snug text-navy">{service.title}</h3>
+            <h3 className="mt-1 text-2xl font-bold leading-snug text-white">{service.title}</h3>
           </div>
         </header>
-      )}
+      ) : null}
+
+      <div className={`flex flex-1 flex-col gap-5 ${isPanel ? 'p-6 xl:p-7' : 'p-4'}`}>
 
       <p className={`leading-relaxed text-muted ${isPanel ? 'text-sm sm:text-[0.9375rem] sm:leading-[1.6]' : 'text-sm'}`}>
         {service.description}
@@ -117,24 +133,17 @@ function ServiceDetailContent({
         </section>
       )}
 
-      <footer className={`flex flex-col gap-3 ${isPanel ? 'border-t border-border/30 pt-3.5' : 'pt-0.5'}`}>
+      <footer className="mt-auto flex flex-col gap-4 border-t border-border/40 pt-5">
         {service.resultLabel && (
-          <div className="rounded-lg border border-navy/12 bg-gradient-to-r from-navy/[0.05] via-cyan/[0.08] to-navy/[0.04] px-3.5 py-2.5">
-            <p className="text-xs font-semibold leading-snug text-navy/80">{service.resultLabel}</p>
-          </div>
+          <p className="text-xs font-semibold leading-relaxed text-navy/70">{service.resultLabel}</p>
         )}
 
-        <Link
-          href={routes.services}
-          className="group/cta inline-flex w-fit items-center gap-1.5 text-sm font-semibold text-brand-blue transition-colors duration-300 hover:text-cyan"
-        >
-          {learnMoreLabel}
-          <ArrowRight
-            className="h-4 w-4 transition-transform duration-300 group-hover/cta:translate-x-0.5"
-            aria-hidden="true"
-          />
-        </Link>
+        <div className="flex flex-wrap items-center gap-4">
+          <Link href={routes.contact} className="inline-flex items-center justify-center gap-3 rounded-xl gradient-accent px-5 py-3 text-sm font-semibold text-white shadow-lg shadow-cyan/15 transition hover:brightness-110 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-cyan">{t('home.services.projectCta')}<ArrowUpRight className="h-4 w-4" aria-hidden="true" /></Link>
+          <Link href={isCleaning ? routes.projects : isProduct ? routes.products : routes.services} className="inline-flex items-center gap-2 rounded-lg py-2 text-sm font-semibold text-brand-blue hover:text-cyan focus-visible:outline-2 focus-visible:outline-cyan">{isCleaning ? t('home.services.projectsCta') : isProduct ? t('home.services.productsCta') : learnMoreLabel}<ArrowRight className="h-4 w-4" aria-hidden="true" /></Link>
+        </div>
       </footer>
+      </div>
     </div>
   )
 }
@@ -157,8 +166,8 @@ export function ServicesInteractive({ services, learnMoreLabel }: ServicesIntera
   return (
     <>
       {/* Desktop: solution menu + detail panel */}
-      <div className="hidden lg:grid lg:grid-cols-[360px_1fr] lg:gap-6 xl:gap-7">
-        <div className="flex flex-col gap-2" role="tablist" aria-label={t('home.services.title')}>
+      <div className="hidden lg:grid lg:grid-cols-[320px_1fr] lg:gap-6 xl:gap-7">
+        <div className="flex flex-col gap-3" role="tablist" aria-orientation="vertical" aria-label={t('home.services.title')}>
           {services.map((service, index) => {
             const isActive = service.id === activeId
             const iconStyle = iconStyles[index % iconStyles.length]
@@ -170,11 +179,22 @@ export function ServicesInteractive({ services, learnMoreLabel }: ServicesIntera
                 key={service.id}
                 type="button"
                 role="tab"
+                id={`service-tab-${service.id}`}
+                aria-controls="service-detail-panel"
+                tabIndex={isActive ? 0 : -1}
                 aria-selected={isActive}
                 onClick={() => setActiveId(service.id)}
+                onKeyDown={(event) => {
+                  const direction = event.key === 'ArrowDown' ? 1 : event.key === 'ArrowUp' ? -1 : 0
+                  if (!direction && event.key !== 'Home' && event.key !== 'End') return
+                  event.preventDefault()
+                  const nextIndex = event.key === 'Home' ? 0 : event.key === 'End' ? services.length - 1 : (index + direction + services.length) % services.length
+                  setActiveId(services[nextIndex].id)
+                  document.getElementById(`service-tab-${services[nextIndex].id}`)?.focus()
+                }}
                 className={`group/tab relative flex w-full items-start gap-3 overflow-hidden rounded-xl border px-3.5 py-3 text-left transition-all duration-300 ${
                   isActive
-                    ? 'border-cyan/35 bg-gradient-to-br from-cyan/[0.12] via-cyan/[0.04] to-white shadow-[0_4px_22px_-6px_rgba(0,166,214,0.22)] ring-1 ring-cyan/20'
+                    ? 'border-brand-blue/40 bg-gradient-to-br from-brand-blue/[0.16] via-cyan/[0.09] to-white shadow-[0_4px_22px_-6px_rgba(0,166,214,0.22)] ring-1 ring-cyan/20'
                     : 'border-border/50 bg-white/75 hover:border-cyan/25 hover:bg-white hover:shadow-sm'
                 }`}
               >
@@ -210,7 +230,7 @@ export function ServicesInteractive({ services, learnMoreLabel }: ServicesIntera
                   >
                     {service.title}
                   </span>
-                  <span className="mt-1 line-clamp-2 text-xs leading-relaxed text-muted">
+                  <span className="mt-1 line-clamp-1 text-xs leading-relaxed text-muted">
                     {service.description}
                   </span>
                 </span>
@@ -221,6 +241,9 @@ export function ServicesInteractive({ services, learnMoreLabel }: ServicesIntera
 
         <div
           role="tabpanel"
+          id="service-detail-panel"
+          aria-labelledby={`service-tab-${activeService.id}`}
+          tabIndex={0}
           className="service-detail-panel relative overflow-hidden rounded-2xl border border-border/50 shadow-[0_8px_32px_-10px_rgba(11,31,51,0.1)]"
         >
           <div
@@ -234,7 +257,7 @@ export function ServicesInteractive({ services, learnMoreLabel }: ServicesIntera
             aria-hidden="true"
           />
 
-          <div key={activeService.id} className="animate-fade-up relative p-5 xl:p-6">
+          <div key={activeService.id} className="animate-fade-up relative h-full bg-white">
             <ServiceDetailContent
               service={activeService}
               index={activeIndex >= 0 ? activeIndex : 0}
@@ -268,6 +291,7 @@ export function ServicesInteractive({ services, learnMoreLabel }: ServicesIntera
                 type="button"
                 onClick={() => toggleAccordion(service.id)}
                 aria-expanded={isOpen}
+                aria-controls={`service-accordion-${service.id}`}
                 className={`relative flex w-full items-center gap-3 px-4 py-3.5 text-left transition-colors duration-300 ${
                   isOpen ? 'bg-gradient-to-r from-cyan/[0.08] via-cyan/[0.03] to-transparent' : 'hover:bg-navy/[0.02]'
                 }`}
@@ -308,12 +332,14 @@ export function ServicesInteractive({ services, learnMoreLabel }: ServicesIntera
               </button>
 
               <div
+                id={`service-accordion-${service.id}`}
+                inert={!isOpen}
                 className={`grid transition-[grid-template-rows] duration-300 ease-out ${
                   isOpen ? 'grid-rows-[1fr]' : 'grid-rows-[0fr]'
                 }`}
               >
                 <div className="overflow-hidden">
-                  <div className="border-t border-cyan/10 bg-white/50 px-4 pb-4 pt-3">
+                  <div className="border-t border-cyan/10 bg-white/50">
                     <ServiceDetailContent
                       service={service}
                       index={index}

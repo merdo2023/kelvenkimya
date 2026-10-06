@@ -11,6 +11,10 @@ export interface StatItem {
 
 export interface ServiceItem {
   id: string
+  image?: string
+  imageAlt?: string
+  imageCaption?: string
+  imagePosition?: string
   title: string
   description: string
   category?: string

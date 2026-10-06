@@ -14,7 +14,7 @@ export function ServicesSection({ services }: ServicesSectionProps) {
   const { t } = useTranslation()
 
   return (
-    <section className="relative overflow-hidden pb-14 pt-7 sm:pb-16 sm:pt-8 lg:pb-20 lg:pt-9">
+    <section id="hizmetler" className="relative scroll-mt-28 overflow-hidden pb-14 pt-7 sm:pb-16 sm:pt-8 lg:pb-20 lg:pt-9">
       <div className="section-muted absolute inset-0" aria-hidden="true" />
       <div className="pointer-events-none absolute inset-0 blueprint-lines opacity-[0.025]" aria-hidden="true" />
       <div className="pointer-events-none absolute -left-20 top-1/4 h-56 w-56 rounded-full bg-cyan/[0.05] blur-3xl" aria-hidden="true" />
