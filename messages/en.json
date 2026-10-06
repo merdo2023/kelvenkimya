@@ -133,21 +133,22 @@
           "id": "su-yumusatma-uniteleri-revizyonu",
           "image": "/images/services/water-treatment-unit.png",
           "imageAlt": "Industrial water treatment unit with control panel, pump and filtration equipment",
-          "imageCaption": "Water treatment systems · Maintenance and revision",
+          "imageCaption": "Water pretreatment systems · Installation and technical support",
           "title": "Water Pretreatment Units",
-          "category": "System Revision",
-          "description": "Resin replacement, valve maintenance, system optimization and revision services for water softening systems.",
+          "category": "System Installation",
+          "description": "We undertake the installation of water softening, reverse osmosis and filtration units to meet the process and operating water quality requirements of industrial facilities. We plan system selection and installation according to water demand, feedwater characteristics and operating conditions, and provide maintenance, refurbishment and performance improvement services for existing water softening units.",
           "tags": [
-            "Resin",
-            "Valve Maintenance",
-            "Optimization"
+            "Water Softening",
+            "Reverse Osmosis",
+            "Filtration"
           ],
           "bullets": [
-            "Resin replacement and system inspection.",
-            "Performance review of valves, tanks and equipment.",
-            "Revision planning to maintain system continuity."
+            "Technical assessment and system selection: Identifying units and equipment suited to the facility's water demand and feedwater characteristics.",
+            "Unit installation: Installing water softening, reverse osmosis and filtration systems according to project requirements and site conditions.",
+            "Maintenance and refurbishment: Resin replacement, control valve maintenance and equipment inspections for existing water softening units.",
+            "Performance improvement: Assessing water softening system operating conditions and planning upgrades that support operational continuity."
           ],
-          "resultLabel": "System continuity and performance monitoring"
+          "resultLabel": "System selection tailored to your facility, planned installation and ongoing operational support for water softening units."
         },
         {
           "id": "su-sartlandirma-kimyasallari",

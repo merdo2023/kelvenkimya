@@ -133,21 +133,22 @@
           "id": "su-yumusatma-uniteleri-revizyonu",
           "image": "/images/services/water-treatment-unit.png",
           "imageAlt": "Endüstriyel su arıtma ünitesi, kontrol panosu, pompa ve filtrasyon ekipmanları",
-          "imageCaption": "Su arıtma sistemleri · Bakım ve revizyon",
+          "imageCaption": "Su hazırlama sistemleri · Kurulum ve teknik destek",
           "title": "Su Hazırlama Üniteleri",
-          "category": "Sistem Revizyonu",
-          "description": "Su yumuşatma sistemlerinde reçine değişimi, valf bakımı, sistem optimizasyonu ve kapsamlı revizyon hizmetleri gerçekleştirilir.",
+          "category": "Sistem Kurulumu",
+          "description": "Endüstriyel tesislerin proses ve işletme ihtiyaçlarına uygun su kalitesini sağlamak amacıyla su yumuşatma, ters ozmoz ve filtrasyon ünitelerinin kurulumunu üstleniyoruz. Tesisin su ihtiyacı, besleme suyu özellikleri ve çalışma koşulları doğrultusunda sistem seçimini ve kurulum sürecini planlıyor; mevcut su yumuşatma ünitelerinde bakım, revizyon ve performans iyileştirme hizmetleri sunuyoruz.",
           "tags": [
-            "Reçine",
-            "Valf Bakımı",
-            "Optimizasyon"
+            "Su Yumuşatma",
+            "Ters Ozmoz",
+            "Filtrasyon"
           ],
           "bullets": [
-            "Reçine değişimi ve sistem kontrolü yapılır.",
-            "Valf, tank ve ekipman performansı değerlendirilir.",
-            "Sistem sürekliliği için revizyon planı oluşturulur."
+            "Teknik değerlendirme ve sistem seçimi: Tesisin su ihtiyacı ve besleme suyu özelliklerine uygun ünite ve ekipmanların belirlenmesi.",
+            "Ünite kurulumu: Su yumuşatma, ters ozmoz ve filtrasyon sistemlerinin projeye ve tesis koşullarına uygun kurulumu.",
+            "Bakım ve revizyon: Mevcut su yumuşatma ünitelerinde reçine değişimi, kontrol valfi bakımı ve ekipman kontrollerinin gerçekleştirilmesi.",
+            "Performans iyileştirme: Su yumuşatma sistemlerinin çalışma koşullarının değerlendirilmesi ve işletme sürekliliğini destekleyen revizyonların planlanması."
           ],
-          "resultLabel": "Sistem sürekliliği ve performans takibi"
+          "resultLabel": "Tesisinize uygun sistem seçimi, planlı kurulum ve su yumuşatma ünitelerinde sürdürülebilir işletme desteği."
         },
         {
           "id": "su-sartlandirma-kimyasallari",
