@@ -112,11 +112,13 @@
           "id": "endustriyel-kimyasal-temizlik",
           "title": "Industrial Chemical Cleaning",
           "category": "Field Application",
-          "description": "Project-specific chemical cleaning for HRSGs, steam boilers, tanks and pipelines in power and process facilities. Equipment cleaning for cooling towers, condensers and heat exchangers.",
+          "description": "We provide pre-commissioning and maintenance chemical cleaning for HRSG systems, steam boilers, tanks and piping at energy and process facilities. Cooling towers, heat exchangers and condensers are cleaned according to materials and deposit types. With our own equipment and circulation pumps, we deliver project-specific work from technical preparation to final checks in accordance with approved procedures.",
           "tags": [
-            "HRSG & Boilers",
-            "Tanks & Pipelines",
-            "Condensers & Heat Exchangers"
+            "HRSG",
+            "Steam Boilers",
+            "Cooling Towers",
+            "Heat Exchangers & Condensers",
+            "Tanks & Pipelines"
           ],
           "bullets": [
             "Technical assessment and planning: Selecting the cleaning method based on the equipment, material composition and deposit type.",
@@ -176,7 +178,7 @@
           "image": "/images/services/chemical-cleaning-products.png",
           "imageAlt": "Industrial chemical cleaning illustration comparing fouled and clean heat exchanger tubes",
           "imageCaption": "Industrial cleaning chemicals · Product supply",
-          "title": "Chemical Cleaning Products",
+          "title": "Industrial Chemical Cleaning Products",
           "category": "Product Supply",
           "description": "We supply chemicals for cleaning steam boilers, heat exchangers, condensers, cooling towers, tanks and process pipelines. For scale and mineral deposit removal, rust and oxide removal, degreasing and passivation, we support chemical selection based on equipment materials and deposit types. We provide chemical products suited to application requirements and technical support to businesses and site contractors performing chemical cleaning and flushing with their own teams.",
           "tags": [
@@ -201,7 +203,7 @@
           "imagePosition": "center 40%",
           "title": "Laboratory Analysis Services",
           "category": "Laboratory & Reporting",
-          "description": "Raw water, boiler water and cooling water analyses with system performance evaluation and technical reporting.",
+          "description": "We assess water quality and operating conditions through raw water, boiler water and cooling water analyses. Field analyses support process monitoring during chemical cleaning, while water conditioning results guide product selection and the assessment of application conditions. Findings are presented with technical reporting and recommendations tailored to the facility.",
           "tags": [
             "Water Analysis",
             "Reporting",
@@ -376,25 +378,38 @@
           {
             "name": "Kelvenoks Ferlin 123",
             "image": "/images/products/2/1.png",
-            "tags": ["Iron", "Steel", "Cast Materials"],
+            "tags": [
+              "Iron",
+              "Steel",
+              "Cast Materials"
+            ],
             "description": "A chemical cleaning product for removing scale and mineral deposits from iron, steel and cast systems."
           },
           {
             "name": "Kelvenoks Ferlin 124",
             "image": "/images/products/2/2.png",
-            "tags": ["Copper", "Copper Alloys"],
+            "tags": [
+              "Copper",
+              "Copper Alloys"
+            ],
             "description": "A cleaning product for removing scale and mineral deposits from copper and copper alloy systems."
           },
           {
             "name": "Kelvenoks Ferlin 128",
             "image": "/images/products/2/3.png",
-            "tags": ["Stainless Steel", "Stainless Alloys"],
+            "tags": [
+              "Stainless Steel",
+              "Stainless Alloys"
+            ],
             "description": "A chemical cleaning product for removing scale and mineral deposits from stainless surfaces and systems."
           },
           {
             "name": "Kelvenoks Ferlin 130",
             "image": "/images/products/2/4.png",
-            "tags": ["Aluminum", "Aluminum Alloys"],
+            "tags": [
+              "Aluminum",
+              "Aluminum Alloys"
+            ],
             "description": "A chemical cleaning product for removing scale and mineral deposits from aluminum surfaces and systems."
           },
           {

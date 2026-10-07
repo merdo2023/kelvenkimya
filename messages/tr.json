@@ -112,11 +112,13 @@
           "id": "endustriyel-kimyasal-temizlik",
           "title": "Endüstriyel Kimyasal Temizlik",
           "category": "Saha Uygulaması",
-          "description": "Enerji ve proses tesislerinde HRSG, buhar kazanları, tanklar ve boru hatları için projeye özel kimyasal temizlik. Soğutma kuleleri, kondenserler ve eşanjörlerde ekipman temizliği.",
+          "description": "Enerji ve proses tesislerinde HRSG, buhar kazanı, tank ve boru hatları için devreye alma öncesi ve bakım döneminde kimyasal temizlik hizmetleri sunuyoruz. Soğutma kuleleri, eşanjörler ve kondenserlerde malzeme yapısına ve birikinti türüne uygun uygulamalar gerçekleştiriyoruz. Kendi ekipmanlarımız ve sirkülasyon pompalarımızla, onaylı prosedürler doğrultusunda teknik hazırlıktan son kontrollere kadar projeye özel çalışıyoruz.",
           "tags": [
-            "HRSG & Kazan",
-            "Tank & Boru Hattı",
-            "Kondenser & Eşanjör"
+            "HRSG",
+            "Buhar Kazanları",
+            "Soğutma Kuleleri",
+            "Eşanjör ve Kondenserler",
+            "Tank ve Boru Hatları"
           ],
           "bullets": [
             "Teknik değerlendirme ve planlama: Ekipman, malzeme yapısı ve birikinti türüne göre temizlik yönteminin belirlenmesi.",
@@ -176,7 +178,7 @@
           "image": "/images/services/chemical-cleaning-products.png",
           "imageAlt": "Kirli ve temiz eşanjör borularını karşılaştıran endüstriyel kimyasal temizlik görseli",
           "imageCaption": "Endüstriyel temizlik kimyasalları · Ürün tedariği",
-          "title": "Kimyasal Temizlik Kimyasalları",
+        "title": "Endüstriyel Kimyasal Temizlik Ürünleri",
           "category": "Ürün Tedariği",
           "description": "Buhar kazanları, eşanjörler, kondenserler, soğutma kuleleri, tanklar ve proses boru hatlarının kimyasal temizliğine yönelik ürünler sunuyoruz. Kireç ve mineral birikintilerinin giderilmesi, pas ve oksit tabakalarının temizlenmesi, yağdan arındırma ve pasivasyon işlemleri için ekipmanın malzeme yapısına ve birikinti türüne uygun kimyasal seçimini destekliyoruz. Kimyasal temizlik ve flushing uygulamalarını kendi ekipleriyle gerçekleştiren işletmelere ve saha yüklenicilerine, uygulama ihtiyacına uygun kimyasal ürün tedariği ve teknik destek sağlıyoruz.",
           "tags": [
@@ -201,7 +203,7 @@
           "imagePosition": "center 40%",
           "title": "Laboratuvar Analiz Hizmetleri",
           "category": "Laboratuvar & Raporlama",
-          "description": "Ham su, kazan suyu ve soğutma suyu analizleri yapılarak sistem performansı değerlendirilir ve teknik raporlama hizmetleri sunulur.",
+        "description": "Ham su, kazan suyu ve soğutma suyu analizleriyle tesisin su kalitesini ve işletme koşullarını değerlendiriyoruz. Kimyasal temizlik uygulamalarında saha analizleriyle prosesin takibini destekliyor; su şartlandırma programlarında analiz sonuçlarına göre ürün seçimi ve uygulama koşullarının değerlendirilmesine katkı sağlıyoruz. Bulguları teknik raporlama ve tesisin ihtiyacına uygun önerilerle birlikte sunuyoruz.",
           "tags": [
             "Su Analizi",
             "Raporlama",

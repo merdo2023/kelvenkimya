@@ -1,10 +1,14 @@
 'use client'
 
+import type { ServiceItem } from '@/types/locale'
+
+
 import { useState, useEffect } from 'react'
 import { Link, usePathname } from '@/i18n/navigation'
 import { useTranslation } from '@/hooks/useTranslation'
 import { Menu, X } from 'lucide-react'
 import { LanguageSwitcher } from './LanguageSwitcher'
+import { ServicesNavLinks } from './ServicesNavLinks'
 import { Container } from '../common/Container'
 import { Logo } from '../common/Logo'
 import { Button } from '../common/Button'
@@ -58,7 +62,7 @@ function NavLink({ href, label, active, isTransparent }: NavLinkProps) {
 const quoteButtonClass =
   'shadow-[0_4px_16px_-6px_rgba(0,166,214,0.45)] transition-all duration-300 hover:-translate-y-px hover:shadow-[0_8px_24px_-8px_rgba(0,166,214,0.5)] motion-reduce:transform-none motion-reduce:transition-none'
 
-export function Navbar() {
+export function Navbar({ services }: { services: ServiceItem[] }) {
   const { t } = useTranslation()
   const pathname = usePathname()
   const [isOpen, setIsOpen] = useState(false)
@@ -120,12 +124,12 @@ export function Navbar() {
             >
               {navItems.map((item) => (
                 <li key={item.key}>
-                  <NavLink
+                  {item.path === routes.services ? <ServicesNavLinks services={services} isTransparent={isTransparent} /> : <NavLink
                     href={item.path}
                     label={t(`nav.labels.${item.key}`)}
                     active={isNavActive(pathname, item.path)}
                     isTransparent={isTransparent}
-                  />
+                  />}
                 </li>
               ))}
             </ul>
@@ -161,7 +165,7 @@ export function Navbar() {
         id="mobile-nav"
         className={`overflow-hidden border-t transition-all duration-300 ease-out motion-reduce:transition-none lg:hidden ${
           isOpen
-            ? 'visible max-h-[32rem] border-border/50 bg-white/98 opacity-100 shadow-[0_16px_40px_-20px_rgba(11,31,51,0.18)] backdrop-blur-xl'
+            ? 'visible max-h-[calc(100dvh-5rem)] overflow-y-auto border-border/50 bg-white/98 opacity-100 shadow-[0_16px_40px_-20px_rgba(11,31,51,0.18)] backdrop-blur-xl'
             : 'invisible max-h-0 border-transparent opacity-0'
         }`}
       >
@@ -169,14 +173,14 @@ export function Navbar() {
           <ul className="flex flex-col gap-1.5">
             {navItems.map((item) => (
               <li key={item.key}>
-                <Link
+                {item.path === routes.services ? <ServicesNavLinks services={services} mobile /> : <Link
                   href={item.path as '/'}
                   className={mobileLinkClass(item.path)}
                   aria-current={isNavActive(pathname, item.path) ? 'page' : undefined}
                   onClick={() => setIsOpen(false)}
                 >
                   {t(`nav.labels.${item.key}`)}
-                </Link>
+                </Link>}
               </li>
             ))}
           </ul>

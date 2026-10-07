@@ -82,7 +82,6 @@ function ServiceDetailContent({
   const Icon = getServiceIcon(service.id)
   const isPanel = variant === 'panel'
   const { t } = useTranslation()
-  const isCleaning = service.id === 'endustriyel-kimyasal-temizlik'
   const isProduct = service.id === 'kimyasal-temizlik-kimyasallari'
 
   return (
@@ -126,6 +125,7 @@ function ServiceDetailContent({
         </section>
       )}
 
+
       {service.bullets && service.bullets.length > 0 && (
         <section>
           <SectionLabel>{bulletsLabel}</SectionLabel>
@@ -140,7 +140,7 @@ function ServiceDetailContent({
 
         <div className="flex flex-wrap items-center gap-4">
           <Link href={routes.contact} className="inline-flex items-center justify-center gap-3 rounded-xl gradient-accent px-5 py-3 text-sm font-semibold text-white shadow-lg shadow-cyan/15 transition hover:brightness-110 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-cyan">{t('home.services.projectCta')}<ArrowUpRight className="h-4 w-4" aria-hidden="true" /></Link>
-          <Link href={isCleaning ? routes.projects : isProduct ? routes.products : routes.services} className="inline-flex items-center gap-2 rounded-lg py-2 text-sm font-semibold text-brand-blue hover:text-cyan focus-visible:outline-2 focus-visible:outline-cyan">{isCleaning ? t('home.services.projectsCta') : isProduct ? t('home.services.productsCta') : learnMoreLabel}<ArrowRight className="h-4 w-4" aria-hidden="true" /></Link>
+          <Link href={isProduct ? routes.products : `${routes.services}#${service.id}`} className="inline-flex items-center gap-2 rounded-lg py-2 text-sm font-semibold text-brand-blue hover:text-cyan focus-visible:outline-2 focus-visible:outline-cyan">{isProduct ? t('home.services.productsCta') : learnMoreLabel}<ArrowRight className="h-4 w-4" aria-hidden="true" /></Link>
         </div>
       </footer>
       </div>

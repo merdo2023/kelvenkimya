@@ -67,7 +67,7 @@ export function Footer({ services }: FooterProps) {
               {services.map((service) => (
                 <li key={service.id}>
                   <Link
-                    href={routes.services}
+                    href={`${routes.services}#${service.id}`}
                     className="text-sm text-white/80 transition-colors hover:text-white"
                   >
                     {service.title}

@@ -81,3 +81,14 @@ export async function buildPageMetadata(
 export function localeToOgLocale(locale: AppLocale): string {
   return locale === 'tr' ? 'tr_TR' : 'en_US'
 }
+
+export function buildContentMetadata(locale: string, title: string, description: string, path: string): Metadata {
+  const canonical = getLocalePath(locale, path)
+  const pageTitle = `${title} | Kelven Kimya`
+  return {
+    metadataBase: new URL(siteUrl), title: pageTitle, description,
+    alternates: { canonical, languages: buildLanguageAlternates(path) },
+    openGraph: { type: 'website', title: pageTitle, description, url: canonical, siteName: 'Kelven Kimya', locale: locale === 'tr' ? 'tr_TR' : 'en_US', images: [{ url: ogImagePath, width: 1200, height: 630 }] },
+    twitter: { card: 'summary_large_image', title: pageTitle, description, images: [ogImagePath] },
+  }
+}
