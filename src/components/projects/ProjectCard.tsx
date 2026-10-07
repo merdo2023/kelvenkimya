@@ -32,11 +32,12 @@ export function ProjectCard({ project, index }: ProjectCardProps) {
   return (
     <>
       <motion.article
+        id={project.id}
         initial={{ opacity: 0, y: 12 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, margin: '-40px' }}
         transition={{ duration: 0.35, delay: Math.min(index * 0.04, 0.2), ease: [0.22, 1, 0.36, 1] }}
-        className="group h-full"
+        className="group h-full scroll-mt-32"
       >
         <div className="relative flex h-full flex-col overflow-hidden rounded-xl border border-border/40 bg-white shadow-[0_2px_12px_-6px_rgba(11,31,51,0.08)] transition-all duration-200 hover:-translate-y-0.5 hover:border-cyan/20 hover:shadow-[0_8px_24px_-10px_rgba(11,31,51,0.12)]">
           <div className="relative flex flex-1 flex-col p-4 sm:p-5">
