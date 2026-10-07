@@ -23,9 +23,9 @@ export const cleaningServices: CleaningService[] = [
   {
     slug: 'on-temizlik-flushing', image: '/images/services/ahal-chemical-cleaning.jpeg',
     tr: {
-      title: 'Ön Temizlik ve Flushing',
-      summary: 'Devreye alma öncesi boru hatları ve proses sistemlerinde projeye özel ön temizlik ve flushing uygulamaları.',
-      description: 'İmalat, montaj ve depolama sırasında sistem içinde kalan kalıntıların giderilmesi için devreye alma öncesi ön temizlik ve flushing çalışmalarını planlıyoruz. Devre sınırları, malzeme yapısı, bağlantılar ve proje kabul kriterleri değerlendirilerek uygulama yöntemi belirlenir. Su ile flushing ve kimyasal temizlik ayrı işlemlerdir; kimyasal aşamalar yalnızca sistem ihtiyacı ve onaylı prosedür doğrultusunda sürece dahil edilir. Kendi sirkülasyon pompalarımız ve uygulama ekipmanlarımızla saha çalışmasını gerçekleştiriyoruz.',
+      title: 'Devreye Alma Öncesi Temizlik ve Flushing',
+      summary: 'Boru hatları ve proses sistemlerinde devreye alma öncesi su ile flushing (hat yıkama) ve gerektiğinde kimyasal ön temizlik uygulamaları.',
+      description: 'İmalat, montaj ve depolama sırasında sistem içinde kalan kalıntıların giderilmesi için devreye alma öncesi temizlik çalışmalarını planlıyoruz. Su ile flushing (hat yıkama) ve gerektiğinde kimyasal ön temizlik uygulamalarını; devre sınırları, malzeme yapısı, bağlantılar ve proje kabul kriterlerine göre belirliyoruz. Su ile flushing ve kimyasal temizlik ayrı işlemlerdir; kimyasal aşamalar yalnızca sistem ihtiyacı ve onaylı prosedür doğrultusunda sürece dahil edilir. Kendi sirkülasyon pompalarımız ve uygulama ekipmanlarımızla saha çalışmasını gerçekleştiriyoruz.',
       applications: ['Proses boru hatları', 'Devreye alma öncesi sistemler', 'Tank bağlantı devreleri', 'Enerji ve endüstriyel tesisler'],
       scope: ['P&ID, devre sınırları ve malzeme bilgilerinin değerlendirilmesi.', 'Devre hacmi ve debi ihtiyacına uygun pompa, geçici bağlantı ve ekipman planlaması.', 'Onaylı prosedüre göre su ile flushing ve gerekli kimyasal ön temizlik aşamaları.', 'Uygulama takibi, durulama ve proje kabul kriterlerine göre son kontroller.'],
       preparation: ['P&ID ve hat malzemeleri', 'Devre hacmi ve bağlantı bilgileri', 'Saha suyu ve geçici bağlantı imkanları', 'Kabul kriterleri ve devreye alma takvimi'],
