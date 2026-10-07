@@ -60,7 +60,8 @@ export function ProductItemRow({ product, index, accent, searchQuery = '' }: Pro
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, margin: '-20px' }}
         transition={{ duration: 0.3, delay: Math.min(index * 0.03, 0.15), ease: [0.22, 1, 0.36, 1] }}
-        className="group/item h-full rounded-xl border border-border/40 bg-[#fbfcfd] transition-colors duration-200 hover:border-cyan/20 hover:bg-white"
+        id={product.name.toLowerCase().replace(/\s+/g, '-')}
+        className="group/item h-full scroll-mt-36 rounded-xl border border-border/40 bg-[#fbfcfd] transition-colors duration-200 hover:border-cyan/20 hover:bg-white"
       >
         <div className={`flex h-full gap-3.5 p-3.5 sm:gap-4 sm:p-4 ${imagePath ? '' : 'items-start'}`}>
           {imagePath ? (

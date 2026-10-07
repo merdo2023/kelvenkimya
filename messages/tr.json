@@ -372,24 +372,28 @@
         "icon": "flask",
         "products": [
           {
-            "name": "Kelvenoks 123",
+            "name": "Kelvenoks Ferlin 123",
             "image": "/images/products/2/1.png",
-            "description": "Demir, çelik ve döküm malzemelerin kimyasal temizliğinde kullanılır."
+            "tags": ["Demir", "Çelik", "Döküm"],
+            "description": "Demir, çelik ve döküm sistemlerde kireç ve mineral birikintilerinin kimyasal temizliğine yönelik ürün."
           },
           {
-            "name": "Kelvenoks 124",
+            "name": "Kelvenoks Ferlin 124",
             "image": "/images/products/2/2.png",
-            "description": "Her türlü bakır ve bakır alaşımlı sistemlerin temizliğinde kullanılır."
+            "tags": ["Bakır", "Bakır Alaşımları"],
+            "description": "Bakır ve bakır alaşımlı sistemlerde kireç ve mineral birikintilerinin temizliğine yönelik ürün."
           },
           {
-            "name": "Kelvenoks 128",
+            "name": "Kelvenoks Ferlin 128",
             "image": "/images/products/2/3.png",
-            "description": "Paslanmaz ve paslanmaz alaşımlı metal yüzeylerin ve tesislerin kimyasal temizliğinde kullanılır."
+            "tags": ["Paslanmaz", "Paslanmaz Alaşımları"],
+            "description": "Paslanmaz yüzey ve sistemlerde kireç ve mineral birikintilerinin kimyasal temizliğine yönelik ürün."
           },
           {
-            "name": "Kelvenoks 130",
+            "name": "Kelvenoks Ferlin 130",
             "image": "/images/products/2/4.png",
-            "description": "Alüminyum ve alüminyum alaşımlı metal yüzeylerin ve tesislerin kimyasal temizliğinde kullanılır."
+            "tags": ["Alüminyum", "Alüminyum Alaşımları"],
+            "description": "Alüminyum yüzey ve sistemlerde kireç ve mineral birikintilerinin kimyasal temizliğine yönelik ürün."
           },
           {
             "name": "Alkelen np100",

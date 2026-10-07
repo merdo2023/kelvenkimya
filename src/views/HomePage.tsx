@@ -3,6 +3,7 @@ import { HeroSection } from '@/components/home/HeroSection'
 import { getProductCategories, getServices } from '@/data/localeCatalog'
 import type { AppLocale } from '@/i18n/routing'
 import type { HeroMedia } from '@/types/locale'
+import { CleaningProductsSection } from '@/components/home/CleaningProductsSection'
 
 const StatsSection = dynamic(() =>
   import('@/components/home/StatsSection').then((module) => ({
@@ -81,6 +82,7 @@ export async function HomePage({ locale }: HomePageProps) {
       />
       <StatsSection />
       <ServicesSection services={services} />
+      <CleaningProductsSection categories={categories} locale={locale} />
       <ProductPreviewSection categories={categories} />
       <AboutPreviewSection />
       <ClientReferencesSection />

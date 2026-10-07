@@ -372,24 +372,28 @@
         "icon": "flask",
         "products": [
           {
-            "name": "Kelvenoks 123",
+            "name": "Kelvenoks Ferlin 123",
             "image": "/images/products/2/1.png",
-            "description": "Used for chemical cleaning of iron, steel and cast materials."
+            "tags": ["Iron", "Steel", "Cast Materials"],
+            "description": "A chemical cleaning product for removing scale and mineral deposits from iron, steel and cast systems."
           },
           {
-            "name": "Kelvenoks 124",
+            "name": "Kelvenoks Ferlin 124",
             "image": "/images/products/2/2.png",
-            "description": "Used for cleaning all types of copper and copper alloy systems."
+            "tags": ["Copper", "Copper Alloys"],
+            "description": "A cleaning product for removing scale and mineral deposits from copper and copper alloy systems."
           },
           {
-            "name": "Kelvenoks 128",
+            "name": "Kelvenoks Ferlin 128",
             "image": "/images/products/2/3.png",
-            "description": "Used for chemical cleaning of stainless and stainless alloy metal surfaces and facilities."
+            "tags": ["Stainless Steel", "Stainless Alloys"],
+            "description": "A chemical cleaning product for removing scale and mineral deposits from stainless surfaces and systems."
           },
           {
-            "name": "Kelvenoks 130",
+            "name": "Kelvenoks Ferlin 130",
             "image": "/images/products/2/4.png",
-            "description": "Used for chemical cleaning of aluminum and aluminum alloy metal surfaces and facilities."
+            "tags": ["Aluminum", "Aluminum Alloys"],
+            "description": "A chemical cleaning product for removing scale and mineral deposits from aluminum surfaces and systems."
           },
           {
             "name": "Alkelen np100",
