@@ -33,7 +33,9 @@ export function Footer({ services }: FooterProps) {
       <Container className="py-16 lg:py-20">
         <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-4">
           <div className="lg:col-span-1">
-            <Logo variant="footer" className="mb-6" />
+            <div className="mb-6">
+              <Logo variant="footer" tone="light" />
+            </div>
             <p className="text-sm leading-relaxed text-white/80">{t('footer.description')}</p>
           </div>
 
@@ -113,12 +115,12 @@ export function Footer({ services }: FooterProps) {
                 </a>
               </li>
               <li>
-                <span className="flex items-start gap-3 text-sm text-white/80">
+                <a href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(t('contact.info.addressLine1') + ' Eyüpsultan İstanbul')}`} target="_blank" rel="noopener noreferrer" className="flex items-start gap-3 text-sm text-white/80 transition-colors hover:text-white">
                   <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-white/5 ring-1 ring-white/10">
                     <MapPin className="h-4 w-4 text-cyan" />
                   </span>
                   {address}
-                </span>
+                </a>
               </li>
             </ul>
           </div>

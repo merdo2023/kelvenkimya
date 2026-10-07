@@ -324,10 +324,10 @@
       ]
     },
     "contactCta": {
-      "title": "Let's determine the right chemical solution for your industrial facility together.",
-      "subtitle": "Our expert team provides customized technical consultancy and product recommendations for your facility's needs.",
-      "primaryCta": "Contact Us",
-      "secondaryCta": "Get a Quote"
+      "title": "Let’s assess your chemical cleaning requirements together.",
+      "subtitle": "Tell us about the equipment, deposit type and application requirements. Together, we can identify a suitable solution for on-site cleaning or chemical products used by your own team.",
+      "primaryCta": "Request a Quote",
+      "secondaryCta": "Chat on WhatsApp"
     }
   },
   "products": {
@@ -1407,7 +1407,7 @@
     }
   },
   "footer": {
-    "description": "With over 40 years of experience, we provide reliable solutions in industrial water treatment, chemical cleaning and system protection.",
+    "description": "With over 40 years of experience, we provide industrial chemical cleaning services, cleaning chemicals and technical support. We develop solutions tailored to your facility in Turkey and on international projects.",
     "navigation": {
       "title": "Pages"
     },

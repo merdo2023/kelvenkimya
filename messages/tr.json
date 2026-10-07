@@ -324,10 +324,10 @@
       ]
     },
     "contactCta": {
-      "title": "Endüstriyel tesisiniz için doğru kimyasal çözümü birlikte belirleyelim.",
-      "subtitle": "Uzman ekibimiz, tesisinizin ihtiyaçlarına özel teknik danışmanlık ve ürün önerileri sunmaktadır.",
-      "primaryCta": "İletişime Geç",
-      "secondaryCta": "Teklif Al"
+      "title": "Kimyasal temizlik ihtiyacınızı birlikte değerlendirelim.",
+      "subtitle": "Temizlenecek ekipmanı, birikinti türünü ve uygulama ihtiyacınızı paylaşın. Saha uygulaması veya kendi ekibinizin kullanacağı kimyasal ürünler için uygun çözümü birlikte belirleyelim.",
+      "primaryCta": "Teklif Talep Et",
+      "secondaryCta": "WhatsApp’tan Görüşelim"
     }
   },
   "products": {
@@ -1407,7 +1407,7 @@
     }
   },
   "footer": {
-    "description": "Endüstriyel su şartlandırma, kimyasal temizlik ve sistem koruma alanlarında 40 yılı aşkın deneyimle güvenilir çözümler sunuyoruz.",
+    "description": "40 yılı aşkın deneyimle endüstriyel kimyasal temizlik uygulamaları, temizlik kimyasalları ve teknik destek sunuyoruz. Türkiye’de ve uluslararası projelerde tesisinize özel çözümler geliştiriyoruz.",
     "navigation": {
       "title": "Sayfalar"
     },

@@ -1,10 +1,8 @@
 'use client'
 
-import { Link } from '@/i18n/navigation'
 import { useTranslation } from '@/hooks/useTranslation'
 import { ArrowUpRight } from 'lucide-react'
 import { Container } from '../common/Container'
-import { routes } from '@/data/routes'
 
 export function ContactCTA() {
   const { t } = useTranslation()
@@ -55,22 +53,24 @@ export function ContactCTA() {
               </p>
 
               <div className="mt-6 flex flex-wrap items-center justify-center gap-3">
-                <Link
-                  href={routes.contact}
+                <a
+                  href={`mailto:${t('contact.info.email')}?subject=${encodeURIComponent(t('home.contactCta.primaryCta'))}`}
                   className="group/btn inline-flex items-center gap-2.5 rounded-xl gradient-accent px-6 py-3 text-sm font-semibold text-white shadow-md shadow-cyan/25 transition-all duration-300 hover:scale-[1.02] hover:shadow-lg hover:shadow-cyan/35 active:scale-[0.98] sm:text-base"
                 >
                   {t('home.contactCta.primaryCta')}
                   <span className="flex h-7 w-7 items-center justify-center rounded-full bg-white/20 transition-all duration-300 group-hover/btn:bg-white/30">
                     <ArrowUpRight className="h-3.5 w-3.5 transition-transform duration-300 group-hover/btn:translate-x-0.5 group-hover/btn:-translate-y-0.5" />
                   </span>
-                </Link>
+                </a>
 
-                <Link
-                  href={routes.contact}
+                <a
+                  href={t('whatsapp.href')}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="inline-flex items-center justify-center rounded-xl border border-white/30 bg-white/5 px-6 py-3 text-sm font-semibold text-white backdrop-blur-sm transition-all duration-300 hover:scale-[1.02] hover:border-white/45 hover:bg-white/10 active:scale-[0.98] sm:text-base"
                 >
                   {t('home.contactCta.secondaryCta')}
-                </Link>
+                </a>
               </div>
             </div>
           </div>
