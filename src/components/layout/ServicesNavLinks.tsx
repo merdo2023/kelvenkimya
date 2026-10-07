@@ -6,6 +6,7 @@ import { Link, usePathname } from '@/i18n/navigation'
 import { useTranslation } from '@/hooks/useTranslation'
 import type { ServiceItem } from '@/types/locale'
 import { routes } from '@/data/routes'
+import { cleaningBasePath } from '@/data/cleaningServices'
 
 export function ServicesNavLinks({ mobile = false, isTransparent = false, services }: { mobile?: boolean; isTransparent?: boolean; services: ServiceItem[] }) {
   const { t, i18n } = useTranslation()
@@ -13,7 +14,7 @@ export function ServicesNavLinks({ mobile = false, isTransparent = false, servic
   const [open, setOpen] = useState(false)
   useEffect(() => setOpen(false), [pathname])
   const tr = i18n.language === 'tr'
-  const links = services.map(service => ({ href: `${routes.services}#${service.id}`, label: service.title }))
+  const links = services.map(service => ({ href: service.id === 'endustriyel-kimyasal-temizlik' ? cleaningBasePath : `${routes.services}#${service.id}`, label: service.title }))
   return <div className={mobile ? 'rounded-xl border border-navy/10' : 'relative'} onKeyDown={event => { if (event.key === 'Escape') { setOpen(false); (event.currentTarget.querySelector('button') as HTMLButtonElement)?.focus() } }} onBlur={event => { if (!event.currentTarget.contains(event.relatedTarget as Node)) setOpen(false) }}>
     <div className={`flex items-center ${mobile ? 'px-4' : 'pl-3'}`}>
       <Link href={routes.services} className={`py-2 text-sm font-medium ${mobile ? 'flex-1 py-3 text-navy' : isTransparent ? 'text-white/80' : 'text-navy/75'} ${pathname.startsWith(routes.services) ? 'underline decoration-cyan underline-offset-8' : ''}`} aria-current={pathname === routes.services ? 'page' : undefined}>{t('nav.labels.services')}</Link>

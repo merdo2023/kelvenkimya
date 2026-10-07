@@ -7,6 +7,7 @@ import { Container } from '../common/Container'
 import { Logo } from '../common/Logo'
 import { useLocaleArray } from '@/hooks/useLocaleArray'
 import { routes } from '@/data/routes'
+import { cleaningBasePath } from '@/data/cleaningServices'
 import type { NavItem, ServiceItem } from '@/types/locale'
 
 type FooterProps = {
@@ -67,7 +68,7 @@ export function Footer({ services }: FooterProps) {
               {services.map((service) => (
                 <li key={service.id}>
                   <Link
-                    href={`${routes.services}#${service.id}`}
+                    href={service.id === 'endustriyel-kimyasal-temizlik' ? cleaningBasePath : `${routes.services}#${service.id}`}
                     className="text-sm text-white/80 transition-colors hover:text-white"
                   >
                     {service.title}
