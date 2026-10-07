@@ -132,6 +132,7 @@
         {
           "id": "su-yumusatma-uniteleri-revizyonu",
           "image": "/images/services/water-treatment-unit.png",
+          "imagePosition": "center top",
           "imageAlt": "Endüstriyel su arıtma ünitesi, kontrol panosu, pompa ve filtrasyon ekipmanları",
           "imageCaption": "Su hazırlama sistemleri · Kurulum ve teknik destek",
           "title": "Su Hazırlama Üniteleri",

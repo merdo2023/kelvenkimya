@@ -132,6 +132,7 @@
         {
           "id": "su-yumusatma-uniteleri-revizyonu",
           "image": "/images/services/water-treatment-unit.png",
+          "imagePosition": "center top",
           "imageAlt": "Industrial water treatment unit with control panel, pump and filtration equipment",
           "imageCaption": "Water pretreatment systems · Installation and technical support",
           "title": "Water Pretreatment Units",
