@@ -42,14 +42,14 @@ export const cleaningServices: CleaningService[] = [
     },
   },
   {
-    slug: 'hrsg-kimyasal-temizligi', image: '/images/projects/aksa.jpeg',
+    slug: 'hrsg-kimyasal-temizligi', image: '/images/services/hrsg-plant.jpg',
     tr: {
       title: 'HRSG Kimyasal Temizliği',
-      summary: 'Enerji santrallerinde atık ısı kazanlarının devreye alma öncesi ve bakım dönemindeki kimyasal temizliği.',
+      summary: 'Atık ısı kazanlarında devreye alma öncesi ve bakım dönemi temizliği. Sistem malzemesi, birikinti ve üretici prosedürüne uygun, projeye özel saha uygulamaları.',
       description: 'HRSG sistemlerinde devreye alma öncesi imalat ve montaj kalıntıları, işletme döneminde ise birikinti ve oksit tabakaları farklı temizlik ihtiyaçları oluşturur. Kelven Kimya olarak temizlik sınırlarını, sistem metalurjisini ve müşteri/EPC/OEM prosedürlerini değerlendirerek projeye özel saha uygulaması planlıyoruz.',
       applications: ['Kombine çevrim santralleri', 'Atık ısı kazanları', 'Devreye alma öncesi temizlik', 'Bakım dönemi uygulamaları'],
       scope: ['P&ID üzerinden temizlenecek devrelerin ve geçici bağlantıların belirlenmesi.', 'Prosedür gerektirdiğinde alkali yıkama, kimyasal sirkülasyon ve flushing aşamalarının uygulanması.', 'Uygulama parametrelerinin saha kontrolleri ve kimyasal analizlerle takibi.', 'Onaylı prosedüre uygun durulama, nötralizasyon ve pasivasyon işlemleri.'],
-      preparation: ['HRSG üreticisi, ünite ve devre bilgileri', 'P&ID ve ekipman malzeme bilgileri', 'Devre hacmi ve bağlantı noktaları', 'Devreye alma veya bakım takvimi'],
+      preparation: ['HRSG üreticisi, ünite ve devre bilgileri', 'P&ID ve ekipman malzeme bilgileri', 'Devre hacmi ve bağlantı noktaları', 'Devreye alma veya bakım takvimi', 'Varsa birikinti analizleri ve önceki temizlik kayıtları', 'Üretici temizlik prosedürü ve proje kabul kriterleri'],
       reference: 'Proje kayıtlarımızda Aksa Enerji Antalya santralinin 5 ve 6 numaralı ünitelerindeki HRSG kimyasal temizliği ile Mersin Soda, Nuh Enerji ve BİS Enerji çalışmalarımız yer alıyor.',
     },
     en: {
@@ -57,7 +57,7 @@ export const cleaningServices: CleaningService[] = [
       description: 'Manufacturing and construction residues before commissioning and deposits during operation require different cleaning approaches. We assess cleaning boundaries, system metallurgy and customer, EPC or OEM procedures to plan project-specific field work.',
       applications: ['Combined cycle plants', 'Heat recovery steam generators', 'Pre-commissioning', 'Maintenance cleaning'],
       scope: ['Identify cleaning circuits and temporary connections using P&IDs.', 'Carry out alkaline washing, chemical circulation and flushing where required by the procedure.', 'Track application parameters through field checks and chemical analysis.', 'Perform rinsing, neutralization and passivation according to the approved procedure.'],
-      preparation: ['HRSG manufacturer, unit and circuit details', 'P&IDs and equipment materials', 'Circuit volume and connection points', 'Commissioning or maintenance schedule'],
+      preparation: ['HRSG manufacturer, unit and circuit details', 'P&IDs and equipment materials', 'Circuit volume and connection points', 'Commissioning or maintenance schedule', 'Available deposit analyses and previous cleaning records', 'Manufacturer cleaning procedure and project acceptance criteria'],
       reference: 'Our project records include HRSG cleaning in units 5 and 6 at Aksa Energy Antalya and work at Mersin Soda, Nuh Energy and BİS Energy.',
     },
   },
