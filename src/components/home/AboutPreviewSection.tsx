@@ -8,16 +8,16 @@ import { Container } from '../common/Container'
 import { useLocaleArray } from '@/hooks/useLocaleArray'
 import { routes } from '@/data/routes'
 
-const ABOUT_IMAGE_PATH = '/images/aboutpic.png'
+const ABOUT_IMAGE_PATH = '/images/sections/kelven-field-experience.jpg'
 
 function AboutPreviewVisual({ alt }: { alt: string }) {
   return (
-    <div className="relative aspect-[16/10] w-full overflow-hidden rounded-2xl border border-border/30 bg-gradient-to-br from-[#eef6fa] to-white shadow-[0_4px_20px_-10px_rgba(11,31,51,0.12)] sm:aspect-[5/4] lg:aspect-auto lg:min-h-[360px] lg:h-full">
+    <div className="relative aspect-[4/3] w-full shrink-0 overflow-hidden rounded-2xl border border-border/30 bg-gradient-to-br from-[#eef6fa] to-white shadow-[0_4px_20px_-10px_rgba(11,31,51,0.12)]">
       <Image
         src={ABOUT_IMAGE_PATH}
         alt={alt}
         fill
-        className="object-cover object-center"
+        className="object-contain object-center"
         sizes="(max-width: 1024px) 100vw, 40vw"
       />
     </div>
@@ -27,7 +27,7 @@ function AboutPreviewVisual({ alt }: { alt: string }) {
 export function AboutPreviewSection() {
   const { t } = useTranslation()
   const trustItems = useLocaleArray<string>('home.aboutPreview.trustItems')
-  const imageAlt = t('home.aboutPreview.title')
+  const imageAlt = t('home.aboutPreview.imageAlt')
 
   return (
     <section className="relative overflow-hidden py-14 sm:py-16 lg:py-20">
@@ -91,7 +91,7 @@ export function AboutPreviewSection() {
               </div>
             </div>
 
-            <div className="px-7 pb-7 sm:px-9 sm:pb-9 lg:col-span-5 lg:flex lg:p-8 lg:pl-0 lg:pt-8">
+            <div className="px-7 pb-7 sm:px-9 sm:pb-9 lg:col-span-5 lg:flex lg:items-center lg:p-8 lg:pl-0 lg:pt-8">
               <AboutPreviewVisual alt={imageAlt} />
             </div>
           </div>

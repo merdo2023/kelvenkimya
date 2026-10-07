@@ -231,13 +231,14 @@
     },
     "aboutPreview": {
       "eyebrow": "1985'ten Bugüne",
-      "title": "40+ yıllık saha deneyimiyle endüstriyel sistem koruma çözümleri",
-      "description": "40 yılı aşkın endüstriyel deneyimimizle, Türkiye genelinde ve uluslararası projelerde endüstriyel su şartlandırma, kimyasal temizlik ve sistem koruma alanlarında güvenilir çözümler sunuyoruz. Uzman teknik ekibimiz, tesisinizin ihtiyaçlarına özel çözümler geliştirmektedir.",
+      "title": "40 yılı aşkın deneyimle endüstriyel kimyasal temizlik",
+      "description": "Türkiye’de ve uluslararası projelerde endüstriyel tesislerin kimyasal temizlik ihtiyaçlarına yönelik hizmet sunuyoruz. Kendi uygulama ekipmanlarımız, sirkülasyon pompalarımız ve kimyasal ürünlerimizle teknik hazırlıktan saha uygulamasına kadar projeye özel çözümler geliştiriyoruz.",
+      "imageAlt": "Endüstriyel tesiste ekipman ve saha personelini gösteren Kelven Kimya saha arşivi fotoğrafı",
       "cta": "Hakkımızda",
       "trustItems": [
-        "Endüstriyel su şartlandırma",
-        "Kimyasal temizlik uygulamaları",
-        "Analiz, raporlama ve teknik danışmanlık"
+        "Projeye özel teknik planlama",
+        "Kendi ekipmanlarımızla saha uygulaması",
+        "Kimyasal ürün tedariği ve teknik destek"
       ]
     },
     "clientReferences": {

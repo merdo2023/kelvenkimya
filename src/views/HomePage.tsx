@@ -1,9 +1,10 @@
 import dynamic from 'next/dynamic'
 import { HeroSection } from '@/components/home/HeroSection'
-import { getProductCategories, getServices } from '@/data/localeCatalog'
+import { getProductCategories, getServices, getProjects } from '@/data/localeCatalog'
 import type { AppLocale } from '@/i18n/routing'
 import type { HeroMedia } from '@/types/locale'
 import { CleaningProductsSection } from '@/components/home/CleaningProductsSection'
+import { FieldExperienceSection } from '@/components/home/FieldExperienceSection'
 
 const StatsSection = dynamic(() =>
   import('@/components/home/StatsSection').then((module) => ({
@@ -14,12 +15,6 @@ const StatsSection = dynamic(() =>
 const ServicesSection = dynamic(() =>
   import('@/components/home/ServicesSection').then((module) => ({
     default: module.ServicesSection,
-  })),
-)
-
-const ProductPreviewSection = dynamic(() =>
-  import('@/components/home/ProductPreviewSection').then((module) => ({
-    default: module.ProductPreviewSection,
   })),
 )
 
@@ -67,10 +62,11 @@ async function getHomeContent(locale: AppLocale) {
 }
 
 export async function HomePage({ locale }: HomePageProps) {
-  const [services, categories, homeContent] = await Promise.all([
+  const [services, categories, homeContent, projects] = await Promise.all([
     getServices(locale),
     getProductCategories(locale),
     getHomeContent(locale),
+    getProjects(locale),
   ])
 
   return (
@@ -83,7 +79,7 @@ export async function HomePage({ locale }: HomePageProps) {
       <StatsSection />
       <ServicesSection services={services} />
       <CleaningProductsSection categories={categories} locale={locale} />
-      <ProductPreviewSection categories={categories} />
+      <FieldExperienceSection projects={projects} locale={locale} />
       <AboutPreviewSection />
       <ClientReferencesSection />
       <ContactCTA />

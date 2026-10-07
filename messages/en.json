@@ -231,13 +231,14 @@
     },
     "aboutPreview": {
       "eyebrow": "Since 1985",
-      "title": "Industrial system protection solutions backed by 40+ years of field experience",
-      "description": "With over 40 years of industrial experience, we deliver reliable solutions in industrial water treatment, chemical cleaning and system protection across Turkey and international projects. Our expert technical team develops customized solutions for your facility's needs.",
+      "title": "Industrial chemical cleaning backed by over 40 years of experience",
+      "description": "We provide chemical cleaning services for industrial facilities in Turkey and on international projects. With our own application equipment, circulation pumps and chemical products, we develop project-specific solutions from technical preparation to field execution.",
+      "imageAlt": "Kelven Kimya field archive photograph showing equipment and a team member at an industrial facility",
       "cta": "About Us",
       "trustItems": [
-        "Industrial water conditioning",
-        "Chemical cleaning applications",
-        "Analysis, reporting and technical consulting"
+        "Project-specific technical planning",
+        "Field execution with our own equipment",
+        "Chemical product supply and technical support"
       ]
     },
     "clientReferences": {
