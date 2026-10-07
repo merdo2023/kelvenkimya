@@ -62,7 +62,7 @@ export const cleaningServices: CleaningService[] = [
     },
   },
   {
-    slug: 'buhar-kazani-kimyasal-temizligi', image: '/images/projects/mary.jpeg',
+    slug: 'buhar-kazani-kimyasal-temizligi', image: '/images/services/steam-boiler.jpg',
     tr: {
       title: 'Buhar Kazanı Kimyasal Temizliği', summary: 'Buhar ve atık ısı kazanlarının su tarafındaki kireç, mineral birikintisi ve oksit tabakalarına yönelik temizlik.',
       description: 'Kazanların ısı transfer yüzeylerinde oluşan birikintiler için kazan tipi, malzeme yapısı ve işletme geçmişi birlikte değerlendirilmelidir. Su borulu ve skoç tipi buhar kazanlarında, sistemin ihtiyaçlarına uygun kimyasal ürün ve sirkülasyon planıyla temizlik hizmeti sunuyoruz.',
