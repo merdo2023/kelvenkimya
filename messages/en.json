@@ -1077,8 +1077,8 @@
   },
   "projects": {
     "seo": {
-      "title": "Industrial Projects",
-      "description": "Chemical cleaning projects completed at industrial facilities in Turkey and internationally."
+      "title": "Industrial Chemical Cleaning Projects",
+      "description": "Explore Kelven Kimya’s industrial chemical cleaning projects for HRSGs, boilers, tanks, pipelines and cooling systems in Türkiye and Turkmenistan."
     },
     "title": "Our Projects",
     "subtitle": "Chemical cleaning projects completed at industrial facilities in Turkey and internationally.",
@@ -1153,7 +1153,6 @@
         "projectName": "Mersin Soda Industry Inc.",
         "location": "Mersin, Turkey",
         "description": "Pre-commissioning chemical cleaning services were provided at Unit #1 CCPP-HRSG 130 MW facility.",
-        "videoUrl": "/videos/mersin.mp4",
         "sector": "Energy",
         "systemType": "CCPP-HRSG 130 MW",
         "year": "2019",

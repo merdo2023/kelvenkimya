@@ -1,152 +1,41 @@
 'use client'
 
 import { useState } from 'react'
-import { useTranslation } from '@/hooks/useTranslation'
-import { motion } from 'framer-motion'
+import Image from 'next/image'
 import { Calendar, MapPin, Play } from 'lucide-react'
+import { getProjectImage } from '@/data/projectGroups'
+import { useTranslation } from '@/hooks/useTranslation'
 import { VideoModal } from '@/components/common/VideoModal'
-import { cardAccentColors } from '@/data/accentColors'
 import { resolveMediaPath } from '@/lib/media'
 import type { ProjectItem } from '@/types/locale'
 
-interface ProjectCardProps {
-  project: ProjectItem
-  index: number
-}
-
-const MAX_SCOPE_ITEMS = 3
-
-export function ProjectCard({ project, index }: ProjectCardProps) {
-  const { t } = useTranslation()
+export function ProjectCard({ project }: { project: ProjectItem }) {
+  const { t, i18n } = useTranslation()
+  const tr = i18n.language === 'tr'
   const [isVideoOpen, setIsVideoOpen] = useState(false)
-  const accent = cardAccentColors[index % cardAccentColors.length]
   const videoPath = resolveMediaPath(project.videoUrl)
-  const regionLabel =
-    project.region === 'turkmenistan'
-      ? t('projects.filters.turkmenistan')
-      : t('projects.filters.turkey')
+  const imagePath = getProjectImage(project)
   const displayYear = project.year ?? project.date
-  const visibleScope = project.scope?.slice(0, MAX_SCOPE_ITEMS) ?? []
-  const hiddenScopeCount = Math.max(0, (project.scope?.length ?? 0) - visibleScope.length)
-
-  return (
-    <>
-      <motion.article
-        id={project.id}
-        initial={{ opacity: 0, y: 12 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, margin: '-40px' }}
-        transition={{ duration: 0.35, delay: Math.min(index * 0.04, 0.2), ease: [0.22, 1, 0.36, 1] }}
-        className="group h-full scroll-mt-32"
-      >
-        <div className="relative flex h-full flex-col overflow-hidden rounded-xl border border-border/40 bg-white shadow-[0_2px_12px_-6px_rgba(11,31,51,0.08)] transition-all duration-200 hover:-translate-y-0.5 hover:border-cyan/20 hover:shadow-[0_8px_24px_-10px_rgba(11,31,51,0.12)]">
-          <div className="relative flex flex-1 flex-col p-4 sm:p-5">
-            <div
-              className={`absolute bottom-4 left-0 top-4 w-[2px] rounded-r-full bg-gradient-to-b ${accent.gradient} opacity-50 transition-opacity duration-200 group-hover:opacity-100`}
-              aria-hidden="true"
-            />
-
-            <div className="flex min-h-0 flex-1 flex-col pl-3">
-              <div className="mb-2 flex flex-wrap items-center gap-1.5">
-                <span
-                  className={`rounded-md px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wide ${
-                    project.region === 'turkmenistan'
-                      ? 'border border-brand-blue/15 bg-brand-blue/[0.06] text-brand-blue'
-                      : 'border border-green/15 bg-green/[0.06] text-green'
-                  }`}
-                >
-                  {regionLabel}
-                </span>
-                {project.sector ? (
-                  <span className="rounded-md border border-border/45 bg-light-bg px-2 py-0.5 text-[10px] font-medium text-muted">
-                    {project.sector}
-                  </span>
-                ) : null}
-              </div>
-
-              {project.highlight ? (
-                <p className="mb-1.5 text-[11px] font-semibold uppercase tracking-[0.12em] text-cyan">
-                  {project.highlight}
-                </p>
-              ) : null}
-
-              <h3 className="break-words text-base font-bold leading-snug text-navy sm:text-[1.0625rem]">
-                {project.projectName}
-              </h3>
-
-              {(project.location || displayYear || project.systemType) && (
-                <ul className="mt-2 flex flex-wrap items-center gap-x-4 gap-y-1.5 text-xs text-muted">
-                  {project.location ? (
-                    <li className="flex items-center gap-1.5">
-                      <MapPin className="h-3.5 w-3.5 shrink-0 text-brand-blue/60" aria-hidden="true" />
-                      <span>{project.location}</span>
-                    </li>
-                  ) : null}
-                  {displayYear ? (
-                    <li className="flex items-center gap-1.5">
-                      <Calendar className="h-3.5 w-3.5 shrink-0 text-brand-blue/60" aria-hidden="true" />
-                      <span>{displayYear}</span>
-                    </li>
-                  ) : null}
-                  {project.systemType ? (
-                    <li className="rounded-md border border-border/40 bg-light-bg/80 px-2 py-0.5 text-[10px] font-medium text-navy/75">
-                      {project.systemType}
-                    </li>
-                  ) : null}
-                </ul>
-              )}
-
-              {project.description ? (
-                <p className="mt-2.5 line-clamp-3 text-sm leading-relaxed text-muted">
-                  {project.description}
-                </p>
-              ) : null}
-
-              {visibleScope.length > 0 ? (
-                <div className="mt-2.5 flex flex-wrap gap-1.5">
-                  {visibleScope.map((item) => (
-                    <span
-                      key={item}
-                      className="rounded-md border border-border/40 bg-[#fbfcfd] px-2 py-0.5 text-[10px] font-medium text-muted"
-                    >
-                      {item}
-                    </span>
-                  ))}
-                  {hiddenScopeCount > 0 ? (
-                    <span className="rounded-md border border-border/40 px-2 py-0.5 text-[10px] font-medium text-muted">
-                      +{hiddenScopeCount}
-                    </span>
-                  ) : null}
-                </div>
-              ) : null}
-
-              {videoPath ? (
-                <div className="mt-3 pt-1">
-                  <button
-                    type="button"
-                    onClick={() => setIsVideoOpen(true)}
-                    className="group/video inline-flex items-center gap-1.5 rounded-md border border-border/45 bg-light-bg/60 px-2.5 py-1.5 text-xs font-semibold text-navy/80 transition-colors hover:border-cyan/25 hover:bg-cyan/[0.05] hover:text-cyan"
-                    aria-label={t('projects.watchVideo')}
-                  >
-                    <Play className="h-3.5 w-3.5 fill-current" aria-hidden="true" />
-                    {t('projects.watchVideo')}
-                  </button>
-                </div>
-              ) : null}
-            </div>
-          </div>
+  return <>
+    <article id={project.id} aria-labelledby={`title-${project.id}`} className="group flex h-full scroll-mt-32 flex-col overflow-hidden rounded-xl border border-navy/10 bg-white transition-shadow hover:shadow-md">
+      {imagePath && <div className="relative aspect-[16/8] overflow-hidden"><Image src={imagePath} alt={tr ? `${project.projectName} saha fotoğrafı` : `${project.projectName} field photograph`} fill sizes="(min-width: 1024px) 440px, (min-width: 768px) 45vw, 100vw" className="object-cover" /></div>}
+      <div className="flex flex-1 flex-col p-5 sm:p-6">
+        <div className="mb-3 flex flex-wrap items-center gap-2 text-[11px] font-semibold">
+          <span className="rounded-md bg-[#eaf2f8] px-2.5 py-1 text-brand-blue">{project.region === 'turkmenistan' ? t('projects.filters.turkmenistan') : t('projects.filters.turkey')}</span>
+          {project.sector && <span className="text-muted">{project.sector}</span>}
         </div>
-      </motion.article>
-
-      {videoPath ? (
-        <VideoModal
-          isOpen={isVideoOpen}
-          videoUrl={videoPath}
-          title={project.projectName}
-          closeLabel={t('projects.videoModal.close')}
-          onClose={() => setIsVideoOpen(false)}
-        />
-      ) : null}
-    </>
-  )
+        <h4 id={`title-${project.id}`} className="break-words text-lg font-bold leading-snug text-navy">{project.projectName}</h4>
+        <ul className="mt-3 flex flex-wrap gap-x-4 gap-y-2 text-xs text-muted">
+          {project.location && <li className="flex items-center gap-1.5"><MapPin size={14} aria-hidden="true" />{project.location}</li>}
+          {displayYear && <li className="flex items-center gap-1.5"><Calendar size={14} aria-hidden="true" />{displayYear}</li>}
+        </ul>
+        {project.highlight && <p className="mt-4 text-xs font-semibold leading-5 text-brand-blue">{project.highlight}</p>}
+        <p className="mt-3 text-sm leading-6 text-muted">{project.description}</p>
+        {project.systemType && <dl className="mt-4 border-t border-navy/10 pt-3"><dt className="text-[11px] font-semibold uppercase tracking-wider text-muted">{tr ? 'Sistem / ekipman' : 'System / equipment'}</dt><dd className="mt-1 text-xs leading-5 text-navy">{project.systemType}</dd></dl>}
+        {!!project.scope?.length && <ul aria-label={tr ? 'Uygulama kapsamı' : 'Application scope'} className="mt-4 flex flex-wrap gap-1.5">{project.scope.map(item => <li key={item} className="rounded-md border border-navy/10 bg-[#f8fafb] px-2 py-1 text-[11px] leading-4 text-muted">{item}</li>)}</ul>}
+        {videoPath && <div className="mt-auto pt-5"><button type="button" onClick={() => setIsVideoOpen(true)} aria-label={`${project.projectName}: ${t('projects.watchVideo')}`} className="inline-flex items-center gap-2 rounded-lg border border-brand-blue/20 px-3 py-2.5 text-xs font-semibold text-brand-blue transition hover:bg-brand-blue/5 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-blue"><Play size={14} aria-hidden="true" />{tr ? 'Saha uygulamasını izleyin' : 'Watch the field application'}</button></div>}
+      </div>
+    </article>
+    {videoPath && <VideoModal isOpen={isVideoOpen} videoUrl={videoPath} title={project.projectName} closeLabel={t('projects.videoModal.close')} onClose={() => setIsVideoOpen(false)} />}
+  </>
 }

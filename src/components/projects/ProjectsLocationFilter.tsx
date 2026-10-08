@@ -30,7 +30,7 @@ export function ProjectsLocationFilter({
 
   return (
     <div className="flex flex-wrap gap-2"
-      role="tablist"
+      role="group"
       aria-label={t('projects.filters.label')}
     >
       {filters.map((item) => {
@@ -39,19 +39,19 @@ export function ProjectsLocationFilter({
           <button
             key={item}
             type="button"
-            role="tab"
-            aria-selected={active}
+
+            aria-pressed={active}
             onClick={() => onFilterChange(item)}
-            className={`inline-flex items-center gap-2 rounded-full border px-4 py-2.5 text-sm font-semibold transition-all duration-200 ${
+            className={`inline-flex items-center gap-2 rounded-lg border px-4 py-2.5 text-sm font-semibold transition-all duration-200 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-blue ${
               active
-                ? 'border-cyan/30 bg-white text-brand-blue shadow-[0_4px_20px_-8px_rgba(11,31,51,0.12)] ring-1 ring-cyan/20'
+                ? 'border-navy bg-navy text-white'
                 : 'border-border/50 bg-white/80 text-navy hover:border-border hover:bg-white hover:shadow-sm'
             }`}
           >
             {labels[item]}
             <span
               className={`rounded-full px-2 py-0.5 text-xs tabular-nums ${
-                active ? 'bg-cyan/10 text-brand-blue' : 'bg-light-bg text-muted'
+                active ? 'bg-white/15 text-white' : 'bg-light-bg text-muted'
               }`}
             >
               {counts[item]}

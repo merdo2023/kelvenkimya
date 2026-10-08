@@ -23,7 +23,7 @@ function buildLanguageAlternates(path: string): Record<string, string> {
 export default function sitemap(): MetadataRoute.Sitemap {
   return [...paths, ...productPages.map(productPagePath)].map((path) => ({
     url: `${siteUrl}${getLocalePath(routing.defaultLocale, path)}`,
-    lastModified: path.startsWith('/urunlerimiz/') ? new Date('2026-10-08') : siteLastModified,
+    lastModified: path === '/projelerimiz' ? new Date('2026-10-09') : path.startsWith('/urunlerimiz/') ? new Date('2026-10-08') : siteLastModified,
     changeFrequency: path === '' ? 'weekly' : 'monthly',
     priority: path === '' ? 1 : 0.8,
     alternates: {

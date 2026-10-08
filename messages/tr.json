@@ -1064,8 +1064,8 @@
   },
   "projects": {
     "seo": {
-      "title": "Endüstriyel Projeler",
-      "description": "Türkiye ve uluslararası endüstriyel tesislerde gerçekleştirdiğimiz kimyasal temizlik projeleri."
+      "title": "Kimyasal Temizlik Projeleri",
+      "description": "Kelven Kimya’nın Türkiye ve Türkmenistan’da HRSG, kazan, tank, boru hattı ve soğutma sistemlerinde gerçekleştirdiği kimyasal temizlik projelerini inceleyin."
     },
     "title": "Projelerimiz",
     "subtitle": "Türkiye ve uluslararası endüstriyel tesislerde gerçekleştirdiğimiz kimyasal temizlik projeleri.",
@@ -1140,7 +1140,6 @@
         "projectName": "Mersin Soda Sanayi A.Ş.",
         "location": "Mersin, Türkiye",
         "description": "Unit #1 CCPP-HRSG 130 MW tesisinde devreye alma öncesi kimyasal temizlik hizmetleri gerçekleştirilmiştir.",
-        "videoUrl": "/videos/mersin.mp4",
         "sector": "Enerji",
         "systemType": "CCPP-HRSG 130 MW",
         "year": "2019",
