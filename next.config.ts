@@ -18,7 +18,7 @@ const nextConfig: NextConfig = {
       { source: '/urunlerimiz/kelvenoks-ferlin-135', destination: '/urunlerimiz/kelvenoks-ferlin-101', permanent: true },
       { source: '/:locale(tr|en)/urunlerimiz/kelvenoks-ferlin-135', destination: '/:locale/urunlerimiz/kelvenoks-ferlin-101', permanent: true },
       ...Object.entries(legacyRoutes).flatMap(([oldPath, newPath]) => [
-        { source: '/en/' + oldPath, destination: '/en/' + newPath, statusCode: 301 },
+        { source: '/en/' + newPath, destination: '/en/' + oldPath, statusCode: 301 },
         { source: '/tr/' + oldPath, destination: '/' + newPath, statusCode: 301 },
         { source: '/' + oldPath, destination: '/' + newPath, statusCode: 301 },
       ]),

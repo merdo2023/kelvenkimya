@@ -186,3 +186,11 @@ Kullanıcı Ahal'ın en üstte öne çıkarılmasını ve dört Rönesans klasö
 - Canlı /en/projects 308 ile /en/projelerimiz adresine yönleniyor; ayrı ikinci sayfa değil. 22 hizmet URL'sinde TR/EN/canonical/hreflang doğru. Robots ve 72 URL sitemap HTTP 200.
 - Kullanıcının istediği eski sayfa 301 yönlendirmeleri next.config.ts içinde hazır; TR eski yollar doğrudan öneksiz hedefe gider. Production build ve geçici sunucuda HTTP 301 kontrolleri başarılı. Push yapılmadı.
 - Search Console erişimi yok; gerçek taranma/indekslenme doğrulanamadı. PageSpeed mobil API HTTP 429 kota hatası; hız puanı üretilemedi. Ayrıntılar SEO raporuna kaydedildi.
+
+## İngilizce ana URL geçişi — 9 Ekim 2026
+
+- Kullanıcı onayıyla İngilizce ana yollar /en/products, /en/services, /en/projects, /en/about ve /en/contact olarak yerelleştirildi. Türkçe yollar değişmedi; ürün ve hizmet detay URL'leri mevcut biçimde korundu.
+- next-intl pathnames eşleştirmesi menü ve dil seçicide kullanılır. getLocalePath aynı kaynaktan canonical/hreflang/sitemap/schema URL'lerini üretir. Link sarmalayıcısı query ve fragment'i pathname'den ayırarak kategori/proje hash bağlantılarını korur.
+- Önceki İngilizce → Türkçe slug yönlendirmeleri tersine çevrildi: /en/urunlerimiz → /en/products, /en/hizmetlerimiz → /en/services, /en/projelerimiz → /en/projects, /en/hakkimizda → /en/about, /en/iletisim → /en/contact; hepsi 301. Önceki raporlardaki ters yön tarifleri bu geçişle artık geçerli değildir.
+- Üretim derlemesi başarılı. Geçici üretim sunucusunda beş yeni adres HTTP 200/en, eski beş adres HTTP 301/doğru Location; canonical ve TR/EN/x-default doğru. Eski İngilizce ana yollar menü bağlantılarında ve sitemap'te yok. Sitemap'teki 72 adresin tamamı HTTP 200; döngü yok.
+- Dil seçici ortak next-intl eşleştirmesini kullanır; tarayıcıda tıklama/görsel QA yapılmadı. Kanıt: tmp/seo-audit-20261009/english-url-migration.json.
