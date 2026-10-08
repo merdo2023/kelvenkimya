@@ -38,10 +38,10 @@ export const productPages: ProductPage[] = [
   { slug: 'org-311', name: 'ORG-311', image: '/images/products/4/5.png', catalogNames: ['ORG311'], group: 'cooling',
     tr: { introduction: "Soğutma suyu devrelerinde kireç, depozit ve korozyon kontrolü için kullanılan organik esaslı şartlandırma kimyasalıdır. Dispersant ve inhibitör içeren yapısıyla kapalı ve yarı açık devrelerin su kalitesi ve çevrim koşullarına uygun kimyasal programında değerlendirilir.", technicalFeatures: ["Organik esaslı, dispersant ve inhibitör içeren sıvı ürün.","Soğutma devrelerinde kışır, birikinti ve korozyon kontrolü.","pH, iletkenlik, aktif karbonat ve korozyon takibiyle program kontrolü."], applicationSteps: [{"title":"Başlangıç değerlendirmesi","text":"Su analizleri, malzemeler ve çevrim sayısı incelenerek ürün besleme programı oluşturulur."},{"title":"Düzenli kontrol","text":"Ryznar indeksi, pH, iletkenlik ve uygun sistemlerde korozyon kuponları takip edilir. Dozlama ve blöf koşulları analiz sonuçlarına göre değerlendirilir."}], purpose: 'Soğutma Suyu Kireç ve Korozyon Kontrol Kimyasalı', description: 'Soğutma suyu devrelerinde kireç, birikinti ve korozyon kontrolü için kullanılan organik esaslı şartlandırma ürünüdür. Su analizleri, sistem malzemeleri ve çevrim koşulları doğrultusunda kimyasal program değerlendirilir.', applications: ['Kapalı ve yarı açık soğutma devreleri', 'Soğutma kuleleri ve bağlı su devreleri', 'Eşanjör ve kondenser soğutma suyu programları'], packaging: '35, 70 ve 250 kg HDPE bidon' },
     en: { introduction: "An organic-based treatment chemical for scale, deposit and corrosion control in cooling water circuits. Its dispersants and inhibitors are assessed within a chemical program suited to water quality and cycles in closed and semi-open systems.", technicalFeatures: ["Organic-based liquid containing dispersants and inhibitors.","Scale, deposit and corrosion control in cooling circuits.","Program monitoring through pH, conductivity, active carbonate and corrosion checks."], applicationSteps: [{"title":"Initial assessment","text":"Review water analyses, materials and concentration cycles to prepare a feeding program."},{"title":"Regular monitoring","text":"Monitor the Ryznar index, pH, conductivity and corrosion coupons where appropriate. Review dosing and blowdown conditions using analysis results."}], purpose: 'Cooling Water Scale and Corrosion Control Chemical', description: 'An organic-based treatment product for scale, deposit and corrosion control in cooling water circuits. The chemical program is assessed using water analyses, system materials and cycle conditions.', applications: ['Closed and semi-open cooling circuits', 'Cooling towers and associated water circuits', 'Heat exchanger and condenser cooling water programs'], packaging: '35, 70 and 250 kg HDPE containers' } },
-  { slug: 'abacid-microbiosid', name: 'ABACID MICROBIOSID', catalogNames: [], group: 'cooling',
+  { slug: 'abacid-microbiosid', name: 'ABACIDE', image: '/images/products/4/1.png', catalogNames: ['ABACIDE - Yosun Önleyici', 'ABACIDE - Algaecide'], group: 'cooling',
     tr: { introduction: "Soğutma suyunda yosun, bakteri ve mantar kaynaklı biyolojik kirlenmenin kontrolüne yönelik organik sülfür bileşikleri içeren mikrobiyosittir. Soğutma kuleleri, kondenser su devreleri ve kapalı devre sistemlerde biyolojik kontrol programının bir parçası olarak değerlendirilir.", technicalFeatures: ["Organik sülfür bileşikleri içeren berrak sarı-yeşil sıvı.","Yosun, bakteri ve mantar kaynaklı kirlenme kontrolü.","Şok veya sürekli dozlama programına göre kullanım."], applicationSteps: [{"title":"Program seçimi","text":"Sistemin biyolojik kirlenme durumu, devre hacmi ve mevcut kimyasalları değerlendirilir. Şok veya sürekli besleme yöntemi ihtiyaca göre seçilir."},{"title":"Dozlama ve takip","text":"Uygulama sıklığı ve miktarı sistem koşullarıyla belirlenir. Biyolojik kontrol sonuçları ve diğer şartlandırma ürünleriyle uyumluluk takip edilir."}], purpose: 'Soğutma Suyu Biyositi', description: 'Soğutma suyu devrelerinde yosun, bakteri ve mantar kaynaklı biyolojik kirlenmenin kontrolüne yönelik mikrobiyosittir. Sistem koşullarına göre biyolojik kontrol programı ve kimyasal uyumluluğu değerlendirilir.', applications: ['Soğutma kuleleri', 'Kondenser soğutma suyu devreleri', 'Kapalı devre soğutma sistemleri'], packaging: '35, 70 ve 250 kg HDPE bidon' },
     en: { introduction: "A microbiocide containing organic sulphur compounds for biological fouling associated with algae, bacteria and fungi in cooling water. Assessed as part of biological control programs for towers, condenser water circuits and closed-loop systems.", technicalFeatures: ["Clear yellow-green liquid containing organic sulphur compounds.","Control of fouling associated with algae, bacteria and fungi.","Use through shock or continuous dosing programs."], applicationSteps: [{"title":"Program selection","text":"Assess biological fouling, circuit volume and existing chemicals. Choose shock or continuous feeding according to requirements."},{"title":"Dosing and monitoring","text":"Determine quantity and frequency according to system conditions. Monitor biological control results and compatibility with other treatment products."}], purpose: 'Cooling Water Biocide', description: 'A microbiocide for controlling biological fouling associated with algae, bacteria and fungi in cooling water circuits. The biological control program and chemical compatibility are assessed for system conditions.', applications: ['Cooling towers', 'Condenser cooling water circuits', 'Closed-loop cooling systems'], packaging: '35, 70 and 250 kg HDPE containers' } },
-  { slug: 'monoetilen-glikol', name: 'Monoetilen Glikol', catalogNames: [], group: 'cooling',
+  { slug: 'monoetilen-glikol', name: 'Monoetilen Glikol', image: '/images/products/4/2.png', catalogNames: ['Monoetilen Glikol', 'Monoethylene Glycol', 'Montoetilen Glikol 250kg', 'Monoethylene Glycol 250kg'], group: 'cooling',
     tr: { introduction: "Kapalı devre soğutma suyunun donma noktasını düşürmek amacıyla kullanılan sıvı üründür. Chiller ve eşanjörlü sistemlerde hedeflenen çalışma koşullarına uygun su-glikol karışımı hazırlanmasında değerlendirilir. Karışım seçimi sıcaklık ihtiyacı, su kalitesi ve malzeme uygunluğuyla birlikte yapılır.", technicalFeatures: ["Soğutma suyunun donma noktasını düşürmeye yönelik kullanım.","Kapalı devre, chiller ve eşanjörlü soğutma sistemleri.","Karışım oranına bağlı termal özelliklerin değerlendirilmesi."], applicationSteps: [{"title":"Karışımın seçilmesi","text":"Hedeflenen en düşük sıcaklık ve sistem gereklilikleri belirlenerek uygun karışım oranı seçilir."},{"title":"Hazırlama ve takip","text":"Uygun su kalitesiyle karışım hazırlanır. Konsantrasyon, pH ve sistemin çalışma koşulları teknik programa göre kontrol edilir."}], purpose: 'Soğutma Sistemleri İçin Donma Noktası Düşürücü', description: 'Soğutma suyunun donma noktasını düşürmek amacıyla değerlendirilen sıvı üründür. Karışım seçimi, hedeflenen sıcaklık, su kalitesi ve sistemin malzeme gerekliliklerine göre yapılır.', applications: ['Kapalı devre soğutma sistemleri', 'Chiller devreleri', 'Eşanjörlü soğutma sistemleri'], packaging: '35, 70 ve 250 kg HDPE bidon' },
     en: { introduction: "A liquid used to lower the freezing point of closed-loop cooling water. Assessed for preparing water-glycol mixtures in chillers and heat exchanger systems. Mixture selection considers temperature requirements, water quality and material compatibility.", technicalFeatures: ["Used to lower cooling water freezing point.","Closed-loop, chiller and heat exchanger cooling applications.","Assessment of concentration-dependent thermal properties."], applicationSteps: [{"title":"Mixture selection","text":"Determine minimum temperature and system requirements to select the mixture concentration."},{"title":"Preparation and monitoring","text":"Prepare using appropriate-quality water. Monitor concentration, pH and operating conditions according to the technical program."}], purpose: 'Freezing Point Depressant for Cooling Systems', description: 'A liquid assessed for lowering the freezing point of cooling water. Mixture selection depends on target temperature, water quality and system material requirements.', applications: ['Closed-loop cooling systems', 'Chiller circuits', 'Heat exchanger cooling systems'], packaging: '35, 70 and 250 kg HDPE containers' } },
   { slug: 'katyonik-iyon-degisim-recinesi', name: 'Katyonik İyon Değişim Reçinesi', catalogNames: [], group: 'preparation',
@@ -77,5 +77,237 @@ export const productPages: ProductPage[] = [
   },
 },
 ]
+const additionalCoolingPages: ProductPage[] = [
+  {
+    "slug": "org-211",
+    "name": "ORG211",
+    "image": "/images/products/4/4.png",
+    "catalogNames": [
+      "ORG211"
+    ],
+    "group": "cooling",
+    "tr": {
+      "purpose": "Soğutma Suyu Kireç Önleyici",
+      "description": "Kapalı ve yarı açık soğutma suyu devrelerinde kireç ve mineral birikintilerinin kontrolü için kullanılan şartlandırma ürünüdür.",
+      "introduction": "Kapalı ve yarı açık soğutma suyu devrelerinde kireç ve mineral birikintilerinin kontrolü için kullanılan şartlandırma ürünüdür. Ürün seçimi, mevcut su kalitesi, ekipman malzemeleri ve işletme koşulları birlikte incelenerek yapılır.",
+      "applications": [
+        "Kapalı ve yarı açık soğutma devreleri",
+        "Malzeme uygunluğu değerlendirilen soğutma suyu ekipmanları"
+      ],
+      "technicalFeatures": [
+        "Soğutma Suyu Kireç Önleyici",
+        "Sisteme özel seçim ve teknik takip."
+      ],
+      "applicationSteps": [
+        {
+          "title": "Teknik değerlendirme",
+          "text": "Su analizleri, devre hacmi, malzemeler ve işletme koşulları incelenir."
+        },
+        {
+          "title": "Uygulama ve takip",
+          "text": "Dozlama veya karışım koşulları güncel ürün teknik bilgileriyle belirlenir. Analizlerle program takip edilerek gerekli ayarlamalar yapılır."
+        }
+      ],
+      "packaging": "35, 70 ve 250 kg HDPE bidon"
+    },
+    "en": {
+      "purpose": "Cooling Water Scale Inhibitor",
+      "description": "A treatment product for controlling scale and mineral deposits in closed and semi-open cooling water circuits.",
+      "introduction": "A treatment product for controlling scale and mineral deposits in closed and semi-open cooling water circuits. Selection considers water quality, equipment materials and operating conditions together.",
+      "applications": [
+        "Closed and semi-open cooling circuits",
+        "Cooling water equipment subject to material review"
+      ],
+      "technicalFeatures": [
+        "Cooling Water Scale Inhibitor",
+        "System-specific selection and technical monitoring."
+      ],
+      "applicationSteps": [
+        {
+          "title": "Technical assessment",
+          "text": "Review water analyses, circuit volume, materials and operating conditions."
+        },
+        {
+          "title": "Application and monitoring",
+          "text": "Determine dosing or mixture conditions using current product technical information. Monitor analyses and adjust the program as required."
+        }
+      ],
+      "packaging": "35, 70 and 250 kg HDPE containers"
+    }
+  },
+  {
+    "slug": "org-400",
+    "name": "ORG400",
+    "image": "/images/products/4/6.png",
+    "catalogNames": [
+      "ORG400"
+    ],
+    "group": "cooling",
+    "tr": {
+      "purpose": "HEDP Bazlı Soğutma Suyu Antiskalantı",
+      "description": "Sertlik kaynaklı çökelmelerin kontrolü ve demir ile kalsiyum dispersiyonu için kullanılan HEDP bazlı antiskalanttır. Soğutma suyu programında su analizi ve çevrim koşullarına göre değerlendirilir.",
+      "introduction": "Sertlik kaynaklı çökelmelerin kontrolü ve demir ile kalsiyum dispersiyonu için kullanılan HEDP bazlı antiskalanttır. Soğutma suyu programında su analizi ve çevrim koşullarına göre değerlendirilir. Ürün seçimi, mevcut su kalitesi, ekipman malzemeleri ve işletme koşulları birlikte incelenerek yapılır.",
+      "applications": [
+        "Soğutma suyu devrelerinde sertlik kaynaklı birikinti kontrolü",
+        "Demir ve kalsiyum dispersiyonuna ihtiyaç duyulan şartlandırma programları"
+      ],
+      "technicalFeatures": [
+        "HEDP Bazlı Soğutma Suyu Antiskalantı",
+        "Sisteme özel seçim ve teknik takip."
+      ],
+      "applicationSteps": [
+        {
+          "title": "Teknik değerlendirme",
+          "text": "Su analizleri, devre hacmi, malzemeler ve işletme koşulları incelenir."
+        },
+        {
+          "title": "Uygulama ve takip",
+          "text": "Dozlama veya karışım koşulları güncel ürün teknik bilgileriyle belirlenir. Analizlerle program takip edilerek gerekli ayarlamalar yapılır."
+        }
+      ],
+      "packaging": "35, 70 ve 250 kg HDPE bidon"
+    },
+    "en": {
+      "purpose": "HEDP-Based Cooling Water Antiscalant",
+      "description": "An HEDP-based antiscalant for hardness-related deposits and iron and calcium dispersion. Assessed within a cooling water program using water analyses and concentration cycles.",
+      "introduction": "An HEDP-based antiscalant for hardness-related deposits and iron and calcium dispersion. Assessed within a cooling water program using water analyses and concentration cycles. Selection considers water quality, equipment materials and operating conditions together.",
+      "applications": [
+        "Hardness-related deposit control in cooling circuits",
+        "Treatment programs requiring iron and calcium dispersion"
+      ],
+      "technicalFeatures": [
+        "HEDP-Based Cooling Water Antiscalant",
+        "System-specific selection and technical monitoring."
+      ],
+      "applicationSteps": [
+        {
+          "title": "Technical assessment",
+          "text": "Review water analyses, circuit volume, materials and operating conditions."
+        },
+        {
+          "title": "Application and monitoring",
+          "text": "Determine dosing or mixture conditions using current product technical information. Monitor analyses and adjust the program as required."
+        }
+      ],
+      "packaging": "35, 70 and 250 kg HDPE containers"
+    }
+  },
+  {
+    "slug": "org-411",
+    "name": "ORG411",
+    "image": "/images/products/4/7.png",
+    "catalogNames": [
+      "ORG411"
+    ],
+    "group": "cooling",
+    "tr": {
+      "purpose": "Soğutma Kulesi Biyodispersantı",
+      "description": "Soğutma kulelerinde biyolojik kaynaklı birikintilerin dağıtılmasına yönelik kullanılan biyodispersanttır. Biyolojik kontrol programında mevcut ürünler ve sistemin kirlenme durumuyla birlikte değerlendirilir.",
+      "introduction": "Soğutma kulelerinde biyolojik kaynaklı birikintilerin dağıtılmasına yönelik kullanılan biyodispersanttır. Biyolojik kontrol programında mevcut ürünler ve sistemin kirlenme durumuyla birlikte değerlendirilir. Ürün seçimi, mevcut su kalitesi, ekipman malzemeleri ve işletme koşulları birlikte incelenerek yapılır.",
+      "applications": [
+        "Soğutma kuleleri ve bağlı su devreleri",
+        "Biyolojik kaynaklı birikintilerin dağıtılmasına ihtiyaç duyulan sistemler"
+      ],
+      "technicalFeatures": [
+        "Soğutma Kulesi Biyodispersantı",
+        "Sisteme özel seçim ve teknik takip."
+      ],
+      "applicationSteps": [
+        {
+          "title": "Teknik değerlendirme",
+          "text": "Su analizleri, devre hacmi, malzemeler ve işletme koşulları incelenir."
+        },
+        {
+          "title": "Uygulama ve takip",
+          "text": "Dozlama veya karışım koşulları güncel ürün teknik bilgileriyle belirlenir. Analizlerle program takip edilerek gerekli ayarlamalar yapılır."
+        }
+      ],
+      "packaging": "35, 70 ve 250 kg HDPE bidon"
+    },
+    "en": {
+      "purpose": "Cooling Tower Biodispersant",
+      "description": "A biodispersant used in cooling towers to disperse biologically associated deposits. Assessed alongside existing products and fouling conditions in the biological control program.",
+      "introduction": "A biodispersant used in cooling towers to disperse biologically associated deposits. Assessed alongside existing products and fouling conditions in the biological control program. Selection considers water quality, equipment materials and operating conditions together.",
+      "applications": [
+        "Cooling towers and associated circuits",
+        "Systems requiring dispersion of biologically associated deposits"
+      ],
+      "technicalFeatures": [
+        "Cooling Tower Biodispersant",
+        "System-specific selection and technical monitoring."
+      ],
+      "applicationSteps": [
+        {
+          "title": "Technical assessment",
+          "text": "Review water analyses, circuit volume, materials and operating conditions."
+        },
+        {
+          "title": "Application and monitoring",
+          "text": "Determine dosing or mixture conditions using current product technical information. Monitor analyses and adjust the program as required."
+        }
+      ],
+      "packaging": "35, 70 and 250 kg HDPE containers"
+    }
+  },
+  {
+    "slug": "monopropilen-glikol",
+    "name": "Monopropilen Glikol",
+    "image": "/images/products/4/3.png",
+    "catalogNames": [
+      "Monopropilen Glikol 250kg",
+      "Monopropylene Glycol 250kg"
+    ],
+    "group": "cooling",
+    "tr": {
+      "purpose": "Soğutma Sistemleri İçin Antifriz",
+      "description": "Endüstriyel soğutma sistemlerinde donma noktası kontrolü amacıyla kullanılan glikol ürünüdür. Monoetilen glikolden ayrı bir üründür; karışım seçimi sistemin sıcaklık ve malzeme gerekliliklerine göre yapılır.",
+      "introduction": "Endüstriyel soğutma sistemlerinde donma noktası kontrolü amacıyla kullanılan glikol ürünüdür. Monoetilen glikolden ayrı bir üründür; karışım seçimi sistemin sıcaklık ve malzeme gerekliliklerine göre yapılır. Ürün seçimi, mevcut su kalitesi, ekipman malzemeleri ve işletme koşulları birlikte incelenerek yapılır.",
+      "applications": [
+        "Endüstriyel kapalı devre soğutma sistemleri",
+        "Uygunluk değerlendirmesi yapılan chiller ve eşanjör devreleri"
+      ],
+      "technicalFeatures": [
+        "Soğutma Sistemleri İçin Antifriz",
+        "Sisteme özel seçim ve teknik takip."
+      ],
+      "applicationSteps": [
+        {
+          "title": "Teknik değerlendirme",
+          "text": "Su analizleri, devre hacmi, malzemeler ve işletme koşulları incelenir."
+        },
+        {
+          "title": "Uygulama ve takip",
+          "text": "Dozlama veya karışım koşulları güncel ürün teknik bilgileriyle belirlenir. Analizlerle program takip edilerek gerekli ayarlamalar yapılır."
+        }
+      ],
+      "packaging": "35, 70 ve 250 kg HDPE bidon"
+    },
+    "en": {
+      "purpose": "Antifreeze for Cooling Systems",
+      "description": "A glycol product used for freezing point control in industrial cooling systems. It is distinct from monoethylene glycol; mixture selection depends on temperature and material requirements.",
+      "introduction": "A glycol product used for freezing point control in industrial cooling systems. It is distinct from monoethylene glycol; mixture selection depends on temperature and material requirements. Selection considers water quality, equipment materials and operating conditions together.",
+      "applications": [
+        "Industrial closed-loop cooling systems",
+        "Chiller and heat exchanger circuits subject to suitability review"
+      ],
+      "technicalFeatures": [
+        "Antifreeze for Cooling Systems",
+        "System-specific selection and technical monitoring."
+      ],
+      "applicationSteps": [
+        {
+          "title": "Technical assessment",
+          "text": "Review water analyses, circuit volume, materials and operating conditions."
+        },
+        {
+          "title": "Application and monitoring",
+          "text": "Determine dosing or mixture conditions using current product technical information. Monitor analyses and adjust the program as required."
+        }
+      ],
+      "packaging": "35, 70 and 250 kg HDPE containers"
+    }
+  }
+]
+productPages.push(...additionalCoolingPages)
 export function findProductPage(name: string) { return productPages.find(product => product.catalogNames.includes(name)) }
 export function productPagePath(product: ProductPage) { return `${productBasePath}/${product.slug}` }

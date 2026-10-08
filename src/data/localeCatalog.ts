@@ -25,7 +25,11 @@ export async function getProductCategories(locale: AppLocale): Promise<ProductCa
   const messages = await loadLocaleMessages(locale)
   return sortProductCategories(messages.products.categories).map(category => ({
     ...category,
-    products: category.products.map(product => {
+    products: category.products.filter(product => category.id !== 'sogutma_suyu_kimyasallari' || product.name !== 'SILIFOAM 101').sort((a, b) => {
+      if (category.id !== 'sogutma_suyu_kimyasallari') return 0
+      const order = ['ORG311', 'ORG211', 'ORG400', 'ORG411', 'ABACIDE - Yosun Önleyici', 'ABACIDE - Algaecide', 'Monoetilen Glikol', 'Monoethylene Glycol', 'Monopropilen Glikol 250kg', 'Monopropylene Glycol 250kg']
+      return order.indexOf(a.name) - order.indexOf(b.name)
+    }).map(product => {
       const page = findProductPage(product.name)
       return page ? { ...product, description: (locale === 'tr' ? page.tr : page.en).description } : product
     }),
