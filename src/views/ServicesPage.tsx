@@ -8,6 +8,7 @@ import { routes } from '@/data/routes'
 import type { AppLocale } from '@/i18n/routing'
 import { cleaningBasePath, cleaningMenu } from '@/data/cleaningServices'
 import { conditioningBasePath, conditioningContent, conditioningServices } from '@/data/waterConditioningServices'
+import { cleaningProductsPath } from '@/views/CleaningProductsPage'
 
 export async function ServicesPage({ locale }: { locale: string }) {
   const tr = locale === 'tr'
@@ -52,7 +53,7 @@ export async function ServicesPage({ locale }: { locale: string }) {
           <ul className="mt-3 space-y-3">{service.bullets?.map(bullet => <li key={bullet} className="flex gap-2 text-sm leading-relaxed text-muted"><Check className="mt-1 h-4 w-4 shrink-0 text-cyan" />{bullet}</li>)}</ul>
           <p className="mt-6 border-t border-navy/10 pt-4 text-sm font-semibold text-navy/75">{service.resultLabel}</p>
           <div className="mt-5 flex flex-wrap gap-4"><Link href={routes.contact} className="inline-flex items-center gap-2 rounded-xl gradient-accent px-5 py-3 text-sm font-semibold text-white">{tr ? 'İhtiyacınızı Değerlendirelim' : 'Discuss Your Requirements'}<ArrowRight className="h-4 w-4" /></Link>
-          {service.id === 'kimyasal-temizlik-kimyasallari' && <Link href={routes.products} className="inline-flex items-center gap-2 text-sm font-semibold text-brand-blue">{tr ? 'Ürünleri İncele' : 'Explore Products'}<ArrowRight className="h-4 w-4" /></Link>}</div>
+          {service.id === 'kimyasal-temizlik-kimyasallari' && <Link href={cleaningProductsPath} className="inline-flex items-center gap-2 text-sm font-semibold text-brand-blue">{tr ? 'Kelvenoks Ferlin Serisini İnceleyin' : 'Explore the Kelvenoks Ferlin Series'}<ArrowRight className="h-4 w-4" /></Link>}</div>
         </div>
       </div></article>)}
     </div></Container></section>
