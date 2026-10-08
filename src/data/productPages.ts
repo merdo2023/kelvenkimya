@@ -47,6 +47,35 @@ export const productPages: ProductPage[] = [
   { slug: 'katyonik-iyon-degisim-recinesi', name: 'Katyonik İyon Değişim Reçinesi', catalogNames: [], group: 'preparation',
     tr: { introduction: "Su yumuşatma ünitelerinde kullanılan, sodyum formunda kuvvetli asidik katyon değişim reçinesidir. Kalsiyum ve magnezyum iyonlarını sodyum iyonlarıyla değiştirerek suyun sertliğini azaltır. Sıvı kimyasallar gibi dozlanmaz; suyun geçtiği reçine yatağında görev yapar.", technicalFeatures: ["Polistiren esaslı jel boncuk yapısı ve sodyum formu.","Bültende 0,3–1,2 mm parçacık boyutu ve en az 2 eq/L kapasite belirtilir.","NaCl ile rejenerasyon yapılarak yumuşatma çevriminin sürdürülmesi."], applicationSteps: [{"title":"Üniteye yerleştirme","text":"Reçine miktarı ve yatak düzeni, yumuşatma ünitesinin kapasitesi, debisi ve giriş suyu sertliğine göre belirlenir."},{"title":"Servis ve rejenerasyon","text":"Çıkış suyu sertliği takip edilir. Reçine, ünitenin prosedürüne uygun tuzlu suyla rejenerasyona alınır; çevrim ve tuz tüketimi işletme koşullarına göre ayarlanır."}], purpose: 'Su Yumuşatma Reçinesi', description: 'Suyun kalsiyum ve magnezyum iyonlarını sodyum iyonlarıyla değiştirerek sertliği azaltan kuvvetli asidik katyonik reçinedir. Su yumuşatma ünitesinin reçine yatağında kullanılır; sıvı dozlama kimyasalı değildir.', applications: ['Endüstriyel su yumuşatma üniteleri', 'Kazan ve soğutma sistemleri için besleme suyu hazırlama', 'İşletmelerde kullanım suyu yumuşatma'], packaging: '35, 70 ve 250 kg HDPE bidon' },
     en: { introduction: "A strong-acid cation exchange resin in sodium form for water softeners. It reduces hardness by exchanging calcium and magnesium ions for sodium ions. Rather than liquid dosing, it operates in a resin bed through which water flows.", technicalFeatures: ["Polystyrene-based gel beads in sodium form.","The bulletin lists particle size of 0.3–1.2 mm and a minimum capacity of 2 eq/L.","NaCl regeneration supports repeated softening cycles."], applicationSteps: [{"title":"Loading the unit","text":"Determine resin quantity and bed arrangement according to softener capacity, flow and inlet hardness."},{"title":"Service and regeneration","text":"Monitor outlet hardness. Regenerate with brine under the unit procedure; adjust cycles and salt consumption to operating conditions."}], purpose: 'Water Softening Resin', description: 'A strong-acid cation exchange resin that reduces hardness by exchanging calcium and magnesium ions for sodium ions. It is used in a softener resin bed rather than dosed as a liquid chemical.', applications: ['Industrial water softening units', 'Feedwater preparation for boilers and cooling systems', 'Utility water softening in facilities'], packaging: '35, 70 and 250 kg HDPE containers' } },
+{
+  slug: 'alkelen-np150', name: 'Alkelen NP150', image: '/images/products/2/6.png', catalogNames: ['Alkelen np150', 'Alkelen NP150'], group: 'cleaning',
+  tr: {
+    purpose: 'Endüstriyel Yağ, Gres ve Karbon Temizleme Kimyasalı',
+    description: 'Alkelen NP150, ağır yağ, karbon, gres ve proses kalıntılarının temizliği için geliştirilmiş yüksek alkali endüstriyel temizlik ürünüdür. Ekipman ve yüzeylerdeki kirlenmenin niteliğine göre uygun temizlik programında değerlendirilir.',
+    introduction: 'Endüstriyel üretim ve bakım süreçlerinde yüzeylerde biriken yağ, gres ve proses kalıntıları için alkali temizlik çözümü sunar. Kireç temizliğine yönelik asidik ürünlerden farklı olarak yağlı ve organik kirlenmenin giderilmesine odaklanır. Ürün seçimi, temizlenecek yüzeyin malzemesi, kaplaması ve kirlenme özellikleri birlikte değerlendirilerek yapılır.',
+    applications: ['Ağır yağ ve gresle kirlenmiş endüstriyel yüzeyler', 'Karbon ve proses kalıntısı bulunan ekipmanlar', 'Malzeme uygunluğu değerlendirilen makine parçaları ve bakım temizliği uygulamaları'],
+    technicalFeatures: ['Yüksek alkali endüstriyel temizlik ürünü.', 'Ağır yağ, gres, karbon ve proses kalıntılarına yönelik kullanım.', 'Malzeme ve kaplama uygunluğu değerlendirilerek temizlik programına dahil edilir.'],
+    applicationSteps: [
+      { title: 'Yüzey ve kirlenmenin değerlendirilmesi', text: 'Ekipmanın malzemesi, kaplaması ve mevcut kalıntılar incelenir. Alkali temizliğe uygunluk ve uygulama yöntemi belirlenir.' },
+      { title: 'Temizlik koşullarının belirlenmesi', text: 'Seyreltme oranı, sıcaklık, temas süresi ve uygulama yöntemi ürüne ait güncel teknik bilgiler ve sistem gerekliliklerine göre belirlenir.' },
+      { title: 'Durulama ve kontrol', text: 'Temizlik sonrasında yüzey ve devreye uygun durulama yapılır. Kalıntıların giderilmesi ve ekipmanın sonraki kullanım koşulları kontrol edilir.' },
+    ],
+    packaging: '35, 70 ve 250 kg HDPE bidon',
+  },
+  en: {
+    purpose: 'Industrial Oil, Grease and Carbon Cleaning Chemical',
+    description: 'Alkelen NP150 is a highly alkaline industrial cleaning product developed for heavy oil, carbon, grease and process residues. It is assessed in a cleaning program according to equipment and surface contamination.',
+    introduction: 'Provides an alkaline cleaning solution for oil, grease and process residues accumulated during industrial production and maintenance. Unlike acidic descaling products, it focuses on oily and organic contamination. Selection considers surface materials, coatings and contamination characteristics together.',
+    applications: ['Industrial surfaces contaminated with heavy oil and grease', 'Equipment containing carbon and process residues', 'Machine components and maintenance cleaning subject to material compatibility review'],
+    technicalFeatures: ['Highly alkaline industrial cleaning product.', 'Intended for heavy oil, grease, carbon and process residues.', 'Included in a cleaning program after reviewing material and coating compatibility.'],
+    applicationSteps: [
+      { title: 'Surface and contamination assessment', text: 'Review equipment materials, coatings and residues. Determine alkaline cleaning suitability and application method.' },
+      { title: 'Defining cleaning conditions', text: 'Dilution, temperature, contact time and application method are determined using current product technical information and system requirements.' },
+      { title: 'Rinsing and inspection', text: 'Rinse using a method appropriate for the surface and circuit. Check residue removal and requirements for subsequent equipment use.' },
+    ],
+    packaging: '35, 70 and 250 kg HDPE containers',
+  },
+},
 ]
 export function findProductPage(name: string) { return productPages.find(product => product.catalogNames.includes(name)) }
 export function productPagePath(product: ProductPage) { return `${productBasePath}/${product.slug}` }
