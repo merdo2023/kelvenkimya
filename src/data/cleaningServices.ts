@@ -21,7 +21,7 @@ export type CleaningService = {
 
 export const cleaningServices: CleaningService[] = [
   {
-    slug: 'on-temizlik-flushing', image: '/images/services/ahal-chemical-cleaning.jpeg',
+    slug: 'on-temizlik-flushing', image: '/images/services/flushing-pipe-interior.jpg',
     tr: {
       title: 'Flushing ve Kimyasal Ön Temizlik',
       summary: 'Devreye alma öncesi boru hatları ve proses sistemlerinde su ile flushing ve ihtiyaca uygun kimyasal ön temizlik hizmetleri.',
