@@ -1,0 +1,42 @@
+import Image from 'next/image'
+import { ArrowRight, Check, FlaskConical } from 'lucide-react'
+import { Container } from '@/components/common/Container'
+import { ContactCTA } from '@/components/home/ContactCTA'
+import { Link } from '@/i18n/navigation'
+import { getLocalePath } from '@/i18n/routing'
+import { siteUrl } from '@/lib/site'
+import { routes } from '@/data/routes'
+import { productPages, productPagePath, type ProductPage } from '@/data/productPages'
+
+export function ProductPageView({ locale, product }: { locale: string; product: ProductPage }) {
+  const tr = locale === 'tr'
+  const content = tr ? product.tr : product.en
+  const name = !tr && product.slug === 'katyonik-iyon-degisim-recinesi' ? 'Cation Exchange Resin' : product.name
+  const related = productPages.filter(item => item.group === product.group && item.slug !== product.slug).slice(0, 3)
+  const category = { cleaning: 'kimyasal_temizlik_urunleri', boiler: 'kazan_suyu_kimyasallari', cooling: 'sogutma_suyu_kimyasallari', preparation: '' }[product.group]
+  const servicePath = { cleaning: '/hizmetlerimiz/endustriyel-kimyasal-temizlik-urunleri', boiler: '/hizmetlerimiz/su-sartlandirma-kimyasallari/kazan-suyu-sartlandirma-kimyasallari', cooling: '/hizmetlerimiz/su-sartlandirma-kimyasallari/sogutma-kulesi-suyu-sartlandirma-kimyasallari', preparation: '/hizmetlerimiz#su-yumusatma-uniteleri-revizyonu' }[product.group]
+  const inputs = product.group === 'cleaning'
+    ? (tr ? ['Ekipman ve tüm devre malzemeleri', 'Birikinti fotoğrafları veya analizleri', 'Devre hacmi ve planlanan uygulama'] : ['Equipment and all circuit materials', 'Deposit photographs or analyses', 'Circuit volume and planned application'])
+    : (tr ? ['Sistem tipi ve işletme koşulları', 'Mevcut su analizleri', 'Kullanılan ürünler ve tüketim bilgileri'] : ['System type and operating conditions', 'Available water analyses', 'Current products and consumption information'])
+  const breadcrumb = { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [
+    { '@type': 'ListItem', position: 1, name: tr ? 'Ana Sayfa' : 'Home', item: `${siteUrl}${getLocalePath(locale, '/')}` },
+    { '@type': 'ListItem', position: 2, name: tr ? 'Ürünlerimiz' : 'Our Products', item: `${siteUrl}${getLocalePath(locale, routes.products)}` },
+    { '@type': 'ListItem', position: 3, name, item: `${siteUrl}${getLocalePath(locale, productPagePath(product))}` },
+  ] }
+  return <>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb).replace(/</g, '\\u003c') }} />
+    <section className="bg-navy pb-10 pt-28 sm:pt-32"><Container>
+      <nav aria-label={tr ? 'Sayfa yolu' : 'Breadcrumb'} className="mb-7 flex flex-wrap gap-2 text-xs text-white/70"><Link href={routes.home}>{tr ? 'Ana Sayfa' : 'Home'}</Link><span>/</span><Link href={routes.products}>{tr ? 'Ürünlerimiz' : 'Our Products'}</Link><span>/</span><span className="text-white">{name}</span></nav>
+      <div className="grid items-center gap-7 md:grid-cols-[1fr_260px]">
+        <div><p className="text-xs font-bold uppercase tracking-widest text-cyan">{tr ? 'Ürün Tedariki · Teknik Destek' : 'Product Supply · Technical Support'}</p><h1 className="mt-3 text-3xl font-bold text-white sm:text-4xl">{name}</h1><p className="mt-3 text-lg font-medium text-white/90">{content.purpose}</p><p className="mt-4 max-w-2xl text-sm leading-relaxed text-white/70 sm:text-base">{content.description}</p><Link href={routes.contact} className="mt-6 inline-flex items-center gap-2 rounded-xl gradient-accent px-5 py-3 text-sm font-semibold text-white">{tr ? 'Ürün Bilgisi ve Teklif Alın' : 'Request Product Information and a Quote'}<ArrowRight className="h-4 w-4" /></Link></div>
+        {product.image ? <div className="relative mx-auto aspect-square w-52 rounded-2xl bg-white p-5 md:w-64"><Image src={product.image} alt={`${name} – ${content.purpose}`} fill sizes="(min-width: 768px) 256px, 208px" className="object-contain p-5" priority /></div> : <div className="hidden rounded-2xl border border-white/10 bg-white/5 p-9 text-center md:block"><FlaskConical className="mx-auto h-12 w-12 text-cyan" /><p className="mt-4 text-sm font-semibold text-white">{name}</p></div>}
+      </div>
+    </Container></section>
+    <section className="bg-[#eef5f8] py-10 sm:py-12"><Container><div className="grid gap-6 lg:grid-cols-[1.4fr_1fr]">
+      <article className="rounded-2xl border border-navy/10 bg-white p-6 sm:p-8"><h2 className="text-xl font-bold text-navy">{tr ? `${name} Nerelerde Kullanılır?` : `Where Is ${name} Used?`}</h2><ul className="mt-5 space-y-3">{content.applications.map(item => <li key={item} className="flex gap-3 text-sm leading-relaxed text-muted"><Check className="mt-1 h-4 w-4 shrink-0 text-cyan" />{item}</li>)}</ul><dl className="mt-6 space-y-4 border-t border-navy/10 pt-5">{content.materials && <div><dt className="text-xs font-semibold text-navy">{tr ? 'Malzeme Odağı' : 'Material Focus'}</dt><dd className="mt-1 text-sm text-muted">{content.materials}</dd></div>}{content.packaging && <div><dt className="text-xs font-semibold text-navy">{tr ? 'Ambalaj Seçenekleri' : 'Packaging Options'}</dt><dd className="mt-1 text-sm text-muted">{content.packaging}</dd></div>}</dl><p className="mt-5 text-xs leading-relaxed text-muted">{tr ? 'Ürün seçimi ve kullanım koşulları sistem gerekliliklerine göre belirlenir. Güncel teknik bülten, güvenlik bilgi formu ve tedarik bilgileri için bizimle iletişime geçebilirsiniz.' : 'Product selection and use conditions depend on system requirements. Contact us for the current technical bulletin, safety data sheet and supply information.'}</p></article>
+      <aside className="self-start rounded-2xl border border-navy/10 bg-white p-6 sm:p-8"><h2 className="text-xl font-bold text-navy">{tr ? 'Birlikte Doğru Ürünü Seçelim' : 'Let’s Select the Right Product'}</h2><p className="mt-3 text-sm leading-relaxed text-muted">{tr ? 'Teknik değerlendirme için aşağıdaki bilgileri paylaşabilirsiniz.' : 'Share the following information for a technical review.'}</p><ul className="mt-4 space-y-3">{inputs.map(item => <li key={item} className="flex gap-2 text-sm text-muted"><span className="text-cyan">•</span>{item}</li>)}</ul><Link href={servicePath} className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-brand-blue">{tr ? 'İlgili Hizmet ve Kullanım Alanları' : 'Related Service and Applications'}<ArrowRight className="h-4 w-4" /></Link></aside>
+    </div></Container></section>
+    {related.length > 0 && <section className="py-10"><Container><h2 className="text-xl font-bold text-navy">{tr ? 'İlgili Ürünler' : 'Related Products'}</h2><div className="mt-5 grid gap-4 sm:grid-cols-3">{related.map(item => <Link key={item.slug} href={productPagePath(item)} className="rounded-xl border border-navy/10 bg-white p-5 transition hover:border-cyan/40"><h3 className="font-bold text-navy">{item.name}</h3><p className="mt-2 text-sm leading-relaxed text-muted">{(tr ? item.tr : item.en).purpose}</p><span className="mt-4 inline-flex items-center gap-2 text-xs font-semibold text-brand-blue">{tr ? 'Ürünü İncele' : 'Explore Product'}<ArrowRight className="h-3.5 w-3.5" /></span></Link>)}</div><Link href={`${routes.products}${category ? `#${category}` : ''}`} className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-brand-blue">{tr ? 'Ürün Kataloğuna Dönün' : 'Return to the Product Catalogue'}<ArrowRight className="h-4 w-4" /></Link></Container></section>}
+    <ContactCTA title={tr ? `${name} için teknik destek alın.` : `Get technical support for ${name}.`} subtitle={tr ? 'Uygulama ihtiyacınızı paylaşın; ürün seçimini, kullanım koşullarını ve tedarik seçeneklerini birlikte değerlendirelim.' : 'Share your application requirements so we can review product selection, use conditions and supply options together.'} primaryCta={tr ? `${name} İçin Teklif Alın` : `Request a Quote for ${name}`} />
+  </>
+}

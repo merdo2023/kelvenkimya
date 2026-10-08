@@ -14,6 +14,7 @@ import type { cardAccentColors } from '@/data/accentColors'
 import type { ProductItem } from '@/types/locale'
 import { ProductDetailModal } from './ProductDetailModal'
 import { ProductImageLightbox } from './ProductImageLightbox'
+import { findProductPage, productPagePath } from '@/data/productPages'
 
 type Accent = (typeof cardAccentColors)[number]
 
@@ -50,6 +51,7 @@ export function ProductItemRow({ product, index, accent, searchQuery = '' }: Pro
   }, [product])
 
   const showViewDetails = useMemo(() => hasExpandableProductDetail(product), [product])
+  const detailPage = findProductPage(product.name)
   const hasDocLinks = Boolean(sdsUrl || technicalFormUrl)
   const hasTags = visibleTags.length > 0 || hiddenCount > 0
 
@@ -95,9 +97,9 @@ export function ProductItemRow({ product, index, accent, searchQuery = '' }: Pro
           )}
 
           <div className="flex min-w-0 flex-1 flex-col">
-            <p className="break-words text-[0.9375rem] font-semibold leading-snug text-navy">
+            <h3 className="break-words text-[0.9375rem] font-semibold leading-snug text-navy">
               {highlightText(product.name, searchQuery)}
-            </p>
+            </h3>
 
             {cardDescription ? (
               <p className="mt-1.5 line-clamp-3 text-sm leading-relaxed text-muted">
@@ -146,7 +148,7 @@ export function ProductItemRow({ product, index, accent, searchQuery = '' }: Pro
             )}
 
             <div className="mt-auto flex flex-wrap items-center gap-x-4 gap-y-1.5 pt-3">
-              {showViewDetails ? (
+              {detailPage ? <Link href={productPagePath(detailPage)} className="inline-flex items-center gap-1 text-xs font-semibold text-navy/70 hover:text-cyan">{t('products.viewDetails')}<ChevronRight className="h-3.5 w-3.5" /></Link> : showViewDetails ? (
                 <button
                   type="button"
                   onClick={() => setActiveModal('detail')}

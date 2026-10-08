@@ -26,6 +26,11 @@ export function ProductCategoryCard({
   const { t } = useTranslation()
   const accent = cardAccentColors[accentIndex % cardAccentColors.length]
   const number = String(accentIndex + 1).padStart(2, '0')
+  const detailPaths: Record<string, string> = {
+    kimyasal_temizlik_urunleri: '/hizmetlerimiz/endustriyel-kimyasal-temizlik-urunleri',
+    kazan_suyu_kimyasallari: '/hizmetlerimiz/su-sartlandirma-kimyasallari/kazan-suyu-sartlandirma-kimyasallari',
+    sogutma_suyu_kimyasallari: '/hizmetlerimiz/su-sartlandirma-kimyasallari/sogutma-kulesi-suyu-sartlandirma-kimyasallari',
+  }
 
   return (
     <motion.article
@@ -73,7 +78,8 @@ export function ProductCategoryCard({
           ))}
         </ul>
 
-        <div className="flex items-center justify-end border-t border-border/35 px-4 py-3.5 sm:px-6">
+        <div className="flex flex-wrap items-center justify-between gap-3 border-t border-border/35 px-4 py-3.5 sm:px-6">
+          {detailPaths[category.id] && <Link href={detailPaths[category.id]} className="inline-flex items-center gap-1.5 text-sm font-semibold text-brand-blue hover:text-cyan">{t('products.viewDetails')}<ArrowUpRight className="h-4 w-4" /></Link>}
           <Link
             href={routes.contact}
             className="group/cta inline-flex items-center gap-1.5 text-sm font-semibold text-brand-blue transition-colors duration-200 hover:text-cyan"

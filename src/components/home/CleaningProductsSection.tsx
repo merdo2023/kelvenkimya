@@ -8,6 +8,7 @@ import { Container } from '../common/Container'
 import { routes } from '@/data/routes'
 import type { ProductCategory } from '@/types/locale'
 import type { AppLocale } from '@/i18n/routing'
+import { findProductPage, productPagePath } from '@/data/productPages'
 
 export function CleaningProductsSection({ categories, locale }: { categories: ProductCategory[]; locale: AppLocale }) {
   const [playing, setPlaying] = useState(false)
@@ -16,8 +17,8 @@ export function CleaningProductsSection({ categories, locale }: { categories: Pr
   const passivationProduct = categories.find(category => category.id === 'kimyasal_temizlik_urunleri')?.products.find(product => product.name === 'Alkalen NP-100')
   const copy = tr ? {
     eyebrow: 'ÜRÜNÜ UYGULAMADA GÖRÜN',
-    title: 'Endüstriyel Kimyasal Temizlik Ürünleri',
-    description: 'Buhar kazanları, eşanjörler, kondenserler, soğutma kuleleri, tanklar ve proses boru hatlarında kireç ve mineral birikintilerinin temizliği için Kelvenoks Ferlin serisini sunuyoruz. Demir, çelik, döküm, bakır, paslanmaz ve alüminyum sistemlerde malzeme yapısına uygun ürün seçimini destekliyoruz. Devreye alma öncesi ön temizlik ve flushing süreçlerinde kimyasal temizlik gereken aşamalar için sistem malzemesine ve uygulama ihtiyacına uygun ürünler sağlıyoruz. Uygulamaları kendi ekipleriyle gerçekleştiren işletmelere ve saha yüklenicilerine ürün tedariği ve teknik destek sunuyoruz.',
+    title: 'Endüstriyel Kimyasallar ve Su Şartlandırma Ürünleri',
+    description: 'Kelvenoks Ferlin serisiyle malzemeye uygun kimyasal temizlik; kazan ve soğutma suyu kimyasallarıyla sisteminize özel şartlandırma. Ürün seçimi, tedarik ve teknik destek için güçlü ürün gruplarımızı inceleyin.',
     video: '40 yıllık kireçli borunun Kelvenoks Ferlin ile temizliği',
     videoDescription: 'Yıllar içinde oluşan kireç ve mineral birikintilerine karşı gerçek bir uygulama. Borunun işlem öncesi görünümünü, kimyasal temizlik sürecini ve işlem sonrası iç yüzeyini videoda inceleyin.',
     play: 'Uygulama videosunu oynat',
@@ -28,8 +29,8 @@ export function CleaningProductsSection({ categories, locale }: { categories: Pr
     contact: 'Ürün seçimi için bize danışın',
   } : {
     eyebrow: 'SEE THE PRODUCT IN ACTION',
-    title: 'Industrial Chemical Cleaning Products',
-    description: 'We supply the Kelvenoks Ferlin series for removing scale and mineral deposits from steam boilers, heat exchangers, condensers, cooling towers, tanks and process pipelines. We support product selection based on the materials in iron, steel, cast, copper, stainless and aluminum systems. For stages of pre-commissioning cleaning and flushing that require chemical cleaning, we supply products selected for system materials and application requirements. We provide product supply and technical support to businesses and site contractors carrying out these applications with their own teams.',
+    title: 'Industrial Chemicals and Water Treatment Products',
+    description: 'Material-specific chemical cleaning with Kelvenoks Ferlin and system-specific boiler and cooling water treatment. Explore our core product groups for selection, supply and technical support.',
     video: 'Cleaning a 40-year-old scale-encrusted pipe with Kelvenoks Ferlin',
     videoDescription: 'An actual application addressing scale and mineral deposits accumulated over time. See the pipe before treatment, the chemical cleaning process and the internal surface after treatment.',
     play: 'Play application video',
@@ -48,6 +49,11 @@ export function CleaningProductsSection({ categories, locale }: { categories: Pr
           <h2 className="text-3xl font-bold tracking-tight text-navy sm:text-4xl">{copy.title}</h2>
           <p className="mt-4 text-base leading-relaxed text-navy/70">{copy.description}</p>
         </div>
+        <nav aria-label={tr ? 'Öne çıkan ürün grupları' : 'Core product groups'} className="mb-7 grid gap-3 sm:grid-cols-3">{[
+          { href: '/hizmetlerimiz/endustriyel-kimyasal-temizlik-urunleri', title: tr ? 'Kelvenoks Ferlin Serisi' : 'Kelvenoks Ferlin Series', text: tr ? 'Malzemeye uygun temizlik ürünleri' : 'Material-specific cleaning products' },
+          { href: '/hizmetlerimiz/su-sartlandirma-kimyasallari/kazan-suyu-sartlandirma-kimyasallari', title: tr ? 'Kazan Suyu Kimyasalları' : 'Boiler Water Chemicals', text: tr ? 'Birikinti ve korozyon kontrolü' : 'Deposit and corrosion control' },
+          { href: '/hizmetlerimiz/su-sartlandirma-kimyasallari/sogutma-kulesi-suyu-sartlandirma-kimyasallari', title: tr ? 'Soğutma Suyu Kimyasalları' : 'Cooling Water Chemicals', text: tr ? 'Kireç, korozyon ve biyolojik kontrol' : 'Scale, corrosion and biological control' },
+        ].map(item => <Link key={item.href} href={item.href} className="group rounded-xl border border-cyan/20 bg-white p-4 transition hover:border-cyan/40"><span className="flex items-center justify-between gap-3 text-sm font-bold text-navy">{item.title}<ArrowRight className="h-4 w-4 shrink-0 text-cyan" /></span><span className="mt-2 block text-xs text-muted">{item.text}</span></Link>)}</nav>
         <div className="grid gap-6 lg:grid-cols-[minmax(280px,0.8fr)_1.6fr] lg:gap-8">
           <div className="self-start overflow-hidden rounded-2xl bg-[#071525] shadow-lg">
             <div className="relative aspect-[4/3] bg-[#071525] lg:aspect-auto lg:h-[390px]">
@@ -73,7 +79,7 @@ export function CleaningProductsSection({ categories, locale }: { categories: Pr
           </div>
           <div className="grid gap-4 sm:grid-cols-2">
             {products.map((product, index) => (
-              <Link key={product.name} href={`${routes.products}#${product.name.toLowerCase().replace(/\s+/g, '-')}`} className="group flex flex-col rounded-2xl border border-navy/5 bg-white p-5 shadow-sm transition hover:-translate-y-1 hover:border-cyan/35 hover:shadow-lg focus-visible:outline-2 focus-visible:outline-cyan">
+              <Link key={product.name} href={findProductPage(product.name) ? productPagePath(findProductPage(product.name)!) : `${routes.products}#${product.name.toLowerCase().replace(/\s+/g, '-')}`} className="group flex flex-col rounded-2xl border border-navy/5 bg-white p-5 shadow-sm transition hover:-translate-y-1 hover:border-cyan/35 hover:shadow-lg focus-visible:outline-2 focus-visible:outline-cyan">
                 <div className="mb-4 flex items-start justify-between gap-4">
                   <span className="pt-2 text-xs font-bold tracking-widest text-navy/30">0{index + 1}</span>
                   {product.image && <div className="relative h-24 w-32"><Image src={product.image} alt={product.name} fill sizes="128px" className="object-contain" /></div>}
@@ -98,7 +104,7 @@ export function CleaningProductsSection({ categories, locale }: { categories: Pr
               <h3 className="mt-1 text-lg font-bold text-navy">Alkalen NP-100 <span className="font-normal text-navy/60">· {tr ? 'Nötralizasyon ve Pasivasyon' : 'Neutralization and Passivation'}</span></h3>
               <p className="mt-2 text-sm leading-relaxed text-navy/65">{passivationProduct.description}</p>
             </div>
-            <Link href={`${routes.products}#alkalen-np-100`} className="inline-flex shrink-0 items-center gap-2 text-sm font-bold text-brand-blue hover:underline">{copy.inspect}<ArrowRight className="h-4 w-4" /></Link>
+            <Link href={`${routes.products}/alkalen-np-100`} className="inline-flex shrink-0 items-center gap-2 text-sm font-bold text-brand-blue hover:underline">{copy.inspect}<ArrowRight className="h-4 w-4" /></Link>
           </div>
         )}
         <div className="mt-7 flex flex-wrap items-center gap-5">
