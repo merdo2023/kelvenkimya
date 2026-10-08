@@ -14,7 +14,10 @@ const nextConfig: NextConfig = {
       contact: 'iletisim',
     }
 
-    return Object.entries(legacyRoutes).flatMap(([oldPath, newPath]) => [
+    return [
+      { source: '/urunlerimiz/kelvenoks-ferlin-135', destination: '/urunlerimiz/kelvenoks-ferlin-101', permanent: true },
+      { source: '/:locale(tr|en)/urunlerimiz/kelvenoks-ferlin-135', destination: '/:locale/urunlerimiz/kelvenoks-ferlin-101', permanent: true },
+      ...Object.entries(legacyRoutes).flatMap(([oldPath, newPath]) => [
       {
         source: `/:locale(tr|en)/${oldPath}`,
         destination: `/:locale/${newPath}`,
@@ -25,7 +28,8 @@ const nextConfig: NextConfig = {
         destination: `/${newPath}`,
         permanent: true,
       },
-    ])
+    ]),
+    ]
   },
   experimental: {
     optimizeCss: true,
