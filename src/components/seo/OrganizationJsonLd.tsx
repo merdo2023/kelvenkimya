@@ -14,6 +14,11 @@ export async function OrganizationJsonLd({ locale }: OrganizationJsonLdProps) {
     '@context': 'https://schema.org',
     '@graph': [
       {
+        '@type': 'WebSite', '@id': `${siteUrl}/#website`,
+        name: company('companyName'), url: `${siteUrl}/`,
+        inLanguage: ['tr', 'en'], publisher: { '@id': `${siteUrl}/#organization` },
+      },
+      {
         '@type': 'Organization',
         '@id': `${siteUrl}/#organization`,
         name: company('companyName'),

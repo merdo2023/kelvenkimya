@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import { getProductName } from '@/data/productSeo'
 import { ArrowRight, Check, FlaskConical } from 'lucide-react'
 import { Container } from '@/components/common/Container'
 import { ContactCTA } from '@/components/home/ContactCTA'
@@ -11,7 +12,7 @@ import { productPages, productPagePath, type ProductPage } from '@/data/productP
 export function ProductPageView({ locale, product }: { locale: string; product: ProductPage }) {
   const tr = locale === 'tr'
   const content = tr ? product.tr : product.en
-  const name = !tr && product.slug === 'katyonik-iyon-degisim-recinesi' ? 'Cation Exchange Resin' : product.name
+  const name = getProductName(product, locale)
   const related = productPages.filter(item => item.group === product.group && item.slug !== product.slug).slice(0, 3)
   const category = { cleaning: 'kimyasal_temizlik_urunleri', boiler: 'kazan_suyu_kimyasallari', cooling: 'sogutma_suyu_kimyasallari', preparation: '' }[product.group]
   const servicePath = { cleaning: '/hizmetlerimiz/endustriyel-kimyasal-temizlik-urunleri', boiler: '/hizmetlerimiz/su-sartlandirma-kimyasallari/kazan-suyu-sartlandirma-kimyasallari', cooling: '/hizmetlerimiz/su-sartlandirma-kimyasallari/sogutma-kulesi-suyu-sartlandirma-kimyasallari', preparation: '/hizmetlerimiz#su-yumusatma-uniteleri-revizyonu' }[product.group]

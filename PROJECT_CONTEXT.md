@@ -175,3 +175,9 @@ Kullanıcı Ahal'ın en üstte öne çıkarılmasını ve dört Rönesans klasö
 - www canonical/sitemap/robots/schema adresi, URL tabanlı sabit dil davranışı, iki dilli sitemap, doğrulanamayan genel lastmod tarihinin kaldırılması, ana/hizmet SEO başlıkları, ilk HTML sayaç değerleri ve 18 hizmet sayfasında Service/BreadcrumbList JSON-LD tamamlandı.
 - 72 yerel sayfa HTTP 200/tek H1; 79 iç bağlantıda kırık yok. TypeScript ve npm run build başarılı. İlk development taramasında geçici üç 500 yanıt seri tekrarda 200 döndü; üretim derlemesi başarılı.
 - Mevcut tasarım ve içerikler korundu. Bu SEO turunda commit/push veya yayın yapılmadı. Sonraki işler: canlı yayın doğrulaması, Search Console, mobil hız ölçümü, doğrulanmış bilgilerle ayrı proje sayfaları ve teknik içerik geliştirme.
+## 9 Ekim 2026 — İkinci SEO denetimi
+
+- 21734ef canlıda doğrulandı: 72 URL HTTP 200/tek H1/www canonical; 18 Service sayfası, sabit TR URL. Güncel canlı manuel puan 88/100.
+- 20 ürünün kısa iki dilli SEO başlıkları, ortak İngilizce ürün isimleri, kısa hakkımızda başlıkları, WebSite ve ürün kataloğu CollectionPage/ItemList/BreadcrumbList tamamlandı. Yerel manuel puan 90/100; Google/Lighthouse puanı değildir.
+- TypeScript ve production build başarılı. Üretim 72 sayfada JSON-LD parse edildi; iki katalogda 20'şer ürün bağlantısı var. Kanıt tmp/seo-audit-20261009/build-followup.json.
+- İkinci turda commit/push yapılmadı. Hesap erişimi gereken Search Console/Business Profile ve mobil saha hız ölçümü halen doğrulanmamıştır. Detaylar SEO raporunun ikinci denetim bölümünde.

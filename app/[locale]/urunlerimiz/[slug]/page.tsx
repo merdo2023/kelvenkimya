@@ -1,3 +1,4 @@
+import { getProductSeoTitle } from '@/data/productSeo'
 import { notFound } from 'next/navigation'
 import { productPages, productPagePath } from '@/data/productPages'
 import { buildContentMetadata } from '@/lib/metadata'
@@ -10,7 +11,7 @@ export async function generateMetadata({ params }: Props) {
   const product = productPages.find(item => item.slug === slug)
   if (!product) notFound()
   const content = locale === 'tr' ? product.tr : product.en
-  return buildContentMetadata(locale, `${product.name} – ${content.purpose}`, content.description, productPagePath(product))
+  return buildContentMetadata(locale, getProductSeoTitle(product, locale), content.description, productPagePath(product))
 }
 export default async function Page({ params }: Props) {
   const { locale, slug } = await params
