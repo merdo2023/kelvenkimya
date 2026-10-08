@@ -7,6 +7,7 @@ import { getServices } from '@/data/localeCatalog'
 import { routes } from '@/data/routes'
 import type { AppLocale } from '@/i18n/routing'
 import { cleaningBasePath, cleaningMenu } from '@/data/cleaningServices'
+import { conditioningBasePath, conditioningContent, conditioningServices } from '@/data/waterConditioningServices'
 
 export async function ServicesPage({ locale }: { locale: string }) {
   const tr = locale === 'tr'
@@ -39,6 +40,7 @@ export async function ServicesPage({ locale }: { locale: string }) {
           <p className="text-xs font-bold uppercase tracking-widest text-cyan">{service.category}</p>
           <h2 className="mt-2 text-2xl font-bold text-navy sm:text-3xl">{service.title}</h2>
           <p className="mt-4 text-sm leading-relaxed text-muted sm:text-base">{service.description}</p>
+          {service.id === 'su-sartlandirma-kimyasallari' && <nav aria-label={tr ? 'Su şartlandırma hizmet sayfaları' : 'Water treatment service pages'} className="mt-5 grid gap-3 sm:grid-cols-2">{conditioningServices.map(item => <Link key={item.slug} href={`${conditioningBasePath}/${item.slug}`} className="flex items-center justify-between gap-3 rounded-xl border border-cyan/20 bg-cyan/5 p-4 text-sm font-semibold text-brand-blue hover:bg-cyan/10">{conditioningContent(item, locale).title}<ArrowRight className="h-4 w-4 shrink-0" /></Link>)}</nav>}
           {index === 0 && <div className="mt-5 flex flex-wrap gap-3">
             <Link href={cleaningBasePath} className="inline-flex items-center gap-2 rounded-xl gradient-accent px-4 py-3 text-sm font-semibold text-white">{tr ? 'Kimyasal Temizlik Hizmetimizi İnceleyin' : 'Explore Our Chemical Cleaning Service'}<ArrowRight className="h-4 w-4 shrink-0" /></Link>
             <Link href={`${cleaningBasePath}#mobilizasyon`} className="inline-flex items-center gap-2 rounded-xl border border-cyan/20 px-4 py-3 text-sm font-semibold text-brand-blue hover:bg-cyan/5">{tr ? 'Ekipman ve Mobilizasyonumuz' : 'Our Equipment and Mobilization'}<ArrowRight className="h-4 w-4 shrink-0" /></Link>

@@ -2,8 +2,9 @@ import type { MetadataRoute } from 'next'
 import { getLocalePath, routing } from '@/i18n/routing'
 import { siteLastModified, siteUrl } from '@/lib/site'
 import { cleaningBasePath, cleaningServices } from '@/data/cleaningServices'
+import { conditioningBasePath, conditioningServices } from '@/data/waterConditioningServices'
 
-const paths = ['', '/urunlerimiz', '/hizmetlerimiz', '/hakkimizda', '/projelerimiz', '/iletisim', cleaningBasePath, ...cleaningServices.map(service => `${cleaningBasePath}/${service.slug}`)]
+const paths = ['', '/urunlerimiz', '/hizmetlerimiz', '/hakkimizda', '/projelerimiz', '/iletisim', cleaningBasePath, ...cleaningServices.map(service => `${cleaningBasePath}/${service.slug}`), ...conditioningServices.map(service => `${conditioningBasePath}/${service.slug}`)]
 
 function buildLanguageAlternates(path: string): Record<string, string> {
   const alternates: Record<string, string> = {}
