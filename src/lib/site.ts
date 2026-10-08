@@ -1,5 +1,10 @@
-export const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://kelvenkimya.com'
+const configuredSiteUrl = new URL(process.env.NEXT_PUBLIC_SITE_URL ?? 'https://www.kelvenkimya.com')
 
-export const siteLastModified = new Date('2025-06-01')
+// Production redirects to www; canonical, sitemap and schema URLs must match it.
+if (configuredSiteUrl.hostname === 'kelvenkimya.com') {
+  configuredSiteUrl.hostname = 'www.kelvenkimya.com'
+  configuredSiteUrl.protocol = 'https:'
+}
 
+export const siteUrl = configuredSiteUrl.origin
 export const ogImagePath = '/og-image.jpg'

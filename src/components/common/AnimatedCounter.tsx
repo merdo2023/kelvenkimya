@@ -17,10 +17,15 @@ function parseStatValue(value: string): { target: number; suffix: string } {
 export function AnimatedCounter({ value, className = '' }: AnimatedCounterProps) {
   const { ref, inView } = useInViewOnce<HTMLSpanElement>({ rootMargin: '-40px' })
   const { target, suffix } = parseStatValue(value)
-  const [display, setDisplay] = useState(0)
+  const [display, setDisplay] = useState(target)
 
   useEffect(() => {
     if (!inView || target === 0) return
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      setDisplay(target)
+      return
+    }
+    setDisplay(0)
 
     let frame = 0
     const totalFrames = 48
@@ -40,9 +45,8 @@ export function AnimatedCounter({ value, className = '' }: AnimatedCounterProps)
   }, [inView, target])
 
   return (
-    <span ref={ref} className={className}>
-      {inView ? display : 0}
-      {suffix}
+    <span ref={ref} className={className} aria-label={value}>
+      <span aria-hidden="true">{display}{suffix}</span>
     </span>
   )
 }

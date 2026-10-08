@@ -1,6 +1,6 @@
 import type { MetadataRoute } from 'next'
 import { getLocalePath, routing } from '@/i18n/routing'
-import { siteLastModified, siteUrl } from '@/lib/site'
+import { siteUrl } from '@/lib/site'
 import { cleaningBasePath, cleaningServices } from '@/data/cleaningServices'
 import { conditioningBasePath, conditioningServices } from '@/data/waterConditioningServices'
 import { cleaningProductsPath } from '@/views/CleaningProductsPage'
@@ -21,13 +21,14 @@ function buildLanguageAlternates(path: string): Record<string, string> {
 }
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  return [...paths, ...productPages.map(productPagePath)].map((path) => ({
-    url: `${siteUrl}${getLocalePath(routing.defaultLocale, path)}`,
-    lastModified: path === '/projelerimiz' ? new Date('2026-10-09') : path.startsWith('/urunlerimiz/') ? new Date('2026-10-08') : siteLastModified,
+  return [...paths, ...productPages.map(productPagePath)].flatMap((path) => routing.locales.map((locale) => ({
+    url: `${siteUrl}${getLocalePath(locale, path)}`,
+    // Only include dates verified from project history.
+    lastModified: path === '/projelerimiz' || path === '' ? new Date('2026-10-09') : path.startsWith('/urunlerimiz/') ? new Date('2026-10-08') : undefined,
     changeFrequency: path === '' ? 'weekly' : 'monthly',
     priority: path === '' ? 1 : 0.8,
     alternates: {
       languages: buildLanguageAlternates(path),
     },
-  }))
+  })))
 }

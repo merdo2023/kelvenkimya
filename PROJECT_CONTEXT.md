@@ -168,3 +168,10 @@ Kullanıcı Ahal'ın en üstte öne çıkarılmasını ve dört Rönesans klasö
 ## 9 Ekim 2026 — GTG kartının yanında video
 
 - Kullanıcının ekran görüntüsündeki proses grubu boş alanına GTG videosu eklendi. Masaüstünde proje kartı ve yerleşik kontrollü video yan yana, mobilde alt alta. Otomatik oynatma yok; preload none ve mevcut pompa fotoğrafı poster olarak kullanılıyor. Mevcut büyütülmüş video düğmesi korundu.
+
+## 9 Ekim 2026 — SEO denetimi ve yerel düzeltmeler
+
+- Canlı 36 TR sayfa ve yerel 72 TR/EN sayfa denetlendi; rapor docs/seo-audit-2026-10-09.md. Manuel teknik SEO puanı canlı 72/100, yerel 88/100; Google/Lighthouse veya sıralama puanı değil. Search Console, backlink ve Core Web Vitals ölçülmedi.
+- www canonical/sitemap/robots/schema adresi, URL tabanlı sabit dil davranışı, iki dilli sitemap, doğrulanamayan genel lastmod tarihinin kaldırılması, ana/hizmet SEO başlıkları, ilk HTML sayaç değerleri ve 18 hizmet sayfasında Service/BreadcrumbList JSON-LD tamamlandı.
+- 72 yerel sayfa HTTP 200/tek H1; 79 iç bağlantıda kırık yok. TypeScript ve npm run build başarılı. İlk development taramasında geçici üç 500 yanıt seri tekrarda 200 döndü; üretim derlemesi başarılı.
+- Mevcut tasarım ve içerikler korundu. Bu SEO turunda commit/push veya yayın yapılmadı. Sonraki işler: canlı yayın doğrulaması, Search Console, mobil hız ölçümü, doğrulanmış bilgilerle ayrı proje sayfaları ve teknik içerik geliştirme.

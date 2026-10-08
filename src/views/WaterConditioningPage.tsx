@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import { ServiceJsonLd } from '@/components/seo/ServiceJsonLd'
 import { findProductPage, productPagePath } from '@/data/productPages'
 import { ArrowRight, Check } from 'lucide-react'
 import { Container } from '@/components/common/Container'
@@ -18,7 +19,14 @@ export async function WaterConditioningPage({ locale, service }: { locale: strin
     ? service.productNames.flatMap(name => category?.products.filter(product => product.name.startsWith(name)) ?? [])
     : category?.products ?? []
   const other = conditioningServices.find(item => item.slug !== service.slug)!
+  const path = conditioningBasePath + '/' + service.slug
+  const breadcrumbs = [
+    { name: tr ? 'Ana Sayfa' : 'Home', path: routes.home },
+    { name: tr ? 'Su Şartlandırma Kimyasalları' : 'Water Treatment Chemicals', path: routes.services + '#su-sartlandirma-kimyasallari' },
+    { name: content.title, path },
+  ]
   return <>
+    <ServiceJsonLd locale={locale} title={content.title} description={content.summary} path={path} breadcrumbs={breadcrumbs} />
     <section className="bg-navy pb-12 pt-28 sm:pt-32"><Container>
       <nav aria-label={tr ? 'Sayfa yolu' : 'Breadcrumb'} className="mb-7 flex flex-wrap gap-2 text-xs text-white/70"><Link href={routes.home}>{tr ? 'Ana Sayfa' : 'Home'}</Link><span>/</span><Link href={`${routes.services}#su-sartlandirma-kimyasallari`}>{tr ? 'Su Şartlandırma Kimyasalları' : 'Water Treatment Chemicals'}</Link><span>/</span><span className="text-white">{content.title}</span></nav>
       <div className="grid items-center gap-8 lg:grid-cols-[1.2fr_1fr]">
