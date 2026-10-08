@@ -6,6 +6,7 @@ export type ConditioningService = { slug: string; categoryId: string; image: str
 export const conditioningServices: ConditioningService[] = [
   {
     slug: 'kazan-suyu-sartlandirma-kimyasallari', categoryId: 'kazan_suyu_kimyasallari', image: '/images/services/steam-boiler.jpg',
+    productNames: ['Polyquestamin', 'Polyox', 'Carbohydrazide'],
     tr: {
       title: 'Kazan Suyu Şartlandırma Kimyasalları',
       summary: 'Buhar kazanları, besi suyu ve kondens devreleri için su analizlerine ve işletme koşullarına uygun kimyasal ürün seçimi ve teknik destek.',
