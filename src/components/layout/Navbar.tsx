@@ -70,8 +70,7 @@ export function Navbar({ services }: { services: ServiceItem[] }) {
   const [isScrolled, setIsScrolled] = useState(false)
 
   const navItems = useLocaleArray<NavItem>('nav.items')
-  const isHomeHero = pathname === '/'
-  const isTransparent = isHomeHero && !isScrolled && !isOpen
+  const isTransparent = !isScrolled && !isOpen
 
   useEffect(() => {
     const handleScroll = () => setIsScrolled(window.scrollY > 20)
