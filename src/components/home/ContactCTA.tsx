@@ -4,7 +4,7 @@ import { useTranslation } from '@/hooks/useTranslation'
 import { ArrowUpRight } from 'lucide-react'
 import { Container } from '../common/Container'
 
-export function ContactCTA() {
+export function ContactCTA({ title, subtitle, primaryCta }: { title?: string; subtitle?: string; primaryCta?: string } = {}) {
   const { t } = useTranslation()
 
   return (
@@ -45,19 +45,19 @@ export function ContactCTA() {
               </div>
 
               <h2 className="mx-auto mt-4 max-w-2xl text-2xl font-bold leading-snug text-white sm:text-3xl">
-                {t('home.contactCta.title')}
+                {title ?? t('home.contactCta.title')}
               </h2>
 
               <p className="mx-auto mt-3 max-w-xl text-sm leading-relaxed text-white/80 sm:text-base">
-                {t('home.contactCta.subtitle')}
+                {subtitle ?? t('home.contactCta.subtitle')}
               </p>
 
               <div className="mt-6 flex flex-wrap items-center justify-center gap-3">
                 <a
-                  href={`mailto:${t('contact.info.email')}?subject=${encodeURIComponent(t('home.contactCta.primaryCta'))}`}
+                  href={`mailto:${t('contact.info.email')}?subject=${encodeURIComponent(primaryCta ?? t('home.contactCta.primaryCta'))}`}
                   className="group/btn inline-flex items-center gap-2.5 rounded-xl gradient-accent px-6 py-3 text-sm font-semibold text-white shadow-md shadow-cyan/25 transition-all duration-300 hover:scale-[1.02] hover:shadow-lg hover:shadow-cyan/35 active:scale-[0.98] sm:text-base"
                 >
-                  {t('home.contactCta.primaryCta')}
+                  {primaryCta ?? t('home.contactCta.primaryCta')}
                   <span className="flex h-7 w-7 items-center justify-center rounded-full bg-white/20 transition-all duration-300 group-hover/btn:bg-white/30">
                     <ArrowUpRight className="h-3.5 w-3.5 transition-transform duration-300 group-hover/btn:translate-x-0.5 group-hover/btn:-translate-y-0.5" />
                   </span>

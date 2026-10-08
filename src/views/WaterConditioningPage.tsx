@@ -32,6 +32,10 @@ export async function WaterConditioningPage({ locale, service }: { locale: strin
     <section className="py-12"><Container><h2 className="text-2xl font-bold text-navy">{tr ? 'İlgili Kimyasal Ürünlerimiz' : 'Related Chemical Products'}</h2><div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">{products.map(product => <article key={product.name} className="rounded-xl border border-navy/10 bg-white p-5">{product.image && <div className="relative mb-4 aspect-[4/3]"><Image src={product.image} alt={product.name} fill sizes="(min-width: 1024px) 30vw, (min-width: 640px) 50vw, 100vw" className="object-contain" /></div>}<h3 className="font-bold text-navy">{product.name}</h3><p className="mt-2 text-sm leading-relaxed text-muted">{product.description}</p></article>)}</div><Link href={`${routes.products}#${service.categoryId}`} className="mt-6 inline-flex items-center gap-2 font-semibold text-brand-blue">{tr ? 'Ürün Kataloğunu İnceleyin' : 'Explore the Product Catalogue'}<ArrowRight className="h-4 w-4" /></Link>
       <div className="mt-10 rounded-xl bg-[#eef5f8] p-5"><Link href={`${conditioningBasePath}/${other.slug}`} className="inline-flex items-center gap-2 font-semibold text-brand-blue">{conditioningContent(other, locale).title}<ArrowRight className="h-4 w-4 shrink-0" /></Link></div>
     </Container></section>
-    <ContactCTA />
+    <ContactCTA
+      title={tr ? 'Su şartlandırma programınızı birlikte belirleyelim.' : 'Let’s plan your water treatment program together.'}
+      subtitle={tr ? 'Sistem bilgilerinizi ve mevcut su analizlerinizi paylaşın. İhtiyacınıza uygun kimyasal ürün seçimi, aylık su analizleri, sonuç paylaşımı ve dozaj takibi için birlikte çalışalım.' : 'Share your system information and available water analyses. Let’s work together on suitable chemical selection, monthly water analyses, results sharing and dosing follow-up.'}
+      primaryCta={tr ? 'Su Şartlandırma İçin Teklif Alın' : 'Request a Water Treatment Proposal'}
+    />
   </>
 }
