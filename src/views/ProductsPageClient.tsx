@@ -1,6 +1,6 @@
 'use client'
 
-import { useMemo } from 'react'
+import { useEffect, useMemo } from 'react'
 import { useTranslation } from '@/hooks/useTranslation'
 import { Container } from '@/components/common/Container'
 import { PageHero } from '@/components/common/PageHero'
@@ -42,6 +42,23 @@ export function ProductsPageClient({ categories }: ProductsPageClientProps) {
     clearFilters,
     query,
   } = useProductFilter(categories)
+
+  useEffect(() => {
+    const selectHashCategory = () => {
+      const id = window.location.hash.slice(1)
+      if (!categories.some(category => category.id === id)) return
+      setSearch('')
+      setCategoryId(id)
+    }
+    selectHashCategory()
+    window.addEventListener('hashchange', selectHashCategory)
+    return () => window.removeEventListener('hashchange', selectHashCategory)
+  }, [categories, setSearch, setCategoryId])
+
+  useEffect(() => {
+    const id = window.location.hash.slice(1)
+    if (id && id === categoryId) document.getElementById(id)?.scrollIntoView()
+  }, [categoryId, filteredCategories])
 
   const categoryIndexMap = useMemo(
     () => new Map(categories.map((category, index) => [category.id, index])),
@@ -108,6 +125,7 @@ export function ProductsPageClient({ categories }: ProductsPageClientProps) {
             </main>
           </div>
         </Container>
+
 
         <Container className="relative pb-10"><h2 className="text-xl font-bold text-navy">{tr ? 'Ürün Bilgileri ve Kullanım Alanları' : 'Product Information and Applications'}</h2><p className="mt-3 max-w-2xl text-sm leading-relaxed text-muted">{tr ? 'Ürünlerimizin kullanım alanlarını ve ürün seçimi bilgilerini ayrı sayfalarda inceleyebilirsiniz.' : 'Explore separate pages for product applications and selection information.'}</p><div className="mt-5 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">{productPages.map(product => <Link key={product.slug} href={productPagePath(product)} className="rounded-xl border border-navy/10 bg-white p-4 transition hover:border-cyan/40"><h3 className="text-sm font-bold text-navy">{!tr && product.slug === 'katyonik-iyon-degisim-recinesi' ? 'Cation Exchange Resin' : product.name}</h3><p className="mt-2 text-xs leading-relaxed text-muted">{(tr ? product.tr : product.en).purpose}</p></Link>)}</div></Container>
         <ProductsPageCTA />

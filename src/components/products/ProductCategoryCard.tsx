@@ -23,7 +23,7 @@ export function ProductCategoryCard({
   accentIndex,
   searchQuery = '',
 }: ProductCategoryCardProps) {
-  const { t } = useTranslation()
+  const { t, i18n } = useTranslation()
   const accent = cardAccentColors[accentIndex % cardAccentColors.length]
   const number = String(accentIndex + 1).padStart(2, '0')
   const detailPaths: Record<string, string> = {
@@ -80,6 +80,7 @@ export function ProductCategoryCard({
 
         <div className="flex flex-wrap items-center justify-between gap-3 border-t border-border/35 px-4 py-3.5 sm:px-6">
           {detailPaths[category.id] && <Link href={detailPaths[category.id]} className="inline-flex items-center gap-1.5 text-sm font-semibold text-brand-blue hover:text-cyan">{t('products.viewDetails')}<ArrowUpRight className="h-4 w-4" /></Link>}
+          {category.id === 'kimyasal_temizlik_urunleri' && <Link href="/hizmetlerimiz/endustriyel-kimyasal-temizlik/on-temizlik-flushing#flushing-urunleri" className="inline-flex items-center gap-1.5 text-sm font-semibold text-brand-blue hover:text-cyan">{i18n.language === 'tr' ? 'Flushing için ürün seçimi' : 'Product selection for flushing'}<ArrowUpRight className="h-4 w-4" /></Link>}
           <Link
             href={routes.contact}
             className="group/cta inline-flex items-center gap-1.5 text-sm font-semibold text-brand-blue transition-colors duration-200 hover:text-cyan"

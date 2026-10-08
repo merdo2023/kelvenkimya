@@ -9,6 +9,7 @@ import { useTranslation } from '@/hooks/useTranslation'
 import { Menu, X } from 'lucide-react'
 import { LanguageSwitcher } from './LanguageSwitcher'
 import { ServicesNavLinks } from './ServicesNavLinks'
+import { ProductsNavLinks } from './ProductsNavLinks'
 import { Container } from '../common/Container'
 import { Logo } from '../common/Logo'
 import { Button } from '../common/Button'
@@ -124,7 +125,7 @@ export function Navbar({ services }: { services: ServiceItem[] }) {
             >
               {navItems.map((item) => (
                 <li key={item.key}>
-                  {item.path === routes.services ? <ServicesNavLinks services={services} isTransparent={isTransparent} /> : <NavLink
+                  {item.path === routes.services ? <ServicesNavLinks services={services} isTransparent={isTransparent} /> : item.path === routes.products ? <ProductsNavLinks isTransparent={isTransparent} /> : <NavLink
                     href={item.path}
                     label={t(`nav.labels.${item.key}`)}
                     active={isNavActive(pathname, item.path)}
@@ -173,7 +174,7 @@ export function Navbar({ services }: { services: ServiceItem[] }) {
           <ul className="flex flex-col gap-1.5">
             {navItems.map((item) => (
               <li key={item.key}>
-                {item.path === routes.services ? <ServicesNavLinks services={services} mobile /> : <Link
+                {item.path === routes.services ? <ServicesNavLinks services={services} mobile /> : item.path === routes.products ? <ProductsNavLinks mobile onNavigate={() => setIsOpen(false)} /> : <Link
                   href={item.path as '/'}
                   className={mobileLinkClass(item.path)}
                   aria-current={isNavActive(pathname, item.path) ? 'page' : undefined}
