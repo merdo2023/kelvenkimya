@@ -41,6 +41,7 @@ export async function ServicesPage({ locale }: { locale: string }) {
           <p className="text-xs font-bold uppercase tracking-widest text-cyan">{service.category}</p>
           <h2 className="mt-2 text-2xl font-bold text-navy sm:text-3xl">{service.title}</h2>
           <p className="mt-4 text-sm leading-relaxed text-muted sm:text-base">{service.description}</p>
+          {service.id === 'kimyasal-temizlik-kimyasallari' && <Link href={cleaningProductsPath} className="mt-5 inline-flex items-center gap-3 rounded-xl border border-cyan/25 bg-cyan/5 px-4 py-3 text-sm font-semibold text-brand-blue transition hover:border-cyan/45 hover:bg-cyan/10">{tr ? 'Kelvenoks Ferlin Serisini İnceleyin' : 'Explore the Kelvenoks Ferlin Series'}<ArrowRight className="h-4 w-4 shrink-0" /></Link>}
           {service.id === 'su-sartlandirma-kimyasallari' && <nav aria-label={tr ? 'Su şartlandırma hizmet sayfaları' : 'Water treatment service pages'} className="mt-5 grid gap-3 sm:grid-cols-2">{conditioningServices.map(item => <Link key={item.slug} href={`${conditioningBasePath}/${item.slug}`} className="flex items-center justify-between gap-3 rounded-xl border border-cyan/20 bg-cyan/5 p-4 text-sm font-semibold text-brand-blue hover:bg-cyan/10">{conditioningContent(item, locale).title}<ArrowRight className="h-4 w-4 shrink-0" /></Link>)}</nav>}
           {index === 0 && <div className="mt-5 flex flex-wrap gap-3">
             <Link href={cleaningBasePath} className="inline-flex items-center gap-2 rounded-xl gradient-accent px-4 py-3 text-sm font-semibold text-white">{tr ? 'Kimyasal Temizlik Hizmetimizi İnceleyin' : 'Explore Our Chemical Cleaning Service'}<ArrowRight className="h-4 w-4 shrink-0" /></Link>
@@ -53,7 +54,7 @@ export async function ServicesPage({ locale }: { locale: string }) {
           <ul className="mt-3 space-y-3">{service.bullets?.map(bullet => <li key={bullet} className="flex gap-2 text-sm leading-relaxed text-muted"><Check className="mt-1 h-4 w-4 shrink-0 text-cyan" />{bullet}</li>)}</ul>
           <p className="mt-6 border-t border-navy/10 pt-4 text-sm font-semibold text-navy/75">{service.resultLabel}</p>
           <div className="mt-5 flex flex-wrap gap-4"><Link href={routes.contact} className="inline-flex items-center gap-2 rounded-xl gradient-accent px-5 py-3 text-sm font-semibold text-white">{tr ? 'İhtiyacınızı Değerlendirelim' : 'Discuss Your Requirements'}<ArrowRight className="h-4 w-4" /></Link>
-          {service.id === 'kimyasal-temizlik-kimyasallari' && <Link href={cleaningProductsPath} className="inline-flex items-center gap-2 text-sm font-semibold text-brand-blue">{tr ? 'Kelvenoks Ferlin Serisini İnceleyin' : 'Explore the Kelvenoks Ferlin Series'}<ArrowRight className="h-4 w-4" /></Link>}</div>
+          </div>
         </div>
       </div></article>)}
     </div></Container></section>
