@@ -181,3 +181,8 @@ Kullanıcı Ahal'ın en üstte öne çıkarılmasını ve dört Rönesans klasö
 - 20 ürünün kısa iki dilli SEO başlıkları, ortak İngilizce ürün isimleri, kısa hakkımızda başlıkları, WebSite ve ürün kataloğu CollectionPage/ItemList/BreadcrumbList tamamlandı. Yerel manuel puan 90/100; Google/Lighthouse puanı değildir.
 - TypeScript ve production build başarılı. Üretim 72 sayfada JSON-LD parse edildi; iki katalogda 20'şer ürün bağlantısı var. Kanıt tmp/seo-audit-20261009/build-followup.json.
 - İkinci turda commit/push yapılmadı. Hesap erişimi gereken Search Console/Business Profile ve mobil saha hız ölçümü halen doğrulanmamıştır. Detaylar SEO raporunun ikinci denetim bölümünde.
+
+## 9 Ekim 2026 — Yönlendirme ve tarama denetimi
+- Canlı /en/projects 308 ile /en/projelerimiz adresine yönleniyor; ayrı ikinci sayfa değil. 22 hizmet URL'sinde TR/EN/canonical/hreflang doğru. Robots ve 72 URL sitemap HTTP 200.
+- Kullanıcının istediği eski sayfa 301 yönlendirmeleri next.config.ts içinde hazır; TR eski yollar doğrudan öneksiz hedefe gider. Production build ve geçici sunucuda HTTP 301 kontrolleri başarılı. Push yapılmadı.
+- Search Console erişimi yok; gerçek taranma/indekslenme doğrulanamadı. PageSpeed mobil API HTTP 429 kota hatası; hız puanı üretilemedi. Ayrıntılar SEO raporuna kaydedildi.
