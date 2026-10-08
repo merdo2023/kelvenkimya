@@ -1,4 +1,4 @@
-import { buildPageMetadata } from '@/lib/metadata'
+import { buildContentMetadata } from '@/lib/metadata'
 import { AboutPage } from '@/views/AboutPage'
 
 export async function generateMetadata({
@@ -7,11 +7,10 @@ export async function generateMetadata({
   params: Promise<{ locale: string }>
 }) {
   const { locale } = await params
-  return buildPageMetadata(locale, {
-    title: 'about.seo.title',
-    description: 'about.seo.description',
-    path: '/hakkimizda',
-  })
+  return buildContentMetadata(locale,
+    locale === 'tr' ? 'Hakkımızda – Endüstriyel Kimyasal Temizlik ve Su Şartlandırma' : 'About Us – Industrial Chemical Cleaning and Water Treatment',
+    locale === 'tr' ? 'Kelven Kimya: 1985’ten bu yana endüstriyel kimyasal temizlik, su şartlandırma, ürün tedariği ve analiz desteği. Türkiye ve uluslararası saha deneyimi.' : 'Kelven Kimya: industrial chemical cleaning, water treatment, chemical supply and analysis support since 1985. Field experience in Türkiye and internationally.',
+    '/hakkimizda')
 }
 
 export default async function Page({
