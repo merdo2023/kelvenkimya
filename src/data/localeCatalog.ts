@@ -27,7 +27,17 @@ export async function getProductCategories(locale: AppLocale): Promise<ProductCa
 
 export async function getServices(locale: AppLocale): Promise<ServiceItem[]> {
   const messages = await loadLocaleMessages(locale)
-  return messages.home.services.items
+  const order = [
+    'endustriyel-kimyasal-temizlik',
+    'su-sartlandirma-kimyasallari',
+    'kimyasal-temizlik-kimyasallari',
+    'su-yumusatma-uniteleri-revizyonu',
+    'laboratuvar-analiz-hizmetleri',
+  ]
+  return [...messages.home.services.items].sort((a, b) => {
+    const rank = (id: string) => order.includes(id) ? order.indexOf(id) : order.length
+    return rank(a.id) - rank(b.id)
+  })
 }
 
 export async function getProjects(locale: AppLocale) {
