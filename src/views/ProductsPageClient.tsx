@@ -25,7 +25,7 @@ export function ProductsPageClient({ categories }: ProductsPageClientProps) {
   const { t, i18n } = useTranslation()
   const tr = i18n.language === 'tr'
   const featured = [
-    { id: 'kimyasal_temizlik_urunleri', title: tr ? 'Kimyasal Temizlik Ürünleri' : 'Chemical Cleaning Products', description: tr ? 'Kelvenoks Ferlin serisi ve tamamlayıcı temizlik ürünleri.' : 'Kelvenoks Ferlin series and complementary cleaning products.', image: '/images/products/2/1.png', href: '/hizmetlerimiz/endustriyel-kimyasal-temizlik-urunleri' },
+    { id: 'kimyasal_temizlik_urunleri', title: tr ? 'Kimyasal Temizlik Ürünleri' : 'Chemical Cleaning Products', description: tr ? 'Kelvenoks Ferlin serisi ve tamamlayıcı temizlik ürünleri.' : 'Kelvenoks Ferlin series and complementary cleaning products.', image: '/images/products/kelvenoks/ferlin-123.png', href: '/hizmetlerimiz/endustriyel-kimyasal-temizlik-urunleri' },
     { id: 'kazan_suyu_kimyasallari', title: tr ? 'Kazan Suyu Kimyasalları' : 'Boiler Water Chemicals', description: tr ? 'Kazan, besi suyu ve kondens devreleri için şartlandırma.' : 'Water treatment for boiler, feedwater and condensate circuits.', image: '/images/products/1/3.png', href: '/hizmetlerimiz/su-sartlandirma-kimyasallari/kazan-suyu-sartlandirma-kimyasallari' },
     { id: 'sogutma_suyu_kimyasallari', title: tr ? 'Soğutma Suyu Kimyasalları' : 'Cooling Water Chemicals', description: tr ? 'Kireç, korozyon ve biyolojik oluşumların kontrolü.' : 'Scale, corrosion and biological growth control.', image: '/images/products/4/4.png', href: '/hizmetlerimiz/su-sartlandirma-kimyasallari/sogutma-kulesi-suyu-sartlandirma-kimyasallari' },
   ]

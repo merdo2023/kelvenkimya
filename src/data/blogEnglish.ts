@@ -196,7 +196,7 @@ export const blogEnglish = [
     "category": "Chemical Cleaning",
     "title": "Why Is Chemical Cleaning Important for Induction Furnace Cooling Circuits?",
     "summary": "A technical guide for foundries covering induction furnace cooling circuits, material compatibility and assessment of Kelvenoks Ferlin 124.",
-    "image": "/images/products/2/2.png",
+    "image": "/images/products/kelvenoks/ferlin-124.png",
     "imageAlt": "Kelvenoks Ferlin 124 cleaning product for copper and copper alloy systems",
     "service": "/hizmetlerimiz/endustriyel-kimyasal-temizlik",
     "serviceLabel": "Industrial chemical cleaning services",

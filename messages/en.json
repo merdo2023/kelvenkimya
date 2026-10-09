@@ -382,7 +382,7 @@
         "products": [
           {
             "name": "Kelvenoks Ferlin 123",
-            "image": "/images/products/2/1.png",
+            "image": "/images/products/kelvenoks/ferlin-123.png",
             "tags": [
               "Iron",
               "Steel",
@@ -392,7 +392,7 @@
           },
           {
             "name": "Kelvenoks Ferlin 124",
-            "image": "/images/products/2/2.png",
+            "image": "/images/products/kelvenoks/ferlin-124.png",
             "tags": [
               "Copper",
               "Copper Alloys"
@@ -401,7 +401,7 @@
           },
           {
             "name": "Kelvenoks Ferlin 128",
-            "image": "/images/products/2/3.png",
+            "image": "/images/products/kelvenoks/ferlin-128.png",
             "tags": [
               "Stainless Steel",
               "Stainless Alloys"
@@ -410,7 +410,7 @@
           },
           {
             "name": "Kelvenoks Ferlin 130",
-            "image": "/images/products/2/4.png",
+            "image": "/images/products/kelvenoks/ferlin-130.png",
             "tags": [
               "Aluminum",
               "Aluminum Alloys"
