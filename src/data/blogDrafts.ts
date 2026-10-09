@@ -190,5 +190,65 @@ export const blogDrafts = [
         "Analiz ihtiyacı ekipman ve işletme koşullarına göre değerlendirilir. Güncel analizler, temizlik sonrası koruyucu programın gözden geçirilmesini destekler."
       ]
     ]
+  },
+  {
+    "slug": "induksiyon-ocagi-sogutma-devresi-kimyasal-temizligi",
+    "category": "Kimyasal Temizlik",
+    "title": "İndüksiyon Ocaklarında Soğutma Devresi Kimyasal Temizliği Neden Önemlidir?",
+    "summary": "Döküm tesislerinde indüksiyon ocağı soğutma devrelerinin temizliği, bakır yüzeylerde malzeme uyumu ve Kelvenoks Ferlin 124 ürün değerlendirmesi.",
+    "image": "/images/products/2/2.png",
+    "imageAlt": "Kelvenoks Ferlin 124 bakır ve bakır alaşımlı sistemler için kimyasal temizlik ürünü",
+    "service": "/hizmetlerimiz/endustriyel-kimyasal-temizlik",
+    "serviceLabel": "Endüstriyel kimyasal temizlik hizmetleri",
+    "sections": [
+      [
+        "Rehberin kapsamı: soğutma suyu devresi",
+        "Bu rehber, döküm tesislerindeki indüksiyon ocaklarının soğutma suyu devrelerine yönelik teknik değerlendirmeyi ele alır. Ergitme haznesi, refrakter astar veya elektrikli bileşenlerin doğrudan kimyasalla temizlenmesini kapsamaz. Ocak, güç ünitesi ve eşanjör bağlantıları üretici tasarımına göre farklı devrelerden oluşabilir; temizlenecek bölüm uygulama öncesinde belirlenmelidir."
+      ],
+      [
+        "Birikintiler soğutmayı nasıl etkiler?",
+        "Bobin soğutma hatlarında oluşan mineral birikintileri su geçişini daraltabilir ve ısı transferini olumsuz etkileyebilir. Soğutmanın yetersiz kalması aşırı ısınma ve ekipman hasarı riskini artırabilir. Bu nedenle temizlik ihtiyacının değerlendirilmesi, döküm tesisinin bakım planının bir parçası olarak ele alınmalıdır."
+      ],
+      [
+        "Temizlik kararı hangi bilgilere dayanmalı?",
+        "Debi, basınç ve giriş-çıkış sıcaklıkları üreticinin belirlediği işletme koşullarıyla karşılaştırılır. Filtreler, pompalar ve bağlantılar da değerlendirilir; bir akış problemi her zaman kireçten kaynaklanmaz. Su analizleri, bakım kayıtları ve mümkün olduğunda birikinti bilgileri birlikte incelenerek sorunun kaynağı ve uygun bakım yöntemi belirlenir."
+      ],
+      [
+        "Bakır devrelerde kimyasal ürün seçimi",
+        "İndüksiyon ocağının soğutma sisteminde yalnızca bobin malzemesi değil, temizlenecek devredeki tüm metal, conta ve hortumlar dikkate alınmalıdır. Bakırla uyumlu bir ürünün sistemdeki diğer malzemelerle de uyumu değerlendirilir. Üretici gereklilikleri, birikinti türü ve güncel ürün belgeleri temizlik yönteminin seçiminde esas alınır."
+      ],
+      [
+        "Döküm tesisleri için Kelvenoks Ferlin 124",
+        "Kelven Kimya, döküm tesislerine Kelvenoks Ferlin 124 ürününü tedarik etmektedir. Ürün, bakır ve bakır alaşımlı yüzeylerde kireç ve mineral birikintilerinin temizliğine yönelik, bakır inhibitörleri içeren bir formülasyondur. İndüksiyon ocağı soğutma devresinde kullanımı; malzeme listesi, kirlenme ve üretici prosedürü üzerinden değerlendirilmelidir. Ürün tedariki, belirli bir tesiste Kelven tarafından uygulama yapıldığı anlamına gelmez."
+      ],
+      [
+        "Bakım hazırlığı ve uygulama planı",
+        "Temizlenecek devrenin sınırları, geçici bağlantılar, sirkülasyon düzeni ve tamamlama kontrolleri yazılı bir prosedürle belirlenir. İşlem, üreticinin bakım ve güvenli izolasyon gerekliliklerine uygun olarak yetkili ekip tarafından planlanmalıdır; sıcak ekipmanın gerekli soğutma koşulları korunmalıdır. Karışım, sıcaklık ve süre için genel bir reçete yerine ekipmana uygun teknik prosedür kullanılmalıdır."
+      ],
+      [
+        "Temizlik sonrası kontrol ve su kalitesi",
+        "Durulama ve gerekli tamamlama aşamalarından sonra devre, üretici gerekliliklerine göre değerlendirilir. Soğutma suyunun kalitesi ve işletme koşulları gözden geçirilir. Temizlik ile koruyucu su programı birlikte ele alınabilir; takip edilecek değerler ve bakım sıklığı tesisin koşullarına göre belirlenir."
+      ]
+    ],
+    "checklist": [
+      "Ocak üreticisi, model ve soğutma devresi şeması",
+      "Bakır, diğer metaller, conta ve hortum malzemeleri",
+      "Su analizleri ve debi/basınç/sıcaklık kayıtları",
+      "Üretici bakım prosedürü ve devre sınırları"
+    ],
+    "faq": [
+      [
+        "Ferlin 124 her indüksiyon ocağında kullanılabilir mi?",
+        "Uygunluk yalnızca ocak türüyle belirlenmez. Temizlenecek devrenin malzemeleri, birikinti türü ve üretici gereklilikleri birlikte değerlendirilmelidir."
+      ],
+      [
+        "Kimyasal temizlik kaç ayda bir yapılmalıdır?",
+        "Tüm tesisler için geçerli sabit bir süre yoktur. Üretici bakım planı, su kalitesi ve izleme sonuçları temizlik ihtiyacının değerlendirilmesine temel oluşturur."
+      ],
+      [
+        "Soğutma devresi temizliği ile ocak içi temizlik aynı mıdır?",
+        "Hayır. Bu rehber su devresini ele alır; ergitme haznesi ve refrakter astarın bakım yöntemleri ayrı değerlendirilir."
+      ]
+    ]
   }
 ]

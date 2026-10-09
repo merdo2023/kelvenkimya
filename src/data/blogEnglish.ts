@@ -190,5 +190,65 @@ export const blogEnglish = [
         "Analysis requirements depend on equipment and operating conditions. Current analyses support review of the post-cleaning protective programme."
       ]
     ]
+  },
+  {
+    "slug": "induksiyon-ocagi-sogutma-devresi-kimyasal-temizligi",
+    "category": "Chemical Cleaning",
+    "title": "Why Is Chemical Cleaning Important for Induction Furnace Cooling Circuits?",
+    "summary": "A technical guide for foundries covering induction furnace cooling circuits, material compatibility and assessment of Kelvenoks Ferlin 124.",
+    "image": "/images/products/2/2.png",
+    "imageAlt": "Kelvenoks Ferlin 124 cleaning product for copper and copper alloy systems",
+    "service": "/hizmetlerimiz/endustriyel-kimyasal-temizlik",
+    "serviceLabel": "Industrial chemical cleaning services",
+    "sections": [
+      [
+        "Scope: the cooling water circuit",
+        "This guide concerns cooling water circuits in foundry induction furnaces. It does not cover direct chemical cleaning of the melting chamber, refractory lining or electrical components. Furnace, power supply and heat exchanger connections may form different circuits; the cleaning boundary must be defined before work."
+      ],
+      [
+        "How deposits affect cooling",
+        "Mineral deposits in coil cooling lines can restrict water flow and impair heat transfer. Inadequate cooling can increase the risk of overheating and equipment damage. Assessment of cleaning needs should form part of the foundry maintenance plan."
+      ],
+      [
+        "Information needed for assessment",
+        "Flow, pressure and inlet/outlet temperatures are compared with manufacturer operating requirements. Filters, pumps and connections are also assessed because flow problems are not always caused by scale. Water analyses, maintenance records and available deposit information help identify the cause and appropriate maintenance method."
+      ],
+      [
+        "Selecting a product for copper circuits",
+        "All metals, seals and hoses in the cleaning circuit must be considered, not only the coil material. Compatibility with copper does not establish compatibility with every other component. Manufacturer requirements, deposits and current product documentation guide method selection."
+      ],
+      [
+        "Kelvenoks Ferlin 124 for foundries",
+        "Kelven Kimya supplies Kelvenoks Ferlin 124 to foundries. The product contains copper inhibitors and is intended for scale and mineral deposits on copper and copper alloy surfaces. Use in an induction furnace cooling circuit requires assessment of materials, contamination and manufacturer procedures. Product supply does not establish that Kelven performed cleaning at a particular facility."
+      ],
+      [
+        "Maintenance preparation",
+        "Circuit boundaries, temporary connections, circulation and completion checks are defined in a written procedure. Authorised teams must follow manufacturer maintenance and safe isolation requirements while preserving required cooling for hot equipment. Concentration, temperature and duration must follow an equipment-specific procedure."
+      ],
+      [
+        "Post-cleaning checks and water quality",
+        "After rinsing and required completion stages, the circuit is assessed against manufacturer requirements. Water quality and operating conditions are reviewed. Cleaning and protective water treatment can be considered together, with monitoring and maintenance intervals suited to the facility."
+      ]
+    ],
+    "checklist": [
+      "Manufacturer, model and cooling circuit diagram",
+      "Copper, other metals, seals and hoses",
+      "Water analyses and flow/pressure/temperature records",
+      "Manufacturer maintenance procedure and circuit boundaries"
+    ],
+    "faq": [
+      [
+        "Can Ferlin 124 be used in every induction furnace?",
+        "Suitability depends on circuit materials, deposits and manufacturer requirements, not only furnace type."
+      ],
+      [
+        "How often should chemical cleaning be performed?",
+        "There is no universal interval. The manufacturer maintenance plan, water quality and monitoring results inform assessment."
+      ],
+      [
+        "Is cooling circuit cleaning the same as cleaning inside the furnace?",
+        "No. This guide concerns the water circuit; melting chamber and refractory maintenance require separate assessment."
+      ]
+    ]
   }
 ]
