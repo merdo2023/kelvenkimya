@@ -37,7 +37,7 @@ export function ContactInfoSection() {
       title: t('contact.cards.address.title'),
       lines: [t('contact.info.addressLine1'), t('contact.info.addressLine2')],
       actionLabel: t('contact.actions.location'),
-      actionHref: '#contact-location',
+      actionHref: 'https://www.google.com/maps/dir/?api=1&destination=' + encodeURIComponent(t('contact.info.addressLine1') + ' ' + t('contact.info.addressLine2')),
     },
   ] as const
 
@@ -49,8 +49,8 @@ export function ContactInfoSection() {
 
       <Container className="relative">
         <div className="rounded-2xl border border-border/45 bg-white/95 p-5 shadow-[0_4px_32px_-12px_rgba(11,31,51,0.08)] backdrop-blur-sm sm:p-6 lg:p-8">
-          <div className="grid gap-8 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.05fr)] lg:gap-10 xl:gap-12">
-            <div className="flex flex-col justify-center">
+          <div className="grid gap-8 lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)] lg:gap-8">
+            <div className="flex flex-col justify-start lg:pt-3">
               <span className="inline-flex w-fit items-center gap-2 rounded-full border border-cyan/15 bg-cyan/[0.06] px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.12em] text-brand-blue">
                 <span className="h-1.5 w-1.5 rounded-full bg-cyan" aria-hidden="true" />
                 {t('contact.panel.eyebrow')}
@@ -77,9 +77,10 @@ export function ContactInfoSection() {
                   </li>
                 ))}
               </ul>
+              <p className="mt-6 max-w-md border-t border-border/50 pt-4 text-sm leading-relaxed text-muted">{t('contact.panel.requestHint')}</p>
             </div>
 
-            <div className="flex flex-col gap-3 sm:gap-3.5">
+            <div className="grid gap-3 sm:grid-cols-2 sm:gap-4">
               {cards.map((card, index) => (
                 <ContactInfoCard
                   key={card.key}

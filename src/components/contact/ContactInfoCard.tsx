@@ -1,15 +1,16 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { ArrowUpRight, Mail, MapPin, Phone, type LucideIcon } from 'lucide-react'
+import { ArrowUpRight, Mail, MapPin, Phone, MessageCircle, type LucideIcon } from 'lucide-react'
 import { cardAccentColors } from '@/data/accentColors'
 
-type ContactIconKey = 'phone' | 'email' | 'address'
+type ContactIconKey = 'phone' | 'email' | 'address' | 'whatsapp'
 
 const iconMap: Record<ContactIconKey, LucideIcon> = {
   phone: Phone,
   email: Mail,
   address: MapPin,
+  whatsapp: MessageCircle,
 }
 
 interface ContactInfoCardProps {
@@ -86,6 +87,8 @@ export function ContactInfoCard({
         {actionLabel && actionHref ? (
           <a
             href={actionHref}
+            target={actionHref.startsWith('https://') ? '_blank' : undefined}
+            rel={actionHref.startsWith('https://') ? 'noopener noreferrer' : undefined}
             className="mt-2.5 inline-flex items-center gap-1 text-xs font-semibold text-cyan transition-colors hover:text-brand-blue"
           >
             {actionLabel}

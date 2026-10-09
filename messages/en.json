@@ -1403,22 +1403,28 @@
       "address": {
         "title": "Address",
         "description": "Our office address for your visit."
+      },
+      "whatsapp": {
+        "title": "WhatsApp",
+        "description": "Message us about products and projects."
       }
     },
     "panel": {
       "eyebrow": "Get in Touch",
-      "title": "Reach us quickly through your preferred channel",
+      "title": "Contact Us for Technical Support and Quotes",
       "description": "Contact us for technical support, product information, quotes and project requests.",
       "supportItems": [
         "Technical support and product information",
         "Project and quote requests",
         "On-site application consulting"
-      ]
+      ],
+      "requestHint": "For a quote, share your equipment type, requirements and any available photos."
     },
     "actions": {
       "call": "Call Now",
       "mail": "Send Email",
-      "location": "View Location"
+      "location": "Get Directions",
+      "whatsapp": "Message on WhatsApp"
     },
     "map": {
       "title": "Location",

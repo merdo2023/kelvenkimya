@@ -1403,22 +1403,28 @@
       "address": {
         "title": "Adres",
         "description": "Ofisimize ulaşım için adres bilgilerimiz."
+      },
+      "whatsapp": {
+        "title": "WhatsApp",
+        "description": "Ürün ve proje talepleriniz için bize yazın."
       }
     },
     "panel": {
       "eyebrow": "Bize Ulaşın",
-      "title": "Size en uygun kanaldan hızlıca ulaşın",
+      "title": "Teknik Destek ve Teklif İçin Bize Ulaşın",
       "description": "Teknik destek, ürün bilgisi, teklif ve proje talepleriniz için bizimle iletişime geçebilirsiniz.",
       "supportItems": [
         "Teknik destek ve ürün bilgisi",
         "Proje ve teklif talepleri",
         "Saha uygulamaları için danışmanlık"
-      ]
+      ],
+      "requestHint": "Teklif talebinizde ekipman türünü, ihtiyacınızı ve varsa fotoğraflarınızı paylaşabilirsiniz."
     },
     "actions": {
       "call": "Hemen Ara",
       "mail": "E-posta Gönder",
-      "location": "Konumu Gör"
+      "location": "Yol Tarifi Al",
+      "whatsapp": "WhatsApp’tan Yazın"
     },
     "map": {
       "title": "Konum",
