@@ -194,3 +194,21 @@ Kullanıcı Ahal'ın en üstte öne çıkarılmasını ve dört Rönesans klasö
 - Önceki İngilizce → Türkçe slug yönlendirmeleri tersine çevrildi: /en/urunlerimiz → /en/products, /en/hizmetlerimiz → /en/services, /en/projelerimiz → /en/projects, /en/hakkimizda → /en/about, /en/iletisim → /en/contact; hepsi 301. Önceki raporlardaki ters yön tarifleri bu geçişle artık geçerli değildir.
 - Üretim derlemesi başarılı. Geçici üretim sunucusunda beş yeni adres HTTP 200/en, eski beş adres HTTP 301/doğru Location; canonical ve TR/EN/x-default doğru. Eski İngilizce ana yollar menü bağlantılarında ve sitemap'te yok. Sitemap'teki 72 adresin tamamı HTTP 200; döngü yok.
 - Dil seçici ortak next-intl eşleştirmesini kullanır; tarayıcıda tıklama/görsel QA yapılmadı. Kanıt: tmp/seo-audit-20261009/english-url-migration.json.
+## 9 Ekim 2026 — Kapsamlı canlı SEO ve karşılaştırma araştırması
+
+- Canlı 72 sitemap sayfası, 79 iç URL ve 93 medya adresi denetlendi: sayfalar HTTP 200/tek H1, başlık/açıklama tekrarları yok, normalize canonical hatası yok, medya/iç bağlantı hatası yok. İngilizce eski beş ana URL doğru 301; geçiş canlıda doğrulandı.
+- Teknik manuel puan 90/100; farklı kapsamlı içerik/teklif hazırlığı 76/100. Google/Lighthouse puanı değil; sıralama, trafik, backlink ve hesap verileri ölçülmedi.
+- Proses Devreye Alma Teknolojileri, PH Kimya, Akar Arıtım, Fenix açık sayfaları incelendi; Solenis içerik organizasyonu benchmark'ı. Rakiplere sayısal SEO puanı verilmedi ve şirket teknik iddiaları doğrulanmış kabul edilmedi.
+- Öncelikler: Search Console/ölçüm, gerçek teslimli teklif formu, doğrulanmış proje vaka sayfaları, teknik belge erişimi, ihtiyaç odaklı rehberler, gerçek mobil hız ve yerel profil kontrolleri.
+- Tam rapor docs/seo-competitor-research-2026-10-09.md. Kod/tasarım/canlı yayın değişmedi, commit/push yapılmadı.
+
+## Blog araştırması ve önizleme — 2026-10-09
+Solenis Blog, Proses ve PH Kimya sayfaları ile Google içerik/Article belgeleri incelendi. Yazılı sunum: docs/blog-arastirma-sunumu-2026-10-09.md. Yerel Türkçe önizleme /blog-onizleme; dört ayrı taslak yazı, kategori filtresi ve arama. Kaynak src/data/blogDrafts.ts, bileşen src/components/blog/BlogPreview.tsx. Menü/sitemap değiştirilmedi, noindex/nofollow; İngilizce taslak yok (404). Blog yayına alınmadı ve push yapılmadı. Yazılar teknik inceleme bekliyor; yazar/tarih uydurulmadı. npm run build ve npx tsc --noEmit geçti. Production HTTP kontrolünde 5 sayfa 200, tek H1/noindex; bilinmeyen yazı ve EN 404; sitemap önizlemeyi içermiyor. Tarayıcı görsel/etkileşim kontrolü yapılmadı.
+
+
+## Kurumsal içerik ve SEO güncellemesi
+Dört yazı daha açık başlıklar ve beşer içerik bölümüyle yeniden düzenlendi. P&ID/spool terimleri açıklandı; hazırlık listeleri, ikişer SSS, ilgili rehberler ve açıklayıcı hizmet bağlantıları eklendi. Her yazı için özgün title/description ve sosyal paylaşım metadata hazırlandı. Önizleme noindex olarak kaldı; yayın tarihi, teknik inceleyen ve yayın sürümü canonical/schema işlemleri henüz tamamlanmadı. Menü/sitemap/push değişikliği yok. Google faydalı içerik rehberi tekrar kontrol edildi: https://developers.google.com/search/docs/fundamentals/creating-helpful-content
+
+Blog sadeleştirme: Kullanıcı düzeni karmaşık buldu. Blog girişinde mevcut PageHero kullanıldı; yalnızca Blog başlığı, kısa açıklama ve iki sütunlu dört yazı listesi bırakıldı. Tekrarlanan öne çıkan yazı, arama/filtre ve büyük CTA kaldırıldı. Yazı gövdesi daraltıldı, başlangıçtaki içindekiler kaldırıldı; hazırlık listesi açılır bölüme taşındı. Yazı metinleri/veri kaynağı korundu; önceki bileşenler tmp/blog-before-simplification altında saklandı. TypeScript kontrolü geçti. Tarayıcı aracı etkin yüzey döndürmediği için görsel QA yapılamadı. Önizleme/yayın durumu değişmedi.
+
+Kullanıcı main'e push istedi. Blog önizlemesi, yazılı araştırmalar ve development/production önbellek ayrımı gönderim kapsamındadır. Blog menü ve sitemap'e eklenmedi, noindex korunuyor. Diğer yerel tasarım/teknik doküman değişiklikleri gönderim dışındadır.
