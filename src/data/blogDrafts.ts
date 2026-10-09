@@ -196,8 +196,8 @@ export const blogDrafts = [
     "category": "Kimyasal Temizlik",
     "title": "İndüksiyon Ocaklarında Soğutma Devresi Kimyasal Temizliği Neden Önemlidir?",
     "summary": "Döküm tesislerinde indüksiyon ocağı soğutma devrelerinin temizliği, bakır yüzeylerde malzeme uyumu ve Kelvenoks Ferlin 124 ürün değerlendirmesi.",
-    "image": "/images/products/kelvenoks/ferlin-124.png",
-    "imageAlt": "Kelvenoks Ferlin 124 bakır ve bakır alaşımlı sistemler için kimyasal temizlik ürünü",
+    "image": "/images/blog/induksiyon-ocagi.png",
+    "imageAlt": "Döküm tesisinde indüksiyon ocağı ve metal yükleme işlemi",
     "service": "/hizmetlerimiz/endustriyel-kimyasal-temizlik",
     "serviceLabel": "Endüstriyel kimyasal temizlik hizmetleri",
     "sections": [
