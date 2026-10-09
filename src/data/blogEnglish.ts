@@ -2,48 +2,69 @@ export const blogEnglish = [
   {
     "slug": "hrsg-kimyasal-temizlik-oncesi-hazirlik",
     "category": "Chemical Cleaning",
-    "title": "HRSG Chemical Cleaning: Preparation and Application Planning",
-    "summary": "Technical information, circuit boundaries, site preparation and acceptance criteria for chemical cleaning of heat recovery steam generators.",
+    "title": "HRSG Chemical Cleaning: Preparation, Execution and Verification",
+    "summary": "HRSG chemical cleaning planning: circuit boundaries, material assessment, temporary circulation, process monitoring and final acceptance.",
     "image": "/images/projects/aksa/hrsg-drum-piping.jpeg",
     "imageAlt": "HRSG drum and piping from the Aksa Energy project archive",
     "service": "/hizmetlerimiz/endustriyel-kimyasal-temizlik/hrsg-kimyasal-temizligi",
     "sections": [
       [
-        "What is HRSG chemical cleaning?",
-        "Chemical cleaning of a heat recovery steam generator (HRSG) addresses contamination in boiler circuits through a plan suited to the equipment and materials. Pre-commissioning cleaning and maintenance cleaning are assessed under different conditions. The scope is defined using manufacturer requirements, system information and project acceptance criteria."
+        "Why is HRSG chemical cleaning performed?",
+        "A heat recovery steam generator uses energy from gas turbine exhaust. Chemical cleaning addresses identified contamination through a method compatible with circuit materials. Pre-commissioning assessment considers fabrication and installation oils, residues and oxides, while maintenance cleaning considers operating deposits and service history. These situations can require different chemical routes and control plans. Plant age or output alone does not determine the need for cleaning; manufacturer requirements and the circuit condition must be reviewed together."
       ],
       [
-        "Technical information required before cleaning",
-        "The piping and instrumentation diagram (P&ID) identifies circuits and connections. Materials, circuit volumes, available analyses and maintenance records are reviewed together. These inputs support the assessment of cleaning products, circulation equipment and temporary connections."
+        "Defining the cleaning circuit",
+        "Applicable pressure circuits, economizer and evaporator sections are identified on piping and instrumentation diagrams (P&IDs). Other sections are included only where the approved scope requires them. Equipment within and outside the scope, isolation points, supply and return connections are agreed before execution. Boundaries establish circulation paths, temporary connections and sampling locations. Plant output does not replace these engineering inputs: each cleaning circuit is assessed against its volume and connection arrangement."
       ],
       [
-        "Site preparation and application planning",
-        "Water supply, temporary connections, site access and the shutdown schedule are considered during planning. The procedure should define scope, monitored conditions, responsibilities and completion criteria. Duration and equipment requirements are established for the project after technical assessment."
+        "Materials and deposit assessment",
+        "Materials, circuit volumes, manufacturer specifications and available analyses inform method selection. Deposit characteristics and metallurgy are reviewed together to select a suitable inhibited solvent or complexing route. Degreasing and oxide or deposit removal serve different purposes. Product, temperature, concentration and duration limits are established in the approved procedure. Rather than transferring a general acid recipe between HRSG systems, selection considers all circuit materials and manufacturer restrictions."
       ],
       [
-        "Final checks and handover",
-        "Rinsing and any other completion stages follow the approved procedure. Final checks are based on agreed acceptance criteria. Defining the inspection and handover scope at the outset provides a shared basis for evaluating the work."
+        "Procedure development and responsibilities",
+        "Kelven Kimya can develop a procedure from system data and technical specifications for customer approval, or execute an approved procedure supplied by the customer or equipment manufacturer. Both approaches require agreement on boundaries, inspection points, acceptance criteria and responsibilities before work. Required stage approvals and the assessment process for site changes are defined. This connects cleaning execution with plant maintenance and commissioning schedules."
       ],
       [
-        "Aksa Energy Antalya field experience",
-        "Kelven Kimya project references include HRSG chemical cleaning in units 5 and 6 at Aksa Energy Antalya. The drum and piping image comes from that project archive. Our HRSG service page explains the scope, while the projects section presents related references."
+        "Pump selection and temporary circulation",
+        "Pumps and temporary piping are assessed against circuit volume, required circulation and pressure losses. Kelven Kimya carries out site work using its own chemical cleaning equipment and pumps; the configuration for each project is confirmed through technical assessment. Supply and return paths, sampling locations, required heating and compatibility of wetted materials are reviewed. Water, power, lifting, access, drainage and waste responsibilities are agreed in advance. Preparations must support both cleaning stages and final rinsing."
+      ],
+      [
+        "Cleaning stages and process monitoring",
+        "The approved sequence starts with circuit preparation and required flushing, followed by selected degreasing and deposit-removal stages. Every stage is not required in every project. Temperature and circulation are recorded alongside pH, active chemical concentration and dissolved iron where specified. Measurement trends support assessment of stage endpoints. Elapsed time alone does not establish completion. Results and deviations are recorded, with reviews and acceptance at the defined hold points."
+      ],
+      [
+        "Rinsing, final checks and preservation",
+        "Rinse criteria and inspection requirements are agreed before execution. Required neutralisation, passivation and preservation are selected according to equipment requirements and the approved procedure. The interval before commissioning is assessed for recontamination and surface protection. The contractual handover package may include the approved procedure, execution logs, analysis results, inspection records and preservation instructions. Site photographs document the work but do not replace required measurements and inspections."
+      ],
+      [
+        "Aksa Enerji Antalya HRSG field reference",
+        "Kelven Kimya references include HRSG chemical cleaning at units 5 and 6 of the Aksa Enerji Antalya combined cycle plant. The company service presentation states a plant capacity of 820 MW; this is not the volume of the cleaned circuit or a pump duty. The drum and piping photograph comes from this field archive. The reference illustrates circuit planning and site preparation; chemical routes and acceptance criteria for another plant must be established from its own technical data."
       ]
     ],
     "serviceLabel": "HRSG chemical cleaning services",
     "checklist": [
-      "P&ID and cleaning circuit boundaries",
-      "Materials and circuit volumes",
-      "Manufacturer procedure and acceptance criteria",
-      "Maintenance records, analyses and shutdown schedule"
+      "P&IDs, pressure circuits and excluded equipment",
+      "Metallurgy, circuit volumes and available deposit analyses",
+      "Manufacturer specifications, procedure and acceptance criteria",
+      "Connections, sampling, water, power and drainage",
+      "Shutdown schedule, waste management and handover records"
     ],
     "faq": [
       [
-        "Which documents are needed for HRSG cleaning?",
-        "Initial assessment uses P&ID, materials and volume information, manufacturer procedures, maintenance records and acceptance criteria. Further information may be required for the project."
+        "How long does HRSG cleaning take?",
+        "Circuit volume, contamination, connection preparations, selected stages and verification requirements are assessed together. Duration is planned after the technical scope is established."
       ],
       [
-        "How long does HRSG chemical cleaning take?",
-        "Duration depends on the circuits, contamination, site preparation and inspection stages. A fixed duration should not be given before technical assessment."
+        "Does every HRSG require acid cleaning?",
+        "The route depends on deposits, materials and manufacturer requirements. The same acid or sequence is not appropriate for every circuit."
+      ],
+      [
+        "How is completion verified?",
+        "Stage measurements, rinse criteria and required inspections are assessed against the approved acceptance conditions. A photograph or elapsed time alone does not establish acceptance."
+      ],
+      [
+        "What information is needed for a quotation?",
+        "P&IDs, materials, circuit volumes, manufacturer specifications, available analyses, site location and shutdown schedule support initial assessment."
       ]
     ]
   },
@@ -98,48 +119,74 @@ export const blogEnglish = [
   {
     "slug": "tank-boru-hatti-temizlik-hazirligi",
     "category": "Field Experience",
-    "title": "Tank and Pipeline Chemical Cleaning: Preparation and Surface Inspection",
-    "summary": "Defining cleaning scope, planning circulation and reviewing the Ahal GTG field example for process tanks and pipelines.",
+    "title": "Tank and Pipeline Chemical Cleaning: Methods, Preparation and Surface Inspection",
+    "summary": "Material compatibility, degreasing, circuit preparation, surface inspection and the Ahal GTG project reference for process tanks and pipelines.",
     "image": "/images/blog/tank-boru-hatti-saha.jpg",
     "imageAlt": "Large diameter open-ended pipe section from the Ahal field archive",
     "service": "/hizmetlerimiz/endustriyel-kimyasal-temizlik/tank-boru-hatti-kimyasal-temizligi",
     "sections": [
       [
-        "Defining the cleaning scope",
-        "Chemical cleaning of process tanks, pipe groups and connected circuits requires clearly defined boundaries. A spool is a prefabricated pipe assembly prepared for site installation. Tanks, spools and connected equipment are assessed using P&ID and materials information."
+        "Scope of tank and pipeline chemical cleaning",
+        "Cleaning of process tanks, storage tanks and pipelines is planned around surface use and contamination. Fabrication residues, oils, oxides and operating deposits can require different assessments. A spool is a prefabricated pipe assembly prepared for site installation. Cleaning separate spools and circulating a solution through a connected process circuit require different arrangements. P&IDs, equipment lists and connection information establish the scope of tanks, pipe groups and connected equipment."
       ],
       [
-        "Circuit boundaries and circulation preparation",
-        "Boundaries identify equipment and connections included in the work. Volumes, connections and site conditions inform pump and temporary piping arrangements. Product selection and application sequence depend on materials, contamination and the project procedure."
+        "Carbon steel and stainless steel assessment",
+        "Material grade, surface condition and service fluid inform method selection. For carbon steel, surface protection after deposit removal is considered. For stainless steel, degreasing, oxide removal and passivation serve different purposes. Passivation is not the same operation as removing heavy oxide or thick deposits. Selection considers more than the main pipe material: connected equipment, seals and other wetted materials in temporary piping must also be assessed."
       ],
       [
-        "Procedure and acceptance criteria",
-        "The method of surface inspection and acceptance criteria should be defined alongside cleaning. Surfaces contacting different fluids may have different project requirements. Inspection methods and handover scope are agreed with the responsible technical teams before application."
+        "Why degreasing and deposit removal are planned separately",
+        "Oil and grease differ from oxides and mineral deposits. The procedure defines degreasing, required surface treatment and rinsing in a sequence suited to contamination. Acidic and alkaline stages are not a standard recipe applied together to every surface. Weld areas, access and surface condition also inform selection. Product, concentration, temperature and duration are established against project specifications and compatibility. The objective is the surface condition required for subsequent processing or service."
       ],
       [
-        "Ahal GTG field example",
-        "Kelven Kimya Ahal GTG-INT references include acidic and alkaline chemical cleaning of stainless steel spools, liquid storage tanks, oxygen and nitrogen tanks, and specified process systems. The large diameter pipe photograph comes from the Ahal field archive."
+        "Separate spools versus connected circuits",
+        "For separate pipe assemblies, suitable bath or surface application methods can be assessed. Tank and connected circuit arrangements depend on connections, access and circulation possibilities. Geometry and the approved procedure determine the selected method. Component cleaning requires identification and post-treatment handling plans; circuit cleaning requires isolation, supply, return, venting and drainage arrangements. Component counts, bath dimensions or pump lists proposed for one project cannot be transferred directly to another design."
       ],
       [
-        "Surface inspection at Ahal",
-        "The Ahal application note specifies zero tolerance for oil residues on oxygen-contact surfaces. Surfaces were inspected in darkness using a dedicated inspection lamp after cleaning. This describes the project note; inspection methods and acceptance criteria for new projects must follow their own technical requirements."
+        "Temporary connections and site preparation",
+        "Circuit volume, flow paths and pressure losses inform pump and temporary piping assessment. Sampling points and monitoring arrangements are established with the procedure. Water, power, access, lifting, drainage and waste collection are planned before execution. Equipment excluded from the cleaning scope is clearly identified. Agreement on waste collection, treatment and disposal responsibilities connects cleaning and rinsing stages with site organisation."
+      ],
+      [
+        "Surface inspection and acceptance criteria",
+        "Stage endpoints, rinse requirements and surface acceptance criteria are defined before work begins. Visual inspection and specified analysis or other methods are considered according to service requirements. Photographs of accessible surfaces document the work but do not alone establish acceptance of the entire circuit. Inspection scope, responsible technical teams and hold points are agreed in writing. Results, deviations and required repeat operations are included in execution records."
+      ],
+      [
+        "Tank and pipe work at Ahal GTG-INT",
+        "The Kelven Kimya service presentation lists acidic and alkaline chemical cleaning of stainless steel spools, liquid storage tanks, oxygen and nitrogen tanks and specified process systems within its Ahal GTG-INT references for 2016–2019. The large diameter pipe photograph comes from this archive. Dated proposals in the presentation also describe planned methods and equipment; proposed quantities are not treated as completed quantities. The reference illustrates why different surfaces and services require separately defined cleaning packages."
+      ],
+      [
+        "Oxygen-contact surfaces: the Ahal application note",
+        "The Ahal field note specifies zero tolerance for oil residues on oxygen-contact surfaces and records inspection in darkness using a dedicated lamp after cleaning. This is a project application note, not a universal inspection standard or certification statement. For new projects, service conditions, specifications and acceptance methods must be agreed by the responsible technical teams. Post-cleaning handling, closure and storage also form part of the plan to prevent recontamination."
+      ],
+      [
+        "Preservation and handover records",
+        "After rinsing and required completion stages, surface protection until commissioning is planned. Drying, end closure, identification and suitable packaging may be considered for components; connected systems require project-specific preservation. These operations are not identical in every project. The contractual handover scope establishes required procedures, execution logs, analysis and inspection results and preservation instructions. Sharing materials, volumes, contamination, access and schedule together supports a clearly defined quotation."
       ]
     ],
     "serviceLabel": "Tank and pipeline chemical cleaning services",
     "checklist": [
-      "Tank and pipeline materials",
-      "Circuit boundaries and connection points",
-      "Circuit volume and site facilities",
-      "Cleaning procedure and surface acceptance criteria"
+      "P&IDs, equipment lists and tank/spool/circuit boundaries",
+      "Material grades, seals and intended service fluid",
+      "Volume, geometry, contamination and available analyses",
+      "Connections, access, water, power and drainage",
+      "Inspection, acceptance, preservation and handover requirements",
+      "Shutdown schedule and waste management responsibilities"
     ],
     "faq": [
       [
-        "What should be prepared before tank and pipeline cleaning?",
-        "Circuit boundaries, materials, volumes, connections and acceptance criteria should be provided for technical assessment."
+        "Is passivation the same as chemical cleaning?",
+        "They serve different purposes. Degreasing and deposit removal address contamination, while passivation is assessed after suitable preparation against the specification. It cannot automatically replace heavy oxide removal."
       ],
       [
-        "Is one inspection method sufficient for all surfaces?",
-        "The method depends on surface use and project requirements. A method used in one project is not a universal acceptance criterion."
+        "Are spools and tanks cleaned using the same method?",
+        "Geometry, materials, access and intended service determine the method. Bath treatment, surface application or circulation are assessed within the project procedure."
+      ],
+      [
+        "Is lamp inspection alone sufficient for oxygen tanks?",
+        "Acceptance follows project specifications. The Ahal lamp inspection note does not establish universal sufficiency or certification for oxygen systems."
+      ],
+      [
+        "How are cleaned components protected?",
+        "Drying, closure, packaging or system preservation is defined according to materials, storage duration and commissioning conditions."
       ]
     ]
   },

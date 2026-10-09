@@ -2,48 +2,69 @@ export const blogDrafts = [
   {
     "slug": "hrsg-kimyasal-temizlik-oncesi-hazirlik",
     "category": "Kimyasal Temizlik",
-    "title": "HRSG Kimyasal Temizliği: Hazırlık ve Uygulama Planlaması",
-    "summary": "Atık ısı kazanlarında kimyasal temizlik öncesi gerekli teknik bilgiler, devre sınırları, saha hazırlığı ve kabul kriterleri.",
+    "title": "HRSG Kimyasal Temizliği: Hazırlık, Uygulama ve Kontrol Süreci",
+    "summary": "HRSG kimyasal temizliğinde devre kapsamı, malzeme değerlendirmesi, geçici sirkülasyon, uygulama takibi ve temizlik sonrası kabul süreci.",
     "image": "/images/projects/aksa/hrsg-drum-piping.jpeg",
     "imageAlt": "Aksa Enerji projesinden HRSG drum ve borulama görünümü",
     "service": "/hizmetlerimiz/endustriyel-kimyasal-temizlik/hrsg-kimyasal-temizligi",
     "sections": [
       [
-        "HRSG kimyasal temizliği nedir?",
-        "HRSG (atık ısı kazanı) kimyasal temizliği, kazan devrelerindeki kirlenmeye yönelik, ekipman ve malzeme özelliklerine göre planlanan bir uygulamadır. Devreye alma öncesi hazırlık ile işletme dönemindeki bakım temizliği farklı koşullarda değerlendirilir. Uygulamanın kapsamı üretici gereklilikleri, sistem bilgileri ve proje kabul kriterleriyle belirlenir."
+        "HRSG kimyasal temizliği neden yapılır?",
+        "HRSG, gaz türbininden çıkan sıcak gazların enerjisinden yararlanan atık ısı kazanıdır. Kimyasal temizlik, kazan devrelerinde belirlenen kirlenmenin malzemeyle uyumlu bir yöntemle giderilmesi için planlanır. İlk devreye alma öncesinde imalat ve montaj kaynaklı yağlar, kalıntılar ve oksitler değerlendirilirken, işletme dönemindeki temizlikte birikintiler ve bakım geçmişi ele alınır. Bu iki durumun kimyasal ihtiyacı ve kontrol planı aynı olmayabilir. Temizlik kararı yalnızca tesisin yaşı veya gücüne göre verilmez; üretici gereklilikleri ve devrenin mevcut durumu birlikte incelenir."
       ],
       [
-        "Temizlik öncesinde gerekli teknik bilgiler",
-        "Borulama ve enstrümantasyon şeması (P&ID), temizlenecek devre sınırlarını ve bağlantıları tarif eder. Malzeme listesi, devre hacimleri, mevcut analizler ve önceki bakım kayıtları birlikte incelenir. Bu bilgiler kimyasal ürün seçimi, sirkülasyon ekipmanları ve geçici bağlantı düzeninin değerlendirilmesine temel oluşturur."
+        "Temizlenecek devrenin sınırları nasıl belirlenir?",
+        "Borulama ve enstrümantasyon şeması (P&ID) üzerinde ilgili basınç devreleri, ekonomizer ve evaporatör bölümleri tanımlanır. Diğer bölümlerin kapsama alınması onaylı prosedüre bağlıdır. Temizlenecek ve kapsam dışında tutulacak ekipmanlar, izolasyon noktaları, besleme ve dönüş bağlantıları uygulama öncesinde netleştirilir. Devre sınırları; çözeltinin izleyeceği yolu, geçici bağlantı ihtiyacını ve numune noktalarını belirler. Tesis kapasitesi, bu bilgilerin yerine geçmez; her temizlik devresi kendi hacmi ve bağlantı düzeni üzerinden değerlendirilir."
       ],
       [
-        "Saha hazırlığı ve uygulama planı",
-        "Su temini, geçici bağlantılar, saha erişimi ve duruş takvimi planlama aşamasında ele alınır. Prosedür; uygulama kapsamını, takip edilecek koşulları, sorumlulukları ve tamamlanma kriterlerini açıklamalıdır. Uygulama süresi ve ekipman ihtiyacı, teknik değerlendirme tamamlandıktan sonra projeye özel olarak belirlenir."
+        "Malzeme ve birikinti değerlendirmesi",
+        "Malzeme listesi, devre hacimleri, üretici şartnamesi ve mevcut analizler yöntem seçiminin temel girdileridir. Birikintinin niteliği ile temizlenecek yüzeylerin metalürjisi birlikte değerlendirilir; uygun inhibitörlü çözücü veya kompleks oluşturucu yöntem projeye göre seçilir. Yağ giderme ile oksit ve birikinti giderme farklı amaçlara hizmet eder. Ürün, sıcaklık, konsantrasyon ve süre sınırları onaylı prosedürde tanımlanır. Genel bir asit reçetesinin bütün HRSG sistemlerine aktarılması yerine devredeki malzemeler ve üretici sınırlamaları esas alınır."
       ],
       [
-        "Temizlik sonrası kontrol ve teslim",
-        "Durulama ve gerekli diğer tamamlama aşamaları onaylı prosedüre göre yürütülür. Son kontroller, önceden kararlaştırılan kabul kriterlerine dayanır. Kontrol ve teslim kapsamının başlangıçta belirlenmesi, uygulama sonucunun taraflar arasında aynı çerçevede değerlendirilmesini sağlar."
+        "Prosedürün hazırlanması ve teknik sorumluluklar",
+        "Kelven Kimya, sistem verileri ve teknik şartname üzerinden temizlik prosedürü geliştirerek müşteri onayına sunabilir veya müşteri ya da ekipman üreticisinin sağladığı onaylı prosedür kapsamında uygulama gerçekleştirebilir. Her iki modelde de devre sınırları, kontrol noktaları, kabul kriterleri ve sorumluluklar iş öncesinde kararlaştırılır. Bir aşamadan sonraki aşamaya geçiş için gerekli onaylar ve sahada değişiklik gerektiğinde izlenecek değerlendirme yolu planlanır. Böylece uygulama, tesisin bakım ve devreye alma takvimiyle birlikte yönetilir."
       ],
       [
-        "Aksa Enerji Antalya saha deneyimi",
-        "Kelven Kimya proje referansları arasında Aksa Enerji Antalya tesisinin 5 ve 6 numaralı ünitelerinde gerçekleştirilen HRSG kimyasal temizlik uygulamaları yer alır. Yazıdaki drum ve borulama görseli bu proje arşivine aittir. HRSG hizmet sayfamızdan uygulama kapsamını, projeler bölümünden ilgili referansları inceleyebilirsiniz."
+        "Pompa seçimi ve geçici sirkülasyon hazırlığı",
+        "Pompa ve geçici hat düzeni; devre hacmi, gerekli sirkülasyon ve basınç kayıpları üzerinden değerlendirilir. Kelven Kimya kendi kimyasal temizlik ekipmanları ve pompalarıyla saha uygulamaları yürütür; projede kullanılacak konfigürasyon teknik değerlendirmeyle belirlenir. Besleme ve dönüş hatları, numune noktaları, gerekiyorsa ısıtma düzeni ve çözeltiyle temas eden malzemelerin uyumu kontrol edilir. Su, elektrik, kaldırma imkanları, erişim, drenaj ve atık yönetimi sorumlulukları önceden netleştirilir. Hazırlık planı hem temizlik aşamalarını hem de son durulama için gerekli imkanları kapsar."
+      ],
+      [
+        "Kimyasal temizlik aşamaları ve uygulama takibi",
+        "Onaylı iş akışı, devre hazırlığı ve gerekli yıkamayla başlar; kirlenmeye göre yağ giderme ve birikinti giderme aşamaları seçilir. Bütün aşamaların her projede uygulanması gerekmez. Sıcaklık ve sirkülasyon koşulları ile prosedürde belirtilen pH, aktif kimyasal konsantrasyon ve çözünmüş demir gibi değerler takip edilir. Ölçüm eğilimleri, ilgili aşamanın tamamlanma kriterinin değerlendirilmesine yardımcı olur. Yalnızca belirli bir sürenin dolması temizlik tamamlandı anlamına gelmez. Kontrol sonuçları ve prosedürden sapmalar kaydedilir; gerekli değerlendirmeler tanımlanan onay noktalarında yapılır."
+      ],
+      [
+        "Durulama, son kontrol ve devreye almaya kadar koruma",
+        "Temizlik sonrası durulama kriterleri ve muayene kapsamı uygulama başlamadan önce belirlenir. Gereken nötralizasyon, pasivasyon ve koruma işlemleri ekipman şartları ile onaylı prosedüre göre seçilir. Temizlikten devreye almaya kadar geçecek süre, yeniden kirlenme ve yüzeylerin korunması açısından değerlendirilir. Teslim dosyasının kapsamı sözleşmede kararlaştırılır; onaylı prosedür, uygulama kayıtları, analiz sonuçları, muayene kayıtları ve koruma talimatları bu kapsamda yer alabilir. Saha fotoğrafları süreci belgeler; kabul için gerekli ölçüm ve muayenelerin yerine geçmez."
+      ],
+      [
+        "Aksa Enerji Antalya HRSG saha örneği",
+        "Kelven Kimya referansları arasında Aksa Enerji Antalya kombine çevrim tesisinin 5 ve 6 numaralı ünitelerinde gerçekleştirilen HRSG kimyasal temizlik uygulamaları bulunur. Şirketin hizmet sunumunda tesis kapasitesi 820 MW olarak belirtilmiştir; bu değer temizlenen devrenin hacmini veya pompa kapasitesini ifade etmez. Yazıdaki drum ve borulama fotoğrafı bu saha arşivine aittir. Proje deneyimi, devre kapsamı ve saha hazırlığının önemini gösteren bir referans olarak sunulur; başka bir tesisin kimyasal yöntem ve kabul kriterleri kendi teknik verilerine göre belirlenir."
       ]
     ],
     "serviceLabel": "HRSG kimyasal temizliği hizmeti",
     "checklist": [
-      "P&ID ve temizlenecek devre sınırları",
-      "Malzeme bilgileri ve devre hacimleri",
-      "Üretici prosedürü ve kabul kriterleri",
-      "Bakım kayıtları, analizler ve duruş takvimi"
+      "P&ID, basınç devreleri ve kapsam dışı ekipmanlar",
+      "Metalürji, devre hacimleri ve mevcut birikinti analizleri",
+      "Üretici şartnamesi, prosedür ve kabul kriterleri",
+      "Bağlantı, numune, su, enerji ve drenaj imkanları",
+      "Duruş takvimi, atık yönetimi ve teslim kayıtları"
     ],
     "faq": [
       [
-        "HRSG temizliği için hangi belgeler gereklidir?",
-        "İlk değerlendirmede P&ID, malzeme ve hacim bilgileri, üretici prosedürü, bakım kayıtları ve kabul kriterleri paylaşılmalıdır. Projeye göre ek bilgiler gerekebilir."
+        "HRSG temizliği ne kadar sürer?",
+        "Devre hacmi, kirlenme, bağlantı hazırlığı, seçilen aşamalar ve kontrol gereklilikleri birlikte değerlendirilir. Süre teknik kapsam belirlendikten sonra planlanır."
       ],
       [
-        "HRSG kimyasal temizliği ne kadar sürer?",
-        "Süre; devre kapsamı, kirlenme, saha hazırlığı ve kontrol aşamalarına bağlıdır. Teknik değerlendirme yapılmadan sabit bir süre vermek uygun değildir."
+        "Her HRSG için asit temizliği gerekli midir?",
+        "Kimyasal yöntem birikinti, malzeme ve üretici gerekliliklerine göre seçilir. Her devre için aynı asit veya aynı işlem sırası uygun değildir."
+      ],
+      [
+        "Temizliğin tamamlandığı nasıl anlaşılır?",
+        "Aşama sonu ölçümleri, durulama kriterleri ve gerekli muayeneler onaylı prosedürdeki kabul koşullarıyla değerlendirilir. Fotoğraf veya geçen süre tek başına kabul kriteri değildir."
+      ],
+      [
+        "Teklif için hangi bilgileri göndermeliyim?",
+        "P&ID, malzeme listesi, devre hacimleri, üretici şartnamesi, mevcut analizler, saha konumu ve duruş takvimi ilk değerlendirmeyi destekler."
       ]
     ]
   },
@@ -98,48 +119,74 @@ export const blogDrafts = [
   {
     "slug": "tank-boru-hatti-temizlik-hazirligi",
     "category": "Saha Deneyimleri",
-    "title": "Tank ve Boru Hattı Kimyasal Temizliği: Hazırlık ve Yüzey Kontrolü",
-    "summary": "Proses tankları ve boru hatlarında temizlik kapsamının belirlenmesi, sirkülasyon hazırlığı ve Ahal GTG saha örneği.",
+    "title": "Tank ve Boru Hattı Kimyasal Temizliği: Yöntem, Hazırlık ve Yüzey Kontrolü",
+    "summary": "Proses tankları ve boru hatlarında malzeme uyumu, yağ giderme, devre hazırlığı, yüzey muayenesi ve Ahal GTG proje deneyimi.",
     "image": "/images/blog/tank-boru-hatti-saha.jpg",
     "imageAlt": "Ahal saha arşivinden açık uçlu büyük çaplı boru bölümü",
     "service": "/hizmetlerimiz/endustriyel-kimyasal-temizlik/tank-boru-hatti-kimyasal-temizligi",
     "sections": [
       [
-        "Tank ve boru hattı temizliğinin kapsamı",
-        "Proses tankları, boru grupları ve bağlantı devrelerinde kimyasal temizlik planlanırken temizlenecek alanlar açıkça tanımlanır. Spool, sahada birleştirilmek üzere hazırlanmış boru grubunu ifade eder. Tankların, spool gruplarının ve bağlı ekipmanların kapsamı P&ID ve malzeme bilgileri üzerinden değerlendirilir."
+        "Tank ve boru hattı kimyasal temizliğinin kapsamı",
+        "Proses tankları, depolama tankları ve boru hatlarında temizlik planı, yüzeylerin kullanım amacı ve kirlenme türü üzerinden hazırlanır. İmalat ve montaj kalıntıları, yağlar, oksitler ve işletme birikintileri farklı değerlendirmeler gerektirebilir. Spool, sahada birleştirilmek üzere önceden hazırlanmış boru grubunu ifade eder. Ayrı spool parçalarının temizliğiyle bağlı bir proses devresinin sirkülasyonla temizliği aynı saha düzenine sahip değildir. P&ID, ekipman listeleri ve bağlantı bilgileri kullanılarak tank, boru grupları ve bağlı ekipmanların kapsamı açıkça tanımlanır."
       ],
       [
-        "Devre sınırları ve sirkülasyon hazırlığı",
-        "Devre sınırları, uygulamanın hangi ekipman ve bağlantıları kapsadığını belirler. Hacim, bağlantı imkanları ve saha koşulları pompa ve geçici hat düzeninin planlanmasında kullanılır. Kimyasal seçim ve uygulama sırası; malzeme yapısı, kirlenme türü ve proje prosedürüne göre kararlaştırılır."
+        "Karbon çeliği ve paslanmaz çelikte malzeme değerlendirmesi",
+        "Temizlenecek yüzeylerin malzeme sınıfı, mevcut durumu ve temas edeceği akışkan yöntem seçimini belirler. Karbon çeliğinde birikinti giderme sonrasında yüzeyin korunması da değerlendirilir. Paslanmaz çelikte yağ giderme, oksit giderme ve pasivasyonun amaçları birbirinden ayrılır. Pasivasyon işlemi, yoğun oksit veya kalın birikintilerin giderilmesiyle aynı işlem değildir. Kimyasal ürün seçimi yalnızca ana boru malzemesine göre yapılmaz; bağlı ekipmanlar, contalar ve geçici hatlarda çözeltiyle temas eden diğer malzemeler de değerlendirmeye alınır."
       ],
       [
-        "Prosedür ve kabul kriterleri",
-        "Temizlik yöntemiyle birlikte yüzeylerin nasıl kontrol edileceği ve hangi kriterlerle kabul edileceği belirlenmelidir. Farklı akışkanlarla temas eden yüzeyler için proje gereklilikleri farklılaşabilir. Kontrol yöntemi ve teslim kapsamı, uygulama öncesinde sorumlu teknik ekiplerle netleştirilir."
+        "Yağ giderme ve birikinti giderme neden ayrı planlanır?",
+        "Yağ ve gres kalıntıları ile oksit ve mineral birikintileri farklı kirlenme türleridir. Seçilen prosedürde yağ giderme, gerekli yüzey temizliği ve durulama adımları kirlenmeye uygun sırayla tanımlanır. Asidik ve alkali uygulamalar her yüzeye birlikte uygulanacak standart bir reçete olarak değerlendirilmez. Kaynak bölgeleri, erişilebilirlik ve yüzey durumu da yöntem seçimine dahil edilir. Ürün, konsantrasyon, sıcaklık ve süre; proje şartnamesi ve malzeme uyumu üzerinden belirlenir. Temizlik amacı, sonraki üretim veya işletme adımının gerektirdiği yüzey koşuluna ulaşmaktır."
       ],
       [
-        "Ahal GTG projesinden saha örneği",
-        "Kelven Kimya Ahal GTG-INT referansında paslanmaz spool boruları, sıvı depolama tankları, oksijen ve azot tankları ile belirlenen proses sistemlerinde asidik ve alkali kimyasal temizlik uygulamaları yer alır. Yazıdaki büyük çaplı boru fotoğrafı Ahal saha arşivine aittir."
+        "Spool temizliği ile bağlı devre temizliğinin farkı",
+        "Ayrı boru gruplarında uygunluk durumuna göre banyo veya yüzey uygulaması gibi yöntemler değerlendirilebilir; tank ve bağlı devrelerde ise bağlantı düzeni, erişim ve sirkülasyon imkanları belirleyicidir. Kullanılacak yöntem ekipmanın geometrisine ve onaylı prosedüre göre seçilir. Parça temizliğinde kimliklendirme ve işlem sonrası taşıma koşulları; devre temizliğinde izolasyon, besleme, dönüş, hava tahliyesi ve drenaj noktaları planlanır. Bir proje için hazırlanan parça sayısı, banyo boyutu veya pompa listesi başka bir uygulamanın tasarım verisi olarak doğrudan kullanılamaz."
       ],
       [
-        "Ahal projesinde yüzey muayenesi",
-        "Ahal uygulama notunda, oksijenle temas eden yüzeylerde yağ kalıntısı için sıfır tolerans kriteri esas alınmıştır. Temizlik sonrasında karanlık ortamda özel muayene lambasıyla yüzey incelemesi yapılmıştır. Bu kontrol o projeye ait uygulama notunu yansıtır; yeni projelerin muayene yöntemi ve kabul kriterleri kendi teknik gerekliliklerine göre belirlenmelidir."
+        "Geçici bağlantılar, sirkülasyon ve saha hazırlığı",
+        "Devre hacmi, akış yolu ve basınç kayıpları pompa ile geçici hat düzeninin değerlendirilmesine temel oluşturur. Numune noktaları ve gerekli kontrol imkanları prosedürle birlikte belirlenir. Su ve enerji temini, saha erişimi, kaldırma imkanları, drenaj ve atık toplama düzeni uygulama öncesinde planlanır. Temizlik dışında tutulacak ekipmanlarla sınırlar netleştirilir. Atıkların toplanması, işlenmesi ve bertarafına ilişkin sorumlulukların baştan kararlaştırılması, uygulama ve durulama aşamalarının saha organizasyonuyla uyumlu yürütülmesini sağlar."
+      ],
+      [
+        "Yüzey muayenesi ve kabul kriterleri",
+        "Temizlik sonucunun değerlendirilmesi için aşama sonu, durulama ve yüzey kabul kriterleri iş başlamadan önce tanımlanır. Kullanım amacına göre görsel muayene ve prosedürde belirtilen analiz veya kontrol yöntemleri birlikte ele alınır. Erişilebilen yüzeylerin fotoğrafları süreç kaydı sağlar; bütün devrenin kabulünü tek başına kanıtlamaz. Muayene kapsamı, sorumlu teknik ekipler ve onay noktaları yazılı olarak belirlenir. Sonuçlar, varsa sapmalar ve gerekli tekrar işlemleri uygulama kayıtlarına dahil edilir."
+      ],
+      [
+        "Ahal GTG-INT projesindeki tank ve boru uygulamaları",
+        "Kelven Kimya hizmet sunumunda Ahal GTG-INT projesinin 2016–2019 dönemindeki referansları arasında paslanmaz spool boruları, sıvı depolama tankları, oksijen ve azot tankları ile belirlenen proses sistemlerinde asidik ve alkali kimyasal temizlik yer alır. Yazıdaki büyük çaplı boru fotoğrafı bu saha arşivine aittir. Aynı sunumdaki tarihli teklif belgeleri planlanan yöntem ve ekipmanları da içerir; teklif miktarları tamamlanmış iş miktarı olarak değerlendirilmez. Bu referans, farklı yüzeylerin ve kullanım amaçlarının ayrı temizlik paketleriyle ele alınmasının önemini gösterir."
+      ],
+      [
+        "Oksijenle temas eden yüzeyler: Ahal uygulama notu",
+        "Ahal saha notunda oksijenle temas eden yüzeylerde yağ kalıntısı için sıfır tolerans kriteri belirtilmiştir. Temizlik sonrasında karanlık ortamda özel muayene lambasıyla yüzey incelemesi yapıldığı kaydedilir. Bu ifade o projeye ait uygulama notudur; tek başına genel bir muayene standardını veya sertifikasyonu tanımlamaz. Yeni projelerde yüzeyin kullanım amacı, şartname ve kabul yöntemleri sorumlu teknik ekiplerce belirlenir. Temizlik sonrası taşıma, kapatma ve depolama koşulları da yüzeyin yeniden kirlenmesini önleme planının bir parçasıdır."
+      ],
+      [
+        "Temizlik sonrası koruma ve teslim kayıtları",
+        "Durulama ve gerekli son işlemler tamamlandıktan sonra yüzeylerin devreye almaya kadar korunması planlanır. Parçalarda kurutma, uçların kapatılması, kimliklendirme ve uygun ambalajlama; bağlı sistemlerde ise proje şartlarına uygun koruma yöntemi değerlendirilebilir. Bu işlemler her projede aynı şekilde uygulanmaz. Teslim dosyasında yer alacak prosedür, uygulama kayıtları, analiz ve muayene sonuçları ile koruma talimatları sözleşmede netleştirilir. Teknik değerlendirme için malzeme, hacim, kirlenme, erişim ve takvim bilgilerinin birlikte paylaşılması teklif kapsamını daha açık hale getirir."
       ]
     ],
     "serviceLabel": "Tank ve boru hattı kimyasal temizliği hizmeti",
     "checklist": [
-      "Tank ve boru hattı malzeme bilgileri",
-      "Devre sınırları ve bağlantı noktaları",
-      "Devre hacmi ve saha imkanları",
-      "Temizlik prosedürü ve yüzey kabul kriterleri"
+      "P&ID, ekipman listesi ve tank/spool/devre sınırları",
+      "Malzeme sınıfları, contalar ve temas edecek akışkan",
+      "Hacim, geometri, kirlenme ve mevcut analizler",
+      "Bağlantılar, saha erişimi, su, enerji ve drenaj",
+      "Muayene, kabul, koruma ve teslim gereklilikleri",
+      "Duruş takvimi ve atık yönetimi sorumlulukları"
     ],
     "faq": [
       [
-        "Tank ve boru hattı temizliği öncesi ne hazırlanmalıdır?",
-        "Devre sınırları, malzeme bilgileri, hacimler, bağlantı noktaları ve kabul kriterleri teknik değerlendirmeye sunulmalıdır."
+        "Pasivasyon ile kimyasal temizlik aynı işlem midir?",
+        "Amaçları farklıdır. Yağ ve birikinti giderme yüzeydeki kirlenmeyi ele alırken pasivasyon, uygun yüzey hazırlığından sonra şartnameye göre değerlendirilir. Yoğun oksit giderme yerine otomatik olarak kullanılamaz."
       ],
       [
-        "Her yüzey için aynı kontrol yöntemi yeterli midir?",
-        "Kontrol yöntemi, yüzeyin kullanım amacı ve proje gerekliliklerine göre belirlenir. Bir projedeki muayene yöntemi tüm sistemler için genel kabul kriteri değildir."
+        "Spool parçaları ve tanklar aynı yöntemle temizlenir mi?",
+        "Yöntem geometri, malzeme, erişim ve kullanım amacına bağlıdır. Banyo, yüzey uygulaması veya sirkülasyon seçenekleri proje prosedürü kapsamında değerlendirilir."
+      ],
+      [
+        "Oksijen tanklarında yalnızca lamba muayenesi yeterli midir?",
+        "Kabul yöntemi proje şartnamesine göre belirlenir. Ahal uygulama notundaki lamba muayenesi bütün oksijen sistemleri için tek başına yeterlilik veya sertifikasyon anlamına gelmez."
+      ],
+      [
+        "Temizlenen parçalar nasıl korunur?",
+        "Kurutma, kapatma, ambalajlama veya sistem koruma yöntemi; malzeme, depolama süresi ve devreye alma koşullarına göre prosedürde tanımlanır."
       ]
     ]
   },
