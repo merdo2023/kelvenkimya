@@ -250,5 +250,109 @@ export const blogEnglish = [
         "No. This guide concerns the water circuit; melting chamber and refractory maintenance require separate assessment."
       ]
     ]
+  },
+  {
+    "slug": "endustriyel-kimyasal-temizlik-rehberi",
+    "category": "Chemical Cleaning",
+    "title": "Industrial Chemical Cleaning: Purpose, Applications and Process",
+    "summary": "Chemical cleaning of boilers, condensers, heat exchangers and pipelines: assessment, product selection, controlled application and final checks.",
+    "image": "/images/projects/ahal/circulation-pumps.jpg",
+    "imageAlt": "Chemical cleaning circulation equipment from the Kelven Kimya Ahal field archive",
+    "service": "/hizmetlerimiz/endustriyel-kimyasal-temizlik",
+    "serviceLabel": "Industrial chemical cleaning services",
+    "sections": [
+      [
+        "What is chemical cleaning?",
+        "Industrial chemical cleaning addresses contamination in equipment and plant circuits using a method compatible with system materials. Scope is established by assessing contamination and equipment information."
+      ],
+      [
+        "Which systems are covered?",
+        "Kelven Kimya service scope includes steam boilers, condensers, cooling towers, plate heat exchangers, chiller water circuits and pipelines. Surfaces, materials and manufacturer requirements are assessed for each application."
+      ],
+      [
+        "Why is it important?",
+        "Removing deposits from heat transfer surfaces and flow paths supports maintenance objectives. Cleaning aims to support heat transfer, cooling capacity and operating continuity. Effects on energy, costs and service life depend on facility conditions and measurements."
+      ],
+      [
+        "Assessment and product selection",
+        "A survey defines boundaries, connections and conditions. Water analyses and contamination information support method selection. Descalers and other products are assessed against materials; different Kelvenoks Ferlin products address different material requirements."
+      ],
+      [
+        "Application and completion",
+        "Circulation and conditions follow a project-specific procedure. Technical checks are carried out during application, followed by rinsing, required completion stages and final acceptance checks. Reporting scope is agreed at the outset."
+      ],
+      [
+        "After cleaning",
+        "Removal of existing deposits and operating water management serve different needs. Analysis and a water treatment programme may be considered to address operating conditions after cleaning."
+      ]
+    ],
+    "checklist": [
+      "Equipment, materials and circuit diagram",
+      "Contamination and water analyses",
+      "Connections, volume and shutdown schedule",
+      "Manufacturer procedure and acceptance criteria"
+    ],
+    "faq": [
+      [
+        "Is chemical cleaning the same as water treatment?",
+        "No. Cleaning addresses existing contamination; water treatment focuses on operating water and the protective programme."
+      ],
+      [
+        "Can one chemical be used in all equipment?",
+        "Products and methods depend on materials and contamination. One procedure does not suit every system."
+      ]
+    ]
+  },
+  {
+    "slug": "endustriyel-su-sartlandirma-rehberi",
+    "category": "Water Treatment",
+    "title": "Industrial Water Treatment: Analysis, Protective Programmes and Monitoring",
+    "summary": "Water treatment for boiler and cooling systems: analysis, corrosion and deposit control, programme selection and technical monitoring.",
+    "image": "/images/services/water-conditioning.png",
+    "imageAlt": "Kelven Kimya industrial water treatment service image",
+    "service": "/hizmetlerimiz",
+    "serviceLabel": "Water treatment and analysis services",
+    "sections": [
+      [
+        "What is water treatment?",
+        "Industrial water treatment considers water characteristics and operating conditions when establishing and monitoring a protective programme. It supports control of corrosion, mineral deposits and biological formation where relevant."
+      ],
+      [
+        "Separate assessment of boiler and cooling circuits",
+        "Boilers, cooling towers and closed circuits have different operating conditions. Water source, materials and manufacturer requirements inform the programme. Products and monitoring plans should not be transferred directly between systems."
+      ],
+      [
+        "Analysis as a starting point",
+        "Raw water, boiler water and cooling water analyses are reviewed with system information. Results, existing products and operating records support needs assessment and programme review."
+      ],
+      [
+        "The role of protective chemicals",
+        "Kelven Kimya scope includes corrosion inhibitors, biocides, dispersants, defoamers and pH regulators. Each has a different purpose; not every product is needed in each circuit. Selection and dosage require assessment of analyses, compatibility and facility requirements."
+      ],
+      [
+        "Monitoring and reporting",
+        "Water treatment includes analysis, operating data review and programme adjustment where required. Monitoring frequency and reporting scope depend on system needs."
+      ],
+      [
+        "When cleaning requires separate assessment",
+        "A protective programme and removal of existing deposits serve different purposes. Contamination may require separate chemical cleaning assessment, followed by review of operating water and the protective programme."
+      ]
+    ],
+    "checklist": [
+      "Water source and current analyses",
+      "Boiler or cooling system information",
+      "Existing products and programme",
+      "Maintenance records and operating values"
+    ],
+    "faq": [
+      [
+        "How are water treatment products selected?",
+        "Selection considers analyses, equipment, materials and manufacturer requirements, not only the system name."
+      ],
+      [
+        "How often should water be analysed?",
+        "There is no universal interval. Monitoring depends on operating conditions and system needs."
+      ]
+    ]
   }
 ]

@@ -250,5 +250,109 @@ export const blogDrafts = [
         "Hayır. Bu rehber su devresini ele alır; ergitme haznesi ve refrakter astarın bakım yöntemleri ayrı değerlendirilir."
       ]
     ]
+  },
+  {
+    "slug": "endustriyel-kimyasal-temizlik-rehberi",
+    "category": "Kimyasal Temizlik",
+    "title": "Endüstriyel Kimyasal Temizlik: Amaç, Uygulama Alanları ve Süreç",
+    "summary": "Kazan, kondenser, eşanjör ve boru hatlarında kimyasal temizliğin amacı; keşif, ürün seçimi, kontrollü uygulama ve son kontroller.",
+    "image": "/images/projects/ahal/circulation-pumps.jpg",
+    "imageAlt": "Kelven Kimya Ahal saha arşivinden kimyasal temizlik sirkülasyon ekipmanları",
+    "service": "/hizmetlerimiz/endustriyel-kimyasal-temizlik",
+    "serviceLabel": "Endüstriyel kimyasal temizlik hizmetleri",
+    "sections": [
+      [
+        "Kimyasal temizlik nedir?",
+        "Endüstriyel kimyasal temizlik, ekipman ve tesis devrelerinde oluşan kirlenmenin malzemeye uygun ürün ve uygulama yöntemiyle giderilmesine yönelik bir bakım işlemidir. Amaç, mevcut birikintiyi ele almak ve sistemin işletme koşullarına uygun çalışmasını desteklemektir. Temizlik kapsamı, kirlenme türü ve ekipman bilgileri değerlendirilerek belirlenir."
+      ],
+      [
+        "Hangi sistemlerde değerlendirilir?",
+        "Kelven Kimya hizmet kapsamı buhar kazanları, kondenserler, soğutma kuleleri, plakalı eşanjörler, chiller su devreleri ve boru hatlarını içerir. Bu ekipmanlarda aynı yöntem otomatik olarak uygulanmaz. Temizlenecek yüzeyler, metal ve sızdırmazlık malzemeleri ile üretici gereklilikleri birlikte incelenir."
+      ],
+      [
+        "Neden önemlidir?",
+        "Isı transfer yüzeylerindeki ve akış yollarındaki birikintilerin giderilmesi bakım değerlendirmesinin önemli bir parçasıdır. Uygun temizlik; ısı transferini, soğutma kapasitesini ve işletme sürekliliğini desteklemeyi amaçlar. Enerji tüketimi, bakım maliyeti veya ekipman ömründeki etki, tesis koşulları ve ölçüm sonuçlarına bağlıdır; sabit bir iyileşme oranı verilmez."
+      ],
+      [
+        "Keşif ve ürün seçimi",
+        "Sistem keşfiyle devre sınırları, bağlantılar ve çalışma koşulları belirlenir. Su analizleri ve mevcut kirlenme bilgileri uygun yöntemin değerlendirilmesini destekler. Kireç çözücü, pas çözücü veya diğer ürünlerin seçimi sistemin malzemelerine göre yapılır. Kelvenoks Ferlin serisinin farklı ürünleri malzeme uyumu üzerinden değerlendirilir."
+      ],
+      [
+        "Kontrollü uygulama ve tamamlama",
+        "Sirkülasyon düzeni ve uygulama koşulları projeye uygun prosedür kapsamında belirlenir. Temizlik sırasında gerekli teknik kontroller yapılır. Durulama, gerektiğinde nötralizasyon ve diğer tamamlama aşamalarının ardından kabul kriterlerine göre son kontroller gerçekleştirilir. Raporlama kapsamı uygulama başlangıcında kararlaştırılır."
+      ],
+      [
+        "Temizlik sonrasında nasıl devam edilir?",
+        "Mevcut birikintinin giderilmesi ile işletme suyunun yönetilmesi farklı ihtiyaçlardır. Temizlik sonrasında yeniden kirlenmeye yol açan koşullar değerlendirilerek uygun analiz ve su şartlandırma programı ele alınabilir. Bu takip, ayrı bir işletme programı olarak planlanır."
+      ]
+    ],
+    "checklist": [
+      "Ekipman tipi, malzemeleri ve devre şeması",
+      "Mevcut kirlenme ve su analizleri",
+      "Bağlantılar, hacim ve duruş takvimi",
+      "Üretici prosedürü ve kabul kriterleri"
+    ],
+    "faq": [
+      [
+        "Kimyasal temizlik ile su şartlandırma aynı işlem midir?",
+        "Hayır. Kimyasal temizlik mevcut kirlenmeyi ele alır; su şartlandırma işletme suyuna ve koruyucu programa odaklanır."
+      ],
+      [
+        "Her ekipmana aynı kimyasal uygulanır mı?",
+        "Ürün ve yöntem, malzemelere ve kirlenme türüne göre değerlendirilir. Tek bir reçete bütün ekipmanlar için uygun değildir."
+      ]
+    ]
+  },
+  {
+    "slug": "endustriyel-su-sartlandirma-rehberi",
+    "category": "Su Şartlandırma",
+    "title": "Endüstriyel Su Şartlandırma: Analiz, Koruyucu Program ve Takip",
+    "summary": "Kazan ve soğutma sistemlerinde su şartlandırmanın amacı; korozyon, birikinti ve biyolojik oluşum kontrolü için analiz ve teknik takip.",
+    "image": "/images/services/water-conditioning.png",
+    "imageAlt": "Kelven Kimya endüstriyel su şartlandırma hizmet görseli",
+    "service": "/hizmetlerimiz",
+    "serviceLabel": "Su şartlandırma ve analiz hizmetleri",
+    "sections": [
+      [
+        "Su şartlandırma nedir?",
+        "Endüstriyel su şartlandırma, işletme suyunun özellikleri ve tesisin çalışma koşulları dikkate alınarak koruyucu programın oluşturulması ve izlenmesidir. Amaç; korozyon, mineral birikintisi ve ilgili sistemlerde biyolojik oluşumların kontrolünü desteklemektir. Programın kapsamı ekipman ve su analizleri üzerinden belirlenir."
+      ],
+      [
+        "Kazan ve soğutma devreleri ayrı değerlendirilir",
+        "Buhar kazanı, soğutma kulesi ve kapalı devre sistemlerin işletme koşulları aynı değildir. Su kaynağı, çalışma sıcaklıkları, malzemeler ve üretici gereklilikleri programa dahil edilir. Bir sistem için seçilen ürün veya takip planı başka bir devreye doğrudan aktarılmamalıdır."
+      ],
+      [
+        "Su analizi programın temelidir",
+        "Ham su, kazan suyu ve soğutma suyu analizleri sistem bilgileriyle birlikte değerlendirilir. Güncel sonuçlar, kullanılan ürünler ve işletme kayıtları ihtiyaçların belirlenmesine yardımcı olur. Analiz sonuçlarının düzenli takibi, programın değişen işletme koşullarına göre gözden geçirilmesini destekler."
+      ],
+      [
+        "Koruyucu kimyasalların rolü",
+        "Kelven Kimya ürün ve hizmet kapsamı korozyon inhibitörleri, biyositler, dispersantlar, köpük kesiciler ve pH düzenleyiciler gibi ürün gruplarını içerir. Her grubun işlevi farklıdır; bütün ürünlerin aynı devrede birlikte kullanılması gerekmez. Ürün ve dozaj seçimi su analizleri, malzeme uyumu ve tesis gerekliliklerine dayanmalıdır."
+      ],
+      [
+        "İzleme ve teknik raporlama",
+        "Su şartlandırma, yalnızca ürün tedarikiyle tamamlanan bir işlem değildir. Düzenli analiz, işletme değerlerinin takibi ve gerektiğinde programın güncellenmesi birlikte ele alınır. Takip sıklığı ve raporlama kapsamı sistemin ihtiyacına göre planlanır."
+      ],
+      [
+        "Kimyasal temizlik ne zaman ayrıca ele alınır?",
+        "Koruyucu program ile mevcut birikintinin giderilmesi farklı amaçlar taşır. Mevcut kirlenme için ayrıca kimyasal temizlik değerlendirmesi gerekebilir. Temizlik sonrasında işletme suyu ve koruyucu program gözden geçirilerek iki hizmet birbirini tamamlayabilir."
+      ]
+    ],
+    "checklist": [
+      "Su kaynağı ve güncel analizler",
+      "Kazan veya soğutma sistemi bilgileri",
+      "Kullanılan ürünler ve mevcut program",
+      "Bakım kayıtları ve izlenen işletme değerleri"
+    ],
+    "faq": [
+      [
+        "Su şartlandırma için ürün nasıl seçilir?",
+        "Su analizleri, ekipman bilgileri, malzemeler ve üretici gereklilikleri birlikte değerlendirilir. Ürün seçimi yalnızca sistem adına göre yapılmaz."
+      ],
+      [
+        "Analiz ne sıklıkla yapılmalıdır?",
+        "Sabit bir sıklık bütün tesislere uygulanamaz. İzleme planı işletme koşulları ve sistemin ihtiyacına göre belirlenir."
+      ]
+    ]
   }
 ]
