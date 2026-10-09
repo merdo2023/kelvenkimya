@@ -47,6 +47,10 @@
         "path": "/projelerimiz"
       },
       {
+        "key": "blog",
+        "path": "/blog"
+      },
+      {
         "key": "contact",
         "path": "/iletisim"
       }
@@ -57,7 +61,8 @@
       "services": "Our Services",
       "about": "About Us",
       "projects": "Projects",
-      "contact": "Contact"
+      "contact": "Contact",
+      "blog": "Blog"
     },
     "ariaLabel": "Main navigation",
     "menuToggle": "Open Menu",

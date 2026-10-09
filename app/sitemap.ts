@@ -4,9 +4,10 @@ import { siteUrl } from '@/lib/site'
 import { cleaningBasePath, cleaningServices } from '@/data/cleaningServices'
 import { conditioningBasePath, conditioningServices } from '@/data/waterConditioningServices'
 import { cleaningProductsPath } from '@/views/CleaningProductsPage'
+import { blogDrafts } from '@/data/blogDrafts'
 import { productPages, productPagePath } from '@/data/productPages'
 
-const paths = ['', '/urunlerimiz', '/hizmetlerimiz', '/hakkimizda', '/projelerimiz', '/iletisim', cleaningBasePath, cleaningProductsPath, ...cleaningServices.map(service => `${cleaningBasePath}/${service.slug}`), ...conditioningServices.map(service => `${conditioningBasePath}/${service.slug}`)]
+const paths = ['/blog', ...blogDrafts.map(post => '/blog/' + post.slug), '', '/urunlerimiz', '/hizmetlerimiz', '/hakkimizda', '/projelerimiz', '/iletisim', cleaningBasePath, cleaningProductsPath, ...cleaningServices.map(service => `${cleaningBasePath}/${service.slug}`), ...conditioningServices.map(service => `${conditioningBasePath}/${service.slug}`)]
 
 function buildLanguageAlternates(path: string): Record<string, string> {
   const alternates: Record<string, string> = {}

@@ -17,6 +17,8 @@ const nextConfig: NextConfig = {
     }
 
     return [
+      { source: '/blog-onizleme/:path*', destination: '/blog/:path*', statusCode: 301 },
+      { source: '/:locale(tr|en)/blog-onizleme/:path*', destination: '/:locale/blog/:path*', statusCode: 301 },
       { source: '/urunlerimiz/kelvenoks-ferlin-135', destination: '/urunlerimiz/kelvenoks-ferlin-101', permanent: true },
       { source: '/:locale(tr|en)/urunlerimiz/kelvenoks-ferlin-135', destination: '/:locale/urunlerimiz/kelvenoks-ferlin-101', permanent: true },
       ...Object.entries(legacyRoutes).flatMap(([oldPath, newPath]) => [

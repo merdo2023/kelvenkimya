@@ -1,0 +1,194 @@
+export const blogEnglish = [
+  {
+    "slug": "hrsg-kimyasal-temizlik-oncesi-hazirlik",
+    "category": "Chemical Cleaning",
+    "title": "HRSG Chemical Cleaning: Preparation and Application Planning",
+    "summary": "Technical information, circuit boundaries, site preparation and acceptance criteria for chemical cleaning of heat recovery steam generators.",
+    "image": "/images/projects/aksa/hrsg-drum-piping.jpeg",
+    "imageAlt": "HRSG drum and piping from the Aksa Energy project archive",
+    "service": "/hizmetlerimiz/endustriyel-kimyasal-temizlik/hrsg-kimyasal-temizligi",
+    "sections": [
+      [
+        "What is HRSG chemical cleaning?",
+        "Chemical cleaning of a heat recovery steam generator (HRSG) addresses contamination in boiler circuits through a plan suited to the equipment and materials. Pre-commissioning cleaning and maintenance cleaning are assessed under different conditions. The scope is defined using manufacturer requirements, system information and project acceptance criteria."
+      ],
+      [
+        "Technical information required before cleaning",
+        "The piping and instrumentation diagram (P&ID) identifies circuits and connections. Materials, circuit volumes, available analyses and maintenance records are reviewed together. These inputs support the assessment of cleaning products, circulation equipment and temporary connections."
+      ],
+      [
+        "Site preparation and application planning",
+        "Water supply, temporary connections, site access and the shutdown schedule are considered during planning. The procedure should define scope, monitored conditions, responsibilities and completion criteria. Duration and equipment requirements are established for the project after technical assessment."
+      ],
+      [
+        "Final checks and handover",
+        "Rinsing and any other completion stages follow the approved procedure. Final checks are based on agreed acceptance criteria. Defining the inspection and handover scope at the outset provides a shared basis for evaluating the work."
+      ],
+      [
+        "Aksa Energy Antalya field experience",
+        "Kelven Kimya project references include HRSG chemical cleaning in units 5 and 6 at Aksa Energy Antalya. The drum and piping image comes from that project archive. Our HRSG service page explains the scope, while the projects section presents related references."
+      ]
+    ],
+    "serviceLabel": "HRSG chemical cleaning services",
+    "checklist": [
+      "P&ID and cleaning circuit boundaries",
+      "Materials and circuit volumes",
+      "Manufacturer procedure and acceptance criteria",
+      "Maintenance records, analyses and shutdown schedule"
+    ],
+    "faq": [
+      [
+        "Which documents are needed for HRSG cleaning?",
+        "Initial assessment uses P&ID, materials and volume information, manufacturer procedures, maintenance records and acceptance criteria. Further information may be required for the project."
+      ],
+      [
+        "How long does HRSG chemical cleaning take?",
+        "Duration depends on the circuits, contamination, site preparation and inspection stages. A fixed duration should not be given before technical assessment."
+      ]
+    ]
+  },
+  {
+    "slug": "buhar-kazani-birikinti-degerlendirme",
+    "category": "Chemical Cleaning",
+    "title": "Steam Boiler Chemical Cleaning: Deposits and Maintenance Assessment",
+    "summary": "Assessing cleaning requirements, deposit information, material compatibility and shutdown planning for steam boilers.",
+    "image": "/images/services/steam-boiler.jpg",
+    "imageAlt": "Steam boiler chemical cleaning service image",
+    "service": "/hizmetlerimiz/endustriyel-kimyasal-temizlik/buhar-kazani-kimyasal-temizligi",
+    "sections": [
+      [
+        "Assessing boiler cleaning requirements",
+        "Steam boiler chemical cleaning is planned by assessing scale, mineral deposits and oxide layers on the water side. Boiler type, materials and operating history are considered together. Age or a single performance change is insufficient to select the method."
+      ],
+      [
+        "Deposit information and material compatibility",
+        "Available analyses and deposit information support the assessment of contamination. Cleaning products and methods must be compatible with equipment materials. Product selection should not rely only on a general descaler description."
+      ],
+      [
+        "Planning the maintenance shutdown",
+        "Volume, connections, site facilities and maintenance schedule are key inputs. Temporary circulation arrangements and preparations are assessed before shutdown. The time allocated to cleaning and completion stages is established alongside the technical scope."
+      ],
+      [
+        "Rinsing and final checks",
+        "Rinsing and, where required, neutralisation and passivation are planned according to the equipment and approved procedure. The scope of final checks and acceptance criteria should be agreed before work begins. Return-to-service preparation is considered within the plant maintenance plan."
+      ],
+      [
+        "Experience at the Mary facility",
+        "Kelven Kimya references include chemical cleaning of steam and waste heat boilers at the Mary facility. Our boiler service page explains our approach to different equipment types, and the projects section presents field experience."
+      ]
+    ],
+    "serviceLabel": "Steam boiler chemical cleaning services",
+    "checklist": [
+      "Boiler type and manufacturer",
+      "Maintenance and operating history",
+      "Available water analyses and deposit information",
+      "Volume, connections and planned shutdown duration"
+    ],
+    "faq": [
+      [
+        "Can the same cleaning product be used for every boiler?",
+        "Selection depends on materials, deposits and manufacturer requirements. There is no single product or procedure applicable to every boiler."
+      ],
+      [
+        "What information should be shared before cleaning?",
+        "Boiler type, maintenance history, materials, available analyses and planned shutdown duration support the initial technical assessment."
+      ]
+    ]
+  },
+  {
+    "slug": "tank-boru-hatti-temizlik-hazirligi",
+    "category": "Field Experience",
+    "title": "Tank and Pipeline Chemical Cleaning: Preparation and Surface Inspection",
+    "summary": "Defining cleaning scope, planning circulation and reviewing the Ahal GTG field example for process tanks and pipelines.",
+    "image": "/images/projects/ahal/circulation-pumps.jpg",
+    "imageAlt": "Circulation pumps and temporary piping at the Ahal GTG project",
+    "service": "/hizmetlerimiz/endustriyel-kimyasal-temizlik/tank-boru-hatti-kimyasal-temizligi",
+    "sections": [
+      [
+        "Defining the cleaning scope",
+        "Chemical cleaning of process tanks, pipe groups and connected circuits requires clearly defined boundaries. A spool is a prefabricated pipe assembly prepared for site installation. Tanks, spools and connected equipment are assessed using P&ID and materials information."
+      ],
+      [
+        "Circuit boundaries and circulation preparation",
+        "Boundaries identify equipment and connections included in the work. Volumes, connections and site conditions inform pump and temporary piping arrangements. Product selection and application sequence depend on materials, contamination and the project procedure."
+      ],
+      [
+        "Procedure and acceptance criteria",
+        "The method of surface inspection and acceptance criteria should be defined alongside cleaning. Surfaces contacting different fluids may have different project requirements. Inspection methods and handover scope are agreed with the responsible technical teams before application."
+      ],
+      [
+        "Ahal GTG field example",
+        "Kelven Kimya Ahal GTG-INT references include acidic and alkaline chemical cleaning of stainless steel spools, liquid storage tanks, oxygen and nitrogen tanks, and specified process systems. The circulation pump photograph comes from the Ahal field archive."
+      ],
+      [
+        "Surface inspection at Ahal",
+        "The Ahal application note specifies zero tolerance for oil residues on oxygen-contact surfaces. Surfaces were inspected in darkness using a dedicated inspection lamp after cleaning. This describes the project note; inspection methods and acceptance criteria for new projects must follow their own technical requirements."
+      ]
+    ],
+    "serviceLabel": "Tank and pipeline chemical cleaning services",
+    "checklist": [
+      "Tank and pipeline materials",
+      "Circuit boundaries and connection points",
+      "Circuit volume and site facilities",
+      "Cleaning procedure and surface acceptance criteria"
+    ],
+    "faq": [
+      [
+        "What should be prepared before tank and pipeline cleaning?",
+        "Circuit boundaries, materials, volumes, connections and acceptance criteria should be provided for technical assessment."
+      ],
+      [
+        "Is one inspection method sufficient for all surfaces?",
+        "The method depends on surface use and project requirements. A method used in one project is not a universal acceptance criterion."
+      ]
+    ]
+  },
+  {
+    "slug": "temizlik-su-sartlandirma-farki",
+    "category": "Water Treatment",
+    "title": "Chemical Cleaning and Water Treatment: Differences and Applications",
+    "summary": "The purposes of chemical cleaning and water treatment in industrial systems, including post-cleaning analysis and programme assessment.",
+    "image": "/images/services/water-conditioning.png",
+    "imageAlt": "Industrial water treatment service image",
+    "service": "/hizmetlerimiz",
+    "sections": [
+      [
+        "What does chemical cleaning address?",
+        "Chemical cleaning addresses existing contamination in industrial equipment. Methods for boilers, heat exchangers, condensers, tanks and pipelines are assessed against materials, contamination and equipment requirements."
+      ],
+      [
+        "What does water treatment cover?",
+        "Water treatment considers operating water characteristics and an appropriate protective chemical programme. Programmes addressing scale, corrosion and biological formation in boiler and cooling systems are assessed alongside analyses and operating conditions."
+      ],
+      [
+        "How do the services complement each other?",
+        "Cleaning addresses existing contamination, while the operating water programme addresses ongoing system needs. Water analyses and the current programme can be reviewed after cleaning. Considering both services supports a more coherent maintenance and operating plan."
+      ],
+      [
+        "Information for analysis and monitoring",
+        "Raw water, boiler water or cooling water analyses are reviewed with equipment information. The water source, products, existing programme and maintenance history should be shared. Product and dosage decisions depend on facility-specific technical assessment."
+      ],
+      [
+        "Selecting the appropriate service",
+        "Explore chemical cleaning services for existing deposits or cleaning requirements, and water treatment services for operating water and protective programme assessment. The Kelven Kimya services section explains both areas."
+      ]
+    ],
+    "serviceLabel": "Chemical cleaning and water treatment services",
+    "checklist": [
+      "Equipment type and water source",
+      "Current water analyses",
+      "Existing treatment programme and products",
+      "Maintenance history and cleaning requirements"
+    ],
+    "faq": [
+      [
+        "Does water treatment remove existing deposits?",
+        "A protective water programme and cleaning of existing deposits serve different purposes. Existing contamination may require a separate cleaning assessment."
+      ],
+      [
+        "Is water analysis required after cleaning?",
+        "Analysis requirements depend on equipment and operating conditions. Current analyses support review of the post-cleaning protective programme."
+      ]
+    ]
+  }
+]

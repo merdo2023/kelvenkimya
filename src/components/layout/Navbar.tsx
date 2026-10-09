@@ -116,7 +116,7 @@ export function Navbar({ services }: { services: ServiceItem[] }) {
             <Logo variant="navbar" tone={isTransparent ? 'light' : 'dark'} />
           </Link>
 
-          <div className="hidden items-center gap-2.5 lg:flex">
+          <div className="hidden items-center gap-2.5 xl:flex">
             <ul
               className={`flex items-center gap-0.5 rounded-full p-1 transition-colors duration-300 ${
                 isTransparent ? 'nav-pill-dark' : 'nav-pill-light'
@@ -141,7 +141,7 @@ export function Navbar({ services }: { services: ServiceItem[] }) {
             </div>
           </div>
 
-          <div className="flex shrink-0 items-center gap-1.5 sm:gap-2 lg:hidden">
+          <div className="flex shrink-0 items-center gap-1.5 sm:gap-2 xl:hidden">
             <LanguageSwitcher tone={isTransparent ? 'light' : 'dark'} compact />
             <button
               type="button"
@@ -163,7 +163,7 @@ export function Navbar({ services }: { services: ServiceItem[] }) {
 
       <div
         id="mobile-nav"
-        className={`overflow-hidden border-t transition-all duration-300 ease-out motion-reduce:transition-none lg:hidden ${
+        className={`overflow-hidden border-t transition-all duration-300 ease-out motion-reduce:transition-none xl:hidden ${
           isOpen
             ? 'visible max-h-[calc(100dvh-5rem)] overflow-y-auto border-border/50 bg-white/98 opacity-100 shadow-[0_16px_40px_-20px_rgba(11,31,51,0.18)] backdrop-blur-xl'
             : 'invisible max-h-0 border-transparent opacity-0'

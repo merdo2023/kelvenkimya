@@ -47,6 +47,10 @@
         "path": "/projelerimiz"
       },
       {
+        "key": "blog",
+        "path": "/blog"
+      },
+      {
         "key": "contact",
         "path": "/iletisim"
       }
@@ -57,7 +61,8 @@
       "services": "Hizmetlerimiz",
       "about": "Hakkımızda",
       "projects": "Projeler",
-      "contact": "İletişim"
+      "contact": "İletişim",
+      "blog": "Blog"
     },
     "ariaLabel": "Ana navigasyon",
     "menuToggle": "Menüyü Aç",
@@ -178,7 +183,7 @@
           "image": "/images/services/chemical-cleaning-products.png",
           "imageAlt": "Kirli ve temiz eşanjör borularını karşılaştıran endüstriyel kimyasal temizlik görseli",
           "imageCaption": "Endüstriyel temizlik kimyasalları · Ürün tedariği",
-        "title": "Endüstriyel Kimyasal Temizlik Ürünleri",
+          "title": "Endüstriyel Kimyasal Temizlik Ürünleri",
           "category": "Ürün Tedariği",
           "description": "Buhar kazanları, eşanjörler, kondenserler, soğutma kuleleri, tanklar ve proses boru hatlarının kimyasal temizliğine yönelik ürünler sunuyoruz. Kireç ve mineral birikintilerinin giderilmesi, pas ve oksit tabakalarının temizlenmesi, yağdan arındırma ve pasivasyon işlemleri için ekipmanın malzeme yapısına ve birikinti türüne uygun kimyasal seçimini destekliyoruz. Kimyasal temizlik ve flushing uygulamalarını kendi ekipleriyle gerçekleştiren işletmelere ve saha yüklenicilerine, uygulama ihtiyacına uygun kimyasal ürün tedariği ve teknik destek sağlıyoruz.",
           "tags": [
@@ -203,7 +208,7 @@
           "imagePosition": "center 40%",
           "title": "Laboratuvar Analiz Hizmetleri",
           "category": "Laboratuvar & Raporlama",
-        "description": "Ham su, kazan suyu ve soğutma suyu analizleriyle tesisin su kalitesini ve işletme koşullarını değerlendiriyoruz. Kimyasal temizlik uygulamalarında saha analizleriyle prosesin takibini destekliyor; su şartlandırma programlarında analiz sonuçlarına göre ürün seçimi ve uygulama koşullarının değerlendirilmesine katkı sağlıyoruz. Bulguları teknik raporlama ve tesisin ihtiyacına uygun önerilerle birlikte sunuyoruz.",
+          "description": "Ham su, kazan suyu ve soğutma suyu analizleriyle tesisin su kalitesini ve işletme koşullarını değerlendiriyoruz. Kimyasal temizlik uygulamalarında saha analizleriyle prosesin takibini destekliyor; su şartlandırma programlarında analiz sonuçlarına göre ürün seçimi ve uygulama koşullarının değerlendirilmesine katkı sağlıyoruz. Bulguları teknik raporlama ve tesisin ihtiyacına uygun önerilerle birlikte sunuyoruz.",
           "tags": [
             "Su Analizi",
             "Raporlama",
@@ -378,25 +383,38 @@
           {
             "name": "Kelvenoks Ferlin 123",
             "image": "/images/products/2/1.png",
-            "tags": ["Demir", "Çelik", "Döküm"],
+            "tags": [
+              "Demir",
+              "Çelik",
+              "Döküm"
+            ],
             "description": "Demir, çelik ve döküm sistemlerde kireç ve mineral birikintilerinin kimyasal temizliğine yönelik ürün."
           },
           {
             "name": "Kelvenoks Ferlin 124",
             "image": "/images/products/2/2.png",
-            "tags": ["Bakır", "Bakır Alaşımları"],
+            "tags": [
+              "Bakır",
+              "Bakır Alaşımları"
+            ],
             "description": "Bakır ve bakır alaşımlı sistemlerde kireç ve mineral birikintilerinin temizliğine yönelik ürün."
           },
           {
             "name": "Kelvenoks Ferlin 128",
             "image": "/images/products/2/3.png",
-            "tags": ["Paslanmaz", "Paslanmaz Alaşımları"],
+            "tags": [
+              "Paslanmaz",
+              "Paslanmaz Alaşımları"
+            ],
             "description": "Paslanmaz yüzey ve sistemlerde kireç ve mineral birikintilerinin kimyasal temizliğine yönelik ürün."
           },
           {
             "name": "Kelvenoks Ferlin 130",
             "image": "/images/products/2/4.png",
-            "tags": ["Alüminyum", "Alüminyum Alaşımları"],
+            "tags": [
+              "Alüminyum",
+              "Alüminyum Alaşımları"
+            ],
             "description": "Alüminyum yüzey ve sistemlerde kireç ve mineral birikintilerinin kimyasal temizliğine yönelik ürün."
           },
           {

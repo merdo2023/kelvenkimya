@@ -122,3 +122,7 @@ Dört yazı daha açık başlıklar ve beşer içerik bölümüyle yeniden düze
 
 ## Son tasarım durumu
 Kullanıcı geri bildirimiyle liste sayfası sadeleştirildi: mevcut PageHero, kısa Blog başlığı ve iki sütunlu dört yazı. Filtre/arama, tekrar eden öne çıkan rehber ve büyük CTA kaldırıldı. Yazılarda içerik korundu; hazırlık listesi açılır alan oldu, içindekiler ve ek rehber listesi kaldırıldı. Geliştirme/üretim derleme çakışmasını önlemek için next.config.ts içinde development .next-dev, production .next kullanılır. Geliştirme sunucusunda beş blog adresi HTTP 200 ve JS/CSS dosyaları erişilebilir olarak doğrulandı.
+
+
+## Blog yayını ve menü — 2026-10-09
+Kullanıcı blogu menüye açıp main'e push etmeyi istedi. TR/EN nav.items listelerine Projeler ile İletişim arasına Blog eklendi; masaüstü ve mobil aynı listeyi kullanır. Menü kalabalığını önlemek için masaüstü navbar xl genişliğinde açılır. /blog ve /en/blog, dört yazının iki dilde sürümleri yayınlandı. Mevcut önizleme kaynakları korundu; adresleri yayın sayfalarına 301 ile yönlenir. Yayın sayfalarında noindex yok; canonical/hreflang, özgün metadata ve BlogPosting eklendi. Site haritası 82 URL içerir. Üretim derlemesi başarılı; geçici üretim sunucusunda 10 blog adresi HTTP 200, canonical/menu/indexable, yazılarda schema; eski önizleme 301; bilinmeyen yazı 404 doğrulandı. Tarayıcı görsel kontrolü yapılmadı. Tarih/yazar bilgisi uydurulmadı.

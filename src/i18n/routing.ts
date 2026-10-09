@@ -6,6 +6,7 @@ export const pathnames: Record<string, { tr: string; en: string }> = {
   '/hizmetlerimiz': { tr: '/hizmetlerimiz', en: '/services' },
   '/projelerimiz': { tr: '/projelerimiz', en: '/projects' },
   '/hakkimizda': { tr: '/hakkimizda', en: '/about' },
+  '/blog': { tr: '/blog', en: '/blog' },
   '/iletisim': { tr: '/iletisim', en: '/contact' },
 }
 
