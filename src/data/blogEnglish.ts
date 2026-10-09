@@ -100,8 +100,8 @@ export const blogEnglish = [
     "category": "Field Experience",
     "title": "Tank and Pipeline Chemical Cleaning: Preparation and Surface Inspection",
     "summary": "Defining cleaning scope, planning circulation and reviewing the Ahal GTG field example for process tanks and pipelines.",
-    "image": "/images/projects/ahal/circulation-pumps.jpg",
-    "imageAlt": "Circulation pumps and temporary piping at the Ahal GTG project",
+    "image": "/images/blog/tank-boru-hatti-saha.jpg",
+    "imageAlt": "Large diameter open-ended pipe section from the Ahal field archive",
     "service": "/hizmetlerimiz/endustriyel-kimyasal-temizlik/tank-boru-hatti-kimyasal-temizligi",
     "sections": [
       [
@@ -118,7 +118,7 @@ export const blogEnglish = [
       ],
       [
         "Ahal GTG field example",
-        "Kelven Kimya Ahal GTG-INT references include acidic and alkaline chemical cleaning of stainless steel spools, liquid storage tanks, oxygen and nitrogen tanks, and specified process systems. The circulation pump photograph comes from the Ahal field archive."
+        "Kelven Kimya Ahal GTG-INT references include acidic and alkaline chemical cleaning of stainless steel spools, liquid storage tanks, oxygen and nitrogen tanks, and specified process systems. The large diameter pipe photograph comes from the Ahal field archive."
       ],
       [
         "Surface inspection at Ahal",
@@ -256,8 +256,8 @@ export const blogEnglish = [
     "category": "Chemical Cleaning",
     "title": "Industrial Chemical Cleaning: Purpose, Applications and Process",
     "summary": "Chemical cleaning of boilers, condensers, heat exchangers and pipelines: assessment, product selection, controlled application and final checks.",
-    "image": "/images/projects/ahal/circulation-pumps.jpg",
-    "imageAlt": "Chemical cleaning circulation equipment from the Kelven Kimya Ahal field archive",
+    "image": "/images/blog/endustriyel-kimyasal-temizlik-boru-gruplari.jpg",
+    "imageAlt": "Stainless steel pipe groups and connected hoses in liquid, from the Ahal field archive",
     "service": "/hizmetlerimiz/endustriyel-kimyasal-temizlik",
     "serviceLabel": "Industrial chemical cleaning services",
     "sections": [

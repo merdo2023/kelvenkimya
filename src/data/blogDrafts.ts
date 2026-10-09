@@ -100,8 +100,8 @@ export const blogDrafts = [
     "category": "Saha Deneyimleri",
     "title": "Tank ve Boru Hattı Kimyasal Temizliği: Hazırlık ve Yüzey Kontrolü",
     "summary": "Proses tankları ve boru hatlarında temizlik kapsamının belirlenmesi, sirkülasyon hazırlığı ve Ahal GTG saha örneği.",
-    "image": "/images/projects/ahal/circulation-pumps.jpg",
-    "imageAlt": "Ahal GTG projesinde sirkülasyon pompaları ve geçici borulama",
+    "image": "/images/blog/tank-boru-hatti-saha.jpg",
+    "imageAlt": "Ahal saha arşivinden açık uçlu büyük çaplı boru bölümü",
     "service": "/hizmetlerimiz/endustriyel-kimyasal-temizlik/tank-boru-hatti-kimyasal-temizligi",
     "sections": [
       [
@@ -118,7 +118,7 @@ export const blogDrafts = [
       ],
       [
         "Ahal GTG projesinden saha örneği",
-        "Kelven Kimya Ahal GTG-INT referansında paslanmaz spool boruları, sıvı depolama tankları, oksijen ve azot tankları ile belirlenen proses sistemlerinde asidik ve alkali kimyasal temizlik uygulamaları yer alır. Yazıdaki sirkülasyon pompaları fotoğrafı Ahal saha arşivine aittir."
+        "Kelven Kimya Ahal GTG-INT referansında paslanmaz spool boruları, sıvı depolama tankları, oksijen ve azot tankları ile belirlenen proses sistemlerinde asidik ve alkali kimyasal temizlik uygulamaları yer alır. Yazıdaki büyük çaplı boru fotoğrafı Ahal saha arşivine aittir."
       ],
       [
         "Ahal projesinde yüzey muayenesi",
@@ -256,8 +256,8 @@ export const blogDrafts = [
     "category": "Kimyasal Temizlik",
     "title": "Endüstriyel Kimyasal Temizlik: Amaç, Uygulama Alanları ve Süreç",
     "summary": "Kazan, kondenser, eşanjör ve boru hatlarında kimyasal temizliğin amacı; keşif, ürün seçimi, kontrollü uygulama ve son kontroller.",
-    "image": "/images/projects/ahal/circulation-pumps.jpg",
-    "imageAlt": "Kelven Kimya Ahal saha arşivinden kimyasal temizlik sirkülasyon ekipmanları",
+    "image": "/images/blog/endustriyel-kimyasal-temizlik-boru-gruplari.jpg",
+    "imageAlt": "Ahal saha arşivinden sıvı içindeki paslanmaz boru grupları ve bağlantı hortumları",
     "service": "/hizmetlerimiz/endustriyel-kimyasal-temizlik",
     "serviceLabel": "Endüstriyel kimyasal temizlik hizmetleri",
     "sections": [
